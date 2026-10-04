@@ -1,7 +1,7 @@
 # Section IV: neurons more regular or more variable than Poisson
 
 A neuron whose spike count is more regular (binomial) or more variable (negative binomial, generalized Poisson) than Poisson keeps
-the Poisson wall at silence and adds one finite-size term: the count is read at h_eff = h_F - kappa (h_F - q_0 sqrt(A)) / K, with
+the Poisson wall at silence and adds one finite-size term. The count is read at h_eff = h_F - kappa (h_F - q_0 sqrt(A)) / K, with
 kappa = 0.42 +- 0.02 (equation (6) of the paper).
 
 | paper item | scripts | outputs in `logs/` |

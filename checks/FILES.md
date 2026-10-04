@@ -1,0 +1,86 @@
+# Files in checks
+
+Scripts, bindings and figure scripts are copied unchanged; inputs and outputs carry the path redactions of the other folders. A `__` in an input name stands for a folder separator of the original tree.
+
+| file | original path |
+|---|---|
+| `scripts/gate_numbers.py` | `temporal_within/gate_truth/gate_numbers.py` |
+| `scripts/truth_index.py` | `temporal_within/gate_truth/truth_index.py (two names removed from a word list)` |
+| `scripts/figsrc.py` | `temporal_within/gate_truth/figsrc.py` |
+| `scripts/gate_figs.py` | `temporal_within/gate_truth/gate_figs.py` |
+| `scripts/gate_figs_runner.py` | `temporal_within/gate_truth/gate_figs_runner.py` |
+| `scripts/trace_reads.py` | `temporal_within/gate_truth/trace_reads.py` |
+| `scripts/gate_repo.py` | `temporal_within/gate_truth/gate_repo.py` |
+| `scripts/build_table3.py` | `temporal_within/gate_truth/build_table3.py` |
+| `scripts/build_table5.py` | `temporal_within/gate_truth/build_table5.py` |
+| `scripts/paper2_derived.py` | `temporal_within/gate_truth/paper2_derived.py` |
+| `scripts/fano_medians.py` | `temporal_within/gate_truth/fano_medians.py` |
+| `scripts/kappa_counts.py` | `temporal_within/gate_truth/kappa_counts.py` |
+| `scripts/bd_grid_birth.py` | `temporal_within/gate_truth/bd_grid_birth.py` |
+| `scripts/make_bindings_p2w.py` | `temporal_within/gate_truth/make_bindings_p2w.py` |
+| `figures/make_figs2.py` | `temporal_within/paper_neuron/figs/make_figs2.py` |
+| `figures/figstyle.py` | `temporal_within/paper_neuron/figs/figstyle.py` |
+| `bindings/bindings_paper2.json` | `temporal_within/gate_truth/bindings_paper2.json` |
+| `bindings/bindings_paper2_weak.json` | `temporal_within/gate_truth/bindings_paper2_weak.json` |
+| `outputs/paper2_derived.json` | `temporal_within/gate_truth/paper2_derived.json` |
+| `outputs/table3_primary.json` | `temporal_within/gate_truth/table3_primary.json` |
+| `outputs/table5_primary.json` | `temporal_within/gate_truth/table5_primary.json` |
+| `outputs/fano_medians.json` | `temporal_within/gate_truth/fano_medians.json` |
+| `outputs/kappa_counts.json` | `temporal_within/gate_truth/kappa_counts.json` |
+| `outputs/bd_grid_birth.json` | `temporal_within/gate_truth/bd_grid_birth.json` |
+| `inputs/a1__verdict.txt` | `temporal_within/a1/verdict.txt` |
+| `inputs/area2__area2_verdict.txt` | `temporal_within/area2/area2_verdict.txt` |
+| `inputs/area2__dmfc_verdict.txt` | `temporal_within/area2/dmfc_verdict.txt` |
+| `inputs/q75_halfline_Eg.py` | `temporal_within/q75_halfline_Eg.py` |
+| `inputs/results_noiseNstar.json` | `temporal_within/results_noiseNstar.json` |
+| `inputs/results_onoff_loss.json` | `temporal_within/results_onoff_loss.json` |
+| `inputs/results_q106_dc_K11.json` | `temporal_within/results_q106_dc_K11.json` |
+| `inputs/results_q106_dc_K11.log` | `temporal_within/results_q106_dc_K11.log` |
+| `inputs/results_q106_dc_K11_lam0001_002.log` | `temporal_within/results_q106_dc_K11_lam0001_002.log` |
+| `inputs/results_q106_dc_K11_lam005_025.log` | `temporal_within/results_q106_dc_K11_lam005_025.log` |
+| `inputs/results_q106_dc_K11_smalllam.log` | `temporal_within/results_q106_dc_K11_smalllam.log` |
+| `inputs/results_q106_dc_K11b.log` | `temporal_within/results_q106_dc_K11b.log` |
+| `inputs/results_q106_dc_K11c.log` | `temporal_within/results_q106_dc_K11c.log` |
+| `inputs/results_q106_dc_K15.log` | `temporal_within/results_q106_dc_K15.log` |
+| `inputs/results_q106_dc_K15b.log` | `temporal_within/results_q106_dc_K15b.log` |
+| `inputs/results_q106_dc_K15c.log` | `temporal_within/results_q106_dc_K15c.log` |
+| `inputs/results_q106_nb_K15.log` | `temporal_within/results_q106_nb_K15.log` |
+| `inputs/results_q106_nb_K15_r100.log` | `temporal_within/results_q106_nb_K15_r100.log` |
+| `inputs/results_q106_nb_K15_r100_try1.log` | `temporal_within/results_q106_nb_K15_r100_try1.log` |
+| `inputs/results_q106_nb_K15_r100_try2.log` | `temporal_within/results_q106_nb_K15_r100_try2.log` |
+| `inputs/results_q106_nb_K15b.log` | `temporal_within/results_q106_nb_K15b.log` |
+| `inputs/results_q106_nb_K20.log` | `temporal_within/results_q106_nb_K20.log` |
+| `inputs/results_q106_nb_K20b.log` | `temporal_within/results_q106_nb_K20b.log` |
+| `inputs/results_q108_dc_chain_g1.55.log` | `temporal_within/results_q108_dc_chain_g1.55.log` |
+| `inputs/results_q108_dc_chain_g1.55_ext.log` | `temporal_within/results_q108_dc_chain_g1.55_ext.log` |
+| `inputs/results_q129_K18_even.log` | `temporal_within/results_q129_K18_even.log` |
+| `inputs/results_q129_K18_even_b.log` | `temporal_within/results_q129_K18_even_b.log` |
+| `inputs/results_q129_K20_even.log` | `temporal_within/results_q129_K20_even.log` |
+| `inputs/results_q129_K20_even_b.log` | `temporal_within/results_q129_K20_even_b.log` |
+| `inputs/results_q129_bin.log` | `temporal_within/results_q129_bin.log` |
+| `inputs/results_q129_bin_rho.log` | `temporal_within/results_q129_bin_rho.log` |
+| `inputs/results_q129_gp_controls.log` | `temporal_within/results_q129_gp_controls.log` |
+| `inputs/results_q129_gp_controls_b.log` | `temporal_within/results_q129_gp_controls_b.log` |
+| `inputs/results_q130_bin_chain.log` | `temporal_within/results_q130_bin_chain.log` |
+| `inputs/results_q130_bin_chain_K11.log` | `temporal_within/results_q130_bin_chain_K11.log` |
+| `inputs/results_q130_bin_chain_K11_a.log` | `temporal_within/results_q130_bin_chain_K11_a.log` |
+| `inputs/results_q130_bin_chain_K9.log` | `temporal_within/results_q130_bin_chain_K9.log` |
+| `inputs/results_q130_bin_chain_K9b.log` | `temporal_within/results_q130_bin_chain_K9b.log` |
+| `inputs/results_q130_bin_chain_K9c.log` | `temporal_within/results_q130_bin_chain_K9c.log` |
+| `inputs/results_q130_bin_chain_K9d.log` | `temporal_within/results_q130_bin_chain_K9d.log` |
+| `inputs/results_q130_bin_chain_K9e.log` | `temporal_within/results_q130_bin_chain_K9e.log` |
+| `inputs/results_q130_bin_chain_K9f.log` | `temporal_within/results_q130_bin_chain_K9f.log` |
+| `inputs/results_q130_bin_chain_K9g.log` | `temporal_within/results_q130_bin_chain_K9g.log` |
+| `inputs/results_q130_bin_chain_K9h.log` | `temporal_within/results_q130_bin_chain_K9h.log` |
+| `inputs/results_q130_bin_chain_b.log` | `temporal_within/results_q130_bin_chain_b.log` |
+| `inputs/results_q130_bin_gaps_K17.log` | `temporal_within/results_q130_bin_gaps_K17.log` |
+| `inputs/results_q130_bin_gaps_K17b.log` | `temporal_within/results_q130_bin_gaps_K17b.log` |
+| `inputs/results_q32_certificate_v3_A100.json` | `temporal_within/results_q32_certificate_v3_A100.json` |
+| `inputs/results_q32_recertify_v3.json` | `temporal_within/results_q32_recertify_v3.json` |
+| `inputs/results_q75b_Eg.json` | `temporal_within/results_q75b_Eg.json` |
+| `inputs/results_q8_area2.json` | `temporal_within/results_q8_area2.json` |
+| `inputs/results_q8_dmfc.json` | `temporal_within/results_q8_dmfc.json` |
+| `inputs/results_q8_retina.json` | `temporal_within/results_q8_retina.json` |
+| `inputs/results_q8_v1.json` | `temporal_within/results_q8_v1.json` |
+| `inputs/retina__verdict.txt` | `temporal_within/retina/verdict.txt` |
+| `inputs/v1__verdict.txt` | `temporal_within/v1/verdict.txt` |

@@ -1,0 +1,411 @@
+[
+ {
+  "printed_A": "27.9452",
+  "K": 5,
+  "printed_slack": "5.5e-05",
+  "status": "OK",
+  "source": "results_q32_certificate_arb.json",
+  "A_source": 27.945198770640623,
+  "slack_source": 5.517379659846657e-05,
+  "all_sources": [
+   "results_q32_certificate_arb.json",
+   "results_q32_recertify_v3.json",
+   "results_q32_recertify_v4.json",
+   "results_q35_dark_certify.json"
+  ]
+ },
+ {
+  "printed_A": "218.5000",
+  "K": 17,
+  "printed_slack": "3.4e-08",
+  "status": "OK",
+  "source": "results_q53b_certify17_A218.500.json",
+  "A_source": 218.5,
+  "slack_source": 3.372172188207099e-08,
+  "all_sources": [
+   "results_q53b_certify17_A218.500.json"
+  ]
+ },
+ {
+  "printed_A": "28.3620",
+  "K": 6,
+  "printed_slack": "2.0e-06",
+  "status": "OK",
+  "source": "results_q32_certificate_arb.json",
+  "A_source": 28.362,
+  "slack_source": 2.0078364306187994e-06,
+  "all_sources": [
+   "results_q32_certificate_arb.json",
+   "results_q32_recertify_v3.json",
+   "results_q32_recertify_v4.json"
+  ]
+ },
+ {
+  "printed_A": "236.0000",
+  "K": 17,
+  "printed_slack": "6.2e-08",
+  "status": "OK",
+  "source": "results_q53b_certify17_A236.000.json",
+  "A_source": 236.0,
+  "slack_source": 6.231305551405908e-08,
+  "all_sources": [
+   "results_q53b_certify17_A236.000.json"
+  ]
+ },
+ {
+  "printed_A": "39.6120",
+  "K": 6,
+  "printed_slack": "2.9e-05",
+  "status": "OK",
+  "source": "results_q32_certificate_arb.json",
+  "A_source": 39.612,
+  "slack_source": 2.8830678900386636e-05,
+  "all_sources": [
+   "results_q32_certificate_arb.json",
+   "results_q32_recertify_v3.json",
+   "results_q32_recertify_v4.json"
+  ]
+ },
+ {
+  "printed_A": "236.9199",
+  "K": 18,
+  "printed_slack": "7.5e-12",
+  "status": "OK",
+  "source": "results_q53b_certify18_A236.920.json",
+  "A_source": 236.91993773698562,
+  "slack_source": 7.505990532677533e-12,
+  "all_sources": [
+   "results_q53b_certify18_A236.920.json"
+  ]
+ },
+ {
+  "printed_A": "40.0280",
+  "K": 7,
+  "printed_slack": "1.3e-05",
+  "status": "OK",
+  "source": "results_q32_certificate_arb.json",
+  "A_source": 40.028,
+  "slack_source": 1.2890004719628507e-05,
+  "all_sources": [
+   "results_q32_certificate_arb.json",
+   "results_q32_recertify_v3.json",
+   "results_q32_recertify_v4.json"
+  ]
+ },
+ {
+  "printed_A": "237.0356",
+  "K": 18,
+  "printed_slack": "8.3e-12",
+  "status": "OK",
+  "source": "results_q53b_certify18_A237.036.json",
+  "A_source": 237.035589607357,
+  "slack_source": 8.322007738218713e-12,
+  "all_sources": [
+   "results_q53b_certify18_A237.036.json"
+  ]
+ },
+ {
+  "printed_A": "52.5555",
+  "K": 7,
+  "printed_slack": "2.8e-07",
+  "status": "OK",
+  "source": "results_q32_certificate_arb.json",
+  "A_source": 52.5555,
+  "slack_source": 2.7601025870940415e-07,
+  "all_sources": [
+   "results_q32_certificate_arb.json",
+   "results_q32_recertify_v3.json",
+   "results_q32_recertify_v4.json"
+  ]
+ },
+ {
+  "printed_A": "237.1841",
+  "K": 18,
+  "printed_slack": "4.9e-11",
+  "status": "OK",
+  "source": "results_q53b_certify18_A237.184.json",
+  "A_source": 237.18410802765334,
+  "slack_source": 4.880719187711103e-11,
+  "all_sources": [
+   "results_q53b_certify18_A237.184.json"
+  ]
+ },
+ {
+  "printed_A": "66.6505",
+  "K": 8,
+  "printed_slack": "7.9e-07",
+  "status": "OK",
+  "source": "results_q32_certificate_arb.json",
+  "A_source": 66.6505,
+  "slack_source": 7.851041378931531e-07,
+  "all_sources": [
+   "results_q32_certificate_arb.json",
+   "results_q32_recertify_v3.json",
+   "results_q32_recertify_v4.json"
+  ]
+ },
+ {
+  "printed_A": "257.9236",
+  "K": 18,
+  "printed_slack": "5.5e-08",
+  "status": "OK",
+  "source": "results_q53b_certify18_A257.924.json",
+  "A_source": 257.92360000000167,
+  "slack_source": 5.463773346311284e-08,
+  "all_sources": [
+   "results_q53b_certify18_A257.924.json"
+  ]
+ },
+ {
+  "printed_A": "97.9375",
+  "K": 10,
+  "printed_slack": "1.0e-06",
+  "status": "OK",
+  "source": "results_q32_certificate_arb.json",
+  "A_source": 97.9375,
+  "slack_source": 1.0207294506928525e-06,
+  "all_sources": [
+   "results_q32_certificate_arb.json",
+   "results_q32_recertify_v3.json",
+   "results_q32_recertify_v4.json"
+  ]
+ },
+ {
+  "printed_A": "259.9822",
+  "K": 19,
+  "printed_slack": "5.0e-10",
+  "status": "OK",
+  "source": "results_q53b_certify19_A259.982.json",
+  "A_source": 259.98223234352037,
+  "slack_source": 5.021287291544584e-10,
+  "all_sources": [
+   "results_q53b_certify19_A259.982.json"
+  ]
+ },
+ {
+  "printed_A": "100.0000",
+  "K": 11,
+  "printed_slack": "1.0e-06",
+  "status": "OK",
+  "source": "results_q32_certificate_arb.json",
+  "A_source": 100.0,
+  "slack_source": 1.0364133382232978e-06,
+  "all_sources": [
+   "results_q32_certificate_arb.json",
+   "results_q32_certificate_v3_A100.json",
+   "results_q32_certificate_v4_A100.json"
+  ]
+ },
+ {
+  "printed_A": "283.6685",
+  "K": 20,
+  "printed_slack": "1.4e-12",
+  "status": "OK",
+  "source": "results_q53b_certify20_A283.668.json",
+  "A_source": 283.6684668069549,
+  "slack_source": 1.3938160448842082e-12,
+  "all_sources": [
+   "results_q53b_certify20_A283.668.json"
+  ]
+ },
+ {
+  "printed_A": "115.2578",
+  "K": 11,
+  "printed_slack": "1.2e-08",
+  "status": "OK",
+  "source": "results_q32_certificate_arb.json",
+  "A_source": 115.2578125,
+  "slack_source": 1.1974447743951435e-08,
+  "all_sources": [
+   "results_q32_certificate_arb.json",
+   "results_q32_recertify_v3.json",
+   "results_q32_recertify_v4.json"
+  ]
+ },
+ {
+  "printed_A": "302.0000",
+  "K": 20,
+  "printed_slack": "4.0e-08",
+  "status": "OK",
+  "source": "results_q53b_certify20_A302.000.json",
+  "A_source": 302.0,
+  "slack_source": 4.032187451995028e-08,
+  "all_sources": [
+   "results_q53b_certify20_A302.000.json"
+  ]
+ },
+ {
+  "printed_A": "133.3550",
+  "K": 12,
+  "printed_slack": "1.5e-07",
+  "status": "OK",
+  "source": "results_q32_certificate_arb.json",
+  "A_source": 133.355,
+  "slack_source": 1.4640288182333575e-07,
+  "all_sources": [
+   "results_q32_certificate_arb.json",
+   "results_q32_recertify_v3.json",
+   "results_q32_recertify_v4.json"
+  ]
+ },
+ {
+  "printed_A": "308.1187",
+  "K": 21,
+  "printed_slack": "9.8e-11",
+  "status": "OK",
+  "source": "results_q53b_certify21_A308.119.json",
+  "A_source": 308.11873739197057,
+  "slack_source": 9.835803893136646e-11,
+  "all_sources": [
+   "results_q53b_certify21_A308.119.json"
+  ]
+ },
+ {
+  "printed_A": "150.0000",
+  "K": 13,
+  "printed_slack": "1.7e-06",
+  "status": "OK",
+  "source": "results_q32_certificate_arb.json",
+  "A_source": 150.0,
+  "slack_source": 1.6607208055043874e-06,
+  "all_sources": [
+   "results_q32_certificate_arb.json",
+   "results_q32_recertify_v3.json",
+   "results_q32_recertify_v4.json"
+  ]
+ },
+ {
+  "printed_A": "327.0000",
+  "K": 21,
+  "printed_slack": "1.9e-08",
+  "status": "OK",
+  "source": "results_q53b_certify21_A327.000.json",
+  "A_source": 327.0,
+  "slack_source": 1.9455408655771332e-08,
+  "all_sources": [
+   "results_q53b_certify21_A327.000.json"
+  ]
+ },
+ {
+  "printed_A": "152.0000",
+  "K": 13,
+  "printed_slack": "3.6e-07",
+  "status": "OK",
+  "source": "results_q32_certificate_arb.json",
+  "A_source": 152.0,
+  "slack_source": 3.5576883167501565e-07,
+  "all_sources": [
+   "results_q32_certificate_arb.json",
+   "results_q32_recertify_v3.json",
+   "results_q32_recertify_v4.json"
+  ]
+ },
+ {
+  "printed_A": "333.1988",
+  "K": 22,
+  "printed_slack": "3.3e-13",
+  "status": "OK",
+  "source": "results_q53b_certify22_A333.199.json",
+  "A_source": 333.1987712682616,
+  "slack_source": 3.2974666302004455e-13,
+  "all_sources": [
+   "results_q53b_certify22_A333.199.json"
+  ]
+ },
+ {
+  "printed_A": "166.6681",
+  "K": 14,
+  "printed_slack": "1.1e-06",
+  "status": "OK",
+  "source": "results_q47_certify14_c15.json",
+  "A_source": 166.6681,
+  "slack_source": 1.147178712579109e-06,
+  "all_sources": [
+   "results_q47_certify14_c15.json"
+  ]
+ },
+ {
+  "printed_A": "352.0000",
+  "K": 22,
+  "printed_slack": "1.4e-08",
+  "status": "OK",
+  "source": "results_q53b_certify22_A352.000.json",
+  "A_source": 352.0,
+  "slack_source": 1.3997764751094152e-08,
+  "all_sources": [
+   "results_q53b_certify22_A352.000.json"
+  ]
+ },
+ {
+  "printed_A": "172.4467",
+  "K": 15,
+  "printed_slack": "7.1e-09",
+  "status": "OK",
+  "source": "results_q53b_certify15_A172.447.json",
+  "A_source": 172.44665380589757,
+  "slack_source": 7.120483114320537e-09,
+  "all_sources": [
+   "results_q53b_certify15_A172.447.json"
+  ]
+ },
+ {
+  "printed_A": "359.5000",
+  "K": 23,
+  "printed_slack": "2.8e-11",
+  "status": "OK",
+  "source": "results_q53b_certify23_A359.500.json",
+  "A_source": 359.5,
+  "slack_source": 2.796193168410885e-11,
+  "all_sources": [
+   "results_q53b_certify23_A359.500.json"
+  ]
+ },
+ {
+  "printed_A": "185.0000",
+  "K": 15,
+  "printed_slack": "5.7e-07",
+  "status": "OK",
+  "source": "results_q53b_certify15_A185.000.json",
+  "A_source": 185.0,
+  "slack_source": 5.686206492167606e-07,
+  "all_sources": [
+   "results_q53b_certify15_A185.000.json"
+  ]
+ },
+ {
+  "printed_A": "378.0000",
+  "K": 23,
+  "printed_slack": "6.7e-09",
+  "status": "OK",
+  "source": "results_q53b_certify23_A378.000.json",
+  "A_source": 378.0,
+  "slack_source": 6.736270488589688e-09,
+  "all_sources": [
+   "results_q53b_certify23_A378.000.json"
+  ]
+ },
+ {
+  "printed_A": "204.7761",
+  "K": 16,
+  "printed_slack": "3.3e-07",
+  "status": "OK",
+  "source": "results_q49_certify16.json",
+  "A_source": 204.7761,
+  "slack_source": 3.2535634900729527e-07,
+  "all_sources": [
+   "results_q49_certify16.json"
+  ]
+ },
+ {
+  "printed_A": "214.6855",
+  "K": 17,
+  "printed_slack": "1.9e-09",
+  "status": "OK",
+  "source": "results_q53b_certify17_A214.685.json",
+  "A_source": 214.68545179551464,
+  "slack_source": 1.854672479193923e-09,
+  "all_sources": [
+   "results_q53b_certify17_A214.685.json"
+  ]
+ }
+]

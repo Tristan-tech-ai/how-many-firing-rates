@@ -1,0 +1,17 @@
+seed K = 11 at A = 100.0; dropped atom 5 (w = 0.0329); (K-1)-point Poisson at A = 97.5: residual 1.5e-14, min w 0.0763
+   poisson 0: A =   97.9800: v +0.000e+00 at t = 0.000; min w 0.0767
+   poisson 0: fine pass 98.0800..98.1800, violation peak at t = 10.322
+   poisson 0: linear fit on 12 near points: A_K = 98.0853 (slope 9.861e-06, window 98.098..98.162)
+Poisson: A_11 = 98.0853; sqrt = 9.90380; first gaps (t) [3.1262, 2.2648]   [2s]
+   dc 3: A =  119.5931: v +1.159e-13 at t = 21.872; min w 0.0729
+   dc 3: A =  120.8431: v +2.220e-16 at t = 21.986; min w 0.0742
+   dc 3: A =  122.0931: v +0.000e+00 at t = 0.000; min w 0.0754
+   dc 3: A =  123.3431: v +0.000e+00 at t = 0.000; min w 0.0765
+   dc 3: A =  124.5931: v +0.000e+00 at t = 0.000; min w 0.0774
+   dc 3: A =  125.8431: v +1.332e-15 at t = 22.436; min w 0.0783
+   dc 3: fine pass 125.8931..126.0431, violation peak at t = 12.645
+   dc 3: linear fit on 10 near points: A_K = 125.8998 (slope 7.981e-06, window 125.920..125.999)
+dc 3: A_11 = 125.8998 (Fisher-invariant prediction 132.3931); L = 19.24271; Delta c = L/2 - sqrt(A_P) = -0.28245; metric part -1.59915; first gaps (Fisher) [2.7361, 2.1798]; weights [0.153, 0.1011, 0.0878]   [8s]
+   bridge failed at A = 142.825 (res 2.6e-07)
+   continuation failed at 30.0 (A = 146.722): residual 1.0e-06
+done

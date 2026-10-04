@@ -1,0 +1,12 @@
+seed K = 17; (K-1)-point Poisson at A0 = 213.685: residual 9.4e-14
+   already above the transition at A = 213.685 (peak 1.1e-03); stepping down
+   [no interior local maximum on the coarse grid: zone-edge fallback, value is an upper bound on the offset]
+bin 300 K-1=16 -> K=17: transition A = 168.82053 (rho = 0.563; peak -1.5e-13); birth between atoms 7,8 (Fisher 14.2011, 15.7977; gap 1.5965) at t = 15.1969: f_left = 0.6237   [47s]
+   handed over at N = 300, A = 175.00 (min w 0.0503)   [47s]
+   already above the transition at A = 175.000 (peak 7.1e-04); stepping down
+   [no interior local maximum on the coarse grid: zone-edge fallback, value is an upper bound on the offset]
+   [no interior local maximum on the coarse grid: zone-edge fallback, value is an upper bound on the offset]
+   [no interior local maximum on the coarse grid: zone-edge fallback, value is an upper bound on the offset]
+bin 200 K-1=16 -> K=17: transition A = 148.83659 (rho = 0.744; peak -2.7e-14); birth between atoms 7,8 (Fisher 14.2198, 15.8203; gap 1.6006) at t = 15.2182: f_left = 0.6238   [73s]
+   handed over at N = 200, A = 140.00 (min w 0.0223)   [78s]
+   continuation failed at N = 160 (A = 140.00): residual 1.1e-14, min w -2.52e-02

@@ -1,0 +1,11 @@
+seed K = 18 at A = 236.9199 (dropped atom 9, w = 1.0e-03); (K-1)-point Poisson at A0 = 235.920: residual 1.1e-13, min w 0.0445
+poisson 0 K-1=17 -> K=18: transition A = 236.91064 (peak -1.3e-15); birth between atoms 8,9 (Fisher 15.7038, 17.2660; gap 1.5622) at t = 15.8975: f_left = 0.1240   [17s]
+seed K = 18 at A = 236.9199 (dropped atom 9, w = 1.0e-03); (K-1)-point Poisson at A0 = 235.920: residual 1.1e-13, min w 0.0445
+dc 0.01 K-1=17 -> K=18: transition A = 236.67925 (peak -2.8e-14); birth between atoms 8,9 (Fisher 15.4911, 17.0525; gap 1.5614) at t = 15.6538: f_left = 0.1042   [15s]
+dc 0.05 K-1=17 -> K=18: transition A = 237.14207 (peak -1.8e-14); birth between atoms 8,9 (Fisher 15.2808, 16.8402; gap 1.5594) at t = 15.4021: f_left = 0.0778   [32s]
+dc 0.25 K-1=17 -> K=18: transition A = 243.84085 (peak -3.0e-14); birth between atoms 8,9 (Fisher 15.1757, 16.7337; gap 1.5579) at t = 15.2958: f_left = 0.0771   [58s]
+   continuation failed at 1.0: residual 5.0e-08
+   continuation failed at 1.0: residual 5.0e-08
+seed K = 18 at A = 236.9199 (dropped atom 9, w = 1.0e-03); (K-1)-point Poisson at A0 = 235.920: residual 1.1e-13, min w 0.0445
+nb 3000 K-1=17 -> K=18: transition A = 243.06374 (peak -1.2e-14); birth between atoms 8,9 (Fisher 15.6993, 17.2607; gap 1.5614) at t = 15.8789: f_left = 0.1150   [34s]
+   continuation failed at 1000.0: residual 1.9e-07

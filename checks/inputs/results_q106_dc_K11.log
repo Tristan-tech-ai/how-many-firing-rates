@@ -1,0 +1,133 @@
+seed K = 11 at A = 100.0; dropped atom 5 (w = 0.0329); (K-1)-point Poisson at A = 97.5: residual 1.5e-14, min w 0.0763
+   poisson 0: A =   97.9800: v +0.000e+00 at t = 0.000; min w 0.0767
+   poisson 0: fine pass 98.0800..98.1800, violation peak at t = 10.322
+   poisson 0: linear fit on 12 near points: A_K = 98.0853 (slope 9.861e-06, window 98.098..98.162)
+Poisson: A_11 = 98.0853; sqrt = 9.90380; first gaps (t) [3.1262, 2.2648]   [3s]
+   dc 0.01: A =   93.2661: v +6.661e-16 at t = 19.315; min w 0.0725
+   dc 0.01: A =   94.5161: v +0.000e+00 at t = 0.000; min w 0.0740
+   dc 0.01: A =   95.7661: v +0.000e+00 at t = 0.000; min w 0.0753
+   dc 0.01: A =   97.0161: v +6.661e-16 at t = 19.699; min w 0.0764
+   dc 0.01: fine pass 98.0161..98.1161, violation peak at t = 10.289
+   dc 0.01: linear fit on 12 near points: A_K = 98.0108 (slope 9.835e-06, window 98.022..98.087)
+dc 0.01: A_11 = 98.0108 (Fisher-invariant prediction 100.0661); L = 19.60109; Delta c = L/2 - sqrt(A_P) = -0.10326; metric part -0.09949; first gaps (Fisher) [2.9497, 2.2495]; weights [0.1613, 0.103, 0.0879]   [8s]
+   dc 0.03: A =   94.7161: v +7.061e-14 at t = 19.464; min w 0.0744
+   dc 0.03: A =   95.9661: v +1.457e-13 at t = 19.592; min w 0.0757
+   dc 0.03: A =   97.2161: v +0.000e+00 at t = 0.000; min w 0.0768
+   dc 0.03: fine pass 98.1661..98.2661, violation peak at t = 10.287
+   dc 0.03: linear fit on 12 near points: A_K = 98.1698 (slope 9.759e-06, window 98.184..98.248)
+dc 0.03: A_11 = 98.1698 (Fisher-invariant prediction 101.5161); L = 19.47275; Delta c = L/2 - sqrt(A_P) = -0.16743; metric part -0.17169; first gaps (Fisher) [2.8635, 2.2286]; weights [0.1589, 0.1021, 0.0878]   [12s]
+   dc 0.1: A =   97.5490: v +4.441e-16 at t = 19.753; min w 0.0762
+   dc 0.1: A =   98.7990: v +0.000e+00 at t = 0.000; min w 0.0773
+   dc 0.1: fine pass 99.5990..99.7490, violation peak at t = 10.380
+   dc 0.1: linear fit on 9 near points: A_K = 99.6142 (slope 9.357e-06, window 99.626..99.696)
+dc 0.1: A_11 = 99.6142 (Fisher-invariant prediction 104.3490); L = 19.33894; Delta c = L/2 - sqrt(A_P) = -0.23433; metric part -0.31122; first gaps (Fisher) [2.7954, 2.197]; weights [0.157, 0.1009, 0.0876]   [15s]
+   dc 0.3: A =  102.1344: v +0.000e+00 at t = 0.000; min w 0.0768
+   dc 0.3: A =  103.3844: v +0.000e+00 at t = 0.000; min w 0.0778
+   dc 0.3: fine pass 103.7344..103.8844, violation peak at t = 10.766
+   dc 0.3: linear fit on 9 near points: A_K = 103.7547 (slope 9.062e-06, window 103.770..103.840)
+dc 0.3: A_11 = 103.7547 (Fisher-invariant prediction 108.9344); L = 19.30600; Delta c = L/2 - sqrt(A_P) = -0.25080; metric part -0.53301; first gaps (Fisher) [2.7764, 2.1907]; weights [0.1557, 0.1009, 0.0876]   [18s]
+   dc 1: A =  111.0929: v +2.549e-13 at t = 21.080; min w 0.0776
+   dc 1: fine pass 112.0429..112.1429, violation peak at t = 11.503
+   dc 1: linear fit on 14 near points: A_K = 112.0389 (slope 8.579e-06, window 112.055..112.131)
+dc 1: A_11 = 112.0389 (Fisher-invariant prediction 117.8929); L = 19.26395; Delta c = L/2 - sqrt(A_P) = -0.27183; metric part -0.95287; first gaps (Fisher) [2.7501, 2.1831]; weights [0.1542, 0.101, 0.0877]   [20s]
+   dc 3: A = 124.393: NOT converged (res 4.0e-14, min w -0.0295)
+   dc 3: A = 124.443: NOT converged (res 4.6e-14, min w -0.0428)
+   dc 3: A = 124.493: NOT converged (res 3.0e-14, min w -0.0296)
+   dc 3: A = 124.543: NOT converged (res 2.5e-14, min w -0.0303)
+   dc 3: A = 124.593: NOT converged (res 6.4e-14, min w -0.0296)
+   dc 3: A = 124.643: NOT converged (res 3.6e-14, min w -0.0287)
+   dc 3: A = 124.693: NOT converged (res 4.2e-14, min w -0.0293)
+   dc 3: A = 124.743: NOT converged (res 6.0e-14, min w -0.6292)
+   dc 3: A = 124.793: NOT converged (res 4.4e-14, min w -0.0930)
+   dc 3: A = 124.843: NOT converged (res 3.5e-14, min w -0.0213)
+   dc 3: A = 124.893: NOT converged (res 2.0e-14, min w -0.0486)
+   dc 3: A = 124.943: NOT converged (res 2.8e-14, min w -0.0289)
+   dc 3: A = 124.993: NOT converged (res 3.7e-14, min w -0.6607)
+   dc 3: A = 125.043: NOT converged (res 4.2e-14, min w -0.0302)
+   dc 3: A = 125.093: NOT converged (res 3.1e-14, min w -0.0279)
+   dc 3: A = 125.143: NOT converged (res 3.1e-14, min w -0.0289)
+   dc 3: A = 125.193: NOT converged (res 1.5e-14, min w -0.0482)
+   dc 3: A = 125.243: NOT converged (res 3.3e-14, min w -0.0272)
+   dc 3: A = 125.293: NOT converged (res 4.5e-14, min w -0.0084)
+   dc 3: A = 125.343: NOT converged (res 3.6e-14, min w -0.7936)
+   dc 3: A = 125.393: NOT converged (res 2.9e-14, min w -0.9802)
+   dc 3: A = 125.443: NOT converged (res 3.8e-14, min w -0.0312)
+   dc 3: A = 125.493: NOT converged (res 3.2e-14, min w -0.0232)
+   dc 3: A = 125.543: NOT converged (res 1.3e-14, min w -0.4354)
+   dc 3: A = 125.593: NOT converged (res 3.0e-14, min w -0.0323)
+   dc 3: A = 125.643: NOT converged (res 7.1e-14, min w -2.6019)
+   dc 3: A = 125.693: NOT converged (res 3.4e-14, min w -0.0204)
+   dc 3: A = 125.743: NOT converged (res 4.0e-14, min w -0.0330)
+   dc 3: A = 125.793: NOT converged (res 4.4e-14, min w -0.0244)
+   dc 3: A = 125.843: NOT converged (res 4.5e-14, min w -0.0318)
+   dc 3: A = 125.893: NOT converged (res 1.6e-14, min w -0.0247)
+   dc 3: A = 125.943: NOT converged (res 1.0e-14, min w -0.0321)
+   dc 3: A = 125.993: NOT converged (res 3.7e-14, min w -0.0280)
+   dc 3: A = 126.043: NOT converged (res 3.9e-14, min w -0.0329)
+   dc 3: A = 126.093: NOT converged (res 1.6e-14, min w -0.0429)
+   dc 3: A = 126.143: NOT converged (res 3.8e-14, min w -0.0033)
+   dc 3: A = 126.193: NOT converged (res 5.0e-14, min w -0.0167)
+   dc 3: A = 126.243: NOT converged (res 5.3e-14, min w -0.0341)
+   dc 3: A = 126.293: NOT converged (res 2.0e-14, min w -0.0330)
+   dc 3: A = 126.343: NOT converged (res 2.2e-14, min w -0.0306)
+   dc 3: A = 126.393: NOT converged (res 3.9e-14, min w -0.0325)
+   dc 3: A = 126.443: NOT converged (res 4.3e-14, min w -0.0477)
+   dc 3: A = 126.493: NOT converged (res 2.8e-14, min w -0.0244)
+   dc 3: A = 126.543: NOT converged (res 4.0e-14, min w -0.0302)
+   dc 3: A = 126.593: NOT converged (res 3.8e-14, min w -0.0218)
+   dc 3: A = 126.643: NOT converged (res 1.6e-14, min w -0.0440)
+   dc 3: A = 126.693: NOT converged (res 2.6e-14, min w 0.0070)
+   dc 3: A = 126.743: NOT converged (res 3.8e-14, min w -0.0451)
+   dc 3: A = 126.793: NOT converged (res 2.9e-14, min w -0.0263)
+   dc 3: A = 126.843: NOT converged (res 4.4e-14, min w -0.0071)
+   dc 3: A = 126.893: NOT converged (res 5.9e-14, min w -0.0303)
+   dc 3: A = 126.943: NOT converged (res 2.2e-14, min w -0.0335)
+   dc 3: A = 126.993: NOT converged (res 4.6e-14, min w -0.0290)
+   dc 3: A = 127.043: NOT converged (res 1.7e-14, min w 0.0044)
+   dc 3: A = 127.093: NOT converged (res 3.0e-14, min w -0.0288)
+   dc 3: A = 127.143: NOT converged (res 5.0e-14, min w -0.0452)
+   dc 3: A = 127.193: NOT converged (res 2.5e-14, min w -0.0538)
+   dc 3: A = 127.243: NOT converged (res 4.1e-14, min w -0.0285)
+   dc 3: A = 127.293: NOT converged (res 5.1e-14, min w -0.0237)
+   dc 3: A = 127.343: NOT converged (res 4.6e-14, min w -0.0147)
+   dc 3: A = 127.393: NOT converged (res 4.4e-14, min w -0.0345)
+   dc 3: A = 127.443: NOT converged (res 7.3e-14, min w -1.0804)
+   dc 3: A = 127.493: NOT converged (res 3.8e-14, min w -0.0172)
+   dc 3: A = 127.543: NOT converged (res 2.1e-14, min w -0.0181)
+   dc 3: A = 127.593: NOT converged (res 2.6e-14, min w -1.0095)
+   dc 3: A = 127.643: NOT converged (res 2.6e-14, min w -0.0307)
+   dc 3: A = 127.693: NOT converged (res 6.2e-14, min w -0.0261)
+   dc 3: A = 127.743: NOT converged (res 1.7e-14, min w -0.0237)
+   dc 3: A = 127.793: NOT converged (res 4.2e-14, min w -0.0397)
+   dc 3: A = 127.843: NOT converged (res 3.1e-14, min w -0.0278)
+   dc 3: A = 127.893: NOT converged (res 3.3e-14, min w -0.0257)
+   dc 3: A = 127.943: NOT converged (res 2.7e-14, min w -0.0294)
+   dc 3: A = 127.993: NOT converged (res 6.0e-14, min w -0.0298)
+   dc 3: A = 128.043: NOT converged (res 2.4e-14, min w -0.0312)
+   dc 3: A = 128.093: NOT converged (res 3.5e-14, min w -0.0271)
+   dc 3: A = 128.143: NOT converged (res 3.2e-14, min w -0.0166)
+   dc 3: A = 128.193: NOT converged (res 3.2e-14, min w 0.0337)
+   dc 3: A = 128.243: NOT converged (res 2.4e-14, min w 0.0048)
+   dc 3: A = 128.293: NOT converged (res 1.9e-14, min w -1.6806)
+   dc 3: A = 128.343: NOT converged (res 3.6e-14, min w -0.0311)
+   dc 3: A = 128.393: NOT converged (res 2.4e-14, min w -0.0076)
+   dc 3: A = 128.443: NOT converged (res 4.2e-14, min w -0.0358)
+   dc 3: A = 128.493: NOT converged (res 2.5e-14, min w -0.0848)
+   dc 3: A = 128.543: NOT converged (res 2.6e-14, min w -0.0150)
+   dc 3: A = 128.593: NOT converged (res 4.1e-14, min w -0.0349)
+   dc 3: A = 128.643: NOT converged (res 4.0e-14, min w -1.3782)
+   dc 3: A = 128.693: NOT converged (res 2.3e-14, min w -0.0301)
+   dc 3: A = 128.743: NOT converged (res 4.0e-14, min w -0.0245)
+   dc 3: A = 128.793: NOT converged (res 4.6e-14, min w -0.0051)
+   dc 3: A = 128.843: NOT converged (res 4.6e-14, min w -3.1712)
+   dc 3: A = 128.893: NOT converged (res 2.8e-14, min w -1.0985)
+   dc 3: A = 128.943: NOT converged (res 3.7e-14, min w -0.2093)
+   dc 3: A = 128.993: NOT converged (res 4.9e-14, min w -0.0261)
+   dc 3: A = 129.043: NOT converged (res 3.2e-14, min w -0.0116)
+   dc 3: A = 129.093: NOT converged (res 3.4e-14, min w -0.4205)
+   dc 3: A = 129.143: NOT converged (res 3.5e-14, min w -1.4636)
+   dc 3: A = 129.193: NOT converged (res 4.0e-14, min w -0.6796)
+   dc 3: A = 129.243: NOT converged (res 2.6e-14, min w 0.0038)
+   dc 3: A = 129.293: NOT converged (res 2.6e-14, min w -0.0481)
+   dc 3: window not bracketed (v range 2.2e-03..2.2e-03 over A 129.343..129.343)
+done

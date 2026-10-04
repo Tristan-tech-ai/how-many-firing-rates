@@ -1,0 +1,2 @@
+seed K = 17 at A = 214.6855 (dropped atom 8, w = 1.0e-03); (K-1)-point Poisson at A0 = 213.685: residual 9.4e-14, min w 0.0474
+seed K = 18 at A = 236.9199 (dropped atom 9, w = 1.0e-03); (K-1)-point Poisson at A0 = 235.920: residual 1.1e-13, min w 0.0445

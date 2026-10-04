@@ -23,6 +23,7 @@ with the direct terms Dp(x) and Dpp(x) added on the diagonal when the evaluation
 Weights are carried unnormalised with sum w = 1 as its own residual row, which keeps the Jacobian exact; the
 earlier solver normalised inside the residual, which would have put an extra term in every entry.
 """
+
 import sys
 from mpmath import mp, mpf, exp, log, loggamma, matrix, lu_solve, nstr
 
@@ -30,7 +31,7 @@ from mpmath import mp, mpf, exp, log, loggamma, matrix, lu_solve, nstr
 def _setup(A, dps):
     mp.dps = dps
     A = float(A)
-    return int(A + 18 * A ** 0.5 + 50)
+    return int(A + 18 * A**0.5 + 50)
 
 
 def _logP(x, y):
@@ -98,7 +99,9 @@ def _resid(xs_full, interior, vec, K, ny):
     return r, x, w, P, Q, Dv
 
 
-def solve(A, pts, wts, dps=40, newton_steps=30, tol_pow=12, pin_ends=False, pure_below=None, feasible_step=False):
+def solve(
+    A, pts, wts, dps=40, newton_steps=30, tol_pow=12, pin_ends=False, pure_below=None, feasible_step=False
+):
     """pin_ends=True: the first and last atoms are boundary atoms wherever they sit (input interval [x_0, x_K-1],
     e.g. the dark-current problem shifted to [lambda, A + lambda]); only atoms 1..K-2 move."""
     ny = _setup(A, dps)
@@ -108,7 +111,11 @@ def solve(A, pts, wts, dps=40, newton_steps=30, tol_pow=12, pin_ends=False, pure
     t = sum(ws)
     ws = [v / t for v in ws]
     K = len(xs)
-    interior = list(range(1, K - 1)) if pin_ends else [i for i in range(K) if 1e-12 < float(xs[i]) < float(A) - 1e-12]
+    interior = (
+        list(range(1, K - 1))
+        if pin_ends
+        else [i for i in range(K) if 1e-12 < float(xs[i]) < float(A) - 1e-12]
+    )
     n = K + len(interior)
     vec = list(ws) + [xs[i] for i in interior]
     hist = []
@@ -208,18 +215,22 @@ def solve(A, pts, wts, dps=40, newton_steps=30, tol_pow=12, pin_ends=False, pure
             for k in range(K):
                 if dv[k] > 0:
                     alpha = min(alpha, mpf("0.9") * vec[k] / dv[k])
-            xs_now = list(xs); dxs = [mpf(0)] * K
+            xs_now = list(xs)
+            dxs = [mpf(0)] * K
             for j, i in enumerate(interior):
-                xs_now[i] = vec[K + j]; dxs[i] = dv[K + j]
+                xs_now[i] = vec[K + j]
+                dxs[i] = dv[K + j]
             for i in range(K - 1):
-                gap = xs_now[i + 1] - xs_now[i]; dgap = dxs[i + 1] - dxs[i]
+                gap = xs_now[i + 1] - xs_now[i]
+                dgap = dxs[i + 1] - dxs[i]
                 if dgap > 0:
                     alpha = min(alpha, mpf("0.8") * gap / dgap)
             vec = [vec[i] - alpha * dv[i] for i in range(n)]
             hist[-1] = hist[-1] + "@f" + nstr(alpha, 3)
             continue
         step = [vec[i] - dv[i] for i in range(n)]
-        val = ok_state(step); lam_used = "1"
+        val = ok_state(step)
+        lam_used = "1"
         pure = (pure_below is not None) and (nr < mpf(pure_below)) and (val is not None)
         if (not pure) and (val is None or val > nr):
             found = False
@@ -228,7 +239,8 @@ def solve(A, pts, wts, dps=40, newton_steps=30, tol_pow=12, pin_ends=False, pure
                 vt = ok_state(trial)
                 if vt is not None and vt < nr:
                     step = trial
-                    found = True; lam_used = lam
+                    found = True
+                    lam_used = lam
                     break
             if not found:
                 hist[-1] = hist[-1] + "@stuck"
@@ -238,5 +250,4 @@ def solve(A, pts, wts, dps=40, newton_steps=30, tol_pow=12, pin_ends=False, pure
 
     r, x, w, P, Q, Dv = _resid(xs, interior, vec, K, ny)
     C = sum(wi * di for wi, di in zip(w, Dv))
-    return {"x": x, "w": w, "Q": Q, "C": C, "ny": ny,
-            "newton_resid": max(abs(v) for v in r), "hist": hist}
+    return {"x": x, "w": w, "Q": Q, "C": C, "ny": ny, "newton_resid": max(abs(v) for v in r), "hist": hist}

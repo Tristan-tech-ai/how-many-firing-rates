@@ -1,0 +1,15 @@
+seed K = 15 at A = 172.44665380589757; dropped atom 7 (w = 0.0010); (K-1)-point Poisson at A = 171.6: residual 6.3e-14, min w 0.0542
+   poisson 0: A =  172.8000: v +2.401e-07 at t = 13.490; min w 0.0547
+   poisson 0: A =  174.0500: v +1.178e-06 at t = 13.500; min w 0.0552
+   poisson 0: fine pass 172.5500..173.6000, violation peak at t = 13.489
+   poisson 0: linear fit on 16 near points: A_K = 172.4530 (slope 6.934e-07, window 172.612..173.538)
+Poisson: A_15 = 172.4530; sqrt = 13.13214; first gaps (t) [3.1257, 2.2608]   [5s]
+   dc 1: A =  191.9173: v +7.399e-07 at t = 14.778; min w 0.0559
+   dc 1: A =  193.1673: v +1.662e-06 at t = 14.826; min w 0.0563
+   dc 1: fine pass 190.8173..192.0173, violation peak at t = 14.782
+   dc 1: linear fit on 16 near points: A_K = 190.6771 (slope 5.893e-07, window 190.888..191.947)
+   dc 3: A =  211.1441: v +1.188e-06 at t = 16.010; min w 0.0562
+   dc 3: window not bracketed (v range 4.3e-07..2.0e-06 over A 209.944..212.244)
+   dc 10: A =  248.7080: v +1.781e-06 at t = 18.188; min w 0.0565
+   dc 10: window not bracketed (v range 9.8e-07..2.0e-06 over A 247.508..249.008)
+done

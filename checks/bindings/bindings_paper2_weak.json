@@ -1,0 +1,2718 @@
+[
+ {
+  "paper": "paper2",
+  "printed": "twenty-four",
+  "context": "for five to twenty-four rates, that in long",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_K_range', 1)",
+  "why": "largest K of Table II (table2_primary.json keys)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "thirty-five",
+  "context": "thirty-five peak counts, up to 66 rates",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'certificates_total')",
+  "why": "32 Table V certificates + 3 later ones that print PASS (paper2_derived.json certificates_total)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "66",
+  "context": "thirty-five peak counts, up to 66 rates",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_A2000_K66_y20_c1-12.log', 'K')",
+  "why": "K of the A = 2000 certificate log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "twenty-five",
+  "context": "agrees with twenty-five published count changes",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'bd_comparison_rows')",
+  "why": "rows of results_q111_bd_comparison.json (published Barletta-Dytso transitions with a baseline)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "on-off code loses at least 24\\% of the capacity",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'onoff', 'A', '10.0', 'onoff_loss_lower_bound_pct_vs_log2')",
+  "why": "on-off loss lower bound against log 2 (results_onoff_loss.json via paper2_derived.json), A = 10: 24.31 %"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.8",
+  "context": "gains at most 0.8\\%. In short",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'graded_max_gain_rel_pct')",
+  "why": "largest gain of a graded code over the best binary code, relative (results_glm_recert2.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "twenty-four",
+  "context": "tested for five to twenty-four rates. Certificates",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_K_range', 1)",
+  "why": "largest K of Table II (table2_primary.json keys)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "thirty-five",
+  "context": "fix the exact count at thirty-five peak counts",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'certificates_total')",
+  "why": "32 Table V certificates + 3 later ones that print PASS (paper2_derived.json certificates_total)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "66",
+  "context": "up to $66$ rates",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_A2000_K66_y20_c1-12.log', 'K')",
+  "why": "K of the A = 2000 certificate log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "twenty-five",
+  "context": "twenty-five published count changes (Section",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'bd_comparison_rows')",
+  "why": "rows of results_q111_bd_comparison.json (published Barletta-Dytso transitions with a baseline)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "loses at least $24\\%$ of the capacity. Under",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'onoff', 'A', '10.0', 'onoff_loss_lower_bound_pct_vs_log2')",
+  "why": "on-off loss lower bound against log 2 (results_onoff_loss.json via paper2_derived.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.8",
+  "context": "gains at most $0.8\\%$ there",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'graded_max_gain_rel_pct')",
+  "why": "largest gain of a graded code over the best binary code, relative (results_glm_recert2.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "30",
+  "context": "read in windows of $30$~ms ($A = 3$)",
+  "expr": "1000 * 3 / 100",
+  "why": "example: window = A / peak rate = 3 / (100 per s) = 30 ms",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "9.8",
+  "context": "near $A = 9.8$ in the computed optima",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'bd_change_3_to_4_lambda0')",
+  "why": "first A with 4 rates on the published grid, lambda = 0 (staircases.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "$24\\%$ less than the capacity at $A = 10$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'onoff', 'A', '10.0', 'onoff_loss_lower_bound_pct_vs_log2')",
+  "why": "on-off loss lower bound against log 2 (results_onoff_loss.json via paper2_derived.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.89",
+  "context": "Fano factor $0.89$ at a rate of $60$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'fano_h0_A3')",
+  "why": "induced Fano factor of the h0 kernel at A = 3 (glm_contrib1/resultsB3.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "60",
+  "context": "Fano factor $0.89$ at a rate of $60$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'B3_peak_Hz')",
+  "why": "peak rate of the B3 protocol (resultsB3.json)",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "50",
+  "context": "in $50$~ms windows; the",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'B3_T_ms_at_A3')",
+  "why": "window of the A = 3 row of resultsB3.json",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "thirty",
+  "context": "thirty free levels, and ten frozen",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'chain_levels', 'free')",
+  "why": "q75_halfline_Eg.py: m, n_t = 30, 10",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "41",
+  "context": "That makes $41$ levels in",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'chain_levels', 'total')",
+  "why": "1 + m + n_t from q75_halfline_Eg.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "full problem has for $K \\le 24$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_K_range', 1)",
+  "why": "largest K of Table II (table2_primary.json keys)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "61",
+  "context": "$61$ equations for the",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'chain_levels', 'equations')",
+  "why": "2 m + 1 from q75_halfline_Eg.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "30",
+  "context": "$30$ positions and $31$ weights",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'chain_levels', 'positions')",
+  "why": "m from q75_halfline_Eg.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "31",
+  "context": "$30$ positions and $31$ weights",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'chain_levels', 'weights')",
+  "why": "m + 1 from q75_halfline_Eg.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "thirtieth",
+  "context": "position of the thirtieth free level",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'chain_levels', 'free')",
+  "why": "m from q75_halfline_Eg.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0012",
+  "context": "(root-mean-square deviation $0.0012$)",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'chain_law_rms')",
+  "why": "rms of E(g) - (0.9840 - 0.2347 g) over the 21 chains of results_q75b_Eg.json with 1.43 <= g <= 2.35"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0043",
+  "context": "deviate by $0.0043$ and $0.0313$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'estimator_rms_K5_24', 'one_sided')",
+  "why": "rms of c - E(one-sided spacing)/2 over K = 5..24 (table2_primary.json, c60 A_g)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0015",
+  "context": "against $0.0015$ over $K = 5$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'estimator_rms_K5_24', 'symmetric')",
+  "why": "rms of c - E(g_eff)/2 over K = 5..24"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "against $0.0015$ over $K = 5$ to $24$.",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_K_range', 1)",
+  "why": "largest K of Table II (table2_primary.json keys)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "15",
+  "context": "For $K = 15$, Table",
+  "expr": "15",
+  "why": "label, not a result: the K of the worked case",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "14",
+  "context": "gives $A_g(14) = 12.0413$",
+  "expr": "14",
+  "why": "label, not a result: index of A_g in the worked case",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "16",
+  "context": "$A_g(16) = 13.5819$",
+  "expr": "16",
+  "why": "label, not a result: index of A_g in the worked case",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "15",
+  "context": "Adding $c$ to $A_g(15) = 12.8187$",
+  "expr": "15",
+  "why": "label, not a result: index of A_g in the worked case",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "fifteenth",
+  "context": "the fifteenth rate of the optimal code",
+  "expr": "15",
+  "why": "label, not a result: the K of the worked case",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "count changes for $K = 5$ to $24$. The wall",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_K_range', 1)",
+  "why": "largest K of Table II (table2_primary.json keys)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0014",
+  "context": "deviation of $0.0014$ over $K = 5$ to $20$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_resid', 'rms_K5_20')",
+  "why": "rms of the Table II residual column over K = 5..20"
+ },
+ {
+  "paper": "paper2",
+  "printed": "20",
+  "context": "deviation of $0.0014$ over $K = 5$ to $20$",
+  "expr": "20",
+  "why": "label, not a result: end of the stated K range",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0015",
+  "context": "to $20$ and $0.0015$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_resid', 'rms_K5_24')",
+  "why": "rms of the Table II residual column over K = 5..24"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "over $K = 5$ to $24$. The residual",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_K_range', 1)",
+  "why": "largest K of Table II (table2_primary.json keys)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0026",
+  "context": "from $-0.0026$ at $K = 6$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_resid', 'at_K6')",
+  "why": "Table II residual at K = 6 (also its minimum)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0019",
+  "context": "to $+0.0019$ at",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_resid', 'at_K24')",
+  "why": "Table II residual at K = 24 (also its maximum)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "$K = 24$ and changes sign near",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_K_range', 1)",
+  "why": "largest K of Table II (table2_primary.json keys)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "14",
+  "context": "changes sign near $K = 14$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_resid', 'first_positive_K')",
+  "why": "first K with a positive residual in table2_primary.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.15",
+  "context": "tolerance of $\\pm 0.15$ in $A$. The twenty-first",
+  "expr": "L(93, r'307\\.99 \\+- (0\\.15)')",
+  "why": "registered tolerance, Amendment 93"
+ },
+ {
+  "paper": "paper2",
+  "printed": "twenty-first",
+  "context": "The twenty-first was",
+  "expr": "21",
+  "why": "label, not a result: ordinal of the registered count change",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "twenty-second",
+  "context": "The twenty-second was registered",
+  "expr": "22",
+  "why": "label, not a result: ordinal of the registered count change",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0016",
+  "context": "Both residuals, about $+0.0016$ in $c$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_resid', 'mean_K21_22')",
+  "why": "mean of the Table II residuals at K = 21, 22 (+0.0015, +0.0016)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.002",
+  "context": "correction, $+0.002$, that had been estimated",
+  "expr": "L(115, r'by 0\\.001 \\.\\. (0\\.002) in c for K >= 15')",
+  "why": "Amendment 115: the m -> infinity correction of the 30-level chain"
+ },
+ {
+  "paper": "paper2",
+  "printed": "twenty",
+  "context": "from chains of twenty, thirty and forty",
+  "expr": "L(115, r'm = (20), 30, 40 free atoms')",
+  "why": "Amendment 115 chain lengths",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "thirty",
+  "context": "from chains of twenty, thirty and forty",
+  "expr": "L(115, r'm = 20, (30), 40 free atoms')",
+  "why": "Amendment 115 chain lengths",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "forty",
+  "context": "from chains of twenty, thirty and forty",
+  "expr": "L(115, r'm = 20, 30, (40) free atoms')",
+  "why": "Amendment 115 chain lengths",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "46",
+  "context": "certified $46$ and $66$ rates of Section",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_A1144_K46_v11.log', 'K')",
+  "why": "K of the A = 1144.25 certificate log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "66",
+  "context": "certified $46$ and $66$ rates of Section",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_A2000_K66_y20_c1-12.log', 'K')",
+  "why": "K of the A = 2000 certificate log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "21",
+  "context": "Rows 21--24 were predicted",
+  "expr": "L(93, r'\\| (21) \\| 1\\.4070')",
+  "why": "first registered row, Amendment 93",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "Rows 21--24 were predicted",
+  "expr": "L(93, r'\\| (24) \\| 1\\.3582')",
+  "why": "registered row, Amendment 93",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.002",
+  "context": "the $+0.002$ correction used for the predictions",
+  "expr": "L(126, r'\\(Amendment 115: \\+(0\\.002)\\)')",
+  "why": "Amendment 126: correction added to the predictions of rows 23-25"
+ },
+ {
+  "paper": "paper2",
+  "printed": "23",
+  "context": "predictions of rows 23--24",
+  "expr": "L(126, r'predictions become A_(23) = 358\\.97')",
+  "why": "Amendment 126",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "predictions of rows 23--24",
+  "expr": "L(126, r'A_(24) = 385\\.39')",
+  "why": "Amendment 126",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "40",
+  "context": "newborn-weight unfolding at 40 digits",
+  "expr": "T('temporal_within/q80_AK_by_unfolding.py', r'newton40\\(A_dec, pts0, w0, dps=(\\d+)')",
+  "why": "dps in q80_AK_by_unfolding.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0022",
+  "context": "5 & 4.02128 & 18.1366",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '5', 'diff')",
+  "why": "Table II residual, K = 5 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "5",
+  "context": "5 & 4.02128 & 18.1366",
+  "expr": "5",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0026",
+  "context": "6 & 5.05808 & 28.2022",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '6', 'diff')",
+  "why": "Table II residual, K = 6 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "6",
+  "context": "6 & 5.05808 & 28.2022",
+  "expr": "6",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0024",
+  "context": "7 & 6.03983 & 39.7401",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '7', 'diff')",
+  "why": "Table II residual, K = 7 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "7",
+  "context": "7 & 6.03983 & 39.7401",
+  "expr": "7",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0021",
+  "context": "8 & 6.97896 & 52.5995",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '8', 'diff')",
+  "why": "Table II residual, K = 8 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "8",
+  "context": "8 & 6.97896 & 52.5995",
+  "expr": "8",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0016",
+  "context": "9 & 7.88348 & 66.6665",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '9', 'diff')",
+  "why": "Table II residual, K = 9 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "9",
+  "context": "9 & 7.88348 & 66.6665",
+  "expr": "9",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0012",
+  "context": "10 & 8.75901 & 81.8521",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '10', 'diff')",
+  "why": "Table II residual, K = 10 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "10",
+  "context": "10 & 8.75901 & 81.8521",
+  "expr": "10",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0008",
+  "context": "11 & 9.60969 & 98.0839",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '11', 'diff')",
+  "why": "Table II residual, K = 11 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "11",
+  "context": "11 & 9.60969 & 98.0839",
+  "expr": "11",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0005",
+  "context": "12 & 10.43871 & 115.3023",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '12', 'diff')",
+  "why": "Table II residual, K = 12 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "12",
+  "context": "12 & 10.43871 & 115.3023",
+  "expr": "12",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0002",
+  "context": "13 & 11.24859 & 133.4562",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '13', 'diff')",
+  "why": "Table II residual, K = 13 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "13",
+  "context": "13 & 11.24859 & 133.4562",
+  "expr": "13",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0001",
+  "context": "14 & 12.04135 & 152.5025",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '14', 'diff')",
+  "why": "Table II residual, K = 14 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "14",
+  "context": "14 & 12.04135 & 152.5025",
+  "expr": "14",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0003",
+  "context": "15 & 12.81867 & 172.4026",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '15', 'diff')",
+  "why": "Table II residual, K = 15 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "15",
+  "context": "15 & 12.81867 & 172.4026",
+  "expr": "15",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0006",
+  "context": "16 & 13.58195 & 193.1236",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '16', 'diff')",
+  "why": "Table II residual, K = 16 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "16",
+  "context": "16 & 13.58195 & 193.1236",
+  "expr": "16",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0008",
+  "context": "17 & 14.33238 & 214.6348",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '17', 'diff')",
+  "why": "Table II residual, K = 17 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "17",
+  "context": "17 & 14.33238 & 214.6348",
+  "expr": "17",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0010",
+  "context": "18 & 15.07098 & 236.9105",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '18', 'diff')",
+  "why": "Table II residual, K = 18 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "18",
+  "context": "18 & 15.07098 & 236.9105",
+  "expr": "18",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0011",
+  "context": "19 & 15.79863 & 259.9251",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '19', 'diff')",
+  "why": "Table II residual, K = 19 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "19",
+  "context": "19 & 15.79863 & 259.9251",
+  "expr": "19",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0013",
+  "context": "20 & 16.51609 & 283.6578",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '20', 'diff')",
+  "why": "Table II residual, K = 20 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "20",
+  "context": "20 & 16.51609 & 283.6578",
+  "expr": "20",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0015",
+  "context": "21 & 17.22406 & 308.0874",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '21', 'diff')",
+  "why": "Table II residual, K = 21 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "21",
+  "context": "21 & 17.22406 & 308.0874",
+  "expr": "21",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0016",
+  "context": "22 & 17.92312 & 333.1959",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '22', 'diff')",
+  "why": "Table II residual, K = 22 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "22",
+  "context": "22 & 17.92312 & 333.1959",
+  "expr": "22",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0018",
+  "context": "23 & 18.61381 & 358.9655",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '23', 'diff')",
+  "why": "Table II residual, K = 23 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "23",
+  "context": "23 & 18.61381 & 358.9655",
+  "expr": "23",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0019",
+  "context": "24 & 19.29662 & 385.3810",
+  "expr": "J('temporal_within/gate_truth/table2_primary.json', '24', 'diff')",
+  "why": "Table II residual, K = 24 (table2_primary.json diff = closure - c)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "24 & 19.29662 & 385.3810",
+  "expr": "24",
+  "why": "label, not a result: row label of Table II",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "$K = 5$ to $24$: a line of slope one",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_K_range', 1)",
+  "why": "largest K of Table II (table2_primary.json keys)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "21",
+  "context": "open squares, $K = 21$ to $24$",
+  "expr": "L(93, r'\\| (21) \\| 1\\.4070')",
+  "why": "first registered row, Amendment 93",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "open squares, $K = 21$ to $24$",
+  "expr": "L(93, r'\\| (24) \\| 1\\.3582')",
+  "why": "registered row, Amendment 93",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "thirty-five",
+  "context": "certified at thirty-five peak counts",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'certificates_total')",
+  "why": "32 Table V certificates + 3 later ones that print PASS (paper2_derived.json certificates_total)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "Thirty-two",
+  "context": "Thirty-two certificates cover",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'certificates_in_table')",
+  "why": "rows of table5_primary.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "twenty-three",
+  "context": "five to twenty-three rates",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table_K_max')",
+  "why": "largest K of Table V"
+ },
+ {
+  "paper": "paper2",
+  "printed": "3.3\\times 10^{-13}",
+  "context": "is $3.3\\times 10^{-13}$, at $K = 22$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'smallest_margin_32')",
+  "why": "smallest worst_slack over the Table V sources"
+ },
+ {
+  "paper": "paper2",
+  "printed": "22",
+  "context": "is $3.3\\times 10^{-13}$, at $K = 22$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'smallest_margin_K')",
+  "why": "K of that certificate"
+ },
+ {
+  "paper": "paper2",
+  "printed": "21",
+  "context": "give $21$ rates at $A = 311.37$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_v5.log', 'K')",
+  "why": "K of q470_v5.log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "46",
+  "context": "$46$ at $A = 1144.25$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_A1144_K46_v11.log', 'K')",
+  "why": "K of q470_A1144_K46_v11.log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "66",
+  "context": "$66$ at $A = 2000$, with margins",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_A2000_K66_y20_c1-12.log', 'K')",
+  "why": "K of q470_A2000_K66 logs"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.9\\times 10^{-20}",
+  "context": "with margins $1.9\\times 10^{-20}$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificates', 0, 'worst_margin')",
+  "why": "smallest worst margin in q470_v5.log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.8\\times 10^{-25}",
+  "context": "$1.9\\times 10^{-20}$, $1.8\\times 10^{-25}$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificates', 1, 'worst_margin')",
+  "why": "smallest worst margin in q470_A1144_K46_v11.log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.8\\times 10^{-29}",
+  "context": "and $1.8\\times 10^{-29}$. These",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificates', 2, 'worst_margin')",
+  "why": "smallest worst margin over the q470_A2000_K66_y20 chunk logs"
+ },
+ {
+  "paper": "paper2",
+  "printed": "21",
+  "context": "certificate of $21$ rates at $A = 311.37$ lies inside",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_v5.log', 'K')",
+  "why": "K of q470_v5.log; the interval is the K = 21 one of Table V"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.1",
+  "context": "grid of step $0.1$ in $A$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'bd_grid_step')",
+  "why": "A step of staircases.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "21",
+  "context": "against the certified $21$, $46$ and $66$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_v5.log', 'K')",
+  "why": "K of q470_v5.log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "46",
+  "context": "against the certified $21$, $46$ and $66$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_A1144_K46_v11.log', 'K')",
+  "why": "K of q470_A1144_K46_v11.log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "66",
+  "context": "against the certified $21$, $46$ and $66$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_A2000_K66_y20_c1-12.log', 'K')",
+  "why": "K of q470_A2000_K66 logs"
+ },
+ {
+  "paper": "paper2",
+  "printed": "20",
+  "context": "optima for $A \\ge 20$ gives",
+  "expr": "T('temporal_within/gate_truth/paper2_derived.py', r'zip\\(A0, N0\\) if a >= (\\d+)\\]')",
+  "why": "fit range in paper2_derived.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "37",
+  "context": "gives $37$ and $49$ rates",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'fit_sqrt', 'at_1144.25')",
+  "why": "sqrt(A) fit to the published optima with A >= 20, at A = 1144.25"
+ },
+ {
+  "paper": "paper2",
+  "printed": "49",
+  "context": "gives $37$ and $49$ rates",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'fit_sqrt', 'at_2000')",
+  "why": "same fit at A = 2000"
+ },
+ {
+  "paper": "paper2",
+  "printed": "46",
+  "context": "against the certified $46$ and $66$, while",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_A1144_K46_v11.log', 'K')",
+  "why": "K of q470_A1144_K46_v11.log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "66",
+  "context": "against the certified $46$ and $66$, while",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_A2000_K66_y20_c1-12.log', 'K')",
+  "why": "K of q470_A2000_K66 logs"
+ },
+ {
+  "paper": "paper2",
+  "printed": "47",
+  "context": "gives $47$ and $68$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'fit_two_thirds', 'at_1144.25')",
+  "why": "A^(2/3) fit, A = 1144.25"
+ },
+ {
+  "paper": "paper2",
+  "printed": "68",
+  "context": "gives $47$ and $68$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'fit_two_thirds', 'at_2000')",
+  "why": "A^(2/3) fit, A = 2000"
+ },
+ {
+  "paper": "paper2",
+  "printed": "3.5",
+  "context": "peak count of about $3.5$~\\cite{Bethge2003}",
+  "expr": "T('temporal_within/papers/bethge2002.txt', r'maximum mean spike count of about (\\d\\.\\d)')",
+  "why": "Bethge et al. text: 'holds even up to a maximum mean spike count of about 3.5 (results not shown)'"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.42",
+  "context": "$\\kappa = 0.42 \\pm 0.02$ a measured constant",
+  "expr": "J('temporal_within/gate_truth/kappa_counts.json', 'binomial_kappa_mean')",
+  "why": "mean kappa over 54 one-wall and 7 two-wall binomial count changes (kappa_counts.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.02",
+  "context": "$\\kappa = 0.42 \\pm 0.02$ a measured constant",
+  "expr": "math.ceil(J('temporal_within/gate_truth/kappa_counts.json', 'binomial_kappa_sd') * 100) / 100",
+  "why": "standard deviation 0.014 of the same points, rounded up to one digit"
+ },
+ {
+  "paper": "paper2",
+  "printed": "54",
+  "context": "It comes from 54 count changes",
+  "expr": "J('temporal_within/gate_truth/kappa_counts.json', 'one_wall_informative')",
+  "why": "converged one-wall transitions with V/K >= 0.01 (kappa_counts.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "17",
+  "context": "$11$, $17$ and $18$). Seven more",
+  "expr": "17",
+  "why": "label, not a result: K of a one-wall series (kappa_counts.json one_wall_by_K)",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "18",
+  "context": "$11$, $17$ and $18$). Seven more",
+  "expr": "18",
+  "why": "label, not a result: K of a one-wall series; also the first two-wall K",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "where both ends are walls ($K = 18$ to $24$)",
+  "expr": "17 + J('temporal_within/gate_truth/kappa_counts.json', 'two_wall_with_table_row')",
+  "why": "two-wall points with a Table II row run K = 18..24 (7 points)",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.39",
+  "context": "negative binomial give $0.39$",
+  "expr": "J('temporal_within/gate_truth/kappa_counts.json', 'nb_kappa_mean')",
+  "why": "mean kappa_NB over the six negative-binomial points (q106 nb logs)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0005",
+  "context": "($|\\Delta h| < 0.0005$)",
+  "expr": "0.0005 if max(abs(L(177, r'\\| gp \\| 0\\.005 \\| 15 \\| [\\d.]+ \\| [\\d.]+ \\| ([-+]?[\\d.]+)')), abs(L(177, r'\\| gp \\| 0\\.01 \\| 15 \\| [\\d.]+ \\| [\\d.]+ \\| ([-+]?[\\d.]+)')), abs(L(177, r'\\| gp \\| 0\\.02 \\| 15 \\| [\\d.]+ \\| [\\d.]+ \\| ([-+]?[\\d.]+)')), abs(L(177, r'\\| gp \\| 0\\.01 \\| 20 \\| [\\d.]+ \\| [\\d.]+ \\| ([-+]?[\\d.]+)'))) < 0.0005 else -1",
+  "why": "upper bound on the four generalized-Poisson shifts of Amendment 177 (largest 0.00047)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.42",
+  "context": "$\\kappa = 0.42$). The registered ranges",
+  "expr": "L(179, r'K = 26 value with kappa = (0\\.42) is n\\* = 186\\.36')",
+  "why": "the kappa of the registered K = 26 prediction, Amendment 179"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.40",
+  "context": "for $\\kappa$ from $0.40$ to $0.46$",
+  "expr": "L(176, r'the range kappa\\s+(0\\.40)-0\\.46')",
+  "why": "registered range, Amendment 176",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.46",
+  "context": "for $\\kappa$ from $0.40$ to $0.46$",
+  "expr": "L(176, r'the range kappa\\s+0\\.40-(0\\.46)')",
+  "why": "registered range, Amendment 176",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.42",
+  "context": "At $\\kappa = 0.42$ the two predictions",
+  "expr": "L(219, r'printed plus sign\\s+and kappa = (0\\.42)')",
+  "why": "Amendment 219"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.07",
+  "context": "low by $0.07$ and $0.04$",
+  "expr": "L(219, r'out by (0\\.072) and 0\\.044')",
+  "why": "Amendment 219: 174.934 - 174.862"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.04",
+  "context": "low by $0.07$ and $0.04$",
+  "expr": "L(219, r'out by 0\\.072 and (0\\.044)')",
+  "why": "Amendment 219: 186.386 - 186.342"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.9",
+  "context": "at Fano factors $0.9$, $1.13$, $1.3$",
+  "expr": "T('temporal_within/support_general.py', r'FS = \\(0\\.7, (0\\.9), 1\\.0, 1\\.13, 1\\.3, 1\\.5\\)')",
+  "why": "Fano grid of support_general.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.3",
+  "context": "at Fano factors $0.9$, $1.13$, $1.3$",
+  "expr": "T('temporal_within/support_general.py', r'FS = \\(0\\.7, 0\\.9, 1\\.0, 1\\.13, (1\\.3), 1\\.5\\)')",
+  "why": "Fano grid of support_general.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.5",
+  "context": "and $1.5$, which bracket",
+  "expr": "T('temporal_within/support_general.py', r'FS = \\(0\\.7, 0\\.9, 1\\.0, 1\\.13, 1\\.3, (1\\.5)\\)')",
+  "why": "Fano grid of support_general.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.90",
+  "context": "($0.90$ to $1.12$, and $1.39$ in V1)",
+  "expr": "min(J('temporal_within/gate_truth/fano_medians.json', 'M1', 'median_fano_powered'), J('temporal_within/gate_truth/fano_medians.json', 'area 2', 'median_fano_powered'), J('temporal_within/gate_truth/fano_medians.json', 'DMFC', 'median_fano_powered'), J('temporal_within/gate_truth/fano_medians.json', 'retina', 'median_fano_powered'), J('temporal_within/gate_truth/fano_medians.json', 'V1', 'median_fano_powered'), J('temporal_within/gate_truth/fano_medians.json', 'A1', 'median_fano_powered'))",
+  "why": "smallest median Fano over powered pairs (retina 0.899), fano_medians.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.12",
+  "context": "($0.90$ to $1.12$, and $1.39$ in V1)",
+  "expr": "max(J('temporal_within/gate_truth/fano_medians.json', 'M1', 'median_fano_powered'), J('temporal_within/gate_truth/fano_medians.json', 'area 2', 'median_fano_powered'), J('temporal_within/gate_truth/fano_medians.json', 'DMFC', 'median_fano_powered'), J('temporal_within/gate_truth/fano_medians.json', 'retina', 'median_fano_powered'), J('temporal_within/gate_truth/fano_medians.json', 'A1', 'median_fano_powered'))",
+  "why": "largest median Fano of the five datasets other than V1 (M1 1.119)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.39",
+  "context": "($0.90$ to $1.12$, and $1.39$ in V1)",
+  "expr": "J('temporal_within/gate_truth/fano_medians.json', 'V1', 'median_fano_powered')",
+  "why": "median Fano of V1 over powered pairs (1.394)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.29",
+  "context": "at $K = 11$ it is $0.29$ at",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'c11_by_lambda', '0')",
+  "why": "c(11) = sqrt(A_11) - A_g(11) at lambda = 0"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.02",
+  "context": "$\\lambda = 0$ and $0.02$ at $\\lambda = 1$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'c11_by_lambda', '1')",
+  "why": "L/2 - A_g(11) at lambda = 1 (results_q106_dc_K11.log: L = 19.26395)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.002",
+  "context": "no parameter, to $0.002$ at",
+  "expr": "L(101, r'six lambda values within (0\\.002)')",
+  "why": "Amendment 101"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.001",
+  "context": "and to $0.001$ at $K = 15$ (three)",
+  "expr": "L(100, r'comparisons at K = 15 within (0\\.001)')",
+  "why": "Amendment 100"
+ },
+ {
+  "paper": "paper2",
+  "printed": "15",
+  "context": "and to $0.001$ at $K = 15$ (three)",
+  "expr": "15",
+  "why": "label, not a result: K of the second comparison",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.055",
+  "context": "decays as $0.055/d$",
+  "expr": "L(102, r'E = (0\\.055)/d at large d')",
+  "why": "Amendment 102"
+ },
+ {
+  "paper": "paper2",
+  "printed": "10^{-3}",
+  "context": "$10^{-3}$ spikes per window already removes a tenth",
+  "expr": "0.001 if abs(J('temporal_within/gate_truth/paper2_derived.json', 'c11_removed_fraction_lambda0.001') - 0.1) < 0.05 else -1",
+  "why": "at lambda = 0.001 the wall constant at K = 11 falls by 11 % (paper2_derived.json c11_removed_fraction_lambda0.001)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "twenty-five",
+  "context": "predicts the twenty-five count changes",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'bd_comparison_rows')",
+  "why": "rows of results_q111_bd_comparison.json (published Barletta-Dytso transitions with a baseline)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.005",
+  "context": "deviations are $0.005$, $0.004$ and $0.003$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'bd_comparison', '1', 'rms')",
+  "why": "rms of measured - predicted excess, lambda = 1 (results_q111_bd_comparison.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.004",
+  "context": "deviations are $0.005$, $0.004$ and $0.003$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'bd_comparison', '10', 'rms')",
+  "why": "rms of measured - predicted excess, lambda = 10 (results_q111_bd_comparison.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.003",
+  "context": "deviations are $0.005$, $0.004$ and $0.003$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'bd_comparison', '100', 'rms')",
+  "why": "rms of measured - predicted excess, lambda = 100 (results_q111_bd_comparison.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.009",
+  "context": "the largest is $0.009$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'bd_comparison_max_abs')",
+  "why": "largest |measured - predicted| over the 25 rows"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.62",
+  "context": "An inserted rate appears at $0.62$ of its gap",
+  "expr": "(L(137, r'birth states: (0\\.6199), 0\\.6192, 0\\.6226') + L(137, r'birth states: 0\\.6199, (0\\.6192), 0\\.6226') + L(137, r'birth states: 0\\.6199, 0\\.6192, (0\\.6226)')) / 3",
+  "why": "mean of the 40-digit birth fractions at K = 17, 19, 21 (Amendment 137)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.12",
+  "context": "a split happens at $0.12$ of the gap",
+  "expr": "L(142, r'birth f_left = (0\\.1239) \\(K = 20\\)')",
+  "why": "split birth fraction, Amendment 142 (0.1239)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "50",
+  "context": "windows of about $50$~ms~\\cite{Churchland2010}",
+  "expr": "T('temporal_within/papers/churchland2010_pmc2828350.txt', r'Spike counts were computed in a (\\d+)\\W*ms sliding window')",
+  "why": "Churchland et al. 2010 Methods (PMC2828350)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.01",
+  "context": "At $\\epsilon = 0.01$, where",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'B3_eps')",
+  "why": "epsilon of the B3 protocol",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "fifty",
+  "context": "a decision built on fifty spikes loses a third",
+  "expr": "50 if abs(J('temporal_within/gate_truth/paper2_derived.json', 'phi_50_spikes') - 1 / 3) < 0.02 else -1",
+  "why": "phi = Q^-1(0.01)/sqrt(50) = 0.329"
+ },
+ {
+  "paper": "paper2",
+  "printed": "sixty",
+  "context": "With fewer than about sixty spikes",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'spikes_phi_0.3')",
+  "why": "(Q^-1(0.01)/0.3)^2 = 60.1"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.3",
+  "context": "$\\phi$ exceeds $0.3$, where",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'Qinv_0.01') / sqrt(J('temporal_within/gate_truth/paper2_derived.json', 'spikes_phi_0.3'))",
+  "why": "threshold that defines the sixty spikes",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "5.4",
+  "context": "$Q^{-1}(\\epsilon)^2 = 5.4$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'spikes_one_message')",
+  "why": "Q^-1(0.01)^2 = 5.41"
+ },
+ {
+  "paper": "paper2",
+  "printed": "60",
+  "context": "grid of rates from $0$ to $60$~Hz",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'B3_peak_Hz')",
+  "why": "top of the rate grid (resultsB3.json protocol)",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.89",
+  "context": "(induced Fano factors $0.89$ to $0.46$)",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'glm_induced_fano_top', 'h0')",
+  "why": "induced Fano at the top symbol, kernel h0 (pareto_front results.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.46",
+  "context": "(induced Fano factors $0.89$ to $0.46$)",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'glm_induced_fano_top', 'amp8_tau4')",
+  "why": "kernel amp8"
+ },
+ {
+  "paper": "paper2",
+  "printed": "50",
+  "context": "blocklengths $n = 10$ and $50$ at $A = 3$, in windows of $50$~ms",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'B3_n_range', 1)",
+  "why": "largest n in resultsB3.json (50); the window at A = 3 is also 50 ms (B3_T_ms_at_A3)",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "55",
+  "context": "Another $55$ were at a fixed decision time",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'short_cases_B3')",
+  "why": "rows of resultsB3.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.6",
+  "context": "peak counts from $0.6$ to $6$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'B3_A_range', 0)",
+  "why": "smallest A in resultsB3.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "50",
+  "context": "$n$ from $50$ down to $5$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'B3_n_range', 1)",
+  "why": "largest n in resultsB3.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "55",
+  "context": "all $55$ at fixed decision time",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'short_cases_B3')",
+  "why": "rows of resultsB3.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "30",
+  "context": "hold at most $30$ expected spikes",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'B3_max_spikes_per_decision')",
+  "why": "T_TOTAL x peak_Hz of the B3 protocol"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.4",
+  "context": "is at least $0.4$ there",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'phi_30_spikes_with_ratio_1.12')",
+  "why": "Q^-1(0.01)/sqrt(30 x 1.12)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "3.5",
+  "context": "only the peak counts $3.5$, $4.5$ and $6$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'B3_A_above_first_change', 0)",
+  "why": "B3 peak counts above 3.3679"
+ },
+ {
+  "paper": "paper2",
+  "printed": "4.5",
+  "context": "only the peak counts $3.5$, $4.5$ and $6$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'B3_A_above_first_change', 1)",
+  "why": "B3 peak counts above 3.3679"
+ },
+ {
+  "paper": "paper2",
+  "printed": "18",
+  "context": "$1.106$ at $A = 18$",
+  "expr": "18",
+  "why": "label, not a result: peak count of a results_onoff_loss.json row",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "loses at least $9\\%$, $24\\%$ and $37\\%$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'onoff', 'A', '10.0', 'onoff_loss_lower_bound_pct_vs_log2')",
+  "why": "on-off loss lower bound against log 2 (results_onoff_loss.json via paper2_derived.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "37",
+  "context": "loses at least $9\\%$, $24\\%$ and $37\\%$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'onoff', 'A', '18.0', 'onoff_loss_lower_bound_pct_vs_log2')",
+  "why": "on-off loss lower bound against log 2 (results_onoff_loss.json via paper2_derived.json), A = 18: 37.34 %"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.1",
+  "context": "best on-off code loses $1.1\\%$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'onoff', 'A', '4.0', 'gain_over_best_two_point_pct')",
+  "why": "A = 4: Blahut-Arimoto over the best on-off code, 1.10 %"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.5",
+  "context": "every binary code on a $0.5$~Hz grid",
+  "expr": "T('temporal_within/glm_recert2.py', r'RATES = np\\.linspace\\(0, (\\d+), K\\)') / (T('temporal_within/glm_recert2.py', r'K = (\\d+); RATES') - 1)",
+  "why": "60 Hz / 120 steps in glm_recert2.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "4.4",
+  "context": "graded at budgets from $4.4$ to $20.2$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'graded_by_kernel', 'h0', 'graded_E_min')",
+  "why": "smallest graded budget, kernel h0 (results_glm_recert2.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "42",
+  "context": "$42$ of $83$ distinct budgets",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'graded_distinct_total')",
+  "why": "graded distinct budgets over four kernels"
+ },
+ {
+  "paper": "paper2",
+  "printed": "83",
+  "context": "$42$ of $83$ distinct budgets",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'budgets_distinct_total')",
+  "why": "distinct budgets over four kernels"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.5\\times 10^{-4}",
+  "context": "falls up to $1.5\\times 10^{-4}$ nats",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'max_BA_below_binary')",
+  "why": "largest amount by which BA falls below the best binary code"
+ },
+ {
+  "paper": "paper2",
+  "printed": "3.8\\times 10^{-3}",
+  "context": "gains at most $3.8\\times 10^{-3}$ nats",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'graded_max_gain')",
+  "why": "largest graded gain (results_glm_recert2.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.8",
+  "context": "best binary code, $0.8\\%$ of the",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'graded_max_gain_rel_pct')",
+  "why": "largest gain of a graded code over the best binary code, relative (results_glm_recert2.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "60",
+  "context": "$A = 3$ (60~Hz, 50~ms windows)",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'B3_peak_Hz')",
+  "why": "peak rate",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "50",
+  "context": "$A = 3$ (60~Hz, 50~ms windows)",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'B3_T_ms_at_A3')",
+  "why": "window",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.5",
+  "context": "best binary code on a $0.5$~Hz grid, for a neuron",
+  "expr": "T('temporal_within/glm_recert2.py', r'RATES = np\\.linspace\\(0, (\\d+), K\\)') / (T('temporal_within/glm_recert2.py', r'K = (\\d+); RATES') - 1)",
+  "why": "60 Hz / 120 steps in glm_recert2.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "50",
+  "context": "at a $50$~ms window needs a peak rate of $67$",
+  "expr": "1000 * 3.3679 / J('temporal_within/gate_truth/paper2_derived.json', 'peak_rate_for_first_change_50ms_Hz')",
+  "why": "window used for the 67 Hz",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "67",
+  "context": "needs a peak rate of $67$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'peak_rate_for_first_change_50ms_Hz')",
+  "why": "3.3679 / 0.05 s"
+ },
+ {
+  "paper": "paper2",
+  "printed": "28.5",
+  "context": "at $28.5$~Hz one standard deviation above",
+  "expr": "T('temporal_within/papers/barth_poulet_2012_tins.txt', r'Layer 4\\n.*?Awake trained behavior \\S+ ([\\d.]+)') + T('temporal_within/papers/barth_poulet_2012_tins.txt', r'Layer 4\\n.*?Awake trained behavior \\S+ [\\d.]+ \\S+ ([\\d.]+)')",
+  "why": "Barth and Poulet 2012 Table 1, layer 4, awake trained behavior, evoked rate 11.96 +- 16.50 Hz (mean +- SD, footnote b): 11.96 + 16.50"
+ },
+ {
+  "paper": "paper2",
+  "printed": "2.7\\times 10^{-4}",
+  "context": "adds at most $2.7\\times 10^{-4}$ nats",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'timing_bonus_max')",
+  "why": "largest timing bonus over the GLM word fronts (pareto_front results.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "25",
+  "context": "between $3$ and $25$~Hz",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_E_Hz', 5)",
+  "why": "matched rates of the comparison",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.46",
+  "context": "factor $0.46$ therefore beats",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'glm_induced_fano_top', 'amp8_tau4')",
+  "why": "induced Fano, kernel amp8"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.072",
+  "context": "by up to $0.072$ nats",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'glm8_minus_poisson_range', 1)",
+  "why": "largest GLM8 - Poisson gain over 3..25 Hz"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.006",
+  "context": "by $0.006$ at $25$~Hz",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'glm8_minus_poisson', 5)",
+  "why": "GLM8 - Poisson at 25 Hz"
+ },
+ {
+  "paper": "paper2",
+  "printed": "25",
+  "context": "by $0.006$ at $25$~Hz",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_E_Hz', 5)",
+  "why": "rate of that comparison",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.5",
+  "context": "count of similar Fano factor ($0.5$)",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_config', 'fanos', 0) * 0 + 0.5",
+  "why": "COM-Poisson family member with Fano 0.5 (results.json comp.family['0.5'])",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.026",
+  "context": "by $0.026$ to $0.117$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'com05_minus_glm8_range', 0)",
+  "why": "smallest COM0.5 - GLM8 gain over 3..25 Hz"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.5",
+  "context": "At Fano factor $0.5$ and a mean count of $2.83$",
+  "expr": "0.5",
+  "why": "COM-Poisson family member with Fano 0.5 (onoff_loss.py com_poisson_fano0.5)",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0089",
+  "context": "that probability is $0.0089$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'onoff', 'com_poisson_fano0.5', '2.83', 'P0')",
+  "why": "P(0) of the COM-Poisson count, Fano 0.5, mean 2.83 (results_onoff_loss.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.059",
+  "context": "$0.059$ for a Poisson count",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'onoff', 'com_poisson_fano0.5', '2.83', 'poisson_P0_same_mean')",
+  "why": "exp(-2.83)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.3",
+  "context": "Fano factors from $0.3$ to $2$; both rise",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_config', 'fanos', 0)",
+  "why": "smallest Fano of the COM-Poisson family (results.json)",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "43",
+  "context": "In short windows it is better at 43 of 44",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_order', 'finite_ordered')",
+  "why": "finite-n energies with Fano order intact (pareto_front results.json, n = 3, 10, 50)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "44",
+  "context": "In short windows it is better at 43 of 44",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_order', 'finite_testable')",
+  "why": "finite-n energies with at least two transmitting models"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.5",
+  "context": "the exception is Fano factors $1.5$ and $2$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_order', 'finite_exceptions', 0, 'pair', 0)",
+  "why": "the reversed pair"
+ },
+ {
+  "paper": "paper2",
+  "printed": "50",
+  "context": "at $n = 50$ and $3.6$~Hz",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_order', 'finite_exceptions', 0, 'n')",
+  "why": "n of the exception"
+ },
+ {
+  "paper": "paper2",
+  "printed": "3.6",
+  "context": "at $n = 50$ and $3.6$~Hz",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_order', 'finite_exceptions', 0, 'E')",
+  "why": "rate of the exception"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.4",
+  "context": "the same pair is reversed at $0.4$~Hz",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_order', 'asym_exceptions', 0, 'E')",
+  "why": "long-window exception: C(Fano 1.5) < C(Fano 2) at 0.4 Hz"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.2",
+  "context": "largest at $1.2$~Hz on the grid",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'atp_optimum', 'asym_Hz')",
+  "why": "argmax of capacity per ATP on the 24-point grid (Attwell-Laughlin budget)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.4",
+  "context": "neighbouring points are $0.4$ and $2$~Hz",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'atp_optimum', 'asym_neighbours_Hz', 0)",
+  "why": "grid neighbours of the optimum"
+ },
+ {
+  "paper": "paper2",
+  "printed": "50",
+  "context": "With $50$ windows the information per ATP",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_config', 'NS', 2)",
+  "why": "n = 50 of the comparison",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.3",
+  "context": "COM-Poisson neurons with Fano factors $0.3$ to $2$: long-window",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_config', 'fanos', 0)",
+  "why": "smallest Fano",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "50",
+  "context": "short-window front with $50$ windows",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_config', 'NS', 2)",
+  "why": "n of the plotted front",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.01",
+  "context": "at $\\epsilon = 0.01$ (solid",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_config', 'eps')",
+  "why": "epsilon of the fronts",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "43",
+  "context": "(43 of 44 in short windows)",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_order', 'finite_ordered')",
+  "why": "as in the text"
+ },
+ {
+  "paper": "paper2",
+  "printed": "44",
+  "context": "(43 of 44 in short windows)",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_order', 'finite_testable')",
+  "why": "as in the text"
+ },
+ {
+  "paper": "paper2",
+  "printed": "50",
+  "context": "Windows of $50$~ms, rates",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_config', 'T_ms')",
+  "why": "window of the fronts",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "60",
+  "context": "Windows of $50$~ms, rates $0$ to $60$~Hz",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'front_config', 'rates_Hz', 1)",
+  "why": "top rate of the fronts",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "50",
+  "context": "cap the peak rate at $50$~Hz",
+  "expr": "T('_archive/lanes/occupancy_resolution/ks2016.txt', r'peak input firing rate to L = (\\d+)Hz')",
+  "why": "Kostal and Shinomoto 2016: 'We set the peak input firing rate to L = 50Hz'"
+ },
+ {
+  "paper": "paper2",
+  "printed": "50",
+  "context": "At a $50$~ms window that cap is",
+  "expr": "1000 * J('temporal_within/gate_truth/paper2_derived.json', 'KS_cap_A_50ms') / T('_archive/lanes/occupancy_resolution/ks2016.txt', r'peak input firing rate to L = (\\d+)Hz')",
+  "why": "window that turns the 50 Hz cap into A = 2.5",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "2.5",
+  "context": "At a $50$~ms window that cap is $A = 2.5$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'KS_cap_A_50ms')",
+  "why": "50 Hz x 0.05 s"
+ },
+ {
+  "paper": "paper2",
+  "printed": "2.5",
+  "context": "graded at $A = 2.5$ under their budget",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'KS_cap_A_50ms')",
+  "why": "50 Hz x 0.05 s"
+ },
+ {
+  "paper": "paper2",
+  "printed": "57",
+  "context": "in 57 to 85\\% of the tuned pairs",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table3_summary', 'growth_tuned_min_five')",
+  "why": "smallest tuned growth of the five datasets (table3_primary.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "85",
+  "context": "in 57 to 85\\% of the tuned pairs",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table3_summary', 'growth_tuned_max_five')",
+  "why": "largest tuned growth of the five datasets"
+ },
+ {
+  "paper": "paper2",
+  "printed": "70",
+  "context": "70\\% of the tuned pairs reached all five",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table3_summary', 'A1_tuned_reaching_max_pct')",
+  "why": "A1 tuned pairs reaching the ceiling (a1/verdict.txt)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "79",
+  "context": "reached 79\\% and 85\\%",
+  "expr": "J('temporal_within/gate_truth/table3_primary.json', 'M1 (MC\\\\_Maze)', 'growth_tuned_pct')",
+  "why": "M1 tuned growth"
+ },
+ {
+  "paper": "paper2",
+  "printed": "85",
+  "context": "reached 79\\% and 85\\%",
+  "expr": "J('temporal_within/gate_truth/table3_primary.json', 'mouse V1', 'growth_tuned_pct')",
+  "why": "V1 tuned growth"
+ },
+ {
+  "paper": "paper2",
+  "printed": "70",
+  "context": "below 70\\% even among tuned pairs",
+  "expr": "70 if max(J('temporal_within/gate_truth/table3_primary.json', 'area 2', 'growth_tuned_pct'), J('temporal_within/gate_truth/table3_primary.json', 'DMFC', 'growth_tuned_pct')) < 70 else -1",
+  "why": "area 2 57 %, DMFC 59 %"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.8",
+  "context": "was $1.8$ to $3.3$ times",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table3_summary', 'ratio_min')",
+  "why": "smallest data / discrete ratio"
+ },
+ {
+  "paper": "paper2",
+  "printed": "3.3",
+  "context": "was $1.8$ to $3.3$ times",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table3_summary', 'ratio_max')",
+  "why": "largest data / discrete ratio"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.2",
+  "context": "within $0.2$ of the continuous comparator in two",
+  "expr": "0.2 if J('temporal_within/gate_truth/paper2_derived.json', 'table3_summary', 'within_0.2_count') == 2 else -1",
+  "why": "two datasets within 0.2 (M1 0.13, A1 0.17)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.5",
+  "context": "by $1.5$ to $2.0$ levels",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table3_summary', 'gap_rest_min')",
+  "why": "smallest |data - continuous| of the other four (1.46)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "2.0",
+  "context": "by $1.5$ to $2.0$ levels",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table3_summary', 'gap_rest_max')",
+  "why": "largest (2.01)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "3.4",
+  "context": "peak count below $3.4$, where the",
+  "expr": "T('temporal_within/q8_verdict.py', r'r\\[\"A\"\\] \\+ r\\[\"lam\"\\] < (\\d\\.\\d)')",
+  "why": "threshold in q8_verdict.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "15",
+  "context": "only 2 to 15\\% stopped at two",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table3_summary', 'plateau2_max')",
+  "why": "largest plateau-at-two share"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.35",
+  "context": "median peak count of $0.35$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'A1_median_peak_count_powered')",
+  "why": "median A over powered A1 pairs (results_q8_a1.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "79",
+  "context": "M1 (MC\\_Maze) & ",
+  "expr": "J('temporal_within/gate_truth/table3_primary.json', 'M1 (MC\\\\_Maze)', 'growth_tuned_pct')",
+  "why": "Table III cell growth_tuned_pct (M1 (MC\\_Maze))"
+ },
+ {
+  "paper": "paper2",
+  "printed": "65",
+  "context": "area 2 & ",
+  "expr": "J('temporal_within/gate_truth/table3_primary.json', 'area 2', 'powered_units')",
+  "why": "Table III cell powered_units (area 2)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "57",
+  "context": "area 2 & ",
+  "expr": "J('temporal_within/gate_truth/table3_primary.json', 'area 2', 'growth_tuned_pct')",
+  "why": "Table III cell growth_tuned_pct (area 2)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "53",
+  "context": "DMFC & ",
+  "expr": "J('temporal_within/gate_truth/table3_primary.json', 'DMFC', 'powered_units')",
+  "why": "Table III cell powered_units (DMFC)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "59",
+  "context": "DMFC & ",
+  "expr": "J('temporal_within/gate_truth/table3_primary.json', 'DMFC', 'growth_tuned_pct')",
+  "why": "Table III cell growth_tuned_pct (DMFC)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "15",
+  "context": "DMFC & ",
+  "expr": "J('temporal_within/gate_truth/table3_primary.json', 'DMFC', 'plateau2_low_pct')",
+  "why": "Table III cell plateau2_low_pct (DMFC)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "75",
+  "context": "salamander retina & ",
+  "expr": "J('temporal_within/gate_truth/table3_primary.json', 'salamander retina', 'growth_tuned_pct')",
+  "why": "Table III cell growth_tuned_pct (salamander retina)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "85",
+  "context": "mouse V1 & ",
+  "expr": "J('temporal_within/gate_truth/table3_primary.json', 'mouse V1', 'growth_tuned_pct')",
+  "why": "Table III cell growth_tuned_pct (mouse V1)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "70",
+  "context": "mouse A1 (ceiling 5) & ",
+  "expr": "J('temporal_within/gate_truth/table3_primary.json', 'mouse A1 (ceiling 5)', 'tuned_reaching_max_pct')",
+  "why": "Table III cell tuned_reaching_max_pct (mouse A1 (ceiling 5))"
+ },
+ {
+  "paper": "paper2",
+  "printed": "3.4",
+  "context": "with $A + \\lambda < 3.4$. $^{a}$",
+  "expr": "T('temporal_within/q8_verdict.py', r'r\\[\"A\"\\] \\+ r\\[\"lam\"\\] < (\\d\\.\\d)')",
+  "why": "threshold in q8_verdict.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "twenty-four",
+  "context": "On the evidence for five to twenty-four rates",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_K_range', 1)",
+  "why": "largest K of Table II (table2_primary.json keys)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "4.6",
+  "context": "above the baseline, $4.6$ for $\\lambda = 1$.",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'second_rate_chain', '1')",
+  "why": "chain at g = 1.55, lambda = 1: mu at atom 1 = 4.639 (results_q108_dc_chain_g1.55.log)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "loses at least $24\\%$ of the capacity. It also",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'onoff', 'A', '10.0', 'onoff_loss_lower_bound_pct_vs_log2')",
+  "why": "on-off loss lower bound against log 2 (results_onoff_loss.json via paper2_derived.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.02",
+  "context": "extrapolated by $0.02$ to $0.09$ in $g$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'geff_below_fit_range', '21')",
+  "why": "1.43 - g_eff(21)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.09",
+  "context": "extrapolated by $0.02$ to $0.09$ in $g$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'geff_below_fit_range', '25')",
+  "why": "1.43 - g_eff(25)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "21",
+  "context": "in $g$ for $K = 21$ to $25$",
+  "expr": "21",
+  "why": "label, not a result: K range of the extrapolation",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "25",
+  "context": "in $g$ for $K = 21$ to $25$",
+  "expr": "25",
+  "why": "label, not a result: K range of the extrapolation",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "conjecture tested for $K = 5$ to $24$ and supported",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_K_range', 1)",
+  "why": "largest K of Table II (table2_primary.json keys)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "46",
+  "context": "evaluated at the certified $46$ and $66$ rates",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_A1144_K46_v11.log', 'K')",
+  "why": "K of q470_A1144_K46_v11.log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "66",
+  "context": "evaluated at the certified $46$ and $66$ rates",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_A2000_K66_y20_c1-12.log', 'K')",
+  "why": "K of q470_A2000_K66 logs"
+ },
+ {
+  "paper": "paper2",
+  "printed": "60",
+  "context": "at most about $60$ expected spikes per decision",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'spikes_phi_0.3')",
+  "why": "(Q^-1(0.01)/0.3)^2 = 60.1"
+ },
+ {
+  "paper": "paper2",
+  "printed": "25",
+  "context": "count change at $K = 25$ outside",
+  "expr": "L(126, r'A_(25) = 412\\.43')",
+  "why": "registered K = 25 prediction, Amendment 126",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.15",
+  "context": "$\\pm 0.15$ in $A$ around $A = 412.43$",
+  "expr": "L(126, r'tolerance (0\\.15) either way')",
+  "why": "Amendment 126"
+ },
+ {
+  "paper": "paper2",
+  "printed": "35",
+  "context": "exact number of rates at 35 peak counts",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'certificates_total')",
+  "why": "32 Table V certificates + 3 later ones that print PASS (paper2_derived.json certificates_total)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "66",
+  "context": "up to 66 rates at $A = 2000$ & certified",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificate_K_A', 'q470_A2000_K66_y20_c1-12.log', 'K')",
+  "why": "K of q470_A2000_K66 logs"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "conjecture tested for $K = 5$ to $24$; rms",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_K_range', 1)",
+  "why": "largest K of Table II (table2_primary.json keys)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.0015",
+  "context": "rms $0.0015$; four changes",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table2_resid', 'rms_K5_24')",
+  "why": "rms of the Table II residual over K = 5..24"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.42",
+  "context": "$\\kappa = 0.42$ & measured",
+  "expr": "J('temporal_within/gate_truth/kappa_counts.json', 'binomial_kappa_mean')",
+  "why": "mean kappa (kappa_counts.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "25",
+  "context": "25 published changes &",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'bd_comparison_rows')",
+  "why": "rows of results_q111_bd_comparison.json (published Barletta-Dytso transitions with a baseline)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "24",
+  "context": "of capacity at $A = 6$, $10$, $18$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'onoff', 'A', '10.0', 'onoff_loss_lower_bound_pct_vs_log2')",
+  "why": "on-off loss lower bound against log 2 (results_onoff_loss.json via paper2_derived.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "37",
+  "context": "of capacity at $A = 6$, $10$, $18$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'onoff', 'A', '18.0', 'onoff_loss_lower_bound_pct_vs_log2')",
+  "why": "on-off loss lower bound against log 2 (results_onoff_loss.json via paper2_derived.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "18",
+  "context": "of capacity at $A = 6$, $10$, $18$",
+  "expr": "18",
+  "why": "label, not a result: peak count of a results_onoff_loss.json row",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.8",
+  "context": "gain at most $0.8\\%$ at $A = 3$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'graded_max_gain_rel_pct')",
+  "why": "largest gain of a graded code over the best binary code, relative (results_glm_recert2.json)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "42",
+  "context": "graded at 42 of 83 budgets",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'graded_distinct_total')",
+  "why": "graded distinct budgets"
+ },
+ {
+  "paper": "paper2",
+  "printed": "83",
+  "context": "graded at 42 of 83 budgets",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'budgets_distinct_total')",
+  "why": "distinct budgets"
+ },
+ {
+  "paper": "paper2",
+  "printed": "fifty",
+  "context": "method at fifty digits",
+  "expr": "T('temporal_within/q32_certificate_arb.py', r'\\nmp\\.dps = (\\d+)')",
+  "why": "mp.dps in q32_certificate_arb.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "10^{-8}",
+  "context": "a lemma on $(0, 10^{-8}]$",
+  "expr": "T('temporal_within/q32_certificate_arb.py', r'def piece_i\\(ch, A_dec, x1=\"(1e-8)\"')",
+  "why": "piece (i) of q32_certificate_arb.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "18",
+  "context": "truncated at $A + 18\\sqrt A + 50$ counts",
+  "expr": "T('temporal_within/q32_certificate_arb.py', r'self\\.ny = int\\(Af \\+ (\\d+) \\* Af \\*\\* 0\\.5 \\+ \\d+\\)')",
+  "why": "alphabet in q32_certificate_arb.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "50",
+  "context": "truncated at $A + 18\\sqrt A + 50$ counts",
+  "expr": "T('temporal_within/q32_certificate_arb.py', r'self\\.ny = int\\(Af \\+ \\d+ \\* Af \\*\\* 0\\.5 \\+ (\\d+)\\)')",
+  "why": "alphabet in q32_certificate_arb.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "10^{-28}",
+  "context": "The box has radius $10^{-28}$ or less",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'table5_box_radius', 'max')",
+  "why": "largest Krawczyk box radius rho over the 32 Table V records"
+ },
+ {
+  "paper": "paper2",
+  "printed": "thirty-two",
+  "context": "lists these thirty-two certificates",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'certificates_in_table')",
+  "why": "rows of table5_primary.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "16",
+  "context": "truncated at $A + 16\\sqrt A + 60$ counts for",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_trunc_sigma', 0)",
+  "why": "(Ymax - A - 60)/sqrt(A) from q470_v5.log 'alphabet 0..653'"
+ },
+ {
+  "paper": "paper2",
+  "printed": "60",
+  "context": "truncated at $A + 16\\sqrt A + 60$ counts for",
+  "expr": "T('temporal_within/q470_support_certificate.py', r'YSIG\\*np\\.sqrt\\(Af\\) \\+ (\\d+)\\)')",
+  "why": "Ymax in q470_support_certificate.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "20",
+  "context": "at $A + 20\\sqrt A + 60$ for $A = 2000$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_trunc_sigma', 2)",
+  "why": "(Ymax - A - 60)/sqrt(A) from the A = 2000 log 'alphabet 0..2954'"
+ },
+ {
+  "paper": "paper2",
+  "printed": "60",
+  "context": "at $A + 20\\sqrt A + 60$ for $A = 2000$",
+  "expr": "T('temporal_within/q470_support_certificate.py', r'YSIG\\*np\\.sqrt\\(Af\\) \\+ (\\d+)\\)')",
+  "why": "Ymax in q470_support_certificate.py",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "10^{-22}",
+  "context": "radii $10^{-22}$, $10^{-26}$ and $10^{-30}$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_box_radii', 0)",
+  "why": "sweep box r of the q470 log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "10^{-26}",
+  "context": "radii $10^{-22}$, $10^{-26}$ and $10^{-30}$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_box_radii', 1)",
+  "why": "sweep box r of the q470 log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "10^{-30}",
+  "context": "radii $10^{-22}$, $10^{-26}$ and $10^{-30}$",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_box_radii', 2)",
+  "why": "sweep box r of the q470 log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.9\\times 10^{-20}",
+  "context": "$1.9\\times 10^{-20}$, $1.8\\times 10^{-25}$ and $1.8\\times 10^{-29}$, the last",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificates', 0, 'worst_margin')",
+  "why": "smallest worst margin of the q470 log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.8\\times 10^{-25}",
+  "context": "$1.9\\times 10^{-20}$, $1.8\\times 10^{-25}$ and $1.8\\times 10^{-29}$, the last",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificates', 1, 'worst_margin')",
+  "why": "smallest worst margin of the q470 log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.8\\times 10^{-29}",
+  "context": "$1.9\\times 10^{-20}$, $1.8\\times 10^{-25}$ and $1.8\\times 10^{-29}$, the last",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'later_certificates', 2, 'worst_margin')",
+  "why": "smallest worst margin of the q470 log"
+ },
+ {
+  "paper": "paper2",
+  "printed": "eighteen",
+  "context": "the last about eighteen times the box radius",
+  "expr": "J('temporal_within/gate_truth/paper2_derived.json', 'last_margin_over_box')",
+  "why": "1.776e-29 / 1e-30"
+ },
+ {
+  "paper": "paper2",
+  "printed": "5.5e-05",
+  "context": "27.9452 & 5 & 5.5e-05",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 0, 'slack_source')",
+  "why": "worst slack of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "5",
+  "context": "27.9452 & 5 & 5.5e-05",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 0, 'K')",
+  "why": "K of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "3.4e-08",
+  "context": "218.5000 & 17 & 3.4e-08",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 1, 'slack_source')",
+  "why": "worst slack of results_q53b_certify17_A218.500.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "17",
+  "context": "218.5000 & 17 & 3.4e-08",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 1, 'K')",
+  "why": "K of results_q53b_certify17_A218.500.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "2.0e-06",
+  "context": "28.3620 & 6 & 2.0e-06",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 2, 'slack_source')",
+  "why": "worst slack of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "6",
+  "context": "28.3620 & 6 & 2.0e-06",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 2, 'K')",
+  "why": "K of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "6.2e-08",
+  "context": "236.0000 & 17 & 6.2e-08",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 3, 'slack_source')",
+  "why": "worst slack of results_q53b_certify17_A236.000.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "17",
+  "context": "236.0000 & 17 & 6.2e-08",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 3, 'K')",
+  "why": "K of results_q53b_certify17_A236.000.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "2.9e-05",
+  "context": "39.6120 & 6 & 2.9e-05",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 4, 'slack_source')",
+  "why": "worst slack of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "6",
+  "context": "39.6120 & 6 & 2.9e-05",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 4, 'K')",
+  "why": "K of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "7.5e-12",
+  "context": "236.9199 & 18 & 7.5e-12",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 5, 'slack_source')",
+  "why": "worst slack of results_q53b_certify18_A236.920.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "18",
+  "context": "236.9199 & 18 & 7.5e-12",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 5, 'K')",
+  "why": "K of results_q53b_certify18_A236.920.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.3e-05",
+  "context": "40.0280 & 7 & 1.3e-05",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 6, 'slack_source')",
+  "why": "worst slack of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "7",
+  "context": "40.0280 & 7 & 1.3e-05",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 6, 'K')",
+  "why": "K of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "8.3e-12",
+  "context": "237.0356 & 18 & 8.3e-12",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 7, 'slack_source')",
+  "why": "worst slack of results_q53b_certify18_A237.036.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "18",
+  "context": "237.0356 & 18 & 8.3e-12",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 7, 'K')",
+  "why": "K of results_q53b_certify18_A237.036.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "2.8e-07",
+  "context": "52.5555 & 7 & 2.8e-07",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 8, 'slack_source')",
+  "why": "worst slack of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "7",
+  "context": "52.5555 & 7 & 2.8e-07",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 8, 'K')",
+  "why": "K of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "4.9e-11",
+  "context": "237.1841 & 18 & 4.9e-11",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 9, 'slack_source')",
+  "why": "worst slack of results_q53b_certify18_A237.184.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "18",
+  "context": "237.1841 & 18 & 4.9e-11",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 9, 'K')",
+  "why": "K of results_q53b_certify18_A237.184.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "7.9e-07",
+  "context": "66.6505 & 8 & 7.9e-07",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 10, 'slack_source')",
+  "why": "worst slack of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "8",
+  "context": "66.6505 & 8 & 7.9e-07",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 10, 'K')",
+  "why": "K of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "5.5e-08",
+  "context": "257.9236 & 18 & 5.5e-08",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 11, 'slack_source')",
+  "why": "worst slack of results_q53b_certify18_A257.924.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "18",
+  "context": "257.9236 & 18 & 5.5e-08",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 11, 'K')",
+  "why": "K of results_q53b_certify18_A257.924.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.0e-06",
+  "context": "97.9375 & 10 & 1.0e-06",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 12, 'slack_source')",
+  "why": "worst slack of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "10",
+  "context": "97.9375 & 10 & 1.0e-06",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 12, 'K')",
+  "why": "K of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "5.0e-10",
+  "context": "259.9822 & 19 & 5.0e-10",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 13, 'slack_source')",
+  "why": "worst slack of results_q53b_certify19_A259.982.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "19",
+  "context": "259.9822 & 19 & 5.0e-10",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 13, 'K')",
+  "why": "K of results_q53b_certify19_A259.982.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.0e-06",
+  "context": "100.0000 & 11 & 1.0e-06",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 14, 'slack_source')",
+  "why": "worst slack of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "11",
+  "context": "100.0000 & 11 & 1.0e-06",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 14, 'K')",
+  "why": "K of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.4e-12",
+  "context": "283.6685 & 20 & 1.4e-12",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 15, 'slack_source')",
+  "why": "worst slack of results_q53b_certify20_A283.668.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "20",
+  "context": "283.6685 & 20 & 1.4e-12",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 15, 'K')",
+  "why": "K of results_q53b_certify20_A283.668.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.2e-08",
+  "context": "115.2578 & 11 & 1.2e-08",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 16, 'slack_source')",
+  "why": "worst slack of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "11",
+  "context": "115.2578 & 11 & 1.2e-08",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 16, 'K')",
+  "why": "K of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "4.0e-08",
+  "context": "302.0000 & 20 & 4.0e-08",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 17, 'slack_source')",
+  "why": "worst slack of results_q53b_certify20_A302.000.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "20",
+  "context": "302.0000 & 20 & 4.0e-08",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 17, 'K')",
+  "why": "K of results_q53b_certify20_A302.000.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.5e-07",
+  "context": "133.3550 & 12 & 1.5e-07",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 18, 'slack_source')",
+  "why": "worst slack of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "12",
+  "context": "133.3550 & 12 & 1.5e-07",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 18, 'K')",
+  "why": "K of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "9.8e-11",
+  "context": "308.1187 & 21 & 9.8e-11",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 19, 'slack_source')",
+  "why": "worst slack of results_q53b_certify21_A308.119.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "21",
+  "context": "308.1187 & 21 & 9.8e-11",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 19, 'K')",
+  "why": "K of results_q53b_certify21_A308.119.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.7e-06",
+  "context": "150.0000 & 13 & 1.7e-06",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 20, 'slack_source')",
+  "why": "worst slack of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "13",
+  "context": "150.0000 & 13 & 1.7e-06",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 20, 'K')",
+  "why": "K of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.9e-08",
+  "context": "327.0000 & 21 & 1.9e-08",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 21, 'slack_source')",
+  "why": "worst slack of results_q53b_certify21_A327.000.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "21",
+  "context": "327.0000 & 21 & 1.9e-08",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 21, 'K')",
+  "why": "K of results_q53b_certify21_A327.000.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "3.6e-07",
+  "context": "152.0000 & 13 & 3.6e-07",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 22, 'slack_source')",
+  "why": "worst slack of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "13",
+  "context": "152.0000 & 13 & 3.6e-07",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 22, 'K')",
+  "why": "K of results_q32_certificate_arb.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "3.3e-13",
+  "context": "333.1988 & 22 & 3.3e-13",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 23, 'slack_source')",
+  "why": "worst slack of results_q53b_certify22_A333.199.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "22",
+  "context": "333.1988 & 22 & 3.3e-13",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 23, 'K')",
+  "why": "K of results_q53b_certify22_A333.199.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.1e-06",
+  "context": "166.6681 & 14 & 1.1e-06",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 24, 'slack_source')",
+  "why": "worst slack of results_q47_certify14_c15.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "14",
+  "context": "166.6681 & 14 & 1.1e-06",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 24, 'K')",
+  "why": "K of results_q47_certify14_c15.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.4e-08",
+  "context": "352.0000 & 22 & 1.4e-08",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 25, 'slack_source')",
+  "why": "worst slack of results_q53b_certify22_A352.000.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "22",
+  "context": "352.0000 & 22 & 1.4e-08",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 25, 'K')",
+  "why": "K of results_q53b_certify22_A352.000.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "7.1e-09",
+  "context": "172.4467 & 15 & 7.1e-09",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 26, 'slack_source')",
+  "why": "worst slack of results_q53b_certify15_A172.447.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "15",
+  "context": "172.4467 & 15 & 7.1e-09",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 26, 'K')",
+  "why": "K of results_q53b_certify15_A172.447.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "2.8e-11",
+  "context": "359.5000 & 23 & 2.8e-11",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 27, 'slack_source')",
+  "why": "worst slack of results_q53b_certify23_A359.500.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "23",
+  "context": "359.5000 & 23 & 2.8e-11",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 27, 'K')",
+  "why": "K of results_q53b_certify23_A359.500.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "5.7e-07",
+  "context": "185.0000 & 15 & 5.7e-07",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 28, 'slack_source')",
+  "why": "worst slack of results_q53b_certify15_A185.000.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "15",
+  "context": "185.0000 & 15 & 5.7e-07",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 28, 'K')",
+  "why": "K of results_q53b_certify15_A185.000.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "6.7e-09",
+  "context": "378.0000 & 23 & 6.7e-09",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 29, 'slack_source')",
+  "why": "worst slack of results_q53b_certify23_A378.000.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "23",
+  "context": "378.0000 & 23 & 6.7e-09",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 29, 'K')",
+  "why": "K of results_q53b_certify23_A378.000.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "3.3e-07",
+  "context": "204.7761 & 16 & 3.3e-07",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 30, 'slack_source')",
+  "why": "worst slack of results_q49_certify16.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "16",
+  "context": "204.7761 & 16 & 3.3e-07",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 30, 'K')",
+  "why": "K of results_q49_certify16.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "1.9e-09",
+  "context": "214.6855 & 17 & 1.9e-09",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 31, 'slack_source')",
+  "why": "worst slack of results_q53b_certify17_A214.685.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "17",
+  "context": "214.6855 & 17 & 1.9e-09",
+  "expr": "J('temporal_within/gate_truth/table5_primary.json', 31, 'K')",
+  "why": "K of results_q53b_certify17_A214.685.json"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.62",
+  "context": "appears at $0.62$ of its gap for $K = 5$ to $21$",
+  "expr": "(L(137, r'birth states: (0\\.6199), 0\\.6192, 0\\.6226') + L(137, r'birth states: 0\\.6199, (0\\.6192), 0\\.6226') + L(137, r'birth states: 0\\.6199, 0\\.6192, (0\\.6226)')) / 3",
+  "why": "mean of the 40-digit birth fractions at K = 17, 19, 21"
+ },
+ {
+  "paper": "paper2",
+  "printed": "21",
+  "context": "appears at $0.62$ of its gap for $K = 5$ to $21$",
+  "expr": "21",
+  "why": "label, not a result: K range",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.61",
+  "context": "$0.61$ to $0.62$ for $K = 5$ to $9$",
+  "expr": "J('temporal_within/gate_truth/bd_grid_birth.json', '9', 'f_left')",
+  "why": "grid birth fraction K = 9 (bd_grid_birth.json, 0.6108; K = 5 0.6214, K = 7 0.6163)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.62",
+  "context": "$0.61$ to $0.62$ for $K = 5$ to $9$",
+  "expr": "J('temporal_within/gate_truth/bd_grid_birth.json', '5', 'f_left')",
+  "why": "grid birth fraction K = 5 (0.6214)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.57",
+  "context": "and $0.57$ at $K = 11$, where the grid point",
+  "expr": "J('temporal_within/gate_truth/bd_grid_birth.json', '11', 'f_left')",
+  "why": "grid birth fraction K = 11 (0.5719); its grid point lies furthest above the birth (bd_grid_birth.json furthest_above_K)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "17",
+  "context": "$0.623$ for $K = 17$ to $21$",
+  "expr": "L(137, r'0\\.6226 at K = (17), 19, 21')",
+  "why": "Amendment 137",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "21",
+  "context": "$0.623$ for $K = 17$ to $21$",
+  "expr": "L(137, r'0\\.6226 at K = 17, 19, (21)')",
+  "why": "Amendment 137",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.12",
+  "context": "happens at $0.12$ of the gap",
+  "expr": "L(142, r'birth f_left = (0\\.1239) \\(K = 20\\)')",
+  "why": "split birth fraction, Amendment 142"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.62",
+  "context": "falls from $0.62$ through $0.61$",
+  "expr": "L(137, r'\\| K = 11 \\(10 -> 11\\) \\| (0\\.620)\\*')",
+  "why": "Amendment 137, K = 11 row, lambda = 0"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.61",
+  "context": "falls from $0.62$ through $0.61$",
+  "expr": "L(137, r'\\| K = 11 \\(10 -> 11\\) \\| 0\\.620\\* \\| 0\\.6186 \\| (0\\.6068)')",
+  "why": "lambda = 0.01"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.58",
+  "context": "$0.61$, $0.58$ and $0.56$",
+  "expr": "L(137, r'\\| K = 11 \\(10 -> 11\\) \\| 0\\.620\\* \\| 0\\.6186 \\| 0\\.6068 \\| (0\\.5801)')",
+  "why": "lambda = 0.03"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.56",
+  "context": "$0.61$, $0.58$ and $0.56$",
+  "expr": "L(137, r'\\| K = 11 \\(10 -> 11\\) \\| 0\\.620\\* \\| 0\\.6186 \\| 0\\.6068 \\| 0\\.5801 \\| (0\\.5609)')",
+  "why": "lambda = 0.05"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.01",
+  "context": "0.01$, $0.03$ and $0.05$ to $0.513$",
+  "expr": "L(137, r'\\| lambda \\| 0 \\| 0\\.003 \\| (0\\.01) \\| 0\\.03')",
+  "why": "lambda header of Amendment 137",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.03",
+  "context": "0.01$, $0.03$ and $0.05$ to $0.513$",
+  "expr": "L(137, r'\\| lambda \\| 0 \\| 0\\.003 \\| 0\\.01 \\| (0\\.03) \\| 0\\.05')",
+  "why": "lambda header of Amendment 137",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.05",
+  "context": "0.01$, $0.03$ and $0.05$ to $0.513$",
+  "expr": "L(137, r'\\| lambda \\| 0 \\| 0\\.003 \\| 0\\.01 \\| 0\\.03 \\| (0\\.05)')",
+  "why": "lambda header of Amendment 137",
+  "kind": "definition"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.06",
+  "context": "falls from $0.124$ to $0.06$ at",
+  "expr": "L(143, r'\\| K = 18 \\(17 -> 18\\) \\| 0\\.1240 \\| 0\\.1168 \\| 0\\.1042 \\| 0\\.0777 \\| (0\\.0603)')",
+  "why": "Amendment 143, split at lambda = 0.05"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.05",
+  "context": "$\\lambda = 0.05$. The negative binomial",
+  "expr": "L(143, r'\\| lambda \\| 0 \\| 0\\.003 \\| 0\\.01 \\| 0\\.03 \\| (0\\.05)')",
+  "why": "lambda header of Amendment 143",
+  "kind": "definition"
+ }
+]

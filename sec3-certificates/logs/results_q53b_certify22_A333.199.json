@@ -1,0 +1,24 @@
+{
+ "A": 333.1987712682616,
+ "K": 22,
+ "source": "results_q80_state_K22_eps2.5e-4_K22closure.json",
+ "rho": "1e-28",
+ "certificate": {
+  "ok": true,
+  "krawczyk_ok": true,
+  "krawczyk_ratio": 3.167709691129476e-08,
+  "worst_slack": 3.2974666302004455e-13,
+  "piece_i": {
+   "sliver": -14.091051977683621,
+   "left_reach": 0.2133549658546799,
+   "left_margin": 1.6504377956570349,
+   "right_reach": 321.1167779614035,
+   "right_margin": 2.44232195222061
+  },
+  "K": 22,
+  "A": 333.1987712682616,
+  "rho": "1e-28",
+  "seconds": 1948.4631583690643
+ },
+ "A_23": 333.4376380742919
+}

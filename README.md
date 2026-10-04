@@ -14,12 +14,13 @@ public datasets.
 
 | folder | paper section | what it holds |
 |---|---|---|
-| [`sec3-certificates/`](sec3-certificates/) | III, Appendix A, Table V | the ball-arithmetic certificates of the exact number of rates at 35 peak counts (runs on its own) |
+| [`sec3-certificates/`](sec3-certificates/) | III, Appendix A, Table IV | the ball-arithmetic certificates that fix the exact count at 35 peak counts (runs on its own) |
 | [`sec3-count-law/`](sec3-count-law/) | III, Table II, Fig. 1 | Gaussian count changes (with the relocated values of Table II), the wall constants and the growth predictions |
 | [`sec4-non-poisson/`](sec4-non-poisson/) | IV | binomial, negative-binomial and generalized-Poisson wall chains; the finite-size term |
 | [`sec5-baseline/`](sec5-baseline/) | V | the baseline (dark-current) rate and the comparison with published count changes |
 | [`sec6-short-windows/`](sec6-short-windows/) | VI, Figs. 2-3 | short-window optima, the exact binary onset A = 3.3679, energy-capacity fronts, refractoriness |
 | [`sec7-data-test/`](sec7-data-test/) | VII, Table III | the pre-registered level-count test on six public datasets |
+| [`checks/`](checks/) | all | the code that checked every number and figure of the paper against primary files, with what it reads |
 | [`paper/`](paper/) | | the paper |
 
 Each folder has a `README.md` (what is there and how it maps to the paper) and a `FILES.md` (one line per script: what it does,
@@ -38,10 +39,18 @@ after the original run, and the rerun prints it; this is the form that Appendix 
 names. Some scripts expect the folder layout of the original project, so rerunning one can mean adjusting a path at the top of
 the script. The Python files were reformatted with [black](https://github.com/psf/black), which changes layout only.
 
-Three result files are kept although the short scripts that wrote them were not: `sec3-count-law/logs/results_q89_cK_table.json`
-(an earlier table of wall constants, now superseded: Table II is rebuilt by `sec3-count-law/scripts/build_table2.py` from output files only), `sec4-non-poisson/logs/results_q138_kappa_points.json` (the points behind kappa = 0.42) and
-`sec5-baseline/logs/results_q111_bd_comparison.json` (the comparison with the published dark-current count changes). Their numbers
-can be checked against the certificates and against the published data they compare with.
+Three result files are kept although the short scripts that wrote them were not. `sec3-count-law/logs/results_q89_cK_table.json`
+is an earlier table of wall constants, now superseded; Table II is rebuilt by `sec3-count-law/scripts/build_table2.py` from
+output files only. `sec4-non-poisson/logs/results_q138_kappa_points.json` holds the points behind kappa = 0.42, which
+`checks/scripts/kappa_counts.py` recounts from the run logs. `sec5-baseline/logs/results_q111_bd_comparison.json` is the
+comparison with the published dark-current count changes. Their numbers can be checked against the certificates and against the
+published data they compare with.
+
+## How the numbers were checked
+
+Every number printed in the paper was checked by code against a primary file: a run log, a result file, or an entry of the
+registration log. The figures are drawn by scripts that read their data from such files. [`checks/`](checks/) holds that code,
+the formula behind each derived number, and the input files that the other folders do not already hold.
 
 ## Requirements
 

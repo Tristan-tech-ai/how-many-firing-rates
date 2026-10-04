@@ -1,0 +1,31 @@
+seed K = 11 at A = 112.0099999999979; dropped atom 5 (w = 0.0669); (K-1)-point Poisson at A = 97.0: residual 1.7e-14, min w 0.0759
+   poisson 0: A =   98.2000: v +1.153e-06 at t = 10.314; min w 0.0769
+   poisson 0: fine pass 98.0500..98.2000, violation peak at t = 10.314
+   poisson 0: linear fit on 8 near points: A_K = 98.0855 (slope 9.907e-06, window 98.103..98.165)
+Poisson: A_11 = 98.0855; sqrt = 9.90381; first gaps (t) [3.1262, 2.2647]   [1s]
+   dc 0.003: A =   94.3704: v +2.442e-15 at t = 19.429; min w 0.0736
+   dc 0.003: A =   95.6204: v +0.000e+00 at t = 0.000; min w 0.0749
+   dc 0.003: A =   96.8704: v +1.332e-15 at t = 19.685; min w 0.0760
+   dc 0.003: A =   98.1204: v +8.888e-07 at t = 10.314; min w 0.0771
+   dc 0.003: fine pass 98.0204..98.1204, violation peak at t = 10.314
+   dc 0.003: linear fit on 12 near points: A_K = 98.0312 (slope 9.868e-06, window 98.044..98.109)
+dc 0.003: A_11 = 98.0312 (Fisher-invariant prediction 99.1704); L = 19.69289; Delta c = L/2 - sqrt(A_P) = -0.05737; metric part -0.05462; first gaps (Fisher) [3.022, 2.2595]; weights [0.163, 0.1033, 0.0878]   [4s]
+   dc 0.01: A =   95.2663: v +8.882e-16 at t = 19.521; min w 0.0748
+   dc 0.01: A =   96.5163: v +0.000e+00 at t = 0.000; min w 0.0760
+   dc 0.01: A =   97.7663: v +0.000e+00 at t = 0.000; min w 0.0770
+   dc 0.01: fine pass 98.0163..98.1163, violation peak at t = 10.289
+   dc 0.01: linear fit on 12 near points: A_K = 98.0108 (slope 9.838e-06, window 98.022..98.087)
+dc 0.01: A_11 = 98.0108 (Fisher-invariant prediction 100.0663); L = 19.60109; Delta c = L/2 - sqrt(A_P) = -0.10327; metric part -0.09949; first gaps (Fisher) [2.9497, 2.2495]; weights [0.1613, 0.103, 0.0879]   [7s]
+   dc 0.03: A =   96.7163: v +0.000e+00 at t = 0.000; min w 0.0764
+   dc 0.03: A =   97.9663: v +0.000e+00 at t = 0.000; min w 0.0774
+   dc 0.03: fine pass 98.1663..98.2663, violation peak at t = 10.282
+   dc 0.03: linear fit on 12 near points: A_K = 98.1698 (slope 9.761e-06, window 98.184..98.249)
+dc 0.03: A_11 = 98.1698 (Fisher-invariant prediction 101.5163); L = 19.47275; Delta c = L/2 - sqrt(A_P) = -0.16744; metric part -0.17169; first gaps (Fisher) [2.8635, 2.2286]; weights [0.1589, 0.1021, 0.0878]   [9s]
+   dc 0.05: A =   97.7147: v +7.749e-14 at t = 19.770; min w 0.0771
+   dc 0.05: fine pass 98.4647..98.6147, violation peak at t = 10.291
+   dc 0.05: linear fit on 9 near points: A_K = 98.4893 (slope 9.623e-06, window 98.500..98.571)
+dc 0.05: A_11 = 98.4893 (Fisher-invariant prediction 102.5147); L = 19.40618; Delta c = L/2 - sqrt(A_P) = -0.20072; metric part -0.22109; first gaps (Fisher) [2.8262, 2.2142]; weights [0.1579, 0.1015, 0.0877]   [11s]
+   dc 0.25: fine pass 102.8894..103.0394, violation peak at t = 10.686
+   dc 0.25: linear fit on 9 near points: A_K = 102.9037 (slope 9.107e-06, window 102.916..102.986)
+dc 0.25: A_11 = 102.9037 (Fisher-invariant prediction 107.9894); L = 19.31293; Delta c = L/2 - sqrt(A_P) = -0.24735; metric part -0.48769; first gaps (Fisher) [2.7814, 2.1917]; weights [0.156, 0.1009, 0.0876]   [12s]
+done

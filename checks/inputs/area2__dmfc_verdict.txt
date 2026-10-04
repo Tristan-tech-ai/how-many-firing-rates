@@ -1,0 +1,18 @@
+K1 shuffle control: N_cv == 1 in 162/162 (100.0%)  -> PASS
+
+(unit, W) pairs analysed: 162;  powered (K2 sep >= 0.8): 130 pairs over 53 distinct units
+power by window: W100: 43/54  W200: 42/54  W400: 45/54
+comparator (simulations, mean N_cv): discrete sims show growth in 28% of pairs; smooth sims in 85%
+                 mean N_cv(all): discrete sims 2.89, smooth sims 6.83, data 4.84
+
+POWERED PAIRS:
+  plateau: 58%   growth: 42%   plateau AND |N_cv - N*|<=1: 44%
+  low A+lam (<3.4): n=68  plateau-at-2: 15%
+  high A+lam (>=3.4): n=62  growth: 50%
+  N_cv(all) distribution among powered: {np.int64(1): np.int64(36), np.int64(2): np.int64(24), np.int64(3): np.int64(18), np.int64(4): np.int64(3), np.int64(5): np.int64(1), np.int64(6): np.int64(3), np.int64(7): np.int64(8), np.int64(8): np.int64(1), np.int64(9): np.int64(4), np.int64(10): np.int64(6), np.int64(11): np.int64(2), np.int64(12): np.int64(4), np.int64(13): np.int64(4), np.int64(14): np.int64(3), np.int64(15): np.int64(4), np.int64(16): np.int64(9)}
+  N* distribution among powered:        {np.int64(2): np.int64(109), np.int64(3): np.int64(19), np.int64(4): np.int64(2)}
+  mean N_cv(all) powered: data 5.39  vs their discrete sims 2.96  vs their smooth sims 7.40
+  DIAGNOSTIC: powered pairs with N_cv(all) = 1 (no resolvable tuning): 36 (28%); plateau&match with N_cv(all) >= 2: 21 (16% of powered)
+  DIAGNOSTIC among TUNED powered pairs (N_cv(all) >= 2, n=94): growth 59%   plateau&match 22%
+
+VERDICT: Q8-MIXED — no pre-registered outcome reached 70%

@@ -1,0 +1,17 @@
+[
+ {
+  "paper": "paper2",
+  "printed": "5.39",
+  "context": "above silence at $3.13$ and $5.39$",
+  "expr": "3.126 + 2.260",
+  "why": "position of the second level = sum of the first two gaps printed in the same sentence (3.126 + 2.260 = 5.386)"
+ },
+ {
+  "paper": "paper2",
+  "printed": "0.02",
+  "context": "by more than $0.02$ in the half-length",
+  "expr": "0.02",
+  "kind": "definition",
+  "why": "falsification threshold chosen in the text (the measured spread of kappa is 0.42 +- 0.02)"
+ }
+]

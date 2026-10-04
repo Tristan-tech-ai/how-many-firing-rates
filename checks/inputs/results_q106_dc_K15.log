@@ -1,0 +1,27 @@
+seed K = 15 at A = 172.44665380589757; dropped atom 7 (w = 0.0010); (K-1)-point Poisson at A = 171.6: residual 6.3e-14, min w 0.0542
+   poisson 0: A =  172.8000: v +2.401e-07 at t = 13.490; min w 0.0547
+   poisson 0: A =  174.0500: v +1.178e-06 at t = 13.500; min w 0.0552
+   poisson 0: fine pass 172.5500..173.6000, violation peak at t = 13.489
+   poisson 0: linear fit on 16 near points: A_K = 172.4530 (slope 6.934e-07, window 172.612..173.538)
+Poisson: A_15 = 172.4530; sqrt = 13.13214; first gaps (t) [3.1257, 2.2608]   [6s]
+   dc 0.1: A =  169.9585: v +1.152e-13 at t = 15.792; min w 0.0533
+   dc 0.1: A =  171.2085: v +6.883e-15 at t = 26.169; min w 0.0540
+   dc 0.1: A =  172.4585: v +0.000e+00 at t = 0.000; min w 0.0545
+   dc 0.1: A =  173.7085: v +2.665e-15 at t = 26.360; min w 0.0551
+   dc 0.1: A =  174.9585: v +4.861e-07 at t = 13.601; min w 0.0556
+   dc 0.1: A =  176.2085: v +1.406e-06 at t = 13.643; min w 0.0561
+   dc 0.1: fine pass 174.3085..175.4585, violation peak at t = 13.620
+   dc 0.1: linear fit on 16 near points: A_K = 174.1812 (slope 6.336e-07, window 174.376..175.391)
+dc 0.1: A_15 = 174.1812 (Fisher-invariant prediction 180.7585); L = 25.77067; Delta c = L/2 - sqrt(A_P) = -0.24680; metric part -0.31244; first gaps (Fisher) [2.7947, 2.1923]; weights [0.1231, 0.0791, 0.0684]   [16s]
+   dc 0.3: A =  176.0386: v +1.066e-14 at t = 26.536; min w 0.0537
+   dc 0.3: A =  177.2886: v +8.882e-16 at t = 26.630; min w 0.0543
+   dc 0.3: A =  178.5386: v +2.220e-15 at t = 26.724; min w 0.0549
+   dc 0.3: A =  179.7886: v +9.286e-08 at t = 13.989; min w 0.0554
+   dc 0.3: A =  181.0386: v +8.692e-07 at t = 14.017; min w 0.0559
+   dc 0.3: A =  182.2886: v +1.870e-06 at t = 14.065; min w 0.0563
+   dc 0.3: fine pass 179.7886..180.9886, violation peak at t = 14.015
+   dc 0.3: linear fit on 16 near points: A_K = 179.6654 (slope 6.172e-07, window 179.859..180.918)
+dc 0.3: A_15 = 179.6654 (Fisher-invariant prediction 186.8386); L = 25.73479; Delta c = L/2 - sqrt(A_P) = -0.26474; metric part -0.53654; first gaps (Fisher) [2.7757, 2.1859]; weights [0.1221, 0.0791, 0.0684]   [24s]
+   continuation failed at 1.0: residual 1.1e-07
+   continuation failed at 1.0: residual 1.1e-07
+done

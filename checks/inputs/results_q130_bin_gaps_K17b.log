@@ -1,0 +1,9 @@
+seed K = 17; (K-1)-point Poisson at A0 = 213.685: residual 9.4e-14
+   already above the transition at A = 213.685 (peak 1.1e-03); stepping down
+   [no interior local maximum on the coarse grid: zone-edge fallback, value is an upper bound on the offset]
+bin 300 K-1=16 -> K=17: transition A = 168.82053 (rho = 0.563; peak -1.5e-13); birth between atoms 7,8 (Fisher 14.2011, 15.7977; gap 1.5965) at t = 15.1969: f_left = 0.6237   [55s]
+   Fisher gaps of the (K-1)-point at the handover state: [3.15, 2.373, 2.23, 2.2, 2.195, 2.195, 2.194, 2.194, 2.194, 2.194, 2.195, 2.198, 2.217, 2.313, 2.759]
+   handed over at N = 300, A = 168.72 (min w 0.0477)   [55s]
+   already above the transition at A = 168.721 (peak 1.3e-03); stepping down
+   solve failed at A = 167.7205 (res 2.8e-14, min w -2.15e-01)
+bin 200: no transition found from A = 168.72

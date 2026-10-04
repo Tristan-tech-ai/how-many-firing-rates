@@ -1,0 +1,86 @@
+{
+ "grid_rates": 601,
+ "log2": 0.6931471805599453,
+ "A": {
+  "3.0": {
+   "C_BA_lower": 0.594430610846572,
+   "C_BA_upper": 0.5944306109627909,
+   "best_two_point": 0.5944306109013818,
+   "best_two_point_at": [
+    0.0,
+    3.0,
+    0.47160302888224775
+   ],
+   "gain_over_best_two_point_pct": -9.220558690364792e-09,
+   "onoff_loss_lower_bound_pct_vs_log2": 0.0
+  },
+  "4.0": {
+   "C_BA_lower": 0.654908333814412,
+   "C_BA_upper": 0.654932424626462,
+   "best_two_point": 0.6476731429088467,
+   "best_two_point_at": [
+    0.0,
+    4.0,
+    0.4856327571065667
+   ],
+   "gain_over_best_two_point_pct": 1.1047639084732819,
+   "onoff_loss_lower_bound_pct_vs_log2": 0.0
+  },
+  "6.0": {
+   "C_BA_lower": 0.7620251250205482,
+   "C_BA_upper": 0.7620495019637823,
+   "best_two_point": 0.6844893375899421,
+   "best_two_point_at": [
+    0.0,
+    6.0,
+    0.49688394423278337
+   ],
+   "gain_over_best_two_point_pct": 10.17496469404671,
+   "onoff_loss_lower_bound_pct_vs_log2": 9.038513152112323
+  },
+  "10.0": {
+   "C_BA_lower": 0.915838722444344,
+   "C_BA_upper": 0.915869351487114,
+   "best_two_point": 0.6928975013023628,
+   "best_two_point_at": [
+    0.0,
+    10.0,
+    0.4998978326525884
+   ],
+   "gain_over_best_two_point_pct": 24.342847237006772,
+   "onoff_loss_lower_bound_pct_vs_log2": 24.314771700003966
+  },
+  "18.0": {
+   "C_BA_lower": 1.106304649284302,
+   "C_BA_upper": 1.106328842425358,
+   "best_two_point": 0.6931470358751446,
+   "best_two_point_at": [
+    0.0,
+    18.0,
+    0.49999993181506247
+   ],
+   "gain_over_best_two_point_pct": 37.34573597574955,
+   "onoff_loss_lower_bound_pct_vs_log2": 37.344906223235505
+  }
+ },
+ "A3_onoff": {
+  "C": 0.5944306109013817,
+  "V": 0.22238971927646906,
+  "C_over_V": 2.6729230687251384,
+  "C2_over_V": 1.5888672926346799,
+  "mean_count": 1.4148090865467533,
+  "ratio_C2V_to_mean": 1.1230259317267783
+ },
+ "com_poisson_fano0.5": {
+  "2.83": {
+   "nu": 2.2133737379559197,
+   "P0": 0.008896812049795923,
+   "poisson_P0_same_mean": 0.05901285366944784
+  },
+  "3.0": {
+   "nu": 2.199038981551443,
+   "P0": 0.006488289451830291,
+   "poisson_P0_same_mean": 0.049787068367863944
+  }
+ }
+}

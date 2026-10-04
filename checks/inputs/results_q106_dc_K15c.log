@@ -1,0 +1,19 @@
+seed K = 15 at A = 172.44665380589757; dropped atom 7 (w = 0.0010); (K-1)-point Poisson at A = 171.6: residual 6.3e-14, min w 0.0542
+   poisson 0: A =  172.8000: v +2.401e-07 at t = 13.490; min w 0.0547
+   poisson 0: A =  174.0500: v +1.178e-06 at t = 13.500; min w 0.0552
+   poisson 0: fine pass 172.5500..173.6000, violation peak at t = 13.489
+   poisson 0: linear fit on 16 near points: A_K = 172.4530 (slope 6.934e-07, window 172.612..173.538)
+Poisson: A_15 = 172.4530; sqrt = 13.13214; first gaps (t) [3.1257, 2.2608]   [4s]
+   dc 3: A =  203.1441: v +0.000e+00 at t = 0.000; min w 0.0528
+   dc 3: A =  204.3941: v +0.000e+00 at t = 0.000; min w 0.0535
+   dc 3: A =  205.6441: v +0.000e+00 at t = 0.000; min w 0.0541
+   dc 3: A =  206.8941: v +0.000e+00 at t = 0.000; min w 0.0546
+   dc 3: A =  208.1441: v +2.842e-13 at t = 28.854; min w 0.0551
+   dc 3: A =  209.3941: v +1.446e-07 at t = 15.950; min w 0.0556
+   dc 3: A =  210.6441: v +8.534e-07 at t = 15.991; min w 0.0560
+   dc 3: A =  211.8941: v +1.749e-06 at t = 16.038; min w 0.0564
+   dc 3: fine pass 209.2941..210.5941, violation peak at t = 15.989
+   dc 3: linear fit on 16 near points: A_K = 209.1528 (slope 5.583e-07, window 209.371..210.518)
+dc 3: A_15 = 209.1528 (Fisher-invariant prediction 217.9441); L = 25.66683; Delta c = L/2 - sqrt(A_P) = -0.29872; metric part -1.62870; first gaps (Fisher) [2.7354, 2.1748]; weights [0.1199, 0.0792, 0.0685]   [16s]
+   continuation failed at 5.0 (A = 201.944): residual 2.0e-07
+done

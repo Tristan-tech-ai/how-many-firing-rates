@@ -1,0 +1,13 @@
+seed K = 20 at A = 283.6684668069549; dropped atom 10 (w = 0.0010); (K-1)-point Poisson at A = 282.4: residual 1.4e-13, min w 0.0397
+   poisson 0: A =  284.8000: v +3.460e-08 at t = 17.910; min w 0.0403
+   poisson 0: A =  287.3000: v +1.517e-07 at t = 18.031; min w 0.0408
+   poisson 0: A =  289.8000: v +3.258e-07 at t = 18.118; min w 0.0413
+   poisson 0: A =  292.3000: v +5.700e-07 at t = 18.196; min w 0.0417
+   poisson 0: A =  294.8000: v +8.993e-07 at t = 18.282; min w 0.0420
+   poisson 0: A =  297.3000: v +1.330e-06 at t = 18.359; min w 0.0424
+   poisson 0: fine pass 284.3000..287.5000, violation peak at t = 18.037
+   poisson 0: linear fit on 16 near points: A_K = 284.0818 (slope 4.561e-08, window 284.488..287.312)
+Poisson: A_20 = 284.0818; sqrt = 16.85473; first gaps (t) [3.1257, 2.2604]   [16s]
+   continuation failed at 1000.0 (A = 300.475): residual 3.5e-07
+   continuation failed at 1000.0 (A = 300.475): residual 3.5e-07
+done

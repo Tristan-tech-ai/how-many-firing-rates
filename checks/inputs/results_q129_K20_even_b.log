@@ -1,0 +1,11 @@
+seed K = 20 at A = 283.6685 (dropped atom 10, w = 1.0e-03); (K-1)-point Poisson at A0 = 282.668: residual 2.3e-13, min w 0.0398
+poisson 0 K-1=19 -> K=20: transition A = 283.65798 (peak -9.8e-14); birth between atoms 9,10 (Fisher 17.1600, 18.6726; gap 1.5125) at t = 17.3474: f_left = 0.1239   [19s]
+seed K = 20 at A = 283.6685 (dropped atom 10, w = 1.0e-03); (K-1)-point Poisson at A0 = 282.668: residual 2.3e-13, min w 0.0398
+dc 0.05 K-1=19 -> K=20: transition A = 283.82668 (peak -5.3e-14); birth between atoms 9,10 (Fisher 16.7312, 18.2413; gap 1.5101) at t = 16.8195: f_left = 0.0585   [19s]
+dc 0.25 K-1=19 -> K=20: transition A = 291.11776 (peak -1.2e-13); birth between atoms 9,10 (Fisher 16.6230, 18.1318; gap 1.5088) at t = 16.6706: f_left = 0.0315   [47s]
+   already above the transition at A = 282.668 (peak 6.4e-08); stepping down
+   solve failed at A = 269.6685 (res 6.9e-08, min w -1.14e-03)
+dc 1: no transition found
+seed K = 20 at A = 283.6685 (dropped atom 10, w = 1.0e-03); (K-1)-point Poisson at A0 = 282.668: residual 2.3e-13, min w 0.0398
+nb 3000 K-1=19 -> K=20: transition A = 292.50594 (peak -4.7e-12); birth between atoms 9,10 (Fisher 17.1545, 18.6660; gap 1.5116) at t = 17.2043: f_left = 0.0330   [42s]
+   continuation failed at 2000.0: residual 2.7e-07

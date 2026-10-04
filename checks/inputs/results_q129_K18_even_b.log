@@ -1,0 +1,17 @@
+seed K = 18 at A = 236.9199 (dropped atom 9, w = 1.0e-03); (K-1)-point Poisson at A0 = 235.920: residual 1.1e-13, min w 0.0445
+poisson 0 K-1=17 -> K=18: transition A = 236.91064 (peak -1.3e-15); birth between atoms 8,9 (Fisher 15.7038, 17.2660; gap 1.5622) at t = 15.8975: f_left = 0.1240   [17s]
+seed K = 18 at A = 236.9199 (dropped atom 9, w = 1.0e-03); (K-1)-point Poisson at A0 = 235.920: residual 1.1e-13, min w 0.0445
+dc 0.003 K-1=17 -> K=18: transition A = 236.78579 (peak -2.3e-14); birth between atoms 8,9 (Fisher 15.5869, 17.1488; gap 1.5619) at t = 15.7694: f_left = 0.1168   [17s]
+dc 0.01 K-1=17 -> K=18: transition A = 236.67925 (peak -2.8e-14); birth between atoms 8,9 (Fisher 15.4911, 17.0525; gap 1.5614) at t = 15.6538: f_left = 0.1042   [32s]
+dc 0.03 K-1=17 -> K=18: transition A = 236.76180 (peak -4.0e-14); birth between atoms 8,9 (Fisher 15.3538, 16.9140; gap 1.5602) at t = 15.4750: f_left = 0.0777   [47s]
+dc 0.05 K-1=17 -> K=18: transition A = 237.14177 (peak -6.4e-14); birth between atoms 8,9 (Fisher 15.2808, 16.8401; gap 1.5594) at t = 15.3747: f_left = 0.0603   [63s]
+dc 0.25 K-1=17 -> K=18: transition A = 243.83822 (peak -2.4e-14); birth between atoms 8,9 (Fisher 15.1757, 16.7336; gap 1.5579) at t = 15.2201: f_left = 0.0285   [87s]
+   already above the transition at A = 235.920 (peak 7.2e-08); stepping down
+dc 1 K-1=17 -> K=18: transition A = 230.95119 (peak -2.1e-09); birth between atoms 9,10 (Fisher 15.0192, 16.5654; gap 1.5462) at t = 15.0553: f_left = 0.0233   [123s]
+   already above the transition at A = 235.920 (peak 1.1e-07); stepping down
+   solve failed at A = 233.4199 (res 3.0e-08, min w -1.09e-02)
+dc 3: no transition found
+seed K = 18 at A = 236.9199 (dropped atom 9, w = 1.0e-03); (K-1)-point Poisson at A0 = 235.920: residual 1.1e-13, min w 0.0445
+nb 3000 K-1=17 -> K=18: transition A = 243.06374 (peak -8.7e-14); birth between atoms 8,9 (Fisher 15.6993, 17.2607; gap 1.5614) at t = 15.8989: f_left = 0.1278   [32s]
+   continuation failed at 1000.0: residual 1.9e-07
+   continuation failed at 1000.0: residual 1.9e-07

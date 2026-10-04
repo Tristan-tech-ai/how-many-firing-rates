@@ -1,0 +1,8 @@
+seed K = 11 at A = 112.0099999999979; dropped atom 5 (w = 0.0669); (K-1)-point Poisson at A = 97.0: residual 1.7e-14, min w 0.0759
+   poisson 0: A =   98.2000: v +1.153e-06 at t = 10.314; min w 0.0769
+   poisson 0: fine pass 98.0500..98.2000, violation peak at t = 10.314
+   poisson 0: linear fit on 8 near points: A_K = 98.0855 (slope 9.907e-06, window 98.103..98.165)
+Poisson: A_11 = 98.0855; sqrt = 9.90381; first gaps (t) [3.1262, 2.2647]   [1s]
+   dc 0.05: window not bracketed (v range 1.1e-05..1.1e-05 over A 99.515..99.515)
+   dc 0.25: window not bracketed (v range 2.5e-05..2.5e-05 over A 104.989..104.989)
+done

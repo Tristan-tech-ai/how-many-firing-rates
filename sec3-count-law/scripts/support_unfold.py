@@ -14,6 +14,7 @@ Control: from the certified 13-atom input at A = 152 the unfolding must reproduc
 A_14 = 152.5075 (eps -> 0) and hand over to a 14-atom fixed-A solution with the known boundary pattern
 (first atom at t = 3.126).
 """
+
 import sys
 from mpmath import mp, mpf, exp, log, loggamma, matrix, lu_solve, nstr
 from support_mp3 import _logP, _P, _tables, D_of, Dp_of, Dpp_of
@@ -57,32 +58,52 @@ def _entries(x, w, P, Q, ny):
             if p > 0 and Q[y] > 0:
                 s -= p * (mpf(y) / xi - 1) * w[k] * P[k][y] * (mpf(y) / x[k] - 1) / Q[y]
         return s
+
     return dD_dw, dD_dx, dDp_dw, dDp_dx
 
 
-def solve_unfold(A0, pts, wts, fixed_idx, eps, dps=40, newton_steps=40, tol_pow=8, ny=None, verbose=False, fix_position=False, max_dx=None, pure_below=None, feasible_step=False):
+def solve_unfold(
+    A0,
+    pts,
+    wts,
+    fixed_idx,
+    eps,
+    dps=40,
+    newton_steps=40,
+    tol_pow=8,
+    ny=None,
+    verbose=False,
+    fix_position=False,
+    max_dx=None,
+    pure_below=None,
+    feasible_step=False,
+):
     """pts include the boundary atoms (pts[0] = 0, pts[-1] = A0); wts[fixed_idx] is replaced by eps and held.
     Returns dict with x (incl. the new A as x[-1]), w, C, newton_resid, hist."""
     mp.dps = dps
     if ny is None:
         Ab = float(A0) * 1.2
-        ny = int(Ab + 18 * Ab ** 0.5 + 60)
+        ny = int(Ab + 18 * Ab**0.5 + 60)
     x = [mpf(p) if isinstance(p, str) else mpf(repr(float(p))) for p in pts]
     w = [mpf(v) if isinstance(v, str) else mpf(repr(float(v))) for v in wts]
     K = len(x)
     w[fixed_idx] = mpf(eps)
-    t = sum(w); w = [v / t for v in w]; w[fixed_idx] = mpf(eps)      # renormalise the others, hold eps
+    t = sum(w)
+    w = [v / t for v in w]
+    w[fixed_idx] = mpf(eps)  # renormalise the others, hold eps
     others = [k for k in range(K) if k != fixed_idx]
-    scale = (1 - mpf(eps)) / sum(w[k] for k in others); w = [w[k] * scale if k != fixed_idx else mpf(eps) for k in range(K)]
+    scale = (1 - mpf(eps)) / sum(w[k] for k in others)
+    w = [w[k] * scale if k != fixed_idx else mpf(eps) for k in range(K)]
     interior = list(range(1, K - 1))
-    if fix_position:                      # stage 1: the new atom's position is held, its D' row dropped
+    if fix_position:  # stage 1: the new atom's position is held, its D' row dropped
         interior = [i for i in interior if i != fixed_idx]
     n = (K - 1) + len(interior) + 1
     vec = [w[k] for k in others] + [x[i] for i in interior] + [x[K - 1]]
     hist = []
 
     def unpack(v):
-        ww = list(w); xx = list(x)
+        ww = list(w)
+        xx = list(x)
         for j, k in enumerate(others):
             ww[k] = v[j]
         ww[fixed_idx] = mpf(eps)
@@ -148,7 +169,7 @@ def solve_unfold(A0, pts, wts, fixed_idx, eps, dps=40, newton_steps=40, tol_pow=
                 return None
             return max(abs(v) for v in resid(cand)[0])
 
-        if max_dx is not None:            # cap the position moves (flat D near a light atom gives huge steps)
+        if max_dx is not None:  # cap the position moves (flat D near a light atom gives huge steps)
             big = max([abs(dv[(K - 1) + j]) for j in range(len(interior))] + [abs(dv[n - 1])] + [mpf(0)])
             if big > mpf(max_dx):
                 dv = [v * mpf(max_dx) / big for v in dv]
@@ -168,7 +189,8 @@ def solve_unfold(A0, pts, wts, fixed_idx, eps, dps=40, newton_steps=40, tol_pow=
                 dxs[i] = dv[(K - 1) + j]
             dxs[K - 1] = dv[-1]
             for i in range(K - 1):
-                gap = xs_now[i + 1] - xs_now[i]; dgap = dxs[i + 1] - dxs[i]      # new gap = gap - alpha*dgap
+                gap = xs_now[i + 1] - xs_now[i]
+                dgap = dxs[i + 1] - dxs[i]  # new gap = gap - alpha*dgap
                 if dgap > 0:
                     alpha = min(alpha, mpf("0.8") * gap / dgap)
             step = [vec[i] - alpha * dv[i] for i in range(n)]
@@ -176,7 +198,8 @@ def solve_unfold(A0, pts, wts, fixed_idx, eps, dps=40, newton_steps=40, tol_pow=
             vec = step
             continue
         step = [vec[i] - dv[i] for i in range(n)]
-        val = ok(step); lam_used = "1"
+        val = ok(step)
+        lam_used = "1"
         pure = (pure_below is not None) and (nr < mpf(pure_below)) and (val is not None)
         if (not pure) and (val is None or val > nr):
             found = False
@@ -184,7 +207,10 @@ def solve_unfold(A0, pts, wts, fixed_idx, eps, dps=40, newton_steps=40, tol_pow=
                 trial = [vec[i] - mpf(lam) * dv[i] for i in range(n)]
                 vt = ok(trial)
                 if vt is not None and vt < nr:
-                    step = trial; found = True; lam_used = lam; break
+                    step = trial
+                    found = True
+                    lam_used = lam
+                    break
             if not found:
                 hist[-1] = hist[-1] + "@stuck"
                 break
@@ -192,4 +218,12 @@ def solve_unfold(A0, pts, wts, fixed_idx, eps, dps=40, newton_steps=40, tol_pow=
         vec = step
     r, xx, ww, P, Q, Dv = resid(vec)
     C = sum(wi * di for wi, di in zip(ww, Dv))
-    return {"x": xx, "w": ww, "C": C, "A": xx[-1], "newton_resid": max(abs(v) for v in r), "hist": hist, "ny": ny}
+    return {
+        "x": xx,
+        "w": ww,
+        "C": C,
+        "A": xx[-1],
+        "newton_resid": max(abs(v) for v in r),
+        "hist": hist,
+        "ny": ny,
+    }
