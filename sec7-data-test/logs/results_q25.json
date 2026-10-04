@@ -1,0 +1,3437 @@
+{
+ "cells": {
+  "020701md01b": {
+   "rows": 2432,
+   "repeats_per_tone": 76.0,
+   "spikethresh": 50.0,
+   "stationary_rows": 2016,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 76
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 63
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 76
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 63
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 76
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 63
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 76
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 63
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 76
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 63
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 76
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 63
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 76
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 63
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 76
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 63
+    }
+   }
+  },
+  "020901md01": {
+   "rows": 1424,
+   "repeats_per_tone": 44.5,
+   "spikethresh": 50.0,
+   "stationary_rows": 1088,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 45
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 45
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 45
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 45
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 45
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 45
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 45
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 45
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    }
+   }
+  },
+  "021001md01": {
+   "rows": 3152,
+   "repeats_per_tone": 98.5,
+   "spikethresh": 40.0,
+   "stationary_rows": 416,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 99
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 99
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 99
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 99
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 99
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 99
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 99
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 99
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    }
+   }
+  },
+  "021401md01b": {
+   "rows": 1856,
+   "repeats_per_tone": 58.0,
+   "spikethresh": 45.0,
+   "stationary_rows": 832,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 58
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 58
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 58
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 58
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 58
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 58
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 58
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 58
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    }
+   }
+  },
+  "021401md02": {
+   "rows": 384,
+   "repeats_per_tone": 12.0,
+   "spikethresh": 50.0,
+   "stationary_rows": 352,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    }
+   }
+  },
+  "021401md03": {
+   "rows": 352,
+   "repeats_per_tone": 11.0,
+   "spikethresh": 50.0,
+   "stationary_rows": 320,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    }
+   }
+  },
+  "021401md05": {
+   "rows": 800,
+   "repeats_per_tone": 25.0,
+   "spikethresh": 44.0,
+   "stationary_rows": 448,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 25
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 25
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 25
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 25
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 25
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 25
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 25
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 25
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    }
+   }
+  },
+  "021901md01": {
+   "rows": 864,
+   "repeats_per_tone": 27.0,
+   "spikethresh": 29.0,
+   "stationary_rows": 864,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 27
+    }
+   }
+  },
+  "022301md01": {
+   "rows": 976,
+   "repeats_per_tone": 30.5,
+   "spikethresh": 30.0,
+   "stationary_rows": 896,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 31
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 28
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 31
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 28
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 31
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 28
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 31
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 28
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 31
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 28
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 31
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 28
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 31
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 28
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 31
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 28
+    }
+   }
+  },
+  "022801md01b": {
+   "rows": 736,
+   "repeats_per_tone": 23.0,
+   "spikethresh": 40.0,
+   "stationary_rows": 640,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    }
+   }
+  },
+  "022801md02b": {
+   "rows": 816,
+   "repeats_per_tone": 25.5,
+   "spikethresh": 50.0,
+   "stationary_rows": 352,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 26
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    }
+   }
+  },
+  "030201md01b": {
+   "rows": 864,
+   "repeats_per_tone": 27.0,
+   "spikethresh": 50.0,
+   "stationary_rows": 640,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.037037037037037035,
+     "best_n": 27
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "100ms|all|author": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.037037037037037035,
+     "best_n": 27
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "50ms|all|25": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.037037037037037035,
+     "best_n": 27
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "100ms|all|25": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.037037037037037035,
+     "best_n": 27
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "50ms|all|35": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.037037037037037035,
+     "best_n": 27
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "100ms|all|35": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.037037037037037035,
+     "best_n": 27
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "50ms|all|45": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.037037037037037035,
+     "best_n": 27
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "100ms|all|45": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.037037037037037035,
+     "best_n": 27
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    }
+   }
+  },
+  "030201md03b": {
+   "rows": 1312,
+   "repeats_per_tone": 41.0,
+   "spikethresh": 50.0,
+   "stationary_rows": 544,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    }
+   }
+  },
+  "030301md01b": {
+   "rows": 640,
+   "repeats_per_tone": 20.0,
+   "spikethresh": 55.0,
+   "stationary_rows": 448,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 20
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    }
+   }
+  },
+  "030301md02b": {
+   "rows": 480,
+   "repeats_per_tone": 15.0,
+   "spikethresh": 50.0,
+   "stationary_rows": 384,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    }
+   }
+  },
+  "030301md03b": {
+   "rows": 704,
+   "repeats_per_tone": 22.0,
+   "spikethresh": 35.0,
+   "stationary_rows": 512,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    }
+   }
+  },
+  "100300md01": {
+   "rows": 1072,
+   "repeats_per_tone": 33.5,
+   "spikethresh": 45.0,
+   "stationary_rows": 512,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 34
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    }
+   }
+  },
+  "100300md02": {
+   "rows": 464,
+   "repeats_per_tone": 14.5,
+   "spikethresh": 40.0,
+   "stationary_rows": 320,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 10
+    }
+   }
+  },
+  "100500md01": {
+   "rows": 608,
+   "repeats_per_tone": 19.0,
+   "spikethresh": 40.0,
+   "stationary_rows": 352,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.05263157894736842,
+     "best_n": 19
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.09090909090909091,
+     "best_n": 11
+    },
+    "100ms|all|author": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.05263157894736842,
+     "best_n": 19
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.09090909090909091,
+     "best_n": 11
+    },
+    "50ms|all|25": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.05263157894736842,
+     "best_n": 19
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.09090909090909091,
+     "best_n": 11
+    },
+    "100ms|all|25": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.05263157894736842,
+     "best_n": 19
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.09090909090909091,
+     "best_n": 11
+    },
+    "50ms|all|35": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.05263157894736842,
+     "best_n": 19
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.09090909090909091,
+     "best_n": 11
+    },
+    "100ms|all|35": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.05263157894736842,
+     "best_n": 19
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.09090909090909091,
+     "best_n": 11
+    },
+    "50ms|all|45": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.05263157894736842,
+     "best_n": 19
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.09090909090909091,
+     "best_n": 11
+    },
+    "100ms|all|45": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.05263157894736842,
+     "best_n": 19
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.09090909090909091,
+     "best_n": 11
+    }
+   }
+  },
+  "100500md02b": {
+   "rows": 480,
+   "repeats_per_tone": 15.0,
+   "spikethresh": 45.0,
+   "stationary_rows": 448,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    }
+   }
+  },
+  "102400md01": {
+   "rows": 1344,
+   "repeats_per_tone": 42.0,
+   "spikethresh": 45.0,
+   "stationary_rows": 544,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 42
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 42
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 42
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 42
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 42
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 42
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 42
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 42
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    }
+   }
+  },
+  "102500md02": {
+   "rows": 2592,
+   "repeats_per_tone": 81.0,
+   "spikethresh": 45.0,
+   "stationary_rows": 1408,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 81
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 44
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 81
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 44
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 81
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 44
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 81
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 44
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 81
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 44
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 81
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 44
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 81
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 44
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 81
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 44
+    }
+   }
+  },
+  "102600md01": {
+   "rows": 704,
+   "repeats_per_tone": 22.0,
+   "spikethresh": 45.0,
+   "stationary_rows": 384,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 22
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    }
+   }
+  },
+  "102600md03": {
+   "rows": 1280,
+   "repeats_per_tone": 40.0,
+   "spikethresh": 40.0,
+   "stationary_rows": 384,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 40
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 40
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 40
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 40
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 40
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 40
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 40
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 40
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    }
+   }
+  },
+  "102800md01": {
+   "rows": 960,
+   "repeats_per_tone": 30.0,
+   "spikethresh": 45.0,
+   "stationary_rows": 448,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 30
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 30
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 30
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 30
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 30
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 30
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 30
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 30
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 14
+    }
+   }
+  },
+  "102800md02": {
+   "rows": 1600,
+   "repeats_per_tone": 50.0,
+   "spikethresh": 35.0,
+   "stationary_rows": 512,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 50
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 50
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 50
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 50
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 50
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 50
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 50
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 50
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 16
+    }
+   }
+  },
+  "102900md02": {
+   "rows": 976,
+   "repeats_per_tone": 30.5,
+   "spikethresh": 45.0,
+   "stationary_rows": 544,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 33.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.22580645161290322,
+     "best_n": 31
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "100ms|all|author": {
+     "total_spikes": 76.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.4838709677419355,
+     "best_n": 31
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "50ms|all|25": {
+     "total_spikes": 33.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.22580645161290322,
+     "best_n": 31
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "100ms|all|25": {
+     "total_spikes": 76.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.4838709677419355,
+     "best_n": 31
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "50ms|all|35": {
+     "total_spikes": 33.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.22580645161290322,
+     "best_n": 31
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "100ms|all|35": {
+     "total_spikes": 76.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.4838709677419355,
+     "best_n": 31
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "50ms|all|45": {
+     "total_spikes": 33.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.22580645161290322,
+     "best_n": 31
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    },
+    "100ms|all|45": {
+     "total_spikes": 76.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.4838709677419355,
+     "best_n": 31
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 17
+    }
+   }
+  },
+  "102900md04": {
+   "rows": 464,
+   "repeats_per_tone": 14.5,
+   "spikethresh": 32.0,
+   "stationary_rows": 352,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 15
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 11
+    }
+   }
+  },
+  "110700md01": {
+   "rows": 1312,
+   "repeats_per_tone": 41.0,
+   "spikethresh": 28.0,
+   "stationary_rows": 384,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 41
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    }
+   }
+  },
+  "110900md05": {
+   "rows": 1376,
+   "repeats_per_tone": 43.0,
+   "spikethresh": 40.0,
+   "stationary_rows": 416,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 43
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 43
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 43
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 43
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 43
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 43
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 43
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 43
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 13
+    }
+   }
+  },
+  "111200md01": {
+   "rows": 1664,
+   "repeats_per_tone": 52.0,
+   "spikethresh": 45.0,
+   "stationary_rows": 672,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 52
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 21
+    },
+    "100ms|all|author": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.019230769230769232,
+     "best_n": 52
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 21
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 52
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 21
+    },
+    "100ms|all|25": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.019230769230769232,
+     "best_n": 52
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 21
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 52
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 21
+    },
+    "100ms|all|35": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.019230769230769232,
+     "best_n": 52
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 21
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 52
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 21
+    },
+    "100ms|all|45": {
+     "total_spikes": 1.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.019230769230769232,
+     "best_n": 52
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 21
+    }
+   }
+  },
+  "111400md01": {
+   "rows": 720,
+   "repeats_per_tone": 22.5,
+   "spikethresh": 38.0,
+   "stationary_rows": 384,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "50ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    },
+    "100ms|all|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 23
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 0.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.0,
+     "best_n": 12
+    }
+   }
+  },
+  "111500md01": {
+   "rows": 592,
+   "repeats_per_tone": 18.5,
+   "spikethresh": 45.0,
+   "stationary_rows": 320,
+   "windows": {
+    "50ms|all|author": {
+     "total_spikes": 4.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.15789473684210525,
+     "best_n": 19
+    },
+    "50ms|stationary|author": {
+     "total_spikes": 4.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.3,
+     "best_n": 10
+    },
+    "100ms|all|author": {
+     "total_spikes": 5.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.15789473684210525,
+     "best_n": 19
+    },
+    "100ms|stationary|author": {
+     "total_spikes": 5.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.3,
+     "best_n": 10
+    },
+    "50ms|all|25": {
+     "total_spikes": 4.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.15789473684210525,
+     "best_n": 19
+    },
+    "50ms|stationary|25": {
+     "total_spikes": 4.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.3,
+     "best_n": 10
+    },
+    "100ms|all|25": {
+     "total_spikes": 5.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.15789473684210525,
+     "best_n": 19
+    },
+    "100ms|stationary|25": {
+     "total_spikes": 5.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.3,
+     "best_n": 10
+    },
+    "50ms|all|35": {
+     "total_spikes": 4.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.15789473684210525,
+     "best_n": 19
+    },
+    "50ms|stationary|35": {
+     "total_spikes": 4.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.3,
+     "best_n": 10
+    },
+    "100ms|all|35": {
+     "total_spikes": 5.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.15789473684210525,
+     "best_n": 19
+    },
+    "100ms|stationary|35": {
+     "total_spikes": 5.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.3,
+     "best_n": 10
+    },
+    "50ms|all|45": {
+     "total_spikes": 4.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.15789473684210525,
+     "best_n": 19
+    },
+    "50ms|stationary|45": {
+     "total_spikes": 4.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.3,
+     "best_n": 10
+    },
+    "100ms|all|45": {
+     "total_spikes": 5.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.15789473684210525,
+     "best_n": 19
+    },
+    "100ms|stationary|45": {
+     "total_spikes": 5.0,
+     "n_responsive_tones": 0,
+     "best_mu": 0.3,
+     "best_n": 10
+    }
+   }
+  }
+ },
+ "pooled": {}
+}

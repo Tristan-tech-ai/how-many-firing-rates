@@ -1,0 +1,94 @@
+start from the wall-gap guess
+start from the q135 record at n = 176, K = 25 (mp state re-polished)
+start n = 176, K = 25: residual 4.94e-28 in 2 mp steps   [3s]
+      [centre bracket] wc = 0.0077058: g = 2.832e-8, solve residual 2.2e-29 (2 steps), u0 - n/2 = 5.437
+      [centre bracket] wc = 0.010018: g = 3.005e-8, solve residual 2.6e-29 (2 steps), u0 - n/2 = 5.64
+      [centre bracket] wc = 0.013023: g = 3.116e-8, solve residual 3.8e-29 (2 steps), u0 - n/2 = 5.938
+      [centre bracket] wc = 0.01693: g = 2.659e-8, solve residual 2.0e-29 (2 steps), u0 - n/2 = 6.403
+      [centre bracket] wc = 0.022009: g = -2.302e-8, solve residual 2.2e-29 (2 steps), u0 - n/2 = 7.186
+      [centre bracket] wc = 0.019652: g = 1.158e-8, solve residual 2.2e-29 (2 steps), u0 - n/2 = 6.792
+      [centre bracket] wc = 0.02044: g = 3.245e-9, solve residual 2.9e-29 (2 steps), u0 - n/2 = 6.917
+      [centre bracket] wc = 0.020634: g = 7.836e-10, solve residual 3.6e-29 (2 steps), u0 - n/2 = 6.949
+      [centre bracket] wc = 0.020722: g = -3.905e-10, solve residual 2.9e-29 (2 steps), u0 - n/2 = 6.964
+      [centre bracket] wc = 0.020692: g = 4.357e-12, solve residual 2.8e-29 (2 steps), u0 - n/2 = 6.959
+      [centre bracket] wc = 0.020693: g = 2.387e-14, solve residual 2.2e-29 (2 steps), u0 - n/2 = 6.959
+      [centre bracket] wc = 0.020693: g = 1.307e-16, solve residual 2.3e-29 (2 steps), u0 - n/2 = 6.959
+      [centre bracket] wc = 0.020693: g = -1.293e-16, solve residual 3.7e-29 (2 steps), u0 - n/2 = 6.959
+      [centre bracket] wc = 0.020693: g = 2.389e-25, solve residual 3.9e-29 (2 steps), u0 - n/2 = 6.959
+n = 177: K = 25 [centre-held bracket (9 it)], pair d = nan, C = 2.407243, min w 2.07e-02, wc 2.0693e-02, centre D-C 2.39e-25, curv -3.41e-10, off-atom max D-C -inf at t = nan   [46s]
+n = 178: K = 25 [full (2 mp steps)], pair d = nan, C = 2.409806, min w 2.35e-02, wc 2.3507e-02, centre D-C 8.72e-29, curv -5.56e-10, off-atom max D-C -inf at t = nan   [54s]
+n = 179: K = 25 [full (2 mp steps)], pair d = nan, C = 2.412356, min w 2.53e-02, wc 2.5280e-02, centre D-C 3.16e-30, curv -7.92e-10, off-atom max D-C -inf at t = nan   [57s]
+n = 180: K = 25 [full (2 mp steps)], pair d = nan, C = 2.414892, min w 2.65e-02, wc 2.6516e-02, centre D-C 9.86e-30, curv -1.03e-9, off-atom max D-C -inf at t = nan   [61s]
+n = 181: K = 25 [full (2 mp steps)], pair d = nan, C = 2.417415, min w 2.74e-02, wc 2.7437e-02, centre D-C 6.31e-30, curv -1.23e-9, off-atom max D-C -inf at t = nan   [64s]
+n = 182: K = 25 [full (2 mp steps)], pair d = nan, C = 2.419925, min w 2.82e-02, wc 2.8158e-02, centre D-C 3.94e-31, curv -1.36e-9, off-atom max D-C -inf at t = nan   [68s]
+n = 183: K = 25 [full (2 mp steps)], pair d = nan, C = 2.422421, min w 2.87e-02, wc 2.8742e-02, centre D-C 7.89e-31, curv -1.39e-9, off-atom max D-C -inf at t = nan   [72s]
+n = 184: K = 25 [full (2 mp steps)], pair d = nan, C = 2.424905, min w 2.92e-02, wc 2.9230e-02, centre D-C -2.76e-30, curv -1.27e-9, off-atom max D-C -inf at t = nan   [75s]
+n = 185: K = 25 [full (2 mp steps)], pair d = nan, C = 2.427375, min w 2.96e-02, wc 2.9647e-02, centre D-C -2.76e-30, curv -9.39e-10, off-atom max D-C -inf at t = nan   [79s]
+n = 186: K = 25 [full (2 mp steps)], pair d = nan, C = 2.429833, min w 3.00e-02, wc 3.0009e-02, centre D-C -7.89e-31, curv -3.52e-10, off-atom max D-C -inf at t = nan   [82s]
+   >>> transition to K = 26 (split) at n* = 186.386 (signal -3.52e-10 at 186 -> +5.59e-10 at 187)
+      [pair bracket] d = 0.02: g = D'(u0) = 7.63e-11, solve residual 3.8e-29 (2 steps)
+      [pair bracket] d = 0.026: g = D'(u0) = 9.894e-11, solve residual 2.6e-29 (2 steps)
+      [pair bracket] d = 0.0338: g = D'(u0) = 1.28e-10, solve residual 3.4e-29 (2 steps)
+      [pair bracket] d = 0.04394: g = D'(u0) = 1.652e-10, solve residual 4.1e-29 (2 steps)
+      [pair bracket] d = 0.057122: g = D'(u0) = 2.12e-10, solve residual 4.0e-29 (2 steps)
+      [pair bracket] d = 0.074259: g = D'(u0) = 2.694e-10, solve residual 2.9e-29 (2 steps)
+      [pair bracket] d = 0.096536: g = D'(u0) = 3.366e-10, solve residual 1.6e-29 (2 steps)
+      [pair bracket] d = 0.1255: g = D'(u0) = 4.071e-10, solve residual 3.0e-29 (2 steps)
+      [pair bracket] d = 0.16315: g = D'(u0) = 4.603e-10, solve residual 4.7e-29 (2 steps)
+      [pair bracket] d = 0.21209: g = D'(u0) = 4.386e-10, solve residual 3.1e-29 (2 steps)
+      [pair bracket] d = 0.27572: g = D'(u0) = 1.81e-10, solve residual 3.2e-29 (2 steps)
+      [pair bracket] d = 0.35843: g = D'(u0) = -8.174e-10, solve residual 5.2e-29 (2 steps)
+      [pair bracket] d = 0.29072: g = D'(u0) = 6.802e-11, solve residual 1.6e-29 (2 steps)
+      [pair bracket] d = 0.29592: g = D'(u0) = 2.302e-11, solve residual 2.4e-29 (2 steps)
+      [pair bracket] d = 0.29763: g = D'(u0) = 7.516e-12, solve residual 3.9e-29 (2 steps)
+      [pair bracket] d = 0.29873: g = D'(u0) = -2.611e-12, solve residual 3.6e-29 (2 steps)
+      [pair bracket] d = 0.29845: g = D'(u0) = 1.394e-14, solve residual 1.9e-29 (2 steps)
+      [pair bracket] d = 0.29845: g = D'(u0) = 2.562e-17, solve residual 1.6e-29 (2 steps)
+      [pair bracket] d = 0.29845: g = D'(u0) = 4.712e-20, solve residual 1.5e-29 (2 steps)
+      [pair bracket] d = 0.29845: g = D'(u0) = -4.695e-20, solve residual 2.8e-29 (2 steps)
+      [pair bracket] d = 0.29845: g = D'(u0) = 6.411e-30, solve residual 1.9e-29 (2 steps)
+n = 187: K = 26 [full (2 mp steps)], pair d = 0.2984, C = 2.432278, min w 1.74e-02, wc nan, centre D-C -3.27e-11, curv 3.34e-11, off-atom max D-C -inf at t = nan SPLIT (curv was 5.59e-10); pair half-separation 0.29845   [159s]
+      [pair bracket] d = 0.24195: g = D'(u0) = 2.451e-9, solve residual 3.4e-29 (2 steps)
+      [pair bracket] d = 0.31454: g = D'(u0) = 2.491e-9, solve residual 3.5e-29 (2 steps)
+      [pair bracket] d = 0.4089: g = D'(u0) = 1.198e-9, solve residual 2.5e-29 (2 steps)
+      [pair bracket] d = 0.53156: g = D'(u0) = -7.513e-9, solve residual 4.6e-29 (2 steps)
+      [pair bracket] d = 0.42577: g = D'(u0) = 6.81e-10, solve residual 2.4e-29 (2 steps)
+      [pair bracket] d = 0.43456: g = D'(u0) = 3.593e-10, solve residual 1.5e-29 (2 steps)
+      [pair bracket] d = 0.43899: g = D'(u0) = 1.82e-10, solve residual 3.3e-29 (2 steps)
+      [pair bracket] d = 0.44327: g = D'(u0) = 1.983e-13, solve residual 2.8e-29 (2 steps)
+      [pair bracket] d = 0.44327: g = D'(u0) = -2.095e-13, solve residual 3.7e-29 (2 steps)
+      [pair bracket] d = 0.44327: g = D'(u0) = 6.451e-18, solve residual 1.7e-29 (2 steps)
+      [pair bracket] d = 0.44327: g = D'(u0) = 2.098e-22, solve residual 1.1e-29 (2 steps)
+      [pair bracket] d = 0.44327: g = D'(u0) = 6.821e-27, solve residual 1.8e-29 (2 steps)
+n = 188: K = 26 [pair-held bracket (8 it)], pair d = 0.4433, C = 2.434711, min w 2.05e-02, wc nan, centre D-C -2.46e-10, curv 1.2e-10, off-atom max D-C -inf at t = nan   [202s]
+      [pair bracket] d = 0.28206: g = D'(u0) = 5.894e-9, solve residual 2.2e-29 (2 steps)
+      [pair bracket] d = 0.36668: g = D'(u0) = 6.315e-9, solve residual 4.1e-29 (2 steps)
+      [pair bracket] d = 0.47668: g = D'(u0) = 3.443e-9, solve residual 2.1e-29 (2 steps)
+      [pair bracket] d = 0.61969: g = D'(u0) = -3.247e-8, solve residual 3.6e-25 (31 steps)
+      [pair bracket] d = 0.4904: g = D'(u0) = 2.495e-9, solve residual 2.6e-29 (2 steps)
+      [pair bracket] d = 0.49962: g = D'(u0) = 1.729e-9, solve residual 2.2e-29 (2 steps)
+      [pair bracket] d = 0.50569: g = D'(u0) = 1.16e-9, solve residual 1.9e-29 (2 steps)
+      [pair bracket] d = 0.5133: g = D'(u0) = 3.652e-10, solve residual 3.2e-29 (2 steps)
+      [pair bracket] d = 0.51788: g = D'(u0) = -1.624e-10, solve residual 2.8e-29 (2 steps)
+      [pair bracket] d = 0.51647: g = D'(u0) = 4.128e-12, solve residual 1.9e-29 (2 steps)
+      [pair bracket] d = 0.5165: g = D'(u0) = 4.514e-14, solve residual 3.1e-29 (2 steps)
+      [pair bracket] d = 0.5165: g = D'(u0) = 4.935e-16, solve residual 2.6e-29 (2 steps)
+      [pair bracket] d = 0.5165: g = D'(u0) = -4.827e-16, solve residual 3.4e-29 (2 steps)
+      [pair bracket] d = 0.5165: g = D'(u0) = 1.628e-23, solve residual 3.4e-29 (2 steps)
+n = 189: K = 26 [pair-held bracket (10 it)], pair d = 0.5165, C = 2.437132, min w 2.26e-02, wc nan, centre D-C -6.4e-10, curv 2.36e-10, off-atom max D-C -inf at t = nan   [301s]
+      [pair bracket] d = 0.30366: g = D'(u0) = 1.09e-8, solve residual 2.8e-29 (31 steps)
+      [pair bracket] d = 0.39476: g = D'(u0) = 1.227e-8, solve residual 2.0e-29 (2 steps)
+      [pair bracket] d = 0.51319: g = D'(u0) = 8.12e-9, solve residual 3.9e-29 (2 steps)
+      [pair bracket] d = 0.66714: g = D'(u0) = -8.553e-8, solve residual 1.0 (107 steps)
+      [pair bracket] d = 0.58512: g = D'(u0) = -6.984e-9, solve residual 2.3e-29 (2 steps)
+      [pair bracket] d = 0.55186: g = D'(u0) = 2.419e-9, solve residual 1.8e-29 (2 steps)
+      [pair bracket] d = 0.56042: g = D'(u0) = 5.18e-10, solve residual 3.1e-29 (2 steps)
+      [pair bracket] d = 0.56212: g = D'(u0) = 1.023e-10, solve residual 1.7e-29 (2 steps)
+      [pair bracket] d = 0.56278: g = D'(u0) = -6.069e-11, solve residual 3.0e-29 (2 steps)
+      [pair bracket] d = 0.56253: g = D'(u0) = 2.278e-13, solve residual 3.2e-29 (2 steps)
+      [pair bracket] d = 0.56253: g = D'(u0) = 5.049e-16, solve residual 2.9e-29 (2 steps)
+      [pair bracket] d = 0.56253: g = D'(u0) = 1.119e-18, solve residual 1.9e-29 (2 steps)
+      [pair bracket] d = 0.56253: g = D'(u0) = -1.114e-18, solve residual 3.2e-29 (2 steps)
+      [pair bracket] d = 0.56253: g = D'(u0) = 5.003e-29, solve residual 2.9e-29 (2 steps)
+n = 190: K = 26 [pair-held bracket (9 it)], pair d = 0.5625, C = 2.439540, min w 2.42e-02, wc nan, centre D-C -1.18e-9, curv 3.72e-10, off-atom max D-C -inf at t = nan   [601s]
+done [601s]; transitions: [{'K_new': 26, 'type': 'split', 'n_star': 186.38609377585348, 'sig_prev': -3.517819333319694e-10, 'sig_now': 5.59348873048802e-10}]

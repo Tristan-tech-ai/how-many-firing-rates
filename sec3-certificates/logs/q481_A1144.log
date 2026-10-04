@@ -1,0 +1,12 @@
+tail lemma for results_q351_A1144.248_K46_arb40.json: K = 46, A = 1144.2476941079478, Ymax = 1745, prec 192, sweep box 1e-26
+   point: max |F| = 1.887e-46
+   w_min 0.0164314, x_1 >= 2.44245
+   delta on [x_1, A]  = 3.825e-42      (Poisson tail of A beyond Ymax, all orders, all rows and entries)
+   delta on (h0, x_1) = 7.427e-4196
+(a) Krawczyk with the tail: ||Y F~||_inf 3.161e-32, ||I - Y J~(X)||_inf 0.000188084, max_i (|YF|_i + r row_i)/r = 0.000190881 -> CONTAINED
+   logs: 1 file(s), atoms covered 45/45, failures 0, pieces 105798
+   worst free-stretch margin 1.830e-25; largest D'' upper bound over neighbourhoods -1.937e-14; wall D' lower 0.008465
+(b) 2 delta = 7.651e-42 (and 0.000e+00 below x_1) against the worst margin 1.830e-25 -> PASS
+(c) delta against |D''| >= 1.937e-14 and D'(wall) >= 0.008465 -> PASS
+VERDICT: PASS - the untruncated Poisson channel at A = 1144.2476941079478 has a unique stationary 46-atom state in the sweep box, a probability distribution satisfying the KKT inequality on [0, A]: |supp P*| = 46.
+[4s]

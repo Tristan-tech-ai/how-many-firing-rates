@@ -1,0 +1,41 @@
+state results_q473_seed_A2000_K66_v7_ascent_arb40.json: K = 66, A = 2000.0, alphabet 0..2954, n = 130 unknowns, prec 192 bits
+(i) point: max |F| = 3.118e-43 PASS (target 1e-40); cond(J) = 1.780e+17
+    ||Y F||_inf (rigorous) = 6.2079e-34, scaled cond 2.283e+12
+
+(ii) Krawczyk ladder
+     r = 1e-30: ||I - Y J(X)||_inf = 0.88013  CONTAINED   [48s]
+     r = 1e-29: ||I - Y J(X)||_inf = 0.88013  CONTAINED   [52s]
+     r = 1e-28: ||I - Y J(X)||_inf = 0.88013  CONTAINED   [56s]
+     r = 1e-27: ||I - Y J(X)||_inf = 0.88013  CONTAINED   [59s]
+     r = 1e-26: ||I - Y J(X)||_inf = 0.88013  CONTAINED   [62s]
+     r = 1e-25: ||I - Y J(X)||_inf = 0.88013  CONTAINED   [65s]
+     r = 1e-24: ||I - Y J(X)||_inf = 0.88013  CONTAINED   [69s]
+     r = 1e-23: ||I - Y J(X)||_inf = 0.88013  CONTAINED   [72s]
+     r = 1e-22: ||I - Y J(X)||_inf = 0.88013  CONTAINED   [75s]
+     r = 1e-21: ||I - Y J(X)||_inf = 0.88015  CONTAINED   [78s]
+     r = 1e-20: ||I - Y J(X)||_inf = 0.88033  CONTAINED   [82s]
+     r = 1e-19: ||I - Y J(X)||_inf = 0.88220  CONTAINED   [85s]
+     r = 1e-18: ||I - Y J(X)||_inf = 0.90086  CONTAINED   [88s]
+     r = 1e-17: ||I - Y J(X)||_inf = 1.0875  not contained   [91s]
+     sweep box r = 1e-30: ||I - Y J(X)||_inf = 0.88013  CONTAINED
+     exactly one zero in the box z0 +/- 1e-18 (scaled), and in the sweep box
+
+(iii) weights in the sweep box: min lower bound 0.0114496 PASS; atom radii max 5.2e-28, weight radii max 2.2e-31
+     D'''' check at x = 49.5997: formula 1.0054233256e-08, central difference 1.0054233256e-08, rel diff 2.11e-14
+
+(iv) D''' at x = 49.5997: formula 1.4797878257e-08, central difference 1.4797878257e-08, rel diff 8.88e-14 PASS
+
+(v) KKT sweep. C_X = [3.1185711767886380640 +/- 2.87e-20]  (radius 6.8e-29); atom half-width 1.00e-6
+     origin (0, 0.001000]: log h0 = -6.90776 < lower E_x[dg] = -2.04673 -> PASS
+     CHUNK: atoms 21..26 (with the free stretch before each); the rest of [0, A] is another chunk's
+     atom 21 x =   262.1507: h_k = 1.0e-06, D''(x_k) = -5.8134e-14, D'' on I_k upper   -5.813e-14 PASS; stretch before: 8 starts, 6478 pieces so far, worst margin 1.94e-26   [344s]
+     atom 22 x =   281.2405: h_k = 1.0e-06, D''(x_k) = -2.7965e-14, D'' on I_k upper   -2.797e-14 PASS; stretch before: 8 starts, 13968 pieces so far, worst margin 8.76e-27   [613s]
+     atom 23 x =   300.7775: h_k = 1.0e-06, D''(x_k) = -1.3683e-14, D'' on I_k upper   -1.368e-14 PASS; stretch before: 8 starts, 23066 pieces so far, worst margin 3.80e-27   [923s]
+     atom 24 x =   320.7539: h_k = 1.0e-06, D''(x_k) = -6.7964e-15, D'' on I_k upper   -6.796e-15 PASS; stretch before: 8 starts, 34434 pieces so far, worst margin 1.45e-27   [1269s]
+     atom 25 x =   341.1634: h_k = 1.3e-06, D''(x_k) = -3.4199e-15, D'' on I_k upper   -3.420e-15 PASS; stretch before: 8 starts, 47012 pieces so far, worst margin 1.34e-27   [1648s]
+     atom 26 x =   362.0020: h_k = 1.8e-06, D''(x_k) = -1.7384e-15, D'' on I_k upper   -1.738e-15 PASS; stretch before: 8 starts, 61290 pieces so far, worst margin 1.30e-27   [2086s]
+
+     pieces evaluated: 61290; worst free-stretch margin (inf C - sup D): 1.304e-27; failures: 0
+
+VERDICT: PASS - the truncated-alphabet Poisson channel at A = 2000.0 has a unique stationary 66-atom state in the box, it is a probability distribution, and it satisfies the KKT inequality on all of [0, A].
+[2086s]

@@ -1,0 +1,107 @@
+{
+ "pin1_paper_CV": {
+  "C": 0.5944306108751345,
+  "V": 0.222389719735738,
+  "match_C": true,
+  "match_V": true,
+  "opt_rate_Hz": 28.296181372230212,
+  "support": 2
+ },
+ "pin2_comp_is_poisson": {
+  "max_abs_diff": 0.0,
+  "ok": true
+ },
+ "pin3_falsifier": {
+  "C_dup": 0.0,
+  "fires": true
+ },
+ "pin4_glm_zero_history_is_binomial": {
+  "max_abs_diff": 2.220446049250313e-16,
+  "ok": true
+ },
+ "pin5_word_eq_count_zero_history": {
+  "C_word": 0.28556301962125313,
+  "C_count": 0.285563019621253,
+  "dC": 1.1102230246251565e-16,
+  "dV": 1.6653345369377348e-16,
+  "ok": true
+ },
+ "pin6_glm_to_poisson": {
+  "rows": [
+   {
+    "Kbins": 10,
+    "dt_ms": 5.0,
+    "C": 0.5944306108760355,
+    "gap_vs_poisson": 3.061087603550838e-05
+   },
+   {
+    "Kbins": 25,
+    "dt_ms": 2.0,
+    "C": 0.5944306108750957,
+    "gap_vs_poisson": 3.061087509570459e-05
+   },
+   {
+    "Kbins": 50,
+    "dt_ms": 1.0,
+    "C": 0.5944306108751812,
+    "gap_vs_poisson": 3.0610875181191766e-05
+   },
+   {
+    "Kbins": 100,
+    "dt_ms": 0.5,
+    "C": 0.5944306108751745,
+    "gap_vs_poisson": 3.0610875174419405e-05
+   },
+   {
+    "Kbins": 200,
+    "dt_ms": 0.25,
+    "C": 0.5944306108751585,
+    "gap_vs_poisson": 3.0610875158432194e-05
+   }
+  ],
+  "monotone_convergence": true,
+  "final_gap": 3.0610875158432194e-05
+ },
+ "pin7_enum_never_beats_BA": {
+  "rows": [
+   {
+    "E": 2.0,
+    "C_BA": 0.17096084850594606,
+    "C_enum": 0.1708583416623246,
+    "enum_minus_BA": -0.00010250684362145268
+   },
+   {
+    "E": 5.0,
+    "C_BA": 0.29771021448954293,
+    "C_enum": 0.29761523109844656,
+    "enum_minus_BA": -9.498339109637044e-05
+   },
+   {
+    "E": 10.0,
+    "C_BA": 0.4269083963169912,
+    "C_enum": 0.424195422218855,
+    "enum_minus_BA": -0.0027129740981362005
+   },
+   {
+    "E": 20.0,
+    "C_BA": 0.5603090651129461,
+    "C_enum": 0.5594854586335458,
+    "enum_minus_BA": -0.000823606479400274
+   },
+   {
+    "E": 40.0,
+    "C_BA": 0.5944306108751345,
+    "C_enum": 0.5944306109013822,
+    "enum_minus_BA": 2.6247670703583026e-11
+   }
+  ],
+  "worst_excess": 2.6247670703583026e-11,
+  "ok": true
+ },
+ "pin8_asym_front_shape": {
+  "nondecreasing": true,
+  "concave": true,
+  "worst_second_diff": 0.0
+ },
+ "ALL_PINS_PASS": true
+}

@@ -1,0 +1,13 @@
+5 to 6 lower     A =   27.9452 K =  5 rho = 1e-30   PROVED for the exact point   worst slack 5.517e-05   [159s]
+5 to 6 upper     A =   28.3620 K =  6 rho = 1e-30   PROVED for the exact point   worst slack 2.008e-06   [173s]
+6 to 7 lower     A =   39.6120 K =  6 rho = 1e-30   PROVED for the exact point   worst slack 2.883e-05   [292s]
+6 to 7 upper     A =   40.0280 K =  7 rho = 1e-30   PROVED for the exact point   worst slack 1.289e-05   [300s]
+7 to 8 lower     A =   52.5555 K =  7 rho = 1e-30   PROVED for the exact point   worst slack 2.760e-07   [474s]
+8 to 9 lower     A =   66.6505 K =  8 rho = 1e-30   PROVED for the exact point   worst slack 7.851e-07   [754s]
+10 to 11 lower   A =   97.9375 K = 10 rho = 1e-30   PROVED for the exact point   worst slack 1.021e-06   [2019s]
+11 to 12 lower   A =  115.2578 K = 11 rho = 1e-30   PROVED for the exact point   worst slack 1.198e-08   [2596s]
+12 to 13 lower   A =  133.3550 K = 12 rho = 1e-30   PROVED for the exact point   worst slack 1.464e-07   [3800s]
+13 to 14 lower   A =  152.0000 K = 13 rho = 1e-30   PROVED for the exact point   worst slack 3.558e-07   [5155s]
+A = 150          A =  150.0000 K = 13 rho = 1e-30   PROVED for the exact point   worst slack 1.661e-06   [4169s]
+
+N*(A) = K PROVED at every endpoint

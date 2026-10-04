@@ -1,0 +1,12 @@
+tail lemma for results_q66_K21_A311.369_exact40.json: K = 21, A = 311.368737, Ymax = 653, prec 128, sweep box 1e-22
+   point: max |F| = 2.767e-35
+   w_min 0.0213924, x_1 >= 2.44245
+   delta on [x_1, A]  = 2.408e-47      (Poisson tail of A beyond Ymax, all orders, all rows and entries)
+   delta on (h0, x_1) = 1.831e-1276
+(a) Krawczyk with the tail: ||Y F~||_inf 1.875e-28, ||I - Y J~(X)||_inf 1.97895e-8, max_i (|YF|_i + r row_i)/r = 1.89528e-6 -> CONTAINED
+   logs: 1 file(s), atoms covered 20/20, failures 0, pieces 6648
+   worst free-stretch margin 1.939e-20; largest D'' upper bound over neighbourhoods -7.235e-10; wall D' lower 0.01624
+(b) 2 delta = 4.815e-47 (and 0.000e+00 below x_1) against the worst margin 1.939e-20 -> PASS
+(c) delta against |D''| >= 7.235e-10 and D'(wall) >= 0.01624 -> PASS
+VERDICT: PASS - the untruncated Poisson channel at A = 311.368737 has a unique stationary 21-atom state in the sweep box, a probability distribution satisfying the KKT inequality on [0, A]: |supp P*| = 21.
+[0s]

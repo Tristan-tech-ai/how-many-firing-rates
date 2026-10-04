@@ -1,0 +1,12 @@
+tail lemma for results_q473_seed_A2000_K66_v7_ascent_arb40.json: K = 66, A = 2000.0, Ymax = 2775, prec 192, sweep box 1e-30
+   point: max |F| = 3.288e-43
+   w_min 0.0114496, x_1 >= 2.44245
+   delta on [x_1, A]  = 4.054e-40      (Poisson tail of A beyond Ymax, all orders, all rows and entries)
+   delta on (h0, x_1) = 2.575e-7246
+(a) Krawczyk with the tail: ||Y F~||_inf 1.205e-27, ||I - Y J~(X)||_inf 0.880126, max_i (|YF|_i + r row_i)/r = 1205.53 -> NOT CONTAINED
+   logs: 8 file(s), atoms covered 65/65, failures 0, pieces 485002
+   worst free-stretch margin 1.776e-29; largest D'' upper bound over neighbourhoods -3.105e-17; wall D' lower 0.006401
+(b) 2 delta = 8.109e-40 (and 0.000e+00 below x_1) against the worst margin 1.776e-29 -> PASS
+(c) delta against |D''| >= 3.105e-17 and D'(wall) >= 0.006401 -> PASS
+VERDICT: FAIL
+[16s]

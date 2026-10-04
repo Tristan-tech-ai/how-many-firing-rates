@@ -1,0 +1,25 @@
+A = 100.0000, K = 11, rho = 1.0e-30, C(F) over the box in [1.759640325188972061172781, 1.759640325188972061172781]  (ny = 330, depth 3)
+tail bounds: T0 = 1.4e-69 T1 = 4.8e-59 T2 = 1.6e-48 T3 = 5.2e-38
+(i) D' < 0 on [1e-300, 0.2134] for every F in the box (grid margin 1.668, decades ok); D' > 0 on [93.4922, A) margin 2.14; consistency: D(0) - C over box within 8.3e-29, D(A) - C within 8.4e-29   [41s]
+(ii) cubic radii about the atom boxes; M3 proved on [a~ - rho - r, a~ + rho + r] for every F in the box
+    atom  1 x~ =    2.4430  sup D'' =    -0.016692  M3 =    0.099342 (  32 pieces)  r =  0.4581  consistency |D'| <= 1.5e-29, D - C within 9.4e-29  ok   [80s]
+    atom  2 x~ =    7.2593  sup D'' =  -0.00047256  M3 =  0.00074338 (  64 pieces)  r =  1.5051  consistency |D'| <= 9.0e-30, D - C within 9.6e-29  ok   [161s]
+    atom  3 x~ =   13.6011  sup D'' =    -3.381e-5  M3 =   3.8191e-5 ( 128 pieces)  r =  1.7836  consistency |D'| <= 7.0e-30, D - C within 9.8e-29  ok   [320s]
+    atom  4 x~ =   21.0264  sup D'' =   -3.0002e-6  M3 =   3.6402e-6 ( 256 pieces)  r =  2.0852  consistency |D'| <= 6.1e-30, D - C within 1.0e-28  ok   [577s]
+    atom  5 x~ =   27.0926  sup D'' =    -8.301e-7  M3 =   1.1709e-6 ( 256 pieces)  r =  2.1250  consistency |D'| <= 5.4e-30, D - C within 1.0e-28  ok   [838s]
+    atom  6 x~ =   32.7593  sup D'' =   -1.1713e-6  M3 =    1.238e-6 ( 256 pieces)  r =  2.6563  consistency |D'| <= 4.9e-30, D - C within 1.0e-28  ok   [1100s]
+    atom  7 x~ =   43.3678  sup D'' =   -6.5574e-6  M3 =   4.9083e-6 ( 256 pieces)  r =  3.6467  consistency |D'| <= 4.0e-30, D - C within 9.9e-29  ok   [1391s]
+    atom  8 x~ =   57.0788  sup D'' =    -3.561e-5  M3 =   1.9079e-5 ( 256 pieces)  r =  4.7132  consistency |D'| <= 3.2e-30, D - C within 9.6e-29  ok   [1652s]
+    atom  9 x~ =   74.6686  sup D'' =  -0.00028981  M3 =  0.00013115 ( 256 pieces)  r =  6.5961  consistency |D'| <= 2.6e-30, D - C within 9.4e-29  ok   [1911s]
+(iii) chord bound on every gap for every F in the box, slack = inf C - sup bound
+    [  0.0000,   2.4430]  checked 122 (+  0 split)  worst inf C - sup bound          0.0025096  ok   [1934s]
+    [  2.4430,   7.2593]  checked 124 (+  0 split)  worst inf C - sup bound         0.00088187  ok   [1957s]
+    [  7.2593,  13.6011]  checked  97 (+  0 split)  worst inf C - sup bound           7.648e-5  ok   [1976s]
+    [ 13.6011,  21.0264]  checked  97 (+  0 split)  worst inf C - sup bound          9.4627e-6  ok   [1994s]
+    [ 21.0264,  27.0926]  checked  62 (+  0 split)  worst inf C - sup bound          1.6529e-6  ok   [2006s]
+    [ 27.0926,  32.7593]  checked  32 (+  0 split)  worst inf C - sup bound          1.0364e-6  ok   [2012s]
+    [ 32.7593,  43.3678]  checked  83 (+  0 split)  worst inf C - sup bound           5.668e-6  ok   [2028s]
+    [ 43.3678,  57.0788]  checked  80 (+  0 split)  worst inf C - sup bound          5.4604e-5  ok   [2043s]
+    [ 57.0788,  74.6686]  checked  73 (+  0 split)  worst inf C - sup bound         0.00054424  ok   [2057s]
+    [ 74.6686, 100.0000]  checked  98 (+  0 split)  worst inf C - sup bound           0.011548  ok   [2076s]
+D(x; F*) <= C(F*) on [0, A] for the exact KKT point F* in the Krawczyk box: PROVED (all three pieces True); worst chord slack 1.036e-6   [2076s]

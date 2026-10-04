@@ -1,0 +1,39 @@
+reference Gaussian K = 25 at A = 20.3741: wall gaps [2.7188, 2.1696, 1.9351, 1.7901, 1.687, 1.6078, 1.5432, 1.4874], wall weights [0.0782, 0.0525, 0.0454, 0.0414, 0.0388, 0.0368, 0.0352, 0.0339, 0.0327], interior weight 0.0303
+   K = 42: A = 31.050 solve not clean (res 1.3e-05); stepping up
+   K = 42: A = 31.150 solve not clean (res 9.3e-07); stepping up
+   K = 42: A = 31.250 solve not clean (res 1.4e-06); stepping up
+   K = 42: A = 31.350 solve not clean (res 7.6e-08); stepping up
+A_g(43) = 31.55002 (insertion; bracket 31.5500 .. 31.5502)   [215s]
+   K = 43: A = 31.670 solve not clean (res 2.2e-04); stepping up
+   K = 43: A = 31.770 solve not clean (res 1.9e-05); stepping up
+   K = 43: A = 31.870 solve not clean (res 1.6e-07); stepping up
+   K = 43: A = 31.970 solve not clean (res 1.1e-07); stepping up
+   K = 43: A = 32.070 solve not clean (res 8.1e-08); stepping up
+   K = 43: A = 32.170 solve not clean (res 1.5e-07); stepping up
+   K = 43: A = 32.220 solve not clean (res 1.0e-07); stepping up
+A_g(44) = 32.07010 (split; bracket 32.0700 .. 32.0702)   [679s]
+   K = 44: A = 32.190 solve not clean (res 1.8e-05); stepping up
+A_g(45) = 31.24015 (insertion; bracket 31.2401 .. 31.2403)   [1101s]
+   K = 45: A = 31.360 solve not clean (res 7.5e-06); stepping up
+   K = 45: A = 31.460 solve not clean (res 3.5e-06); stepping up
+   K = 45: A = 31.560 solve not clean (res 5.3e-06); stepping up
+   K = 45: A = 31.660 solve not clean (res 2.3e-07); stepping up
+   K = 45: A = 31.760 solve not clean (res 3.5e-06); stepping up
+   K = 45: A = 31.860 solve not clean (res 6.4e-06); stepping up
+   K = 45: A = 31.960 solve not clean (res 6.7e-06); stepping up
+   K = 45: A = 32.060 solve not clean (res 3.8e-06); stepping up
+   K = 45: A = 32.160 solve not clean (res 3.8e-05); stepping up
+   K = 45: A = 32.260 solve not clean (res 5.4e-06); stepping up
+   K = 45: A = 32.360 solve not clean (res 6.8e-07); stepping up
+   K = 45: A = 32.460 solve not clean (res 4.9e-08); stepping up
+   K = 45: A = 32.560 solve not clean (res 2.7e-06); stepping up
+   K = 45: A = 32.660 solve not clean (res 4.3e-06); stepping up
+   K = 45: A = 32.760 solve not clean (res 1.5e-05); stepping up
+   K = 45: A = 32.860 solve not clean (res 2.9e-04); stepping up
+   K = 45: A = 32.960 solve not clean (res 2.4e-04); stepping up
+   K = 45: A = 33.060 solve not clean (res 2.2e-05); stepping up
+   K = 45: A = 33.160 solve not clean (res 9.4e-08); stepping up
+   K = 45: A = 33.260 solve not clean (res 6.9e-08); stepping up
+   K = 45: A = 33.360 solve not clean (res 2.8e-07); stepping up
+   K = 45: A = 33.460 solve not clean (res 8.1e-08); stepping up
+A_g(46) = 32.91269 (split; bracket 32.9125 .. 32.9127)   [1847s]

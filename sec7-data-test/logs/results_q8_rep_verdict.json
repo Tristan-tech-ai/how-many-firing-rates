@@ -1,0 +1,9 @@
+{
+ "verdict": "Q8-MIXED \u2014 no pre-registered outcome reached 70%",
+ "n_pairs": 529,
+ "n_powered": 473,
+ "units_powered": 178,
+ "plateau_frac": 0.33192389006342493,
+ "growth_frac": 0.6680761099365751,
+ "plateau_match_frac": 0.1945031712473573
+}

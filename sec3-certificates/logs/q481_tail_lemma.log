@@ -1,0 +1,46 @@
+tail lemma, prec 400 bits
+
+results_q66_K21_A311.369_exact40.json  (617)
+   A = 311.368737, K = 21, M = 653, M - A = 341.6 = 19.36 sigma; w_wall = [0.088768207 +/- 3.83e-10], w_min = [0.021392392 +/- 4.92e-10]
+   P(M+1|A) = [1.62158e-64 +/- 8.34e-71]
+   T = sum_{y>M} P(y|A) <= [3.09092e-64 +/- 3.78e-70];  log(1/w_wall) = [2.4217267 +/- 1.81e-8]
+   |D(x) - D_M(x)| <= T max(1, log(1/w_wall)) for all x in [0, A];  margin loss <= T(1 + log(1/w_wall)) = [1.05763e-63 +/- 2.94e-69]
+   certificate's worst free-stretch margin 3.300e-18  ->  margin / tail bound = 3.120e+45   PASS (need > 1e+10)
+      j = 1 at x = 0.001: |D^(j) - D_M^(j)| <= [1.404e-51 +/- 4.12e-55]
+      j = 2 at x = 2.442: |D^(j) - D_M^(j)| <= [1.227e-51 +/- 1.15e-55]
+      j = 3 at x = 0.001: |D^(j) - D_M^(j)| <= [3.853e-38 +/- 6.36e-43]
+      j = 4 at x = 2.442: |D^(j) - D_M^(j)| <= [5.647e-45 +/- 3.69e-49]
+      j = 1 at the first atom x = 2.442 (the Krawczyk rows): [5.721e-55 +/- 4.77e-59]
+   Krawczyk: the true system's rows differ from the truncated ones by at most [5.721e-55 +/- 4.77e-59]
+
+results_q351_A1144.248_K46_arb40.json  (624)
+   A = 1144.2476941079478, K = 46, M = 1745, M - A = 600.8 = 17.76 sigma; w_wall = [0.048732227 +/- 3.49e-11], w_min = [0.016431411 +/- 1.26e-10]
+   P(M+1|A) = [7.66181e-62 +/- 3.82e-69]
+   T = sum_{y>M} P(y|A) <= [2.22068e-61 +/- 3.07e-67];  log(1/w_wall) = [3.0214147 +/- 2.17e-8]
+   |D(x) - D_M(x)| <= T max(1, log(1/w_wall)) for all x in [0, A];  margin loss <= T(1 + log(1/w_wall)) = [8.93026e-61 +/- 2.91e-67]
+   certificate's worst free-stretch margin 1.831e-25  ->  margin / tail bound = 2.050e+35   PASS (need > 1e+10)
+      j = 1 at x = 0.001: |D^(j) - D_M^(j)| <= [1.906e-47 +/- 3.22e-51]
+      j = 2 at x = 2.442: |D^(j) - D_M^(j)| <= [4.459e-47 +/- 2.68e-51]
+      j = 3 at x = 0.001: |D^(j) - D_M^(j)| <= [3.726e-33 +/- 2.21e-37]
+      j = 4 at x = 2.442: |D^(j) - D_M^(j)| <= [1.462e-39 +/- 3.84e-43]
+      j = 1 at the first atom x = 2.442 (the Krawczyk rows): [7.789e-51 +/- 3.45e-56]
+   Krawczyk: the true system's rows differ from the truncated ones by at most [7.789e-51 +/- 3.45e-56]
+
+results_q473_seed_A2000_K66_v7_ascent_arb40.json  (623 (certificate running))
+   A = 2000.0, K = 66, M = 2775, M - A = 775.0 = 17.33 sigma; w_wall = [0.037380218 +/- 4.53e-10], w_min = [0.011449609 +/- 4.68e-10]
+   P(M+1|A) = [4.15477e-61 +/- 3.08e-67]
+   T = sum_{y>M} P(y|A) <= [1.48492e-60 +/- 3.04e-66];  log(1/w_wall) = [3.2866136 +/- 3.29e-8]
+   |D(x) - D_M(x)| <= T max(1, log(1/w_wall)) for all x in [0, A];  margin loss <= T(1 + log(1/w_wall)) = [6.36527e-60 +/- 4.69e-66]
+   certificate margin not yet available; bound recorded
+      j = 1 at x = 0.001: |D^(j) - D_M^(j)| <= [5.111e-46 +/- 3.48e-50]
+      j = 2 at x = 2.442: |D^(j) - D_M^(j)| <= [1.903e-45 +/- 4.78e-49]
+      j = 3 at x = 0.001: |D^(j) - D_M^(j)| <= [2.526e-31 +/- 4.05e-35]
+      j = 4 at x = 2.442: |D^(j) - D_M^(j)| <= [1.576e-37 +/- 1.73e-41]
+      j = 1 at the first atom x = 2.442 (the Krawczyk rows): [2.090e-49 +/- 4.57e-53]
+   Krawczyk: the true system's rows differ from the truncated ones by at most [2.090e-49 +/- 4.57e-53]
+
+summary: A, K, T, margin-loss bound, certificate margin
+      311.369  K =  21  T = 3.091e-64  bound = 1.058e-63  margin = 3.300e-18
+     1144.248  K =  46  T = 2.221e-61  bound = 8.930e-61  margin = 1.831e-25
+     2000.000  K =  66  T = 1.485e-60  bound = 6.365e-60  margin = nan
+[0s]
