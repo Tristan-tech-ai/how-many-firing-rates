@@ -6,9 +6,12 @@ the number of levels of the unit-noise Gaussian channel, read at the half-length
 | paper item | scripts | outputs in `logs/` |
 |---|---|---|
 | Gaussian count changes A_g(K) (Table II) | `q143_gaussian_transitions.py`, `q84_gauss_symmetric_chain.py`, `q89_gauss_ba.py` | `results_q143_Ag_all.json`, `results_q143_Ag.log`, `results_q89_gauss_ba.json` |
-| A_g(15) to A_g(26) relocated at 128 bits (the values printed in Table II) | `c60_cap_fullchain.py` | `c60_K14.json` to `c60_K25.json` with their logs, `c61_out.txt` |
+| A_g(15) to A_g(26) relocated at 128 bits | `c60_cap_fullchain.py` | `c60_K14.json` to `c60_K25.json` with their logs, `c61_out.txt` |
+| Table II, every value, built only from the output files below | `build_table2.py` | `table2_primary.json` |
+| A_K by the newborn-weight unfolding (K = 11, 13 and 14 rerun on 4 Oct 2026) | `q80_AK_by_unfolding.py` with `support_unfold.py`, `support_mp3.py`, `q34_poisson_dark.py` | `results_q80_A_transition_*.json`, `results_q80_gate_K*.log` |
+| A_g(4) to A_g(7) and A_g(14) relocated at 128 bits (4 Oct 2026) | `c60_cap_fullchain.py` | `c60_gate_K*.json` with their logs |
 | the Gaussian side of the correspondence | `q33_gauss_support.py` | |
-| wall constant c(K) (Table II) | (producing script not kept) | `results_q89_cK_table.json` |
+| earlier table of wall constants, superseded by `table2_primary.json` (it mixed older A_g values with back-computed A_K) | (producing script not kept) | `results_q89_cK_table.json` |
 | growth of the count, predictions made in advance | `q173_conjecture_table.py`, `q181_growth_verdict.py` | |
 
 `c60_cap_fullchain.py` is run once per event as `python c60_cap_fullchain.py K A0 DA PREC TAG`; the file `c60_K<K>.json` holds the

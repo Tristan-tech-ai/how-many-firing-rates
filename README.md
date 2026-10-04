@@ -39,7 +39,7 @@ names. Some scripts expect the folder layout of the original project, so rerunni
 the script. The Python files were reformatted with [black](https://github.com/psf/black), which changes layout only.
 
 Three result files are kept although the short scripts that wrote them were not: `sec3-count-law/logs/results_q89_cK_table.json`
-(the wall constant c(K) of Table II), `sec4-non-poisson/logs/results_q138_kappa_points.json` (the points behind kappa = 0.42) and
+(an earlier table of wall constants, now superseded: Table II is rebuilt by `sec3-count-law/scripts/build_table2.py` from output files only), `sec4-non-poisson/logs/results_q138_kappa_points.json` (the points behind kappa = 0.42) and
 `sec5-baseline/logs/results_q111_bd_comparison.json` (the comparison with the published dark-current count changes). Their numbers
 can be checked against the certificates and against the published data they compare with.
 

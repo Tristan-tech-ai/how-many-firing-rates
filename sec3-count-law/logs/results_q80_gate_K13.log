@@ -1,0 +1,11 @@
+K = 12 KKT point at A = 134.0: residual 1.71e-38   [33s]
+   max(D - C) = +1.330e-06 at t = 11.903
+   eps = 1e-3: residual 6.04e-39 in 15 steps, A = 133.49379023109, newborn t = 12.0569   [157s]
+   resid hist (last 8): 4.057e-7@f1.0 4.552e-7@f1.0 3.086e-8@f1.0 4.459e-9@f1.0 3.446e-12@f1.0 4.935e-17@f1.0 4.681e-28@f1.0 6.038e-39
+   eps = 5e-4: residual 1.33e-38 in 8 steps, A = 133.47491509455, newborn t = 12.0577   [215s]
+   resid hist (last 8): 0.00384@f1.0 4.328e-6@f1.0 3.826e-7@f1.0 5.837e-9@f1.0 1.043e-11@f1.0 3.583e-16@f1.0 3.36e-26@f1.0 1.327e-38
+   eps = 2.5e-4: residual 9.9e-39 in 7 steps, A = 133.46561852436, newborn t = 12.0580   [265s]
+   resid hist (last 8): 0.001917@f1.0 1.073e-6@f1.0 9.054e-8@f1.0 5.087e-10@f1.0 7.653e-16@f1.0 1.49e-22@f1.0 9.895e-39
+   A(eps) = 133.456181 + 37.589 eps (linear fit over 3 points); A_K+1 = 133.456181; dw/dA at birth = 0.02660 per unit A
+   quadratic fit: A(0) = 133.456416 (difference +0.000235)
+done [265s]

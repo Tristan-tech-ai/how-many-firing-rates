@@ -14,3 +14,6 @@ Scripts are formatted with black (layout only). The original path is the name us
 | `scripts/q89_gauss_ba.py` | Gaussian optimal input from scratch: Blahut-Arimoto on a fine symmetric input grid, then clustering, symmetric Newton refinement (q84 functions) and a violation check. | `q89_gauss_ba.py` |
 
 `logs/` holds 28 output files of the runs reported in the paper; a `__` in a name stands for a folder separator of the original tree.
+| `scripts/build_table2.py` | builds Table II of the paper from the unfolding and relocation output files only | `gate_truth/build_table2.py` |
+| `scripts/q80_AK_by_unfolding.py` | Poisson count change A_K by the newborn-weight -> 0 unfolding at 40 digits | `q80_AK_by_unfolding.py` |
+| `scripts/support_unfold.py`, `scripts/support_mp3.py`, `scripts/q34_poisson_dark.py` | modules imported by the unfolding script | same names |
