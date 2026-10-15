@@ -1,0 +1,14 @@
+tail lemma for p2k67/state_2001.58782263026.json: K = 66, A = 2001.5878226302589, Ymax = 3135, prec 256, sweep box 1e-40
+   point: max |F| = 1.355e-51
+   w_min 0.0114820, x_1 >= 2.44245
+   delta on [x_1, A]  = 1.374e-100      (Poisson tail of A beyond Ymax, all orders, all rows and entries)
+   delta on (h0, x_1) = 8.093e-8356
+(a) Krawczyk with the tail: ||Y F~||_inf 1.384e-41, ||I - Y J~(X)||_inf 1.12399, max_i (|YF|_i + r row_i)/r = 1.26238 -> NOT CONTAINED
+Traceback (most recent call last):
+  File "lawcert\q481_tail_lemma.py", line 148, in <module>
+    worst, d2, d1, atoms, npieces, fails = parse_logs(LOGS)
+                                           ~~~~~~~~~~^^^^^^
+  File "lawcert\q481_tail_lemma.py", line 72, in parse_logs
+    for line in open(os.path.join(HERE, p), encoding="utf-8", errors="replace"):
+                ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'lawcert\\nonexistent.log'

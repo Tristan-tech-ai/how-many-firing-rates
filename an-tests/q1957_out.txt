@@ -1,0 +1,6 @@
+Reading: fibres 950, failed fits 0; fraction with d > 0 0.802; median d 0.3985
+Reading: against the standard Gompertz curve: fibres 950, mean -0.1834, lower bound -0.2432, fraction > 0 0.434
+Reading: low spontaneous fibres 171, mean d 4.3787, fraction d > 0 0.918
+Reading: high spontaneous fibres 779, mean d 0.5587, fraction d > 0 0.777
+mean d 1.2463, bootstrap 95% lower bound 1.1048 (bar > 0)
+VERDICT q1957 (Amendment 2303, H_asym): PASS

@@ -1,0 +1,4 @@
+n 950; d mean 1.2463 median 0.3985 frac>0 0.802 LB 1.1048
+gompertz n 950; mean -0.1834 median -0.0424 frac>0 0.434 LB -0.2432
+low spont n 171: d mean 4.3787 frac 0.918; gompertz mean -0.8774 frac>0 0.345
+high spont n 779: d mean 0.5587 frac 0.777; gompertz mean -0.0310 frac>0 0.453

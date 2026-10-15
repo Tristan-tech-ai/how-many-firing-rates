@@ -1,0 +1,6 @@
+control: A 8 lam 0.5, full range: rejected 0.030 of staircase and 1.000 of graded fibres (K full range 3)
+control: A 8 lam 0.5, upper range: rejected 0.030 of staircase and 1.000 of graded fibres (K full range 3)
+control: A 15 lam 1.0, full range: rejected 0.050 of staircase and 1.000 of graded fibres (K full range 5)
+control: A 15 lam 1.0, upper range: rejected 0.060 of staircase and 1.000 of graded fibres (K full range 5)
+control decide(): PASS FAIL VOID (expected PASS FAIL VOID)
+VERDICT q1953 registration run: CONTROLS PASS

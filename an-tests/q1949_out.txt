@@ -1,0 +1,4 @@
+Reading: most regular third (88 fibres): observed minus matched Fano at lowest level +0.224, at highest -0.018; observed minus binomial -0.077, +0.199; slope of Fano per spike: observed -0.0297, matched -0.0021, binomial -0.0795
+Reading: middle third (88 fibres): observed minus matched Fano at lowest level +0.215, at highest -0.052; observed minus binomial -0.051, +0.253; slope of Fano per spike: observed -0.0366, matched -0.0036, binomial -0.0863
+Reading: least regular third (88 fibres): observed minus matched Fano at lowest level +0.181, at highest -0.065; observed minus binomial +0.078, +0.444; slope of Fano per spike: observed -0.0406, matched -0.0058, binomial -0.0988
+Reading: all (264 fibres): observed minus matched Fano at lowest level +0.207, at highest -0.045; observed minus binomial -0.017, +0.299; slope of Fano per spike: observed -0.0356, matched -0.0038, binomial -0.0882

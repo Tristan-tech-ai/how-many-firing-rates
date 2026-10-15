@@ -1,0 +1,6 @@
+Reading: fibres 950, failed fits 0; median log-likelihood difference (M_sq minus M_log, in favour of M_sq) 0.001
+Reading: sigma quartiles 6.74 8.53 10.60 dB; s quartiles 3.29 4.17 5.20 dB
+Reading: low spontaneous fibres 171, fraction preferring M_sq 0.789, median sigma 8.93 dB
+Reading: high spontaneous fibres 779, fraction preferring M_sq 0.447, median sigma 8.46 dB
+mean d 0.2027, bootstrap 95% lower bound 0.1495 (bar > 0); median sigma 8.53 dB (bar [6, 20])
+VERDICT q1925 (Amendment 2271, H_L1): PASS

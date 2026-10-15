@@ -1,0 +1,52 @@
+state p2k47/state_1145.61569253043.json: K = 46, A = 1145.6156925304338, alphabet 0..1747, n = 90 unknowns, prec 192 bits
+(i) point: max |F| = 4.715e-33 PASS (target 1e-28); cond(J) = 1.774e+14
+    ||Y F||_inf (rigorous) = 9.0686e-29, scaled cond 5.816e+09
+
+(ii) Krawczyk ladder
+     r = 1e-26: ||I - Y J(X)||_inf = 0.00020595  CONTAINED   [2s]
+     r = 1e-25: ||I - Y J(X)||_inf = 0.00020595  CONTAINED   [3s]
+     r = 1e-24: ||I - Y J(X)||_inf = 0.00020595  CONTAINED   [3s]
+     r = 1e-23: ||I - Y J(X)||_inf = 0.00020595  CONTAINED   [4s]
+     r = 1e-22: ||I - Y J(X)||_inf = 0.00020596  CONTAINED   [5s]
+     r = 1e-21: ||I - Y J(X)||_inf = 0.00020599  CONTAINED   [5s]
+     r = 1e-20: ||I - Y J(X)||_inf = 0.00020629  CONTAINED   [6s]
+     r = 1e-19: ||I - Y J(X)||_inf = 0.00020933  CONTAINED   [7s]
+     r = 1e-18: ||I - Y J(X)||_inf = 0.00023975  CONTAINED   [7s]
+     r = 1e-17: ||I - Y J(X)||_inf = 0.00054397  CONTAINED   [8s]
+     r = 1e-16: ||I - Y J(X)||_inf = 0.0036407  CONTAINED   [9s]
+     r = 1e-15: ||I - Y J(X)||_inf = 0.034658  CONTAINED   [10s]
+     r = 1e-14: ||I - Y J(X)||_inf = 0.34483  CONTAINED   [10s]
+     r = 1e-13: ||I - Y J(X)||_inf = 3.4466  not contained   [11s]
+     sweep box r = 1e-26: ||I - Y J(X)||_inf = 0.00020595  CONTAINED
+     exactly one zero in the box z0 +/- 1e-14 (scaled), and in the sweep box
+
+(iii) weights in the sweep box: min lower bound 0.0164882 PASS; atom radii max 3.2e-24, weight radii max 2.5e-27
+     D'''' check at x = 49.5997: formula 1.0054115942e-08, central difference 1.0054115942e-08, rel diff 2.11e-14
+
+(iv) D''' at x = 49.5997: formula 1.4797828974e-08, central difference 1.4797828974e-08, rel diff 8.88e-14 PASS
+
+(v) KKT sweep. C_X = [2.8536738541481569015 +/- 3.83e-20]  (radius 4.7e-25); atom half-width 1.00e-6
+     origin (0, 0.001000]: log h0 = -6.90776 < lower E_x[dg] = -2.04673 -> PASS
+     atom  1 x =     2.4424: h_k = 1.0e-06, D''(x_k) = -1.6725e-02, D'' on I_k upper     -0.01672 PASS; stretch before: 8 starts, 68 pieces so far, worst margin 5.53e-15   [13s]
+     atom  2 x =     7.2523: h_k = 1.0e-06, D''(x_k) = -4.8170e-04, D'' on I_k upper   -0.0004817 PASS; stretch before: 8 starts, 172 pieces so far, worst margin 1.62e-16   [15s]
+     atom  3 x =    13.5723: h_k = 1.0e-06, D''(x_k) = -3.7849e-05, D'' on I_k upper    -3.785e-5 PASS; stretch before: 8 starts, 306 pieces so far, worst margin 8.18e-18   [17s]
+     atom  4 x =    21.1105: h_k = 1.0e-06, D''(x_k) = -4.8231e-06, D'' on I_k upper    -4.823e-6 PASS; stretch before: 8 starts, 468 pieces so far, worst margin 4.64e-19   [20s]
+     atom  5 x =    29.6981: h_k = 1.0e-06, D''(x_k) = -8.2283e-07, D'' on I_k upper    -8.228e-7 PASS; stretch before: 8 starts, 694 pieces so far, worst margin 3.04e-19   [24s]
+     atom  6 x =    39.2221: h_k = 1.0e-06, D''(x_k) = -1.7123e-07, D'' on I_k upper    -1.712e-7 PASS; stretch before: 8 starts, 966 pieces so far, worst margin 5.80e-20   [28s]
+     atom  7 x =    49.5997: h_k = 1.0e-06, D''(x_k) = -4.1229e-08, D'' on I_k upper    -4.123e-8 PASS; stretch before: 8 starts, 1354 pieces so far, worst margin 1.27e-20   [35s]
+     atom  8 x =    60.7667: h_k = 1.0e-06, D''(x_k) = -1.1112e-08, D'' on I_k upper    -1.111e-8 PASS; stretch before: 8 starts, 1802 pieces so far, worst margin 3.09e-21   [42s]
+     atom  9 x =    72.6720: h_k = 1.0e-06, D''(x_k) = -3.2780e-09, D'' on I_k upper    -3.278e-9 PASS; stretch before: 8 starts, 2372 pieces so far, worst margin 8.11e-22   [52s]
+     atom 10 x =    85.2732: h_k = 1.0e-06, D''(x_k) = -1.0417e-09, D'' on I_k upper    -1.042e-9 PASS; stretch before: 8 starts, 3138 pieces so far, worst margin 2.24e-22   [65s]
+     atom 11 x =    98.5344: h_k = 1.0e-06, D''(x_k) = -3.5241e-10, D'' on I_k upper   -3.524e-10 PASS; stretch before: 8 starts, 4036 pieces so far, worst margin 6.31e-23   [81s]
+     atom 12 x =   112.4254: h_k = 1.0e-06, D''(x_k) = -1.2576e-10, D'' on I_k upper   -1.258e-10 PASS; stretch before: 8 starts, 5172 pieces so far, worst margin 1.65e-23   [101s]
+     atom 13 x =   126.9200: h_k = 1.0e-06, D''(x_k) = -4.6994e-11, D'' on I_k upper   -4.699e-11 PASS; stretch before: 8 starts, 6656 pieces so far, worst margin 2.49e-24   [127s]
+     atom 14 x =   141.9958: h_k = 1.4e-06, D''(x_k) = -1.8271e-11, D'' on I_k upper   -1.827e-11 PASS; stretch before: 8 starts, 8378 pieces so far, worst margin 1.06e-24   [158s]
+     atom 15 x =   157.6344: h_k = 2.3e-06, D''(x_k) = -7.3460e-12, D'' on I_k upper   -7.346e-12 PASS; stretch before: 8 starts, 10474 pieces so far, worst margin 2.12e-24   [194s]
+     atom 16 x =   173.8215: h_k = 3.5e-06, D''(x_k) = -3.0337e-12, D'' on I_k upper   -3.034e-12 PASS; stretch before: 8 starts, 13284 pieces so far, worst margin 1.20e-24   [244s]
+     atom 17 x =   190.5476: h_k = 5.4e-06, D''(x_k) = -1.2751e-12, D'' on I_k upper   -1.275e-12 PASS; stretch before: 8 starts, 16460 pieces so far, worst margin 4.06e-24   [300s]
+     atom 18 x =   207.8099: h_k = 8.4e-06, D''(x_k) = -5.3743e-13, D'' on I_k upper   -5.374e-13 PASS; stretch before: 8 starts, 20192 pieces so far, worst margin 3.37e-24   [365s]
+     atom 19 x =   225.6132: h_k = 1.3e-05, D''(x_k) = -2.2100e-13, D'' on I_k upper   -2.210e-13 PASS; stretch before: 8 starts, 24964 pieces so far, worst margin 2.09e-24   [448s]
+     atom 20 x =   243.9721: h_k = 2.1e-05, D''(x_k) = -8.3645e-14, D'' on I_k upper   -8.364e-14 PASS; stretch before: 8 starts, 30946 pieces so far, worst margin 1.07e-24   [554s]
+     atom 21 x =   262.9118: h_k = 3.9e-05, D''(x_k) = -2.5042e-14, D'' on I_k upper   -2.503e-14 PASS; stretch before: 8 starts, 38256 pieces so far, worst margin 5.90e-24   [683s]
+     atom 22 x =   282.4692: h_k = 1.1e-04, D''(x_k) = -3.1356e-15, D'' on I_k upper   -2.827e-15 PASS; stretch before: 8 starts, 50034 pieces so far, worst margin 5.91e-24   [891s]
+     atom 23 x =   302.6917: h_k = 1.9e-04, D''(x_k) = -1.0571e-15, D'' on I_k upper    3.025e-16 FAIL; stretch before: 8 starts, 77024 pieces so far, worst margin 4.37e-24   [1367s]

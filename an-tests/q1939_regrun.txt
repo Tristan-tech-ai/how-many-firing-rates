@@ -1,0 +1,12 @@
+control: Fano at nu = 1, mean 0.7: 1.000000 (Poisson 1)
+control: Fano at nu = 1, mean 3.0: 1.000000 (Poisson 1)
+control: Fano at nu = 1, mean 12.0: 1.000000 (Poisson 1)
+control: Fano at mean 3 for nu = 1, 1.5, 2, 3, 5, 10: 1.000, 0.709, 0.546, 0.373, 0.228, 0.113
+control: nu_for(F = 0.4, mbar = 3) = 2.7887 (capped False), Fano there 0.400000
+control: A 3.0 lam 0.5: Poisson K 2, COM-Poisson K at nu = 1: 2
+control: A 8.0 lam 0.5: Poisson K 3, COM-Poisson K at nu = 1: 3
+control: A 15.0 lam 1.0: Poisson K 4, COM-Poisson K at nu = 1: 4
+control: A 8 lam 0.5, K at nu = (1.0, 1.5, 2.0, 3.0, 5.0): [3, 3, 4, 4, 6]
+control: A 15 lam 1.0, K at nu = (1.0, 1.5, 2.0, 3.0, 5.0): [4, 4, 5, 5, 7]
+control decide(): PASS FAIL VOID (expected PASS FAIL VOID)
+VERDICT q1939 registration run: CONTROLS PASS

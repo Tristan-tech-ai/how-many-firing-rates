@@ -1,0 +1,12 @@
+tail lemma for p2k47/state_1145.61569253043.json: K = 46, A = 1145.6156925304338, Ymax = 1747, prec 256, sweep box 1e-40
+   point: max |F| = 2.379e-51
+   w_min 0.0164882, x_1 >= 2.44245
+   delta on [x_1, A]  = 3.380e-42      (Poisson tail of A beyond Ymax, all orders, all rows and entries)
+   delta on (h0, x_1) = 1.454e-4201
+(a) Krawczyk with the tail: ||Y F~||_inf 2.552e-32, ||I - Y J~(X)||_inf 0.000205953, max_i (|YF|_i + r row_i)/r = 2.55205e+8 -> NOT CONTAINED
+   logs: 1 file(s), atoms covered 45/45, failures 0, pieces 135482
+   worst free-stretch margin 2.490e-28; largest D'' upper bound over neighbourhoods -1.057e-15; wall D' lower 0.008459
+(b) 2 delta = 6.760e-42 (and 0.000e+00 below x_1) against the worst margin 2.490e-28 -> PASS
+(c) delta against |D''| >= 1.057e-15 and D'(wall) >= 0.008459 -> PASS
+VERDICT: FAIL
+[3s]

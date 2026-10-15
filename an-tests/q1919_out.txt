@@ -1,0 +1,20 @@
+Reading: A 4 n 5 eps 0.1: on-off 1.52420..1.52428 (onoff w=0.45), graded 1.35693..1.35700 (capacity law (7 atoms)), on-off minus graded 0.16727 -> ON-OFF
+Reading: A 4 n 5 eps 0.01: on-off 0.15326..0.15327 (onoff w=0.50), graded 0.13314..0.13315 (capacity law (7 atoms)), on-off minus graded 0.02011 -> ON-OFF
+Reading: A 4 n 10 eps 0.1: on-off 3.78103..3.78122 (onoff w=0.40), graded 3.70929..3.70948 (capacity law (7 atoms)), on-off minus graded 0.07174 -> ON-OFF
+Reading: A 4 n 10 eps 0.01: on-off 1.15145..1.15158 (onoff w=0.45), graded 0.94818..0.94830 (capacity law (7 atoms)), on-off minus graded 0.20327 -> ON-OFF
+Reading: A 4 n 20 eps 0.1: on-off 9.68480..9.68520 (onoff w=0.50), graded 9.54475..9.54515 (capacity law (7 atoms)), on-off minus graded 0.14006 -> ON-OFF
+Reading: A 4 n 20 eps 0.01: on-off 5.77104..5.77144 (onoff w=0.50), graded 5.60541..5.60581 (capacity law (7 atoms)), on-off minus graded 0.16563 -> ON-OFF
+Reading: A 5 n 5 eps 0.1: on-off 1.84513..1.84521 (onoff w=0.50), graded 1.61346..1.61354 (3pt x=0.25A wm=0.1 wt=0.4), on-off minus graded 0.23167 -> ON-OFF
+Reading: A 5 n 5 eps 0.01: on-off 0.16545..0.16546 (onoff w=0.50), graded 0.16196..0.16197 (3pt x=0.55A wm=0.1 wt=0.4), on-off minus graded 0.00349 -> ON-OFF
+Reading: A 5 n 10 eps 0.1: on-off 4.92600..4.92620 (onoff w=0.50), graded 4.45418..4.45438 (3pt x=0.25A wm=0.1 wt=0.4), on-off minus graded 0.47182 -> ON-OFF
+Reading: A 5 n 10 eps 0.01: on-off 1.44071..1.44086 (onoff w=0.50), graded 1.32396..1.32410 (3pt x=0.55A wm=0.1 wt=0.4), on-off minus graded 0.11675 -> ON-OFF
+Reading: A 5 n 20 eps 0.1: on-off 11.19588..11.19628 (onoff w=0.50), graded 10.67457..10.67497 (3pt x=0.25A wm=0.1 wt=0.4), on-off minus graded 0.52131 -> ON-OFF
+Reading: A 5 n 20 eps 0.01: on-off 7.31531..7.31571 (onoff w=0.50), graded 6.75838..6.75878 (3pt x=0.55A wm=0.1 wt=0.4), on-off minus graded 0.55693 -> ON-OFF
+Reading: A 6 n 5 eps 0.1: on-off 1.94650..1.94658 (onoff w=0.50), graded 1.80964..1.80973 (3pt x=0.55A wm=0.1 wt=0.4), on-off minus graded 0.13685 -> ON-OFF
+Reading: A 6 n 5 eps 0.01: on-off 0.23883..0.23885 (onoff w=0.45), graded 0.22003..0.22005 (3pt x=0.25A wm=0.1 wt=0.4), on-off minus graded 0.01880 -> ON-OFF
+Reading: A 6 n 10 eps 0.1: on-off 5.19596..5.19616 (onoff w=0.50), graded 4.88104..4.88124 (3pt x=0.55A wm=0.1 wt=0.4), on-off minus graded 0.31492 -> ON-OFF
+Reading: A 6 n 10 eps 0.01: on-off 1.47764..1.47779 (onoff w=0.50), graded 1.67338..1.67354 (3pt x=0.25A wm=0.1 wt=0.4), on-off minus graded -0.19574 -> GRADED
+Reading: A 6 n 20 eps 0.1: on-off 11.97232..11.97272 (onoff w=0.50), graded 11.53398..11.53438 (3pt x=0.25A wm=0.1 wt=0.4), on-off minus graded 0.43834 -> ON-OFF
+Reading: A 6 n 20 eps 0.01: on-off 7.52195..7.52235 (onoff w=0.50), graded 7.65233..7.65273 (3pt x=0.25A wm=0.1 wt=0.4), on-off minus graded -0.13038 -> GRADED
+ON-OFF in 16 of 18 cells (bar >= 12)
+VERDICT q1919 (Amendment 2268, H_E): PASS

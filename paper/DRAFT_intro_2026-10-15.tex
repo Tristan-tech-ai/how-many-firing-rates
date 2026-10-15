@@ -1,0 +1,71 @@
+
+\section{Introduction}\label{sec:intro}
+
+A sensory neuron turns a stimulus into a firing rate, and the cell it drives sees only how many spikes arrive in a short window. We call
+the map from stimulus to expected spike count the tuning curve; for sound level it is the rate-level function. If the neuron is to
+carry as much information as it can about the stimulus, which tuning curve should it have? Barlow asked this question in 1961 with the
+stimulus distribution held fixed: the neuron cannot choose what the world presents, only how it responds~\cite{Barlow1961}. The tuning
+curve that maximizes the mutual information between stimulus and count is called the infomax tuning curve. Laughlin gave the classic
+answer for a neuron whose response is limited by its range but not by noise: the response should follow the cumulative distribution of
+the stimulus, so that every response level is used equally often~\cite{Laughlin1981}. Laughlin's curve is smooth; for a neuron
+whose count in a short window is noisy, we find that the answer is a staircase.
+
+Spikes are noisy, and a short window holds few of them. The standard model of this noise is the Poisson count, whose variance
+equals its mean; we build the theory on it and then test, on recorded fibres, how much their more regular counts change its
+predictions. We consider a neuron whose count in the window is Poisson, with a mean that
+lies between its spontaneous count $\lambda$, the count with no stimulus, and $\lambda+A$. The peak count $A$ is the largest
+expected count above the spontaneous one, the peak firing rate times the window. Seen as a communication channel from rate to count,
+such a neuron has a best distribution of rates, the one under which the count carries the most information. Rates closer together
+than the width of the noise are hard to tell apart from the count, so the range is best used by a few well separated rates.
+Information theory calls this best distribution the capacity-achieving input, and for this channel it indeed puts all its probability
+on a few rates~\cite{Shamai1990}. Numerical work found that the infomax tuning curve of a
+Poisson neuron is a staircase whose number of steps grows as the window lengthens~\cite{Nikitin2009}; in the opposite limit of many
+spikes, the optimum approaches a smooth curve set by the stimulus distribution and the noise~\cite{McDonnellStocks2008}. Two questions
+stayed open. How many steps does the optimal staircase have, as a function of the peak count? And do real neurons follow it?
+
+This paper answers the first question with a theorem and puts the second to registered tests of two predictions: the shape of the
+tuning curve's envelope, and the number of distinct rates the curve uses. We show that, for any continuous
+stimulus distribution, the infomax tuning curve assigns the rates of the capacity-achieving input to the stimulus by its quantiles
+(Proposition~\ref{prop:L1}). Quantiles are the stimulus values that cut its distribution into pieces of given probability, as the
+median cuts it into halves. The stimulus distribution therefore decides where the steps sit and nothing else: their number and their
+values depend only on $A$ and $\lambda$. We prove that the number of steps grows at least like $0.056\,A^{2/3}$
+(Theorem~\ref{thm:C}). A naive count of resolvable rates, the range of rates divided by the width of the noise, grows only like
+$\sqrt A$. Because the variance of a Poisson count equals its mean, the square root makes the noise nearly the same at every rate. In
+the coordinate $2\sqrt{r}$ the Poisson noise has unit width, and the range from $0$ to $A$ becomes an interval of length $2\sqrt A$,
+the Fisher length of the range, named after the Fisher information, which measures how precisely a count determines its rate. The optimal staircase uses more steps than that. The theorem concerns large peak counts; the fibres
+tested below have peak counts of about 3 to 14 (5 to 14 for those of the shape test), where the optimal staircase for Poisson
+counts has two to five steps. For large peak
+counts the square root of the optimal rate follows the distribution function of the stimulus, which is Laughlin's rule with the
+Poisson noise taken into account. The same problem with additive
+Gaussian noise of fixed variance, the Gaussian channel, has a law for its number of levels, about $0.4\,a^{4/3}$ for an input range
+of half-width $a$ in units of the noise, proved from below and measured~\cite{Paper1}. Carried over through the Fisher length, it gives
+a sharper law for the exact number of steps: a new step appears each time the peak count passes a threshold, and the law predicts
+these thresholds. The thresholds tested lie at peak counts of about 300 to 2000, far above those of neurons, so they test the
+mathematics of the law and not its use for neurons. We state it as a conjecture, together with the
+predictions it made before they were computed, including one that failed.
+
+For the second question we used single auditory-nerve fibres of the gerbil, recorded at many sound levels with repeated
+presentations~\cite{Heeringa2024}. The auditory nerve is a natural place to look. Its rate-level functions shift towards the most
+frequent levels when the level distribution changes, in the midbrain and, more weakly, in the nerve itself~\cite{Wen2009}. The
+decibel amplitude of natural sounds has a roughly symmetric bell-shaped distribution~\cite{Escabi2003}, for which the theory predicts a
+specific asymmetric rate-level function. Every test was recorded, with its decision rule, in a dated log before the data were analysed.
+The log is in the repository named under Data availability, and the entries for these tests carry a certificate of their date
+from an independent authority, so the order of prediction and analysis can be checked (Section~\ref{sec:methods}). The failures are
+reported with the successes. Pooled over fibres, the rate-level functions favour the predicted asymmetric shape over a symmetric sigmoid, in young and in aged animals.
+Under Poisson counts about half of the fibres use more distinct rates, that is significantly different mean counts across sound
+levels, than the optimal staircase allows, most by one. Their counts, however, are far less variable than
+Poisson counts. For counts matched to the mean regularity of each fibre, more than four in five fibres stay within the optimal
+staircase. For counts whose regularity is matched at every rate, the model that fits them best, about three in four do, short of the
+registered $80\%$. A more powerful likelihood test finds about half of the fibres consistent with the optimal number of steps and nearly nine in ten
+with one step more.
+
+Kostal and Shinomoto~\cite{KostalShinomoto2016} studied a Poisson neuron with the same kind of bounds on its rate. Their downstream
+reader sees the full spike train, and the best input then switches between two rates. Here the reader sees only the count in a
+window, and counting is what makes the number of optimal rates grow with the peak count instead of staying at two.
+
+Section~\ref{sec:results} holds the results. Section~\ref{sec:laughlin} derives the infomax tuning curve for a given stimulus
+distribution. Section~\ref{sec:thmC} states the lower bound on the number of steps, whose proof is in Appendix~\ref{app:C}.
+Section~\ref{sec:countlaw} states the conjectured law for the exact number and the predictions that tested it, and Section~\ref{sec:an}
+reports the registered tests on auditory-nerve fibres. Section~\ref{sec:discussion} discusses them, and Section~\ref{sec:methods}
+describes the data, the fits and the tests. The Supplementary Notes (S1 Text) treat counts more or less regular than Poisson counts, a
+spontaneous rate, codes for windows that hold few spikes, and a test for discrete levels on six further public datasets.

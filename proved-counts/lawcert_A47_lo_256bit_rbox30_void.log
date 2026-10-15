@@ -1,0 +1,8 @@
+state p2k47/state_1145.61569253043.json: K = 46, A = 1145.6156925304338, alphabet 0..1747, n = 90 unknowns, prec 256 bits
+(i) point: max |F| = 4.715e-33 PASS (target 1e-28); cond(J) = 1.774e+14
+    ||Y F||_inf (rigorous) = 9.0686e-29, scaled cond 5.816e+09
+
+(ii) Krawczyk ladder
+     r = 1e-30: ||I - Y J(X)||_inf = 0.00020595  not contained   [2s]
+     sweep box r = 1e-30: ||I - Y J(X)||_inf = 0.00020595  not contained
+FAIL at (ii): the sweep box is not contained

@@ -1,0 +1,4 @@
+fibres matched to q1937 rows: 265 of 265
+Reading: channel regular than or as the fibre: 158 fibres, D <= K in 0.899, median channel Fano 0.262, median fibre Fano 0.376
+Reading: channel noisier than or as the fibre: 102 fibres, D <= K in 0.863, median channel Fano 0.458, median fibre Fano 0.333
+Reading: channel poisson than or as the fibre: 5 fibres, D <= K in 0.800

@@ -1,0 +1,19 @@
+C1 A 8.0 lam 0.5 zeta 3.00: mean increasing on 400 u from 1e-6 to 1e3: True (m from 1e-06 to 9.66)
+C3 A 8.0 lam 0.5 zeta 3.00: C 0.979802 nats, support size 5, max i - C on grid 1.05e-07: False
+C2 A 8.0 lam 0.5 zeta 3.00: tail bounds hold for y = 0..115: True (min slack lower 20.2, upper 1.74)
+C4 A 8.0 lam 0.5 zeta 3.00: i >= growth bound for 30 theta above theta1: True (at theta1 + 3.00: i 27.680, bound 4.557, C 0.980)
+C1 A 15.0 lam 1.0 zeta 2.99: mean increasing on 400 u from 1e-6 to 1e3: True (m from 1e-06 to 9.74)
+C3 A 15.0 lam 1.0 zeta 2.99: C 1.215253 nats, support size 9, max i - C on grid 1.80e-07: False
+C2 A 15.0 lam 1.0 zeta 2.99: tail bounds hold for y = 0..146: True (min slack lower 40.8, upper 2.87)
+C4 A 15.0 lam 1.0 zeta 2.99: i >= growth bound for 30 theta above theta1: True (at theta1 + 3.00: i 50.677, bound 5.596, C 1.215)
+C1 A 8.0 lam 0.0 zeta 3.00: mean increasing on 400 u from 1e-6 to 1e3: True (m from 1e-06 to 9.66)
+C3 A 8.0 lam 0.0 zeta 3.00: C 1.110757 nats, support size 6, max i - C on grid 8.00e-09: True
+C2 A 8.0 lam 0.0 zeta 3.00: tail bounds hold for y = 0..112: True (min slack lower 16.5, upper 1.11)
+C4 A 8.0 lam 0.0 zeta 3.00: i >= growth bound for 30 theta above theta1: True (at theta1 + 3.00: i 26.306, bound 4.498, C 1.111)
+C5 A 8.0 lam 0.0 zeta 3.00: i - C at u = 1e-3..1e-6: -6.647e-03 -8.953e-04 -1.126e-04 -1.355e-05; (i - C - u log u)/u = 0.2612 0.2576 0.2578 0.2650: True
+C1 A 5.0 lam 0.0 zeta 2.33: mean increasing on 400 u from 1e-6 to 1e3: True (m from 1e-06 to 19.1)
+C3 A 5.0 lam 0.0 zeta 2.33: C 0.878191 nats, support size 4, max i - C on grid 1.63e-09: True
+C2 A 5.0 lam 0.0 zeta 2.33: tail bounds hold for y = 0..115: True (min slack lower 6.13, upper 0.878)
+C4 A 5.0 lam 0.0 zeta 2.33: i >= growth bound for 30 theta above theta1: True (at theta1 + 3.00: i 26.261, bound 15.594, C 0.878)
+C5 A 5.0 lam 0.0 zeta 2.33: i - C at u = 1e-3..1e-6: -6.448e-03 -8.754e-04 -1.106e-04 -1.336e-05; (i - C - u log u)/u = 0.4593 0.4568 0.4566 0.4580: True
+SOME CHECK FAILED

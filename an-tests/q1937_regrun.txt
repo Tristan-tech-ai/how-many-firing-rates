@@ -1,0 +1,7 @@
+control: A 3.0 lam 0.5: Poisson K 2, binomial K at n = 4000 (Fano near 1) 2
+control: A 8.0 lam 0.5: Poisson K 3, binomial K at n = 4000 (Fano near 1) 3
+control: A 15.0 lam 1.0: Poisson K 4, binomial K at n = 4000 (Fano near 1) 4
+control: A 8 lam 0.5, K at n = (4000, 40, 20, 10) (Fano at the mid rate 1.00, 0.89, 0.78, 0.55): [3, 3, 3, 4]
+control: A 15 lam 1.0, K at n = (4000, 40, 20, 17) (Fano at the mid rate 1.00, 0.79, 0.57, 0.50): [4, 4, 4, 5]
+control decide(): PASS FAIL VOID (expected PASS FAIL VOID)
+VERDICT q1937 registration run: CONTROLS PASS

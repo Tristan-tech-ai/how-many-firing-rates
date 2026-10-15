@@ -1,0 +1,7 @@
+Reading: most regular  n  88, Fano 0.059 to 0.306, D <= K: Poisson 0.636, binomial 0.943, matched 0.955, rate-matched 0.875
+Reading: middle        n  89, Fano 0.309 to 0.407, D <= K: Poisson 0.494, binomial 0.865, matched 0.843, rate-matched 0.775
+Reading: least regular n  88, Fano 0.407 to 4.781, D <= K: Poisson 0.420, binomial 0.841, matched 0.670, rate-matched 0.659
+Reading: all           n 265, Fano 0.059 to 4.781, D <= K: Poisson 0.517, binomial 0.883, matched 0.823, rate-matched 0.770
+Reading: fibres with A >= 8: 118; D <= K: Poisson 0.517, binomial 0.949, matched 0.924, rate-matched 0.839
+Reading: Poisson D - K distribution {-1: 34, 0: 103, 1: 103, 2: 23, 3: 2}
+Reading: Poisson D - K = +1 in 103 of 265 fibres (0.389); D - K = 0 in 103

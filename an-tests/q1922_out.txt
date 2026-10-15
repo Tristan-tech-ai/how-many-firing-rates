@@ -1,0 +1,3 @@
+Reading: units 161; loss_free quartiles 0.00000 0.00000 0.00000; share quartiles 1.0000 1.0000 1.0000; units with loss_free > 0.05: 0
+median loss_free 0.00000 over 161 units (bar < 0.02)
+VERDICT q1922 (Amendment 2269, H_map): PASS

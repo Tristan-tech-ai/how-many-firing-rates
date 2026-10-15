@@ -1,0 +1,3 @@
+Reading: fibres 265; fraction drifting among D > K fibres 0.062 (128), among D <= K fibres 0.051 (137); median mean change -0.150 spikes
+fraction drifting 0.057 over 265 fibres (bar >= 0.3)
+VERDICT q1929 (Amendment 2275, H_drift): FAIL

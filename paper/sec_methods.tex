@@ -1,0 +1,228 @@
+
+\section{Materials and Methods}\label{sec:methods}
+
+Table~\ref{tab:notation} lists the symbols of the main text. Appendix~\ref{app:C} uses further symbols, defined where they first
+appear and used only there.
+
+\begin{table}[tp]
+\caption{Notation of the main text.}\label{tab:notation}
+\centering
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{2.0cm}>{\raggedright\arraybackslash}p{11.0cm}}
+\hline
+symbol & meaning\\
+\hline
+$A$ & peak count: the largest expected count in the window above the spontaneous count\\
+$\lambda$ & spontaneous count: the expected count in the window without a stimulus\\
+$r$ & expected count in the window at a given stimulus; the rate times the window\\
+$K$ & number of steps of the optimal staircase, the number of mass points of the capacity-achieving input\\
+$D$ & number of significantly different mean counts across the tested sound levels of a fibre\\
+$C$, $i(x)$ & capacity of the counting channel; relative entropy between the count distribution at rate $x$ and the optimal output law\\
+$L$ & sound level, in dB\\
+$\mu$, $\sigma$ & mean and spread of the Gaussian distribution of sound levels\\
+$\sigma_{\rm s}$ & scale of the symmetric sigmoid\\
+$r_0$ & spontaneous count of a fitted shape\\
+$d$ & log-likelihood of the predicted shape minus that of the sigmoid, for one fibre\\
+$F$ & Fano factor: the variance of a count divided by its mean\\
+$\zeta$ & exponent of the counts of the matched test; the value 1 gives Poisson counts\\
+$n$ & number of trials of the binomial count\\
+$m_l$, $n_l$ & mean count and number of presentations at sound level $l$\\
+$T$ & statistic of the likelihood test\\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Recordings}
+The recordings are the public single-unit data of Heeringa and colleagues~\cite{Heeringa2024}, collected from 104 Mongolian gerbils
+(\emph{Meriones unguiculatus}) of either sex. The original experimental procedures were in accordance with the ethics authorities of
+Lower Saxony, Germany, under the permit numbers given in~\cite{Heeringa2024}; no new animal experiment was done for this study. In
+the rate-level recordings, tones at the best frequency were played at up to 27 sound levels with 10 presentations each. In the
+phase-locking recordings, tones were played at 5 to 8 levels with 20 to 40 presentations each. Spikes were counted from tone onset in
+a window of 50~ms, and the silent condition was excluded. The young-adult group holds animals below 12 months of age and the
+quiet-aged group animals above 36 months, as in Table~1 of Heeringa and colleagues~\cite{Heeringa2024}.
+
+\subsection{Shape of the rate-level function}
+A rate-level recording entered the test if it had at least 8 levels, at least 5 presentations at every level, and a range of level
+means of at least one spike per window. In all, 950 recordings passed, each from a different fibre. The predicted shape $r_0+A\,\Phi((L-\mu)/\sigma)^2$ and the symmetric
+sigmoid $r_0+A/(1+e^{-(L-\mu)/\sigma_{\rm s}})$ were fitted to the single-trial counts by Poisson maximum likelihood. Both shapes have four parameters, and each fit took the best of 12 fixed
+starting points of a bounded quasi-Newton search, a standard optimizer that keeps every parameter within its bounds. The bounds were $r_0$ between 0 and 50, $A$ between 0 and 100, $\mu$ between $-20$
+and 120~dB, and $\sigma$ and $\sigma_{\rm s}$ between 0.5 and 60~dB. For each fibre $d$ is the log-likelihood of the predicted shape minus that of the sigmoid.
+The test passed if the bootstrap 95\% lower bound of the mean of $d$ over fibres was above zero and the median fitted $\sigma$ lay
+between 6 and 20~dB; the bootstrap drew the fibres again with replacement 2000 times. Each synthetic fibre of the controls had 27
+sound levels from 0 to 78~dB in steps of 3~dB, with 10 presentations each. Its counts were Poisson, with a mean that followed one of
+the two shapes: spontaneous count 0.5, peak count 8, midpoint 40~dB, and width 12~dB for the predicted shape or scale 5~dB for the
+sigmoid. The rule
+passed on fibres drawn from the predicted shape and failed on fibres drawn from the sigmoid (Table~\ref{tab:controls}). The replication in the two age
+groups used the same values of $d$ and the same rule for the lower bound.
+
+\subsection{Number of distinct rates}
+A phase-locking recording entered the test if it had at least 4 levels, at least 20 presentations at every level, and a range of level
+means of at least one spike per window. For each fibre, the spontaneous count $\lambda$ is the mean count at the lowest level and the
+peak count $A$ is the range of the level means. The number $K$ of mass points of the capacity-achieving input on $[\lambda,\lambda+A]$
+was found by solving the capacity problem numerically for the fibre's $\lambda$ and $A$: rates are added one at a time where the
+optimality condition fails, until it holds everywhere. In words, the condition says that no rate left out of the input would make the
+count more informative than the rates already in it. Close to a peak count where a new rate appears, this numerical
+solution can hold the new rate with a weight below $0.005$. Two of the 265 fibres have such a rate, and counting it decides their
+outcome, so the Poisson fraction below is uncertain by at most two fibres. The number $D$ of distinct rates is one plus the number of neighbouring
+sound-level pairs whose counts differ by the exact conditional binomial test, with Holm's correction at level 0.05 within the fibre. Given the total count of two levels, the share of the first is binomial when
+their mean counts are equal, which is what the test checks. For example, a fibre whose mean counts at three sound levels are 5, 5 and 12, where only the second
+and third levels differ significantly, has $D=2$: the first two levels share one rate and the third has another. The test passed if $D\le K$ in at least 80\% of fibres. This bar lies below the fractions of 93\% to 100\% that synthetic
+fibres with a staircase reached in the controls, and far above the fraction of 0\% that graded fibres reached at peak counts 8 and 15. The controls used synthetic fibres with 7 sound levels and 40 presentations at peak and spontaneous counts
+$(A,\lambda)=(3,0.5)$, $(8,0.5)$ and $(15,1)$ (Table~\ref{tab:controls}). The test therefore separates the two codes only from $A$ of about 8 upward. Of the 265
+fibres, 118 have $A$ of at least 8. With Poisson counts $D\le K$ held in 61 of them and in 76 of the 147 others, both $51.7\%$;
+this split was computed after the test and is not part of its registered rule. A fibre counted as drifting if, at some level, the mean count of the first half
+of the presentations differed from that of the second half by more than the two-sided Bonferroni threshold at 0.05 for its number of
+levels. The drift test passed if at least 30\% of fibres drifted. Its controls are in Table~\ref{tab:controls}. The longer window of 75~ms is the longest that lies inside every trial.
+
+\subsection{Dispersion of the counts and the binomial channel}
+For every fibre and sound level with a mean count of at least one, the Fano factor is the sample variance of the counts across
+presentations divided by their mean. The Fano factor $F$ of a fibre is its median over these levels. The registered rule asked whether
+the median over all fibres and sound levels lay between 0.8 and 1.2. On 265 synthetic fibres with 6 sound levels and 30 presentations, the rule
+passed for Poisson counts and failed for negative binomial and binomial counts (Table~\ref{tab:controls}).
+
+For the binomial channel the count at rate $r$ is binomial with $n$ trials and success probability $r/n$. Its $K$ was found by the
+same method as for Poisson counts, on a grid of 801 rates in $[\lambda,\lambda+A]$, and mass points closer than 0.2 in the
+coordinate $2\sqrt r$ were merged. On a grid of rates the numerical solution can split one mass point into two neighbouring grid
+points just after a new rate appears, $0.05$ to $0.07$ apart in this coordinate in the cases examined, where the noise has unit width; merging removes these
+splits. It can only lower $K$, which makes the bound $D\le K$ harder to meet. The registered rule took for $n$ the smallest integer $n\ge\lambda+A$ for which the Fano factor
+$1-\bar m/n$ at the mean $\bar m$ of the level means does not exceed $F$. Because $1-\bar m/n$ grows with $n$, this integer is
+$\lceil\lambda+A\rceil$ whenever it exists. In 102 fibres no such integer exists, and in the first run the code then fell back to
+Poisson counts, against the purpose of the rule; $D\le K$ held in $72.5\%$ of fibres in that run. Before the second run the rule was
+changed to use $n=\lceil\lambda+A\rceil$ in these fibres as well, and the change was recorded in the log with the outcome of the
+first run. The bar, the data and $D$ were unchanged, and the change raised the fraction. The first run counts as void, and
+the reported result, $88.3\%$, is that of the second run. A binomial count is never more variable than a Poisson count
+with the same mean, so it cannot match a Fano factor of 1 or more; the 5 fibres with $F\ge1$ therefore keep Poisson counts. In synthetic checks before the data were used, the binomial $K$ at $n=4000$ equalled the Poisson $K$ at
+$(A,\lambda)=(3,0.5)$, $(8,0.5)$ and $(15,1)$, and it never decreased as $n$ decreased, rising by one step at
+$n=\lceil\lambda+A\rceil+1$ for $(8,0.5)$ and $(15,1)$. The test of $D$ assumes Poisson counts; for counts less variable than Poisson
+counts it finds fewer differences, so $D$ is not inflated by the dispersion. This was checked on 1000 synthetic fibres with one mean
+count at all 7 sound levels and 40 presentations (Table~\ref{tab:controls}).
+
+In the matched test the count at rate $r$ has probabilities proportional to $e^{ty}/(y!)^{\zeta}$, with $t$ chosen so that the mean is
+$r$, and the count is zero at $r=0$. The value 1 of $\zeta$ gives Poisson counts, and values above 1 give less variable ones. The
+distribution was truncated where the last retained count had probability below $10^{-12}$. For each fibre $\zeta$ is the root in
+$[1,50]$ of the condition that the Fano factor at $\bar m$ equals $F$, found numerically to within $10^{-12}$. A fibre whose Fano factor
+stayed above $F$ at the upper end of this interval was to keep the value 50 and be reported apart from the others; there was none. The
+quartiles of $\zeta$ over the fibres were $2.33$, $2.99$ and $3.60$; at a mean count of 3 the median value gives a Fano factor of
+$0.374$. Values of $\zeta$ of at least 1 never give counts more variable than Poisson counts, so the 5 fibres with $F\ge1$ keep the
+value 1. In synthetic checks before the data were used, this $K$ equalled
+the Poisson $K$ at the value 1 of $\zeta$ for the three pairs above. It never decreased as $\zeta$ increased: for $\zeta$ equal to 1,
+1.5, 2, 3 and 5 it was 3, 3, 4, 4 and 6 at $A=8$ and 4, 4, 5, 5 and 7 at $A=15$.
+
+In the test matched at every rate, a least-squares line through the Fano factors of the levels with a mean count of at least one
+gives each fibre a Fano factor at every rate, kept between $0.05$ and $1$. At each rate the count is of the matched kind,
+with the value of $\zeta$ between 1 and 50 that gives the Fano factor of that line, found on 41 rates and interpolated
+to the grid. The quartiles of the fitted slope over the fibres were $-0.0573$, $-0.0355$ and $-0.0182$ per spike. In synthetic checks
+before the data were used, this channel reproduced the $K$ above when $\zeta$ was held fixed. Its graded control, at the median line of the fibres, is in Table~\ref{tab:controls}.
+
+The likelihood test uses, for each fibre, the level means $m_l$ over $n_l$ presentations and the variance $V(m)$ of the count matched
+at every rate. Its statistic $T$ is the smallest value of $\sum_l n_l(m_l-\mu_l)^2/V(\mu_l)$ over all monotone maps that take at most $K$ values
+on contiguous groups of levels. Here $\mu_l$ is the value of the map at level $l$, and each value is the mean of its group, weighted
+by the numbers of presentations. Its $p$-value comes
+from 200 sets of counts drawn from the matched count at the fitted group means, and a fibre counts as consistent with at most $K$
+steps if $p\ge0.05$. The controls drew synthetic fibres from the median line, with $K$ computed from the observed range of each,
+as on the data (Table~\ref{tab:controls}). Splitting the presentations of each level into odd and even ones, the squared difference of
+the means of the two halves averaged $1.008$ times its value under the variance model over all 1549 levels of the 265 fibres, so the model is not too small.
+
+A larger $K$ is easier to meet, so the graded control was repeated for regular counts, registered before it was run. Synthetic fibres
+with 7 sound levels, 40 presentations and Conway-Maxwell-Poisson counts with $\zeta$ equal to 3, close to the median of the fibres,
+were scored with the $K$ of these counts. This $K$ is 4 at $(A,\lambda)=(8,0.5)$ and 5 at $(15,1)$, and the outcomes are in Table~\ref{tab:controls}. Among the 118 recorded fibres
+with $A$ of at least 8, $D\le K$ held in $92.4\%$ with the matched $K$, a fraction computed after the test.
+
+
+\begin{table}[tp]
+\caption{Synthetic controls of the registered tests, each run before that test was applied to the recorded fibres. Each row gives the synthetic
+fibres, what the rule or statistic must do on them, and what it did. $(A,\lambda)$: peak and spontaneous count.}\label{tab:controls}
+\centering
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{5.0cm}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{3.6cm}}
+\hline
+test & synthetic fibres & required & outcome\\
+\hline
+shape & 200 from the predicted shape & pass & LB $0.0802$, passed\\
+shape & 200 from the symmetric sigmoid & fail & LB $-0.2709$, failed\\
+$D\le K$, Poisson & staircase, $(A,\lambda)=(3,0.5)$, $(8,0.5)$, $(15,1)$ & meet & $0.97$, $1.00$, $0.93$\\
+$D\le K$, Poisson & graded, same three pairs & not meet & met in $0.70$, $0.00$, $0.00$\\
+drift & stationary & not marked & marked in $0.045$\\
+drift & rate up by $25\%$ in the second half & marked & marked in $0.818$\\
+Fano factor in $[0.8,1.2]$ & Poisson counts & pass & median $0.965$, passed\\
+Fano factor in $[0.8,1.2]$ & negative binomial, Fano factor $1.6$ & fail & median $1.535$, failed\\
+Fano factor in $[0.8,1.2]$ & binomial, Fano factor $0.6$ & fail & median $0.571$, failed\\
+$D$ on one mean count & Poisson, mean counts 3 and 8 & $D=1$ & $D>1$ in $3.2\%$ and $4.0\%$\\
+$D$ on one mean count & matched counts, $\zeta=3$ & $D=1$ & $D>1$ in none\\
+likelihood test & staircase, median line, $(8,0.5)$ and $(15,1)$, full and partial range & reject at most $10\%$ & rejected $3\%$, $3\%$, $5\%$, $6\%$\\
+likelihood test & graded, same four cases & reject at least $70\%$ & rejected $100\%$ in all four\\
+$D\le K$, matched & staircase and graded, $\zeta=3$, $(8,0.5)$ and $(15,1)$ & meet / not meet & staircase $100\%$, $100\%$; graded $16.0\%$, $0.5\%$\\
+$D\le K$, matched at every rate & staircase and graded, median line, $(8,0.5)$ and $(15,1)$ & meet / not meet & staircase $100\%$, $100\%$; graded $1.0\%$, none\\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Count changes of the Poisson channel}
+A count change $A_K$ was located by following the optimal input with $K-1$ mass points upward in $A$. At each step the information was
+maximized for the current set of rates by Newton's method, with each step limited in size, in arithmetic of 160 bits (about 48
+digits). The optimality condition compares, at
+each rate $x$, the relative entropy $i(x)$ between the count distribution at $x$ and the count distribution of the optimal input; it
+holds when $i(x)$ is nowhere larger than at the rates in use. The largest value of $i(x)-i(0)$ away from the rates in use was
+evaluated with 40 significant digits. The first change of sign of this value, located by repeated linear interpolation within an interval below
+$2\times10^{-6}$, is the peak count at which the optimal input gains a new rate. In words, a new rate appears at the peak count
+where some rate outside the input first becomes as informative as the rates in use. On the branch with 23 rates this procedure
+placed $A_{24}$, the peak count at which the 24th rate appears, at $385.381131$, against $385.3810$, the value of
+Table~\ref{tab:countlaw}. That value came from an earlier, independent method: the new rate was inserted just above the count
+change with a small weight and followed downward in $A$ while its weight decreased, and the count change is the peak count at which
+that weight reaches zero. This zero was found by linear extrapolation from weights $5\times10^{-4}$ and $2.5\times10^{-4}$. A first walk with the
+method used here gave $385.381193$. The predictions of Table~\ref{tab:countlaw} are scored against $385.3810$; at the later values
+their misses change by at most $2\times10^{-4}$, far inside the tolerance of $0.15$.
+
+\subsection{Proved counts}\label{sec:certmeth}
+A computed optimal input is a numerical point, and a numerical point can be wrong without any sign of it. A count is proved instead
+by ball arithmetic, the interval arithmetic with midpoint-radius balls: every number is carried as a midpoint and a radius
+that contains the exact value, so that every
+inequality it confirms holds for the exact quantities. The proof has three parts. First, a test of Krawczyk's type shows that the
+equations of a stationary input with the given number of rates have exactly one solution in a small box around the computed point.
+Second, every weight in that box is positive, so the solution is a probability distribution with that number of rates. Third, the
+relative entropy $i(x)$ of this input stays at or below the capacity on all of $[0,A]$. Near each rate this follows from a negative
+second derivative on an enclosing interval, and between the rates from Taylor bounds on pieces that are split until each piece is
+decided. The capacity-achieving input is unique and the optimality condition is sufficient~\cite{Shamai1990}, so the input found
+is the optimal one and the count is exact. The computation truncates the counts at a large value; a separate bound on the omitted
+tail shows that it is far below every margin of the proof. At $A=412.42711264916346$ the smallest margin was $1.24\times10^{-25}$
+and the tail bound $4.4\times10^{-46}$.
+
+\subsection{Registration}
+Every test of Section~\ref{sec:an} and every prediction of Table~\ref{tab:countlaw} was recorded in a dated log before the data were analysed or the count change was
+computed. Entries from 14 October 2026 on include every test of Section~\ref{sec:an} and the predictions for 47 and 67 steps. They
+carry a certificate of their date from an independent authority: a dated signature from a public dating service and an
+OpenTimestamps proof, both of which anyone can check without trusting the author. The predictions for 21 to 25 steps were entered on
+9 September 2026. For 25 steps the copy of the log dated on 14 October by that authority came before the computation, made on 15
+October; for 21 to 24 steps the
+order of prediction and computation rests on the log alone. The log is deposited with the code named under Data availability. Each entry holds the decision rule, the readout script and the outcome of the readout on synthetic data. The outcome of each test is the last line printed by its readout script, and failed tests are reported with the passed ones. Table~\ref{tab:evidence} lists each claim of the paper with the kind of evidence
+behind it.
+
+\begin{table}[tp]
+\caption{The claims of the paper and their evidence. Proved: a proof in the paper or in S1 Text. Proved by computer: a computer-assisted
+proof (Section~\ref{sec:certmeth}). Registered: a test whose rule was fixed in the dated log before its data were analysed; dated:
+its date is confirmed by an independent authority. After the tests: a reading computed after a registered test, not part of its rule.}\label{tab:evidence}
+\centering
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{6.2cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{4.4cm}}
+\hline
+claim & where & evidence\\
+\hline
+optimal tuning curve is the quantile staircase & Proposition~\ref{prop:L1} & proved\\
+number of steps at least $0.056\,A^{2/3}$ for large $A$, any fixed spontaneous count & Theorem~\ref{thm:C}, Appendix~\ref{app:C} & proved; one step checked
+in interval arithmetic\\
+finitely many rates for the matched counts & S1 Text & proved\\
+exact number of steps follows the conjectured law & Section~\ref{sec:countlaw} & conjectured; predictions registered, six of seven held\\
+24 rates at $A=412.42711264916346$ & Section~\ref{sec:countlaw} & proved by computer\\
+count changes at 21 to 24 steps predicted before computation & Table~\ref{tab:countlaw} & registered on 9 September 2026, log only\\
+count changes at 25, 47 and 67 steps predicted before computation & Table~\ref{tab:countlaw} & registered, dated\\
+shape of the rate-level functions, in both age groups & Section~\ref{sec:an} & registered, dated; held\\
+distinct rates within the staircase, seven forms of the test & Section~\ref{sec:an} & registered, dated; two held, five failed\\
+counts as variable as Poisson counts & Section~\ref{sec:an} & registered, dated; failed\\
+exact square-root form of the shape, against the form tested first & Section~\ref{sec:an} & registered, dated; failed\\
+predicted direction of asymmetry, against the opposite direction & Section~\ref{sec:an} & registered, dated; held\\
+predicted form against a more skewed curve of the same direction & Section~\ref{sec:an} & after the tests; the other curve fits better\\
+discrete levels in six earlier datasets from other species and areas & Section~\ref{sec:discussion}, S1 Text & registered, log only; not found\\
+fractions for $A\ge8$ and by groups of Fano factor & Section~\ref{sec:an} & after the tests\\
+\hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,4 @@
+Reading: known-answer check, largest |d_sq - q1925 d| = 0 over 950 fibres (q1925 rows 950)
+Reading: mean g -0.0904, bootstrap lower bound -0.1062, fraction g > 0 0.318; r0_ex quartiles 0.58 2.41 4.35
+(a) mean g -0.0904, bootstrap 95% lower bound -0.1062 (bar > 0): False; (b) mean d_ex 0.1123, bootstrap 95% lower bound 0.0675 (bar > 0), median sigma_ex 7.42 dB (bar [6, 20]): True; reading: mean g high-spontaneous half -0.0346, low half -0.1469
+VERDICT q1935 (Amendment 2282, H_sqrt): FAIL

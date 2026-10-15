@@ -1,0 +1,14 @@
+control: A 8 lam 0.5 zeta 1: K from rows 3, q1939 K 3
+control: A 8 lam 0.5 zeta 3: K from rows 4, q1939 K 4
+control: A 15 lam 1.0 zeta 1: K from rows 4, q1939 K 4
+control: A 15 lam 1.0 zeta 3: K from rows 5, q1939 K 5
+control: zeta_for targets [0.6 0.4 0.3 0.2] -> Fano [0.6 0.4 0.3 0.2], capped [False False False False]
+control: median line of the 265 fibres: a 0.7034, b -0.0355
+control: A 8 lam 0.5, K (median line) 3, capped share 0.000: D <= K in 1.000 of staircase and 0.010 of graded fibres
+control: A 15 lam 1.0, K (median line) 5, capped share 0.000: D <= K in 1.000 of staircase and 0.000 of graded fibres
+control decide(): PASS FAIL VOID (expected PASS FAIL VOID)
+VERDICT q1950 registration run: CONTROLS PASS
+
+real	0m8.826s
+user	0m0.000s
+sys	0m0.015s

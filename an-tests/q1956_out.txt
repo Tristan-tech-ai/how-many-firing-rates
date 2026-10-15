@@ -1,0 +1,10 @@
+Reading: range extended in 149 fibres, K raised in 55 of them
+Reading: consistent among changed 0.550 (149), among unchanged 0.422 (116)
+Reading: A >= 8, fibres 118, consistent 0.534
+Reading: A < 8, fibres 147, consistent 0.463
+Reading: most regular third, consistent 0.705
+Reading: middle third, consistent 0.404
+Reading: least regular third, consistent 0.375
+Reading: consistent with K + 1 steps 0.868
+consistent with at most K steps (hull range) in 0.494 of 265 fibres (bar 0.80)
+VERDICT q1956 (Amendment 2299, H_stepsLS): FAIL

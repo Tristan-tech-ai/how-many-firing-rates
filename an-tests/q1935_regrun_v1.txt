@@ -1,0 +1,5 @@
+control: M_ex data, r0 0.2 or 4.0 (200 synthetic fibres): FAIL, (a) mean d_ex 0.0297, bootstrap 95% lower bound -0.0090 (bar > 0), median sigma_ex 11.82 dB (bar [6, 20]): False; (b) mean g 0.0815 (bar >= 0): True; (c) mean g high-spontaneous half 0.0414 vs low half 0.1216 (bar high > low): False
+control: M_log data: FAIL, (a) mean d_ex -0.0029, bootstrap 95% lower bound -0.0363 (bar > 0), median sigma_ex 8.96 dB (bar [6, 20]): False; (b) mean g 0.0511 (bar >= 0): True; (c) mean g high-spontaneous half -0.0150 vs low half 0.1172 (bar high > low): False
+control: M_sq data: FAIL, (a) mean d_ex 0.1529, bootstrap 95% lower bound 0.1123 (bar > 0), median sigma_ex 10.37 dB (bar [6, 20]): True; (b) mean g -0.1124 (bar >= 0): False; (c) mean g high-spontaneous half -0.0533 vs low half -0.1716 (bar high > low): True
+control decide(): PASS FAIL FAIL FAIL VOID VOID VOID (expected PASS FAIL FAIL FAIL VOID VOID VOID)
+VERDICT q1935 registration run: CONTROLS FAIL

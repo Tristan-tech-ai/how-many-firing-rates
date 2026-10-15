@@ -1,0 +1,8 @@
+Reading: A >= 8, fibres 118, consistent 0.492
+Reading: A < 8, fibres 147, consistent 0.333
+Reading: most regular third, fibres 88, consistent 0.534
+Reading: middle third, fibres 89, consistent 0.348
+Reading: least regular third, fibres 88, consistent 0.330
+Reading: consistent with K + 1 steps 0.838, with K - 1 steps 0.113
+consistent with at most K steps in 0.404 of 265 fibres (bar 0.80)
+VERDICT q1953 (Amendment 2297, H_stepsL): FAIL

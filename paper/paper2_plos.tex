@@ -1,0 +1,1342 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{url}
+
+\usepackage{changepage}
+
+\usepackage{textcomp,marvosym}
+
+\usepackage{cite}
+
+\usepackage{nameref,hyperref}
+
+\usepackage[right]{lineno}
+
+\usepackage[nopatch=eqnum]{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+\usepackage[table]{xcolor}
+
+\usepackage{array}
+
+\newcolumntype{+}{!{\vrule width 2pt}}
+
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+  \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+  \cline{#1}%
+  \noalign{\vskip\arrayrulewidth}%
+  \noalign{\global\arrayrulewidth\savedwidth}%
+}
+
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+
+
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in
+\textheight 8.75in
+
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\renewcommand{\figurename}{Fig}
+
+
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+
+
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+\lfoot{\today}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newenvironment{IEEEkeywords}{\par\noindent\textit{Index terms}:\ }{\par}
+
+\begin{document}
+\vspace*{0.2in}
+
+\begin{flushleft}
+{\Large
+\textbf{How many firing rates should a neuron use? Infomax staircases for a given stimulus distribution and a test in the auditory nerve}
+}
+\newline
+\\
+I Made Tristan Hope Firdaus\textsuperscript{1*}
+\\
+\bigskip
+\textbf{1} Independent Researcher, Bali, Indonesia
+\\
+\bigskip
+
+* madetristanfirdaus@gmail.com
+\end{flushleft}
+
+\section*{Abstract}
+A sensory neuron turns a stimulus into a firing rate, and a downstream cell sees only the spike count in a short window. Barlow asked which tuning curve, the map from stimulus to rate, carries the most information about a stimulus whose distribution is given. We answer this for a neuron whose count is Poisson, with a mean between its spontaneous count and that count plus a peak count. Its most informative rate distribution uses only a few rates. We prove that the most informative tuning curve is a staircase that uses exactly these rates, with its steps at quantiles of the stimulus distribution. We prove that the number of steps grows at least as fast as 0.056 times the two-thirds power of the peak count, faster than the square-root growth of the rates that noise can tell apart. A conjectured law for the exact number, from Gaussian noise, predicted the peak counts at which the staircase gains its 21st to 25th and 47th step before they were computed, and missed its 67th. For large peak counts the square root of the optimal rate approaches a linear function of the stimulus distribution function, the Poisson form of Laughlin's histogram equalisation. We tested both predictions on gerbil auditory-nerve fibres, registering every test before analysis. Pooled over 950 fibres, rate-level functions favour the asymmetric shape predicted for natural sound levels over a symmetric sigmoid, in young and aged animals. Their counts have about a third of the Poisson variance. Under Poisson counts about half of 265 fibres use more distinct rates than the staircase allows. With counts matched to each fibre's regularity, 77 to 82 percent stay within it, against a registered 80 percent. A likelihood test finds about half within the optimum and nearly nine in ten within one step more.
+
+\section*{Author summary}
+A nerve cell reports a sound to the brain with spikes, and the cells that receive its signal count only the spikes that arrive in a short time. We asked how such a cell should turn the loudness of a sound into a firing rate, given how loud the sounds of the world usually are. Barlow raised this question in 1961. We prove that the best response is a staircase instead of a smooth curve. The cell should use only a few firing rates, switch between them at loudness levels set by how common each level is, and use more rates when it can fire more spikes. We tested these ideas on gerbil auditory-nerve fibres, registering every test before looking at data. Pooled over fibres, the predicted shape fits better than a symmetric curve, in young and old animals. Treated as purely random counts, half exceed the staircase. Their counts are far more regular; with this regularity three in four to four in five stay within it, and a more sensitive test finds about half within it and nearly nine in ten within one rate more.
+
+\begin{IEEEkeywords}
+efficient coding, Poisson neuron, tuning curve, channel capacity, discrete input, auditory nerve
+\end{IEEEkeywords}
+
+
+\clearpage
+\newgeometry{top=0.85in,left=1in,right=1in,footskip=0.75in}
+\linenumbers
+
+\section{Introduction}\label{sec:intro}
+
+A sensory neuron turns a stimulus into a firing rate, and the cell it drives sees only how many spikes arrive in a short window. We call
+the map from stimulus to expected spike count the tuning curve; for sound level it is the rate-level function. If the neuron is to
+carry as much information as it can about the stimulus, which tuning curve should it have? Barlow asked this question in 1961 with the
+stimulus distribution held fixed: the neuron cannot choose what the world presents, only how it responds~\cite{Barlow1961}. The tuning
+curve that maximizes the mutual information between stimulus and count is called the infomax tuning curve. Laughlin gave the classic
+answer for a neuron whose response is limited by its range but not by noise: the response should follow the cumulative distribution of
+the stimulus, so that every response level is used equally often~\cite{Laughlin1981}. Laughlin's curve is smooth; for a neuron
+whose count in a short window is noisy, we find that the answer is a staircase.
+
+Spikes are noisy, and a short window holds few of them. The standard model of this noise is the Poisson count, whose variance
+equals its mean; we build the theory on it and then test, on recorded fibres, how much their more regular counts change its
+predictions. We consider a neuron whose count in the window is Poisson, with a mean that
+lies between its spontaneous count $\lambda$, the count with no stimulus, and $\lambda+A$. The peak count $A$ is the largest
+expected count above the spontaneous one, the peak firing rate times the window. Seen as a communication channel from rate to count,
+such a neuron has a best distribution of rates, the one under which the count carries the most information. Rates closer together
+than the width of the noise are hard to tell apart from the count, so the range is best used by a few well separated rates.
+Information theory calls this best distribution the capacity-achieving input, and for this channel it indeed puts all its probability
+on a few rates~\cite{Shamai1990}. Numerical work found that the infomax tuning curve of a
+Poisson neuron is a staircase whose number of steps grows as the window lengthens~\cite{Nikitin2009}; in the opposite limit of many
+spikes, the optimum approaches a smooth curve set by the stimulus distribution and the noise~\cite{McDonnellStocks2008}. Two questions
+stayed open. How many steps does the optimal staircase have, as a function of the peak count? And do real neurons follow it?
+
+This paper answers the first question with a theorem and puts the second to registered tests of two predictions: the shape of the
+tuning curve's envelope, and the number of distinct rates the curve uses. We show that, for any continuous
+stimulus distribution, the infomax tuning curve assigns the rates of the capacity-achieving input to the stimulus by its quantiles
+(Proposition~\ref{prop:L1}). Quantiles are the stimulus values that cut its distribution into pieces of given probability, as the
+median cuts it into halves. The stimulus distribution therefore decides where the steps sit and nothing else: their number and their
+values depend only on $A$ and $\lambda$. We prove that the number of steps grows at least like $0.056\,A^{2/3}$
+(Theorem~\ref{thm:C}). A naive count of resolvable rates, the range of rates divided by the width of the noise, grows only like
+$\sqrt A$. Because the variance of a Poisson count equals its mean, the square root makes the noise nearly the same at every rate. In
+the coordinate $2\sqrt{r}$ the Poisson noise has unit width, and the range from $0$ to $A$ becomes an interval of length $2\sqrt A$,
+the Fisher length of the range, named after the Fisher information, which measures how precisely a count determines its rate. The optimal staircase uses more steps than that. The theorem concerns large peak counts; the fibres
+tested below have peak counts of about 3 to 14 (5 to 14 for those of the shape test), where the optimal staircase for Poisson
+counts has two to five steps. For large peak
+counts the square root of the optimal rate follows the distribution function of the stimulus, which is Laughlin's rule with the
+Poisson noise taken into account. The same problem with additive
+Gaussian noise of fixed variance, the Gaussian channel, has a law for its number of levels, about $0.4\,a^{4/3}$ for an input range
+of half-width $a$ in units of the noise, proved from below and measured~\cite{Paper1}. Carried over through the Fisher length, it gives
+a sharper law for the exact number of steps: a new step appears each time the peak count passes a threshold, and the law predicts
+these thresholds. The thresholds tested lie at peak counts of about 300 to 2000, far above those of neurons, so they test the
+mathematics of the law and not its use for neurons. We state it as a conjecture, together with the
+predictions it made before they were computed, including one that failed.
+
+For the second question we used single auditory-nerve fibres of the gerbil, recorded at many sound levels with repeated
+presentations~\cite{Heeringa2024}. The auditory nerve is a natural place to look. Its rate-level functions shift towards the most
+frequent levels when the level distribution changes, in the midbrain and, more weakly, in the nerve itself~\cite{Wen2009}. The
+decibel amplitude of natural sounds has a roughly symmetric bell-shaped distribution~\cite{Escabi2003}, for which the theory predicts a
+specific asymmetric rate-level function. Every test was recorded, with its decision rule, in a dated log before the data were analysed.
+The log is in the repository named under Data availability, and the entries for these tests carry a certificate of their date
+from an independent authority, so the order of prediction and analysis can be checked (Section~\ref{sec:methods}). The failures are
+reported with the successes. Pooled over fibres, the rate-level functions favour the predicted asymmetric shape over a symmetric sigmoid, in young and in aged animals.
+Under Poisson counts about half of the fibres use more distinct rates, that is significantly different mean counts across sound
+levels, than the optimal staircase allows, most by one. Their counts, however, are far less variable than
+Poisson counts. For counts matched to the mean regularity of each fibre, more than four in five fibres stay within the optimal
+staircase. For counts whose regularity is matched at every rate, the model that fits them best, about three in four do, short of the
+registered $80\%$. A more powerful likelihood test finds about half of the fibres consistent with the optimal number of steps and nearly nine in ten
+with one step more.
+
+Kostal and Shinomoto~\cite{KostalShinomoto2016} studied a Poisson neuron with the same kind of bounds on its rate. Their downstream
+reader sees the full spike train, and the best input then switches between two rates. Here the reader sees only the count in a
+window, and counting is what makes the number of optimal rates grow with the peak count instead of staying at two.
+
+Section~\ref{sec:results} holds the results. Section~\ref{sec:laughlin} derives the infomax tuning curve for a given stimulus
+distribution. Section~\ref{sec:thmC} states the lower bound on the number of steps, whose proof is in Appendix~\ref{app:C}.
+Section~\ref{sec:countlaw} states the conjectured law for the exact number and the predictions that tested it, and Section~\ref{sec:an}
+reports the registered tests on auditory-nerve fibres. Section~\ref{sec:discussion} discusses them, and Section~\ref{sec:methods}
+describes the data, the fits and the tests. The Supplementary Notes (S1 Text) treat counts more or less regular than Poisson counts, a
+spontaneous rate, codes for windows that hold few spikes, and a test for discrete levels on six further public datasets.
+
+\section{Results}\label{sec:results}
+
+\subsection{Infomax tuning curves for a given stimulus distribution}\label{sec:laughlin}
+
+Let a stimulus $S$ have distribution $P_S$, and let a neuron map it to an expected spike count $r(S)$ in one counting window, with
+$\lambda\le r(s)\le\lambda+A$; here $\lambda$ is the spontaneous count and $A$ the peak count above it. The response is
+$Y\,|\,S=s\sim\mathrm{Poisson}(r(s))$. The tuning curve $r$ is the design variable and $P_S$ is fixed, as in Barlow's and Laughlin's
+formulation of efficient coding. Let $C(A,\lambda)$ be the capacity of the Poisson channel with input in $[\lambda,\lambda+A]$, the
+largest mutual information between rate and count that any distribution of rates in this range can give; for example,
+$C(3,0)=0.5944$ nats, or $0.858$ bits per window. Let
+$\pi=\sum_{j=1}^{K}w_j\delta_{x_j}$, with weights $w_j$ and mass points $x_1<\dots<x_K$, be its capacity-achieving input: the
+distribution of rates that gives probability $w_j$ to the rate $x_j$ and reaches the capacity. Shamai proved that it is unique and has
+finitely many mass points~\cite{Shamai1990}. The letter $\pi$ always denotes this distribution; the number $3.14159$ enters only
+inside constants of Theorem~\ref{thm:C} and its proof. Write $W_j=w_1+\dots+w_j$ and $W_0=0$.
+
+\begin{proposition}\label{prop:L1}
+For every measurable tuning curve $r$ with values in $[\lambda,\lambda+A]$,
+\[
+I(S;Y)\le C(A,\lambda),
+\]
+with equality if and only if the law of $r(S)$ is $\pi$. If $P_S$ has a continuous distribution function $F_S$, equality is attained,
+and, up to a $P_S$-null set, the nondecreasing maximizer is the staircase
+\[
+r^*(s)=x_j\qquad\text{for } F_S(s)\in(W_{j-1},W_j],\quad j=1,\dots,K .
+\]
+Every maximizer takes exactly $K$ values outside a $P_S$-null set.
+\end{proposition}
+
+In words: no tuning curve carries more information than the capacity, and a tuning curve reaches it exactly when the rates it
+produces have the distribution $\pi$. The law of $r(S)$ is this distribution of produced rates, and a $P_S$-null set is a set of
+stimuli of probability zero, on which two tuning curves may differ without any change in information. The count depends on the
+stimulus only through the rate, so passing from the stimulus to the rate loses nothing, and the information of the tuning curve is
+the information of its rates. To build the nondecreasing one, sort the stimuli by their cumulative probability. Give the lowest
+rate $x_1$ to the lowest fraction $w_1$ of stimuli, the next rate $x_2$ to the next fraction $w_2$, and so on up to $x_K$. Any
+assignment of the rates to pieces of the stimulus distribution with these probabilities is optimal; the nondecreasing one has the shape
+of the rate-level functions recorded in the auditory nerve.
+
+\begin{proof}
+Put $X=r(S)$. The count is drawn from the rate alone, so given $X$ the count does not depend on $S$; thus $S\to X\to Y$ is a Markov
+chain and $I(S;Y)\le I(X;Y)$. Since $X$ is computed from $S$, also $X\to S\to Y$ is a Markov chain and $I(X;Y)\le I(S;Y)$. Hence
+$I(S;Y)=I(X;Y)$. The variable $X$ takes values in $[\lambda,\lambda+A]$, so $I(X;Y)\le C(A,\lambda)$, with equality if and only if the
+law of $X$ is a capacity-achieving input, that is $\pi$ by uniqueness. If $F_S$ is continuous, $U=F_S(S)$ is uniform on $(0,1)$. Let
+$G$ be the distribution function of $\pi$ and $G^{-1}(u)=\inf\{x:G(x)\ge u\}$ its quantile function. Then $r^*(S)=G^{-1}(U)$ has law $\pi$, so $r^*$ attains
+the bound; it is nondecreasing and takes the value $x_j$ exactly when $U\in(W_{j-1},W_j]$. Any maximizer has law $\pi$, a $K$-point
+law, so it takes $K$ values almost surely.
+\end{proof}
+
+The proposition separates two questions. The stimulus distribution decides where the steps sit, at its quantiles $W_j$; it does not
+change their number or their values, which depend only on $A$ and $\lambda$. A staircase shape of the optimal tuning curve was found
+numerically for Poisson neurons with a finite coding window~\cite{Nikitin2009}; the proposition derives it for every continuous
+stimulus law from the uniqueness and discreteness of $\pi$. Fig~\ref{fig:schematic} shows the construction for a Gaussian stimulus.
+
+\begin{figure}[!h]
+\centering
+\caption{\textbf{The infomax tuning curve of a Poisson neuron is a staircase.} (A) A Gaussian stimulus distribution; the three dashed
+lines, $W_1$ to $W_3$ from left to right, mark the stimulus values below which the stimulus falls with probability $W_j$; the optimal tuning curve steps
+there for peak count $A=10$ and no spontaneous count. (B) The optimal tuning
+curves for $A=3$, $10$ and $25$, as a fraction of the peak count, with 2, 4 and 5 steps. Much of the weight of the optimal input sits at the lowest rate,
+silence, and at the peak rate, so the inner steps lie close to the middle of the stimulus range; the dotted curve $F_S(s)^2$ is the envelope
+that the staircase approaches only for large $A$. (C) The number of steps against the peak count, from numerical solutions of the
+capacity problem, with the asymptotic lower bound $0.056\,A^{2/3}$ of Theorem~\ref{thm:C}; at these peak counts the bound lies far
+below the number of steps, since it concerns how the number grows for large $A$. All values are computed numerically.}\label{fig:schematic}
+\end{figure}
+
+\begin{corollary}\label{cor:L2}
+Fix $\lambda\ge0$, and let $K(A,\lambda)$ be the number of mass points of $\pi$ at peak count $A$. Then the infomax tuning curve of
+Proposition~\ref{prop:L1} has $K(A,\lambda)$ steps, and $\liminf_{A\to\infty}K(A,\lambda)/A^{2/3}\ge 0.0560$.
+\end{corollary}
+\begin{proof}
+The number of values of $r^*$ is the number of mass points of $\pi$; apply Theorem~\ref{thm:C}, stated in the next section.
+\end{proof}
+
+The corollary holds for every fixed spontaneous count, as the fibres have. At the small peak counts of the fibres the bound says
+little, and the number of steps is computed numerically, as in Section~\ref{sec:an}.
+
+In the coordinate $2\sqrt r$ the Poisson noise has unit width and the range $[0,A]$ has length $2\sqrt A$, its Fisher length. A count
+of distinguishable levels, the Fisher length divided by the width of the noise, therefore grows only like $\sqrt A$. Since
+$2/3-1/2=1/6$, the infomax staircase uses more steps than that, by a factor of order $A^{1/6}$ at least. This comparison concerns
+large $A$: the constant $0.056$ is small, and at the peak counts of Fig~\ref{fig:schematic}C the bound lies far below the actual
+number of steps.
+
+\emph{The large-$A$ limit.} As $A$ grows, the steps become dense. In the limit of small noise the capacity-achieving distribution of
+the rate approaches the density proportional to the square root of the Fisher information. The Fisher information of a Poisson
+count about its rate $r$ is $1/r$, so this density is proportional to $r^{-1/2}$. McDonnell and Stocks~\cite{McDonnellStocks2008} use this argument to derive the optimal tuning curve as a
+nonlinear function of the stimulus distribution function. Under this density $\sqrt r$ is uniform on $[\sqrt\lambda,\sqrt{\lambda+A}]$.
+Proposition~\ref{prop:L1} maps the quantiles of the stimulus to the quantiles of this law, so that
+\begin{equation}
+r(s)\approx\bigl(\sqrt\lambda+(\sqrt{\lambda+A}-\sqrt\lambda)\,F_S(s)\bigr)^2 .\label{eq:envelope}
+\end{equation}
+Without spontaneous count Eq~\eqref{eq:envelope} becomes $A\,F_S(s)^2$, and it is close to $\lambda+A\,F_S(s)^2$ only when $\lambda$ is small compared with
+$A$. This is histogram equalization in the square-root coordinate, the Poisson form of Laughlin's rule. The approximation describes the
+envelope of the optimal staircase when $A$ is large and the steps are many. At the peak counts of the rate-level functions of Section~\ref{sec:an},
+about 5 to 14 for four fibres in five, the staircase has only a few steps, and the smooth curve is the predicted shape of its envelope. The shape test of Section~\ref{sec:an} checks this envelope, and its
+discreteness test checks the number of steps.
+
+
+\subsection{The number of firing rates grows at least like $A^{2/3}$}\label{sec:thmC}
+
+Let $K(A,\lambda)$ be the number of mass points of the capacity-achieving input of the channel $Y\sim\mathrm{Poisson}(X)$ with
+$\lambda\le X\le\lambda+A$, where $\lambda\ge0$ is the spontaneous count, and $K(A)=K(A,0)$. The constant of the theorem comes from a one-dimensional optimization over a parameter
+$\xi$ of the proof; a reader interested only in the result may skip the definitions that follow. In words, $c_P$ below is the best
+constant that the construction of the proof yields, and $\lambda_M$ and $\lambda_\ell$ are numbers of that construction, unrelated to
+the spontaneous count $\lambda$. For $\xi\in(0,1)$ put $\phi_\xi=\xi\log\xi+1-\xi$, let $\kappa_L(\xi)\in(0,\xi)$ be the root of
+$\log k+(1-k)/\xi=0$, and put
+\[
+h(f)=\frac{\xi\log f+1-f}{\phi_\xi},\qquad
+\mathcal L(1,z)=\frac{z-1}{\log z},\qquad
+\varrho=\frac{\mathcal L(1,M)}{\mathcal L(1,\ell)},
+\]
+where $M=e^{\lambda_M}$ with $\lambda_M=1-\psi(2)+e^{\psi(2)}$, $\ell=e^{-\lambda_\ell}$ with $\lambda_\ell=2.777$, and $\psi$ is the
+digamma function. Let
+\[
+c_{0}^{\max}(\xi)=\Bigl[\bigl(1+\xi\kappa_L^{-1/2}\bigr)\kappa_L^{-1/4}\varrho^{1/2}/\phi_\xi\Bigr]^{-2/3},\qquad
+\mathcal I(\xi)=\int_{\kappa_L}^{1}\Bigl(\frac{h(f)}{f}\Bigr)^{1/2}df .
+\]
+Both quantities enter the bound as follows.
+
+\begin{theorem}\label{thm:C}
+For every fixed $\lambda\ge0$,
+\[
+\liminf_{A\to\infty}\frac{K(A,\lambda)}{A^{2/3}}\;\ge\;c_P:=\max_{0<\xi<1}\frac{c_{0}^{\max}(\xi)^{1/2}\,\mathcal I(\xi)}{2\pi}\;>\;0.0560 .
+\]
+At $\xi=0.2411$, near the maximizer, $c_{0}^{\max}=0.06491$, $\mathcal I=1.38249$ and the bound is $0.05606$.
+\end{theorem}
+
+In words: for every $\varepsilon>0$ and every large enough $A$, the optimal input has at least $(c_P-\varepsilon)\,A^{2/3}$ mass
+points; the bound concerns growth, and the lower limit $\liminf$ allows finitely many exceptions at small $A$. The proof is given
+in Appendix~\ref{app:C}; its constants are enclosed in interval arithmetic, so the numerical steps of the proof are proved bounds. In the Fisher half-length $a=\sqrt A$ the bound reads $K\ge(c_P-o(1))\,a^{4/3}$, where $o(1)$ tends to zero as $A$ grows. This is the exponent of the count
+law of the Gaussian channel: the companion paper~\cite{Paper1} proves that the Gaussian channel with input in $[-a,a]$ has at least
+$0.166\,a^{4/3}$ mass points for large $a$, and measures about $0.4002\,a^{4/3}$. The best published lower bound on the same number $K(A)$
+that we know of is of order $\sqrt A$~\cite{DBS2021,BDS2024}, so the theorem raises the proved exponent from $1/2$ to $2/3$. The
+best published upper bound is of order $A$~\cite{BDS2024}, so the proved order of growth now lies between $A^{2/3}$ and $A$; the law
+of Section~\ref{sec:countlaw} places it at $A^{2/3}$. The constant of Theorem~\ref{thm:C} is far from sharp. At the peak count
+$2000$ the bound gives about 9 steps, while the optimal input has 66; the theorem gives the order of growth from below and leaves the
+exact count to the law of Section~\ref{sec:countlaw}.
+
+
+
+\subsection{A conjectured law for the number of steps}\label{sec:countlaw}
+
+Theorem~\ref{thm:C} fixes the order of growth from below. The exact number of steps is described by a law that is conjectured and
+tested by predictions recorded before the computations. In the coordinate $t=2\sqrt x$ the Poisson noise has nearly unit variance,
+so the range $[0,A]$ has Fisher length $2\sqrt A$ and half-length $\sqrt A$. The levels of the optimal input are spaced like those
+of the Gaussian channel with unit noise and input in $[-a,a]$, here with $a=\sqrt A$~\cite{Paper1}. The exception is the level at silence: there the output
+is degenerate, and the levels next to it form a boundary layer. Let $A_g(K)$ be the half-length at which the Gaussian count changes
+from $K-1$ to $K$. Let $A_K$ be the peak count at which the Poisson count does. The law reads
+\begin{equation}
+\sqrt{A_K}=A_g(K)+c(K),\qquad c(K)=\tfrac12\,E\bigl(g_{\rm eff}(K)\bigr)+0.002,\qquad g_{\rm eff}(K)=A_g(K+1)-A_g(K-1).\label{eq:countlaw}
+\end{equation}
+In words, the $K$-th step of the neuron appears where the Gaussian channel gains its $K$-th level, measured in the Fisher
+half-length, shifted by a small wall constant $c(K)$ that accounts for the boundary layer at silence. To predict $A_K$ one takes
+$A_g(K-1)$, $A_g(K)$ and $A_g(K+1)$ from the Gaussian channel, forms $g_{\rm eff}(K)$, evaluates $c(K)$ and squares
+$A_g(K)+c(K)$. Here $E(g)$ is an excess defined from two half-line chains, small models of the levels next to one end of the range.
+Each chain has thirty free levels next to the wall and frozen levels at spacing $g$ beyond them, one chain with Poisson noise and one
+with Gaussian noise. The excess is the difference
+between their last free levels, measured in the Fisher coordinate. We call this the finite-chain variant. The fit $E(g)=0.9840-0.2347\,g$
+to the chain's own excess on $1.43\le g\le2.35$ never sees a Poisson count change, so the rows of Table~\ref{tab:countlaw} are
+predictions out of sample. The term $0.002$ is a correction for the finite length of the chain, estimated
+from chains of 20, 30 and 40 levels. A second variant, the infinite-chain variant, uses the fit for the limit of an infinitely long chain, $E(g)=1.0049-0.2454\,g$ without the
+correction. As a check after the fact, over $K=5$ to $24$ the term $\frac12E(g_{\rm eff})$ alone matches the measured $c(K)$, which runs from $0.237$ to $0.335$, with a root-mean-square deviation of $0.0015$, about half a percent.
+How the count changes are computed is described in Section~\ref{sec:methods}.
+
+\begin{table}[tp]
+\caption{Count changes of the Poisson channel predicted by the law~\eqref{eq:countlaw} before they were computed. $A_K$ is
+the peak count at which the optimal input gains its $K$-th mass point, without spontaneous count. The tolerance of $0.15$ in $A$ was fixed with the first prediction, before
+any of these changes was computed; since a change $\delta$ in $A$ moves $\sqrt A$ by about $\delta/(2\sqrt A)$, it is $0.15/(2\sqrt A)$
+in the half-length, $0.0037$ at $K=25$ and $0.0017$ at $K=67$, close to the scatter of the law; relative to $A$ it is $3.6\times10^{-4}$
+at $K=25$ and $7.5\times10^{-5}$ at $K=67$. Row $21$ was predicted from an earlier local fit of the same law and row $22$ from the law without the correction
+$0.002$; the later rows use the finite-chain variant as written.}\label{tab:countlaw}
+\centering\small
+\begin{tabular}{rrrrl}
+\hline
+$K$ & predicted $A_K$ & computed $A_K$ & difference & outcome\\
+\hline
+21 & 307.99 & 308.0874 & $+0.0974$ & held\\
+22 & 333.14 & 333.1959 & $+0.0559$ & held\\
+23 & 358.97 & 358.9655 & $-0.0045$ & held\\
+24 & 385.39 & 385.3810 & $-0.0090$ & held\\
+25 & 412.43 & 412.4271 & $-0.0029$ & held\\
+47 & 1145.508 & 1145.6157 & $+0.1077$ & held\\
+67 & 2001.381 & 2001.5878 & $+0.2068$ & failed\\
+\hline
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:countlaw} lists the seven predictions made so far. Six held. The prediction for the 67th level failed: the
+change lies $0.207$ above the predicted value, outside the tolerance. Its miss and that at $K=47$ grow with $K$, and both lie where
+$g_{\rm eff}$ is $1.04$ to $1.14$, below the range on which the chain fit was made. The miss at $K=67$ is $1.0\times10^{-4}$ of $A$.
+The infinite-chain variant lies $0.05$ above the measured changes at $K=47$ and $K=67$, a nearly constant offset, while the misses of the finite-chain
+variant grow as $g_{\rm eff}$ falls. Read after the failure, this points to the finite-chain correction, estimated from chains of 20 to 40
+levels, carried outside its range; it does not single out the form of the law. The law is a conjecture that holds to $0.15$ in $A$
+up to $47$ levels and fails at $67$. The computed count changes themselves are being turned into proved statements. At the lower
+end of the bracket of the 25th level, $A=412.42711264916346$, a computer-assisted proof shows that the optimal
+input has exactly 24 mass points (Section~\ref{sec:certmeth}). Three further
+changes were predicted with both variants before any computation, the finite-chain value first and the infinite-chain value second:
+$A_{26}$ at $440.085$ and $440.141$, $A_{48}$ at $1184.393$ and
+$1184.557$, and $A_{68}$ at $2048.241$ and $2048.503$. They will decide between the variants and are not yet computed. These peak counts lie far above those of real fibres, whose
+staircases have only a few steps. The predictions test the mathematics of the law, while the fibres of Section~\ref{sec:an} test its
+consequences for neurons.
+
+Through the Fisher length the law carries the growth of the Gaussian count to the neuron. The Gaussian count grows like $a^{4/3}$ at
+half-length $a$ (proved from below and measured in~\cite{Paper1}), and with $a=\sqrt A$ this becomes a Poisson count of order $A^{2/3}$, the order that Theorem~\ref{thm:C} proves from below.
+
+
+\subsection{Auditory-nerve fibres}\label{sec:an}
+
+The data are the public recordings of single auditory-nerve fibres of the gerbil by Heeringa and colleagues~\cite{Heeringa2024}.
+Two of their protocols serve our questions, and each test uses the recordings of one protocol. In rate-level recordings, tones at the
+best frequency, the frequency the fibre responds to most, are played at up to 27 sound levels with 10 presentations each; these serve
+the test of shape. Phase-locking recordings were made in fibres with best frequencies below about 5~kHz, where spikes lock to the phase
+of the tone. In them, tones are played at 5 to 8 sound levels with 20 to 40 presentations each; the larger number of presentations serves the
+test of discreteness, which compares the mean counts of neighbouring sound levels. Counts are taken in a window of 50~ms from tone onset.
+Every test below was fixed, with its decision rule and its controls on synthetic fibres, before the data were analysed;
+Section~\ref{sec:methods} gives the details. Table~\ref{tab:an} lists the tests and whether their registered rule held.
+
+\begin{table}[tp]
+\caption{Registered tests on auditory-nerve fibres. $d$: log-likelihood of the predicted shape minus that of the symmetric sigmoid,
+in nats per fibre; LB: bootstrap 95\% lower bound of the mean of $d$; $\sigma$: spread of the level distribution implied by the fitted
+shape; $D$: number of significantly different mean counts across the tested sound levels; $K$: number of steps of the optimal
+staircase at the fibre's peak and spontaneous counts, for the count model named in the row; drift: a slow change of rate across
+presentations; Fano factor: variance of the count divided by its mean. The fibres of the two age groups are 881 of the 950; the other 69 come from
+middle-aged animals and were not part of the registered replication.}\label{tab:an}
+\centering
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.4cm}r>{\raggedright\arraybackslash}p{4.4cm}>{\raggedright\arraybackslash}p{3.6cm}}
+\hline
+test & fibres & registered rule & result\\
+\hline
+shape (bell-shaped level law) & 950 & LB $>0$ and median $\sigma$ in $[6,20]$ dB & LB $0.1495$, $\sigma$ $8.53$ dB: held\\
+shape, young-adult animals & 608 & LB $>0$ & LB $0.1427$: held\\
+shape, quiet-aged animals & 273 & LB $>0$ & LB $0.0768$: held\\
+exact square-root shape against the registered shape & 950 & LB of the mean log-likelihood gain $>0$ & LB $-0.1062$: did not hold\\
+shape against the curve of opposite asymmetry & 950 & LB of the mean log-likelihood gain $>0$ & LB $1.1048$: held\\
+staircase, Poisson counts, 50 ms & 265 & $D\le K$ in at least $80\%$ of fibres & $51.7\%$: did not hold\\
+drift explains the excess & 265 & drift in at least $30\%$ of fibres & $5.7\%$: did not hold\\
+staircase, Poisson counts, 75 ms & 271 & $D\le K$ in at least $80\%$ of fibres & $55.7\%$: did not hold\\
+counts as variable as Poisson counts & 265 & median Fano factor in $[0.8,1.2]$ & median $0.355$: did not hold\\
+staircase, binomial counts, 50 ms & 265 & $D\le K$ in at least $80\%$ of fibres & $88.3\%$: held\\
+staircase, counts matched to each fibre's Fano factor, 50 ms & 265 & $D\le K$ in at least $80\%$ of fibres & $82.3\%$: held\\
+staircase, counts matched to each fibre's Fano factor at every rate, 50 ms & 265 & $D\le K$ in at least $80\%$ of fibres & $77.0\%$: did not hold\\
+staircase, likelihood statistic, count matched at every rate, 50 ms & 265 & at least $80\%$ of fibres consistent with at most $K$ steps & $40.4\%$: did not hold\\
+the same, with the range from the spontaneous count & 265 & the same & $49.4\%$: did not hold\\
+\hline
+\end{tabular}
+\end{table}
+
+\emph{Shape.} The decibel amplitude of natural sounds has a roughly symmetric bell-shaped distribution~\cite{Escabi2003}. Take the
+distribution of sound level $L$ to be Gaussian with mean $\mu$ and spread $\sigma$, so that $F_S(L)=\Phi((L-\mu)/\sigma)$, where $\Phi$
+is the standard normal distribution function. For a small spontaneous count $r_0$, the fitted value of $\lambda$, the large-$A$ form of Section~\ref{sec:laughlin}
+becomes $r_0+A\,\Phi((L-\mu)/\sigma)^2$, an asymmetric sigmoid in $L$. The square of the S-shaped $\Phi$ rises from its floor more steeply than it
+approaches its ceiling, unlike a symmetric sigmoid (Fig~\ref{fig:rlf}A). This is the form the test registered. We compared this predicted
+shape with the symmetric sigmoid, the usual description of rate-level functions, which has the same four parameters (spontaneous count, peak count, centre and width),
+by Poisson likelihood on the single-trial counts of 950 fibres. A single fibre at ten presentations distinguishes the two shapes only
+weakly, so the decision pooled the fibres. For each fibre, $d$ is the log-likelihood of the predicted shape minus that of the sigmoid, in nats over all its
+single-trial counts. The mean of $d$ over fibres was $0.2027$, with a bootstrap lower bound of $0.1495$. Only $50.8\%$ of fibres favour the predicted shape individually, so the pooled preference comes
+from a minority of fibres with a large difference (Fig~\ref{fig:rlf}B). The decision rule asked for a positive pooled mean and
+a median spread $\sigma$ between 6 and 20~dB, not for a majority of fibres. Fibres of one animal need not be independent; a
+bootstrap that draws the 103 animals with all their fibres, a reading made after the test, gives a lower bound of $0.1466$. In a split made after the test, the preference was strongest in fibres with large peak counts and in fibres with a low
+spontaneous count (below 0.5 per window), $78.9\%$ of which favoured the predicted shape. It held separately in young-adult and in quiet-aged animals, aged animals raised in a quiet
+environment so that noise damage to the cochlea is kept small~\cite{Heeringa2024}, with lower bounds of $0.1427$ and $0.0768$. The
+spread $\sigma$ that the fitted shapes imply for the level distribution has a median of $8.53$~dB. From recordings of natural sounds,
+Escab\'i and colleagues measured standard deviations of the decibel amplitude in frequency bands of $9.1$~dB for environmental
+sounds, $13.3$~dB for vocalizations and $14.8$~dB for speech, so the fitted spread lies just below the range of natural sounds.
+
+Section~\ref{sec:laughlin} also gives the exact form for any spontaneous count,
+$\bigl(\sqrt{r_0}+(\sqrt{r_0+A}-\sqrt{r_0})\,\Phi\bigr)^2$. In the registered form the spontaneous count is added to the
+stimulus-driven count; in the exact form the two mix inside the square. The prediction of the exact form failed: a second registered test found that it describes
+the fibres worse than the registered one, with a mean log-likelihood difference of $-0.0904$ per fibre and a bootstrap lower bound of
+$-0.1062$, although it still beats the symmetric sigmoid. The fibres therefore behave as if their spontaneous count were an offset
+added to the stimulus-driven count.
+A third registered test compared the predicted form with the complementary log-log curve $r_0+A(1-e^{-e^{(L-\mu)/\sigma_{\rm s}}})$,
+which has four parameters and the opposite direction of asymmetry. The predicted form fitted better: the mean of $d$ was $1.2463$,
+with a bootstrap lower bound of $1.1048$, and $80.2\%$ of fibres favoured it. Against the Gompertz curve
+$r_0+A\,e^{-e^{-(L-\mu)/\sigma_{\rm s}}}$, whose asymmetry has the predicted direction and is stronger, the predicted form fitted
+worse, with a mean difference of $-0.1834$ and a lower bound of $-0.2432$; this comparison is a reading, not a registered rule. The
+fibres thus show the predicted direction of asymmetry, while the predicted form is not the best curve of that direction. Fig~\ref{fig:rlf}A shows a fibre
+chosen by a rule fixed before plotting: among the 50 fibres whose fitted peak count is closest to the median, the one whose difference
+$d$ is the median.
+
+\begin{figure}[!h]
+\centering
+\caption{\textbf{The rate-level functions and the predicted shape.} (A) One fibre, chosen by a rule fixed before any plot was made:
+among the 50 fibres whose fitted peak count is closest to the median over all fibres, the one with the median $d$. Grey points: single-trial
+counts in 50~ms; black points: mean count per sound level; solid line: fitted predicted shape; dashed line: fitted symmetric sigmoid;
+step line: the staircase of Proposition~\ref{prop:L1}, predicted and not fitted, for a Gaussian level law with the fitted mean and
+spread, at the fibre's fitted spontaneous count $5.46$ and peak count $9.25$ above it, where the capacity-achieving input has two
+rates. The staircase is what an optimal fibre with these counts would show; the data are compared with it through the number of
+distinct mean counts, not point by point, and Fig~\ref{fig:dk}C shows that comparison for one fibre of the discreteness test. For this fibre the two fitted shapes nearly coincide ($d=-0.035$). (B) The difference $d$
+for all 950 fibres, with zero, the mean $0.203$ and the median $0.0015$ marked; the median near zero shows that the pooled advantage
+comes from a minority of fibres; one value below $-2$ and ten above $4$ are drawn at the ends.}\label{fig:rlf}
+\end{figure}
+
+\emph{Discreteness.} Proposition~\ref{prop:L1} predicts that an optimal fibre shows at most $K$ different mean counts across any set of
+sound levels, where $K$ is the number of steps of the optimal staircase at the fibre's peak and spontaneous counts. Measured
+mean counts are noisy, so two neighbouring sound levels count as having different mean counts only when a test finds their counts
+significantly different. We counted the different mean counts $D$ in this way, with an exact binomial test between neighbouring levels
+and Holm's correction for multiple comparisons~\cite{Holm1979} within each fibre (Section~\ref{sec:methods}). With $K$ computed for Poisson counts,
+the bound $D\le K$ held in $51.7\%$ of the 265 fibres that met the selection rule of Section~\ref{sec:methods}, against the
+registered $80\%$. Most excesses were of one rate: the difference
+$D-K$ was $-1$ in 34 fibres, $0$ in 103, $+1$ in 103 ($38.9\%$), $+2$ in 23 and $+3$ in 2. A fully graded fibre would show as many distinct mean counts as tested sound
+levels; only $8.7\%$ of fibres did, so the fibres are not fully graded either. Slow drift, a change of rate across the presentations
+of one sound level, does not explain the excess: only $5.7\%$ of fibres drifted, close to the $4.5\%$ that the drift test marks in stationary synthetic fibres. Fibres with
+an excess drifted no more often than the others. The recorded trials of most fibres end near 80~ms after tone onset, so 75~ms is the
+longest window inside every trial; it raised the fraction only to $55.7\%$, with 271 fibres meeting the selection rule at that
+window.
+
+The counts, however, are not Poisson. The tests that follow were registered after the Poisson test had failed and in response to
+it. Each had its rule and its bar of $80\%$ fixed before it was run (Section~\ref{sec:methods}). The Fano factor of a count, its variance across presentations divided by its mean, is 1 for
+Poisson counts. Over the 1430 sound levels of the 265 fibres with a mean count of at least one, its median was $0.355$, with
+quartiles $0.259$ and $0.524$, and $86.0\%$ of the levels lay below $0.67$. A count that varies less than a Poisson count has less
+noise at each rate, so nearby rates are easier to tell apart, the optimal input of its counting channel can hold more rates, and the
+$K$ above is too small for these fibres. The proof of Proposition~\ref{prop:L1} uses only that the count depends on the stimulus through the rate: for any counting
+channel, the staircase built from a capacity-achieving input with finitely many mass points is an optimal tuning curve. We therefore
+recomputed $K$ for a binomial count with $n$ trials and mean $r$, whose Fano factor is $1-r/n$. The binomial count is the simplest
+count less variable than a Poisson one: a neuron that fires at most once in each of $n$ short bins of the window produces it. For a peak count of 10 in the 50~ms window,
+$n$ is 10 and each bin is 5~ms long, much longer than the absolute refractory period of about 0.6~ms of these fibres~\cite{Heeringa2024}.
+The bins are a device of the model: the binomial count describes how regular the counts are, not the time course of recovery. Since the count takes only $n+1$
+values, a capacity-achieving input with at most $n+1$ mass points exists~\cite{Favano2026}. For $n$ we took the smallest integer at
+or above $\lambda+A$, the most regular binomial count that reaches the fibre's peak rate. With this $K$ the bound $D\le K$ held in
+$88.3\%$ of the 265 fibres, above the registered $80\%$; five fibres with a Fano factor of at least one kept Poisson counts. The binomial $K$
+exceeded the Poisson one by one rate in 177 fibres and by two in 28. The binomial count models the regularity of the fibres without
+being fitted to it: at the fibre's mean count it is more regular than the fibre in 158 fibres and less regular in 102. A second
+registered test therefore matched the count to each fibre. It used a Conway-Maxwell-Poisson count~\cite{Shmueli2005}, whose dispersion is set by one
+parameter $\zeta$: the value 1 gives Poisson counts, and larger values give less variable ones. For each fibre $\zeta$ was chosen so
+that the Fano factor at the fibre's mean count equals the measured one. With this $K$ the bound held in $82.3\%$ of the fibres, again
+above the registered $80\%$. For this count, too, the capacity-achieving input has finitely many mass points, as S1 Text proves, and
+$K$ is the number of mass points of the numerical solution on a grid of 801 rates.
+
+The matched count still has one exponent per fibre, so its Fano factor hardly changes with the rate. Within each fibre the measured
+Fano factor falls from level to level by $0.0356$ per spike on average, about nine times faster than that of the matched count,
+$0.0038$ per spike. The matched count is therefore too regular at
+low counts and too noisy at high ones. A third registered test matched the Fano factor at every rate, along a line fitted to the
+levels of each fibre. With this $K$ the bound held in $77.0\%$ of the fibres, below the registered $80\%$, so the count model that fits
+the measured regularity best fails the bar. Its $K$ is smaller than the matched $K$ in 61 fibres: the cost of the extra noise at low
+rates is larger than the gain from the extra regularity at high rates. Table~\ref{tab:thirds} gives the fraction for each count model in
+three groups of equal size, from the most regular fibres to the least regular. Every model explains the excess least well in the
+least regular group.
+
+The count $D$ has little power near a peak count of 8 when the tested levels cover only part of the fibre's range: in a synthetic
+check, graded fibres then met $D\le K$ in $57.0\%$ of cases, against $16.0\%$ when the levels cover the whole range. A last registered test therefore replaced $D$ by a statistic that pools
+all levels of a fibre. It is the smallest weighted squared distance of the level means to a monotone staircase of at most $K$ steps, with the
+variance of the count matched at every rate, and it is calibrated by a parametric bootstrap. In synthetic checks it rejected graded
+fibres in every case and staircase fibres in at most $6\%$, also when the tested levels covered only part of the range. On the
+recorded fibres, $40.4\%$ were consistent with at most $K$ steps, far below the registered $80\%$, and $83.8\%$ were consistent with
+$K+1$ steps. Comparing the two halves of the presentations showed that the variance model of the statistic is not too small, so the
+statistic is not inflated. In the last registered test the spontaneous count of each fibre, measured in trials without a stimulus,
+set the lower end of the range on which $K$ is computed; in 149 fibres the lowest tested level lay above it. This raised $K$ in 55
+fibres and the fraction to $49.4\%$, still far below $80\%$, with $86.8\%$ consistent with $K+1$ steps. By this test about half of the
+fibres use one rate more than the optimum.
+
+\begin{table}[tp]
+\caption{Fraction of fibres with $D\le K$ in three groups of equal size formed by the fibres' median Fano factor, for $K$ computed
+with each count model. The registered tests used all 265 fibres; the split into groups was made after the tests.}\label{tab:thirds}
+\centering
+\small
+\begin{tabular}{lrrrrr}
+\hline
+fibres (Fano factor) & number & Poisson & binomial & matched & matched at every rate\\
+\hline
+most regular ($0.06$ to $0.31$) & 88 & $63.6\%$ & $94.3\%$ & $95.5\%$ & $87.5\%$\\
+middle ($0.31$ to $0.41$) & 89 & $49.4\%$ & $86.5\%$ & $84.3\%$ & $77.5\%$\\
+least regular ($0.41$ to $4.78$) & 88 & $42.0\%$ & $84.1\%$ & $67.0\%$ & $65.9\%$\\
+all & 265 & $51.7\%$ & $88.3\%$ & $82.3\%$ & $77.0\%$\\
+\hline
+\end{tabular}
+\end{table}
+Fig~\ref{fig:dk} shows the same result fibre by fibre.
+
+\begin{figure}[!h]
+\centering
+\caption{\textbf{Distinct mean counts against the steps of the optimal staircase.} (A) For each of the 265 fibres, the number $D$ of
+significantly different mean counts against the number $K$ of steps computed for Poisson counts; points are shifted slightly so that
+they do not overlap, and points on or below the line $D=K$ meet the bound. (B) The same with $K$ computed for counts matched to each
+fibre's Fano factor; three fibres with $K$ above 10 are not shown, and all three meet the bound. (C) One fibre, chosen by a fixed rule
+among the 59 fibres that meet the bound with the matched $K$ but not with the Poisson $K$: the one whose peak count is the median of
+that set ($A=7.98$, spontaneous count $3.3$). Mean counts per sound level with standard errors; levels that the test does not separate
+share a colour, so the three colours are its $D=3$ distinct mean counts.}\label{fig:dk}
+\end{figure}
+
+A larger $K$ is easier to meet, but a registered synthetic control with counts as regular as these shows that graded tuning curves
+meet it in only $16.0\%$ and $0.5\%$ of cases at peak counts 8 and 15 (Section~\ref{sec:methods}). Among the 118 fibres with a peak
+count of at least 8, where the test separates the two codes, the bound held in $92.4\%$ with the matched $K$ and in $83.9\%$ with
+the $K$ matched at every rate; this split was computed after the tests. Below that peak count a graded fibre can meet the bound as well, so those 147 fibres carry little evidence either way.
+Among them the bound held in $74.1\%$ with the matched $K$ and in $71.4\%$ with the $K$ matched at every rate, so they lower the fraction over all fibres and do not raise it.
+
+Pooled over fibres, the auditory-nerve fibres thus favour the shape that Barlow's principle predicts for natural sound levels over a
+symmetric sigmoid, in young and in aged animals. Under Poisson counts about half of them use more distinct rates than the staircase allows. Their
+counts are far more regular than Poisson counts. With the staircase computed for a count matched to the mean regularity of each fibre,
+more than four in five fibres are consistent with it, a bound that graded tuning curves of the same regularity rarely meet. With the
+regularity matched at every rate, which fits the counts best, about three in four are, short of the registered $80\%$. Among the
+fibres with a peak count of at least 8, where the test can tell a staircase from a graded curve, more than four in five are. The
+likelihood test, which has more power than the count $D$, finds about half of the fibres consistent with the optimal number of
+steps and nearly nine in ten consistent with one step more. The fibres use few rates, close to the optimal number; about half
+need more steps than the optimum, most of them one more.
+
+
+\section{Discussion}\label{sec:discussion}
+
+For a neuron whose spike count in a window is Poisson, Barlow's question has an exact answer. The most informative rate map is a
+staircase, its steps sit at the quantiles of the stimulus distribution, and its values are the mass points of the capacity-achieving
+input of the counting channel (Proposition~\ref{prop:L1}). The stimulus distribution decides only where the steps sit. How many steps
+there are depends on the peak count and the spontaneous count alone, and Theorem~\ref{thm:C} proves that the number grows at least like
+$0.056\,A^{2/3}$, faster than the $\sqrt A$ rates that a count of resolvable levels would allow.
+
+Laughlin's rule is the limit of this answer when noise is negligible: the response follows the distribution function of the stimulus.
+With Poisson noise the equalization takes place in the square root of the rate, and the staircase approaches that curve as the peak
+count grows. The computations of Nikitin and colleagues found staircases numerically~\cite{Nikitin2009}; the proposition gives them
+for every continuous stimulus law, and the theorem fixes how fast their number grows. Kostal and Shinomoto found two levels for a
+neuron observed in continuous time~\cite{KostalShinomoto2016}; counting in a window is what makes the number of levels grow.
+
+Pooled over fibres, the auditory-nerve fibres favour the predicted shape, and they use few rates, close to the optimal number. Of the registered
+tests on the fibres, the tests of shape held, the tests of discreteness under Poisson counts failed, and the test that the counts are
+as variable as Poisson counts failed. Of the five tests of discreteness with regular counts, the two that count significant
+differences held and the three others failed, including both likelihood tests, which have the most power. Their rate-level functions favour the asymmetric shape predicted for a bell-shaped distribution of sound levels over the
+symmetric sigmoid, in young and in aged animals, and over a curve of the opposite asymmetry. A curve of the same direction with a
+stronger asymmetry fits them better, so the data support the direction of the asymmetry more than the exact form. Under Poisson counts about half of them show more distinct rates than the staircase
+allows, mostly one more, and neither drift across presentations nor a longer window explains the excess. Their counts, however, have
+about a third of the variance of Poisson counts with the same mean, and a less noisy count supports more rates. For a count matched to the mean dispersion
+of each fibre, $82.3\%$ of the fibres stay within the staircase, and $88.3\%$ do for the most regular binomial count
+with the same range. For a count whose dispersion follows the measured fall of the Fano factor with the rate, $77.0\%$ do, below the
+registered $80\%$. The agreement is weakest in the least regular third of the fibres, where $65.9\%$ to $84.1\%$ stay within it,
+depending on the count model. The number of steps depends on
+the 50~ms window through the peak count and on the spontaneous count. The distribution of sound levels sets only where the steps sit. For analyses of efficient coding with spike counts, the noise model decides the predicted number
+of rates. Under the Poisson model about half of the fibres use more rates than the optimum. Under models with their measured
+regularity most of them are consistent with the optimal staircase, from $77.0\%$ to $88.3\%$ of the fibres depending on how the
+regularity is modelled. A likelihood test with more power, on the range from each fibre's spontaneous count, finds $49.4\%$ consistent with the optimal
+number of steps and $86.8\%$ with one step more. The fibres thus use few rates; about half need more than the optimum, most of them one more.
+
+The regularity of the counts has a known physiological source. An auditory-nerve fibre cannot fire again within an absolute refractory
+period of about 0.6~ms~\cite{Heeringa2024}. Refractoriness makes the spike train of a neuron firing near its maximal rate more regular
+than a Poisson process with the same rate~\cite{BerryMeister1998}. The binomial count of the tests above, at most one spike in each
+short bin, is the simplest model of this effect. The theory treats one fibre and its count in one window, and three things lie outside
+it. First, each sound level is coded by many fibres. Dynamic range adaptation is found in fibres of all spontaneous rates, and it
+improves the precision of level coding by the fibre population~\cite{Wen2009}. Fibres whose steps sit at different sound levels can
+together resolve more levels than any one of them; whether the population code is optimal is not tested here. Second, the count
+discards spike timing, which a reader of the full spike train would use, as in the continuous-time result above. Third, spikes cost
+energy. Under an energy budget at a peak count of 3, a graded code gains over the best on-off code at most $0.8\%$ of the capacity
+at that budget (S1 Text).
+
+Two limits of the present tests are stated where they arise. The shape test used the form of the optimal map for a small spontaneous
+count. The exact form for any spontaneous count, given in Section~\ref{sec:laughlin}, was tested as well and describes the fibres
+worse, as if the spontaneous count were an offset outside the range over which the information is optimized; why this is so is open. The
+conjectured law for the exact number of steps held to within 0.15 in the peak count up to 47 steps and failed at 67. There it is
+applied below the range on which its chain fit was made, and three further predictions of it are recorded and not yet computed. This
+failure does not touch the tests on fibres: they use the number of steps computed directly for each fibre, at peak counts far below
+those where the law failed. On six further public datasets from other species and areas, whose counts are close to Poisson counts, an
+earlier test of a different design did not find discrete levels (S1 Text). That test lies outside the conditions of the theory in two
+further ways. The window in which cortical neurons are read is not known, and the number of steps grows with the window. The stimuli
+were a few conditions chosen by the experimenter, and three of the datasets come from motor and frontal areas, which do not encode
+a stimulus distribution in Barlow's sense.
+
+
+\section{Materials and Methods}\label{sec:methods}
+
+Table~\ref{tab:notation} lists the symbols of the main text. Appendix~\ref{app:C} uses further symbols, defined where they first
+appear and used only there.
+
+\begin{table}[tp]
+\caption{Notation of the main text.}\label{tab:notation}
+\centering
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{2.0cm}>{\raggedright\arraybackslash}p{11.0cm}}
+\hline
+symbol & meaning\\
+\hline
+$A$ & peak count: the largest expected count in the window above the spontaneous count\\
+$\lambda$ & spontaneous count: the expected count in the window without a stimulus\\
+$r$ & expected count in the window at a given stimulus; the rate times the window\\
+$K$ & number of steps of the optimal staircase, the number of mass points of the capacity-achieving input\\
+$D$ & number of significantly different mean counts across the tested sound levels of a fibre\\
+$C$, $i(x)$ & capacity of the counting channel; relative entropy between the count distribution at rate $x$ and the optimal output law\\
+$L$ & sound level, in dB\\
+$\mu$, $\sigma$ & mean and spread of the Gaussian distribution of sound levels\\
+$\sigma_{\rm s}$ & scale of the symmetric sigmoid\\
+$r_0$ & spontaneous count of a fitted shape\\
+$d$ & log-likelihood of the predicted shape minus that of the sigmoid, for one fibre\\
+$F$ & Fano factor: the variance of a count divided by its mean\\
+$\zeta$ & exponent of the counts of the matched test; the value 1 gives Poisson counts\\
+$n$ & number of trials of the binomial count\\
+$m_l$, $n_l$ & mean count and number of presentations at sound level $l$\\
+$T$ & statistic of the likelihood test\\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Recordings}
+The recordings are the public single-unit data of Heeringa and colleagues~\cite{Heeringa2024}, collected from 104 Mongolian gerbils
+(\emph{Meriones unguiculatus}) of either sex. The original experimental procedures were in accordance with the ethics authorities of
+Lower Saxony, Germany, under the permit numbers given in~\cite{Heeringa2024}; no new animal experiment was done for this study. In
+the rate-level recordings, tones at the best frequency were played at up to 27 sound levels with 10 presentations each. In the
+phase-locking recordings, tones were played at 5 to 8 levels with 20 to 40 presentations each. Spikes were counted from tone onset in
+a window of 50~ms, and the silent condition was excluded. The young-adult group holds animals below 12 months of age and the
+quiet-aged group animals above 36 months, as in Table~1 of Heeringa and colleagues~\cite{Heeringa2024}.
+
+\subsection{Shape of the rate-level function}
+A rate-level recording entered the test if it had at least 8 levels, at least 5 presentations at every level, and a range of level
+means of at least one spike per window. In all, 950 recordings passed, each from a different fibre. The predicted shape $r_0+A\,\Phi((L-\mu)/\sigma)^2$ and the symmetric
+sigmoid $r_0+A/(1+e^{-(L-\mu)/\sigma_{\rm s}})$ were fitted to the single-trial counts by Poisson maximum likelihood. Both shapes have four parameters, and each fit took the best of 12 fixed
+starting points of a bounded quasi-Newton search, a standard optimizer that keeps every parameter within its bounds. The bounds were $r_0$ between 0 and 50, $A$ between 0 and 100, $\mu$ between $-20$
+and 120~dB, and $\sigma$ and $\sigma_{\rm s}$ between 0.5 and 60~dB. For each fibre $d$ is the log-likelihood of the predicted shape minus that of the sigmoid.
+The test passed if the bootstrap 95\% lower bound of the mean of $d$ over fibres was above zero and the median fitted $\sigma$ lay
+between 6 and 20~dB; the bootstrap drew the fibres again with replacement 2000 times. Each synthetic fibre of the controls had 27
+sound levels from 0 to 78~dB in steps of 3~dB, with 10 presentations each. Its counts were Poisson, with a mean that followed one of
+the two shapes: spontaneous count 0.5, peak count 8, midpoint 40~dB, and width 12~dB for the predicted shape or scale 5~dB for the
+sigmoid. The rule
+passed on fibres drawn from the predicted shape and failed on fibres drawn from the sigmoid (Table~\ref{tab:controls}). The replication in the two age
+groups used the same values of $d$ and the same rule for the lower bound.
+
+\subsection{Number of distinct rates}
+A phase-locking recording entered the test if it had at least 4 levels, at least 20 presentations at every level, and a range of level
+means of at least one spike per window. For each fibre, the spontaneous count $\lambda$ is the mean count at the lowest level and the
+peak count $A$ is the range of the level means. The number $K$ of mass points of the capacity-achieving input on $[\lambda,\lambda+A]$
+was found by solving the capacity problem numerically for the fibre's $\lambda$ and $A$: rates are added one at a time where the
+optimality condition fails, until it holds everywhere. In words, the condition says that no rate left out of the input would make the
+count more informative than the rates already in it. Close to a peak count where a new rate appears, this numerical
+solution can hold the new rate with a weight below $0.005$. Two of the 265 fibres have such a rate, and counting it decides their
+outcome, so the Poisson fraction below is uncertain by at most two fibres. The number $D$ of distinct rates is one plus the number of neighbouring
+sound-level pairs whose counts differ by the exact conditional binomial test, with Holm's correction at level 0.05 within the fibre. Given the total count of two levels, the share of the first is binomial when
+their mean counts are equal, which is what the test checks. For example, a fibre whose mean counts at three sound levels are 5, 5 and 12, where only the second
+and third levels differ significantly, has $D=2$: the first two levels share one rate and the third has another. The test passed if $D\le K$ in at least 80\% of fibres. This bar lies below the fractions of 93\% to 100\% that synthetic
+fibres with a staircase reached in the controls, and far above the fraction of 0\% that graded fibres reached at peak counts 8 and 15. The controls used synthetic fibres with 7 sound levels and 40 presentations at peak and spontaneous counts
+$(A,\lambda)=(3,0.5)$, $(8,0.5)$ and $(15,1)$ (Table~\ref{tab:controls}). The test therefore separates the two codes only from $A$ of about 8 upward. Of the 265
+fibres, 118 have $A$ of at least 8. With Poisson counts $D\le K$ held in 61 of them and in 76 of the 147 others, both $51.7\%$;
+this split was computed after the test and is not part of its registered rule. A fibre counted as drifting if, at some level, the mean count of the first half
+of the presentations differed from that of the second half by more than the two-sided Bonferroni threshold at 0.05 for its number of
+levels. The drift test passed if at least 30\% of fibres drifted. Its controls are in Table~\ref{tab:controls}. The longer window of 75~ms is the longest that lies inside every trial.
+
+\subsection{Dispersion of the counts and the binomial channel}
+For every fibre and sound level with a mean count of at least one, the Fano factor is the sample variance of the counts across
+presentations divided by their mean. The Fano factor $F$ of a fibre is its median over these levels. The registered rule asked whether
+the median over all fibres and sound levels lay between 0.8 and 1.2. On 265 synthetic fibres with 6 sound levels and 30 presentations, the rule
+passed for Poisson counts and failed for negative binomial and binomial counts (Table~\ref{tab:controls}).
+
+For the binomial channel the count at rate $r$ is binomial with $n$ trials and success probability $r/n$. Its $K$ was found by the
+same method as for Poisson counts, on a grid of 801 rates in $[\lambda,\lambda+A]$, and mass points closer than 0.2 in the
+coordinate $2\sqrt r$ were merged. On a grid of rates the numerical solution can split one mass point into two neighbouring grid
+points just after a new rate appears, $0.05$ to $0.07$ apart in this coordinate in the cases examined, where the noise has unit width; merging removes these
+splits. It can only lower $K$, which makes the bound $D\le K$ harder to meet. The registered rule took for $n$ the smallest integer $n\ge\lambda+A$ for which the Fano factor
+$1-\bar m/n$ at the mean $\bar m$ of the level means does not exceed $F$. Because $1-\bar m/n$ grows with $n$, this integer is
+$\lceil\lambda+A\rceil$ whenever it exists. In 102 fibres no such integer exists, and in the first run the code then fell back to
+Poisson counts, against the purpose of the rule; $D\le K$ held in $72.5\%$ of fibres in that run. Before the second run the rule was
+changed to use $n=\lceil\lambda+A\rceil$ in these fibres as well, and the change was recorded in the log with the outcome of the
+first run. The bar, the data and $D$ were unchanged, and the change raised the fraction. The first run counts as void, and
+the reported result, $88.3\%$, is that of the second run. A binomial count is never more variable than a Poisson count
+with the same mean, so it cannot match a Fano factor of 1 or more; the 5 fibres with $F\ge1$ therefore keep Poisson counts. In synthetic checks before the data were used, the binomial $K$ at $n=4000$ equalled the Poisson $K$ at
+$(A,\lambda)=(3,0.5)$, $(8,0.5)$ and $(15,1)$, and it never decreased as $n$ decreased, rising by one step at
+$n=\lceil\lambda+A\rceil+1$ for $(8,0.5)$ and $(15,1)$. The test of $D$ assumes Poisson counts; for counts less variable than Poisson
+counts it finds fewer differences, so $D$ is not inflated by the dispersion. This was checked on 1000 synthetic fibres with one mean
+count at all 7 sound levels and 40 presentations (Table~\ref{tab:controls}).
+
+In the matched test the count at rate $r$ has probabilities proportional to $e^{ty}/(y!)^{\zeta}$, with $t$ chosen so that the mean is
+$r$, and the count is zero at $r=0$. The value 1 of $\zeta$ gives Poisson counts, and values above 1 give less variable ones. The
+distribution was truncated where the last retained count had probability below $10^{-12}$. For each fibre $\zeta$ is the root in
+$[1,50]$ of the condition that the Fano factor at $\bar m$ equals $F$, found numerically to within $10^{-12}$. A fibre whose Fano factor
+stayed above $F$ at the upper end of this interval was to keep the value 50 and be reported apart from the others; there was none. The
+quartiles of $\zeta$ over the fibres were $2.33$, $2.99$ and $3.60$; at a mean count of 3 the median value gives a Fano factor of
+$0.374$. Values of $\zeta$ of at least 1 never give counts more variable than Poisson counts, so the 5 fibres with $F\ge1$ keep the
+value 1. In synthetic checks before the data were used, this $K$ equalled
+the Poisson $K$ at the value 1 of $\zeta$ for the three pairs above. It never decreased as $\zeta$ increased: for $\zeta$ equal to 1,
+1.5, 2, 3 and 5 it was 3, 3, 4, 4 and 6 at $A=8$ and 4, 4, 5, 5 and 7 at $A=15$.
+
+In the test matched at every rate, a least-squares line through the Fano factors of the levels with a mean count of at least one
+gives each fibre a Fano factor at every rate, kept between $0.05$ and $1$. At each rate the count is of the matched kind,
+with the value of $\zeta$ between 1 and 50 that gives the Fano factor of that line, found on 41 rates and interpolated
+to the grid. The quartiles of the fitted slope over the fibres were $-0.0573$, $-0.0355$ and $-0.0182$ per spike. In synthetic checks
+before the data were used, this channel reproduced the $K$ above when $\zeta$ was held fixed. Its graded control, at the median line of the fibres, is in Table~\ref{tab:controls}.
+
+The likelihood test uses, for each fibre, the level means $m_l$ over $n_l$ presentations and the variance $V(m)$ of the count matched
+at every rate. Its statistic $T$ is the smallest value of $\sum_l n_l(m_l-\mu_l)^2/V(\mu_l)$ over all monotone maps that take at most $K$ values
+on contiguous groups of levels. Here $\mu_l$ is the value of the map at level $l$, and each value is the mean of its group, weighted
+by the numbers of presentations. Its $p$-value comes
+from 200 sets of counts drawn from the matched count at the fitted group means, and a fibre counts as consistent with at most $K$
+steps if $p\ge0.05$. The controls drew synthetic fibres from the median line, with $K$ computed from the observed range of each,
+as on the data (Table~\ref{tab:controls}). Splitting the presentations of each level into odd and even ones, the squared difference of
+the means of the two halves averaged $1.008$ times its value under the variance model over all 1549 levels of the 265 fibres, so the model is not too small.
+
+A larger $K$ is easier to meet, so the graded control was repeated for regular counts, registered before it was run. Synthetic fibres
+with 7 sound levels, 40 presentations and Conway-Maxwell-Poisson counts with $\zeta$ equal to 3, close to the median of the fibres,
+were scored with the $K$ of these counts. This $K$ is 4 at $(A,\lambda)=(8,0.5)$ and 5 at $(15,1)$, and the outcomes are in Table~\ref{tab:controls}. Among the 118 recorded fibres
+with $A$ of at least 8, $D\le K$ held in $92.4\%$ with the matched $K$, a fraction computed after the test.
+
+
+\begin{table}[tp]
+\caption{Synthetic controls of the registered tests, each run before that test was applied to the recorded fibres. Each row gives the synthetic
+fibres, what the rule or statistic must do on them, and what it did. $(A,\lambda)$: peak and spontaneous count.}\label{tab:controls}
+\centering
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{5.0cm}>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{3.6cm}}
+\hline
+test & synthetic fibres & required & outcome\\
+\hline
+shape & 200 from the predicted shape & pass & LB $0.0802$, passed\\
+shape & 200 from the symmetric sigmoid & fail & LB $-0.2709$, failed\\
+$D\le K$, Poisson & staircase, $(A,\lambda)=(3,0.5)$, $(8,0.5)$, $(15,1)$ & meet & $0.97$, $1.00$, $0.93$\\
+$D\le K$, Poisson & graded, same three pairs & not meet & met in $0.70$, $0.00$, $0.00$\\
+drift & stationary & not marked & marked in $0.045$\\
+drift & rate up by $25\%$ in the second half & marked & marked in $0.818$\\
+Fano factor in $[0.8,1.2]$ & Poisson counts & pass & median $0.965$, passed\\
+Fano factor in $[0.8,1.2]$ & negative binomial, Fano factor $1.6$ & fail & median $1.535$, failed\\
+Fano factor in $[0.8,1.2]$ & binomial, Fano factor $0.6$ & fail & median $0.571$, failed\\
+$D$ on one mean count & Poisson, mean counts 3 and 8 & $D=1$ & $D>1$ in $3.2\%$ and $4.0\%$\\
+$D$ on one mean count & matched counts, $\zeta=3$ & $D=1$ & $D>1$ in none\\
+likelihood test & staircase, median line, $(8,0.5)$ and $(15,1)$, full and partial range & reject at most $10\%$ & rejected $3\%$, $3\%$, $5\%$, $6\%$\\
+likelihood test & graded, same four cases & reject at least $70\%$ & rejected $100\%$ in all four\\
+$D\le K$, matched & staircase and graded, $\zeta=3$, $(8,0.5)$ and $(15,1)$ & meet / not meet & staircase $100\%$, $100\%$; graded $16.0\%$, $0.5\%$\\
+$D\le K$, matched at every rate & staircase and graded, median line, $(8,0.5)$ and $(15,1)$ & meet / not meet & staircase $100\%$, $100\%$; graded $1.0\%$, none\\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Count changes of the Poisson channel}
+A count change $A_K$ was located by following the optimal input with $K-1$ mass points upward in $A$. At each step the information was
+maximized for the current set of rates by Newton's method, with each step limited in size, in arithmetic of 160 bits (about 48
+digits). The optimality condition compares, at
+each rate $x$, the relative entropy $i(x)$ between the count distribution at $x$ and the count distribution of the optimal input; it
+holds when $i(x)$ is nowhere larger than at the rates in use. The largest value of $i(x)-i(0)$ away from the rates in use was
+evaluated with 40 significant digits. The first change of sign of this value, located by repeated linear interpolation within an interval below
+$2\times10^{-6}$, is the peak count at which the optimal input gains a new rate. In words, a new rate appears at the peak count
+where some rate outside the input first becomes as informative as the rates in use. On the branch with 23 rates this procedure
+placed $A_{24}$, the peak count at which the 24th rate appears, at $385.381131$, against $385.3810$, the value of
+Table~\ref{tab:countlaw}. That value came from an earlier, independent method: the new rate was inserted just above the count
+change with a small weight and followed downward in $A$ while its weight decreased, and the count change is the peak count at which
+that weight reaches zero. This zero was found by linear extrapolation from weights $5\times10^{-4}$ and $2.5\times10^{-4}$. A first walk with the
+method used here gave $385.381193$. The predictions of Table~\ref{tab:countlaw} are scored against $385.3810$; at the later values
+their misses change by at most $2\times10^{-4}$, far inside the tolerance of $0.15$.
+
+\subsection{Proved counts}\label{sec:certmeth}
+A computed optimal input is a numerical point, and a numerical point can be wrong without any sign of it. A count is proved instead
+by ball arithmetic, the interval arithmetic with midpoint-radius balls: every number is carried as a midpoint and a radius
+that contains the exact value, so that every
+inequality it confirms holds for the exact quantities. The proof has three parts. First, a test of Krawczyk's type shows that the
+equations of a stationary input with the given number of rates have exactly one solution in a small box around the computed point.
+Second, every weight in that box is positive, so the solution is a probability distribution with that number of rates. Third, the
+relative entropy $i(x)$ of this input stays at or below the capacity on all of $[0,A]$. Near each rate this follows from a negative
+second derivative on an enclosing interval, and between the rates from Taylor bounds on pieces that are split until each piece is
+decided. The capacity-achieving input is unique and the optimality condition is sufficient~\cite{Shamai1990}, so the input found
+is the optimal one and the count is exact. The computation truncates the counts at a large value; a separate bound on the omitted
+tail shows that it is far below every margin of the proof. At $A=412.42711264916346$ the smallest margin was $1.24\times10^{-25}$
+and the tail bound $4.4\times10^{-46}$.
+
+\subsection{Registration}
+Every test of Section~\ref{sec:an} and every prediction of Table~\ref{tab:countlaw} was recorded in a dated log before the data were analysed or the count change was
+computed. Entries from 14 October 2026 on include every test of Section~\ref{sec:an} and the predictions for 47 and 67 steps. They
+carry a certificate of their date from an independent authority: a dated signature from a public dating service and an
+OpenTimestamps proof, both of which anyone can check without trusting the author. The predictions for 21 to 25 steps were entered on
+9 September 2026. For 25 steps the copy of the log dated on 14 October by that authority came before the computation, made on 15
+October; for 21 to 24 steps the
+order of prediction and computation rests on the log alone. The log is deposited with the code named under Data availability. Each entry holds the decision rule, the readout script and the outcome of the readout on synthetic data. The outcome of each test is the last line printed by its readout script, and failed tests are reported with the passed ones. Table~\ref{tab:evidence} lists each claim of the paper with the kind of evidence
+behind it.
+
+\begin{table}[tp]
+\caption{The claims of the paper and their evidence. Proved: a proof in the paper or in S1 Text. Proved by computer: a computer-assisted
+proof (Section~\ref{sec:certmeth}). Registered: a test whose rule was fixed in the dated log before its data were analysed; dated:
+its date is confirmed by an independent authority. After the tests: a reading computed after a registered test, not part of its rule.}\label{tab:evidence}
+\centering
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{6.2cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{4.4cm}}
+\hline
+claim & where & evidence\\
+\hline
+optimal tuning curve is the quantile staircase & Proposition~\ref{prop:L1} & proved\\
+number of steps at least $0.056\,A^{2/3}$ for large $A$, any fixed spontaneous count & Theorem~\ref{thm:C}, Appendix~\ref{app:C} & proved; one step checked
+in interval arithmetic\\
+finitely many rates for the matched counts & S1 Text & proved\\
+exact number of steps follows the conjectured law & Section~\ref{sec:countlaw} & conjectured; predictions registered, six of seven held\\
+24 rates at $A=412.42711264916346$ & Section~\ref{sec:countlaw} & proved by computer\\
+count changes at 21 to 24 steps predicted before computation & Table~\ref{tab:countlaw} & registered on 9 September 2026, log only\\
+count changes at 25, 47 and 67 steps predicted before computation & Table~\ref{tab:countlaw} & registered, dated\\
+shape of the rate-level functions, in both age groups & Section~\ref{sec:an} & registered, dated; held\\
+distinct rates within the staircase, seven forms of the test & Section~\ref{sec:an} & registered, dated; two held, five failed\\
+counts as variable as Poisson counts & Section~\ref{sec:an} & registered, dated; failed\\
+exact square-root form of the shape, against the form tested first & Section~\ref{sec:an} & registered, dated; failed\\
+predicted direction of asymmetry, against the opposite direction & Section~\ref{sec:an} & registered, dated; held\\
+predicted form against a more skewed curve of the same direction & Section~\ref{sec:an} & after the tests; the other curve fits better\\
+discrete levels in six earlier datasets from other species and areas & Section~\ref{sec:discussion}, S1 Text & registered, log only; not found\\
+fractions for $A\ge8$ and by groups of Fano factor & Section~\ref{sec:an} & after the tests\\
+\hline
+\end{tabular}
+\end{table}
+
+
+\section*{Data availability}
+The recordings are the public dataset 001262 of the Distributed Archives for Neurophysiology Data Integration (DANDI) (\url{https://dandiarchive.org/dandiset/001262}), described
+in~\cite{Heeringa2024}. The code that selects the fibres, fits the rate-level functions and computes every number of
+Section~\ref{sec:an} and Section~\ref{sec:countlaw} is in the repository \url{https://github.com/Tristan-tech-ai/how-many-firing-rates},
+together with the dated registration log of the tests and the files that certify its dates.
+
+\section*{Competing interests}
+The author has declared that no competing interests exist.
+
+\section*{Acknowledgments}
+The author thanks Sarah Marzen for helpful comments.
+
+\emph{Use of AI.} Claude (Anthropic) was used as an assisting tool during the preparation of this manuscript, primarily for
+computational support and language editing. The research questions, mathematical ideas, methodology, interpretation of results, and
+overall direction of the work were developed by the author. All computational results and certificates reported in the manuscript
+were recomputed and verified by the author, and the cited works were checked by the author. The author is responsible for the content
+and conclusions of this work.
+
+\appendix
+\section{Proof of Theorem~\ref{thm:C}}\label{app:C}
+In this appendix $r$ denotes a reference output law, not the tuning curve of Section~\ref{sec:laughlin}. A $\lambda$ with a subscript
+is a constant of the proof; $\lambda$ without one is the scale parameter of $H_\lambda$ and $S_\lambda$ in Proposition~\ref{thm:C-decay}
+and Lemma~\ref{lem:C-hankel}, and the spontaneous count in Section~\ref{app:C-lam}. Here $D(x)$ is the relative entropy, or Kullback--Leibler divergence, between the count distribution at rate $x$ and the output distribution of the optimal input; it is unrelated to the number $D$ of distinct rates of Section~\ref{sec:an}.
+
+\emph{Plan of the proof.} The proof has four steps, one for each of the subsections that follow. (1) It compares the optimal input $\pi$ with an explicit continuous input $\rho_\infty$, restricted to $[0,A]$ as $\rho_A$, whose output $r$ is known in closed form (Section~\ref{app:C-ref-sec}). (2) The optimality conditions of $\pi$ bound the ratio of its output $m$ to $r$ from above and below over the whole range (Section~\ref{sec:C-range}). (3) A weighted identity then shows that $m$ is exponentially close to $r$ in the bulk of the range (Proposition~\ref{thm:C-decay}). (4) Finally, an input whose output is that close to $r$ on a window must have many mass points in the window, because trigonometric test functions of high order would otherwise separate the two outputs (Lemma~\ref{lem:C-count}). Summing over disjoint windows gives the bound of Theorem~\ref{thm:C}. Section~\ref{app:C-lam} extends the proof to a spontaneous count.
+
+\subsection{Setting and facts from the literature}
+
+Until Section~\ref{app:C-lam} the spontaneous count is $\lambda=0$; that section gives the changes for $\lambda>0$.
+For $y\in\mathbb N_0=\{0,1,2,\dots\}$ put $p(y\,|\,x)=e^{-x}x^y/y!$; $P_x$ and $E_x$ denote probability and expectation for $Y\sim\mathrm{Poisson}(x)$. Let $\pi=\sum_{j=1}^{K}w_j\delta_{x_j}$, with weights $w_j$, be the capacity-achieving input, $m=\mathsf P\pi$ its
+output law ($\mathsf P$ is the Poisson kernel), $C$ the capacity in nats and $D(x)=D(p(\cdot\,|\,x)\,\|\,m)$.
+\begin{itemize}
+\item[(F1)] $\pi$ exists, is unique and has finitely many mass points~\cite{Shamai1990}; it is optimal if and only if $D(x)\le C$ on
+$[0,A]$, with equality on its support~\cite[Lemma~1]{BDS2024}.
+\item[(F2)] $0$ and $A$ are mass points of $\pi$~\cite[Corollaries~2 and~4]{Cao2014}.
+\item[(F3)] $E[X\,|\,Y=y]=(y+1)m(y+1)/m(y)$ and $\frac{d}{dx}E[f(Y)\,|\,X=x]=E[f(Y+1)-f(Y)\,|\,X=x]$ for $x>0$~\cite[Appendix~D]{BDS2024}.
+Since $p(y_0\,|\,x)=p(y_0-1\,|\,x)\,x/y_0$, the posterior of $X$ given $Y=y_0$ is the posterior given $Y=y_0-1$ tilted by $x$.
+\item[(F4)] $E[X\,|\,Y=y]$ is nondecreasing in $y$~\cite[Lemma~3]{BDS2024}. With (F3) this is the convexity of
+$G(y)=\log(y!\,m(y))$, whose increments are $\log E[X\,|\,Y=y]$.
+\end{itemize}
+
+\subsection{A reference output and the exact form of the optimality conditions}
+
+Let $\varphi(y)=y\psi(y+1)-y$, so that $\varphi(y+1)-\varphi(y)=\psi(y+1)$, and put
+\[
+r(y)=\frac{e^{-(C+1)+\varphi(y)}}{y!},\qquad c_*=r(0)=e^{-(C+1)},\qquad g=\log(m/r).
+\]
+The function $r$ is a reference output law, compared with $m$ below.
+
+\begin{lemma}\label{lem:C-digamma}
+For $x\ge0$ one has $E_x\psi(Y+1)=\log x+E_1(x)$ and $E_x\varphi(Y)=x\log x-x+1-\delta_0(x)$, where $\delta_0(x)=e^{-x}-xE_1(x)$ satisfies
+$0<\delta_0(x)\le e^{-x}/(x+1)$ and $\delta_0(0)=1$.
+\end{lemma}
+\begin{proof}
+With Euler's constant $\gamma_E$ one has $\psi(y+1)=-\gamma_E+H_y$ with $H_y=\int_0^1(1-(1-s)^y)\,s^{-1}ds$, so $E_xH_Y=\int_0^1(1-e^{-xs})s^{-1}ds=\gamma_E+\log x+E_1(x)$.
+By (F3), $\frac{d}{dx}E_x\varphi(Y)=E_x\psi(Y+1)$, and $E_0\varphi(Y)=0$; integrating gives
+$\int_0^x(\log s+E_1(s))\,ds=x\log x-x+xE_1(x)-e^{-x}+1$. The bounds follow from $e^{-x}/(x+1)<E_1(x)<e^{-x}/x$.
+\end{proof}
+
+\begin{proposition}\label{prop:C-kkt}
+For every $x\ge0$ one has $D(p(\cdot\,|\,x)\,\|\,r)=C+\delta_0(x)$. Hence $C-D(x)=E_xg(Y)-\delta_0(x)$, and the optimality conditions read
+$E_xg(Y)\ge\delta_0(x)$ on $[0,A]$, with equality at every mass point. We also have $g(0)=1$.
+\end{proposition}
+\begin{proof}
+The log ratio is $\log p(y\,|\,x)-\log r(y)=-x+y\log x+C+1-\varphi(y)$; take $E_x$ and use Lemma~\ref{lem:C-digamma} with $E_xY=x$. Since $0$ is a
+mass point (F2) and $p(\cdot\,|\,0)=\delta_0$, $C=D(0)=-\log m(0)$, so $m(0)=e^{-C}=e\,r(0)$.
+\end{proof}
+
+For $z=m/r>0$ one has $(z-1)\log z=\mathcal L(1,z)(\log z)^2$ and $(z-1)^2=\mathcal L(1,z)(z-1)\log z$; so $g$ has the sign of $m-r$ and
+$(m-r)g\ge0$ pointwise.
+
+\begin{proposition}[weighted identity]\label{prop:C-weighted}
+For every bounded measurable $\chi\ge0$ on $[0,A]$ and every finite measure $\rho\ge0$ on $[0,A]$, with $\mu=\rho-\pi$,
+\[
+\mathcal W(\chi):=\int\chi\,(C-D)\,d\rho\ \ge0,\qquad
+\mathcal W(\chi)=\sum_{y\ge0}g(y)\,\mathsf P(\chi\mu)(y)-\int\chi\,\delta_0\,d\mu .
+\]
+\end{proposition}
+\begin{proof}
+One has $\mathcal W\ge0$ by the optimality inequality, and $\int\chi(C-D)\,d\pi=0$ by the equality on the support. Insert
+Proposition~\ref{prop:C-kkt} and exchange sum and integral; the exchange is justified because $|g(y)|$ grows at most quadratically
+in $y-\lfloor A\rfloor$ beyond $A$ (Lemma~\ref{lem:C-edge}(iii)), while $\mathsf P(\chi|\mu|)(y)$ decays like $p(y\,|\,A)$ for $y>A$.
+\end{proof}
+
+\subsection{The reference input}\label{app:C-ref-sec}
+
+\begin{lemma}\label{lem:C-ref}
+(i) Let $\pi_Z(u)=(ue^u-e^u+1)/(u(e^u-1)^2)>0$ on $(0,\infty)$, let $S\ge0$ be the driftless subordinator variable (the value at time one of an increasing L\'evy process without drift; only this random variable is used, never the process) with Laplace
+exponent $\int(1-e^{-pu})\pi_Z(u)\,du$, that is, $E\,e^{-pS}=\exp\bigl(-\int(1-e^{-pu})\pi_Z(u)\,du\bigr)$, and put $Z=e^{-S}$. Then $EZ^p=\exp(p\psi(p+1)-p-\log\Gamma(p+1))$ for $p\ge0$, so
+$r(y)=c_*\,EZ^y$.
+(ii) $\rho_\infty(dx)=c_*\,E[Z^{-1}e^{-x(1-Z)/Z}]\,dx$ is a completely monotone density on $(0,\infty)$ with $\mathsf P\rho_\infty=r$.
+(iii) $\hat\rho:=\rho_\infty/c_*$ satisfies $\hat\rho(x)\le x^{-1/2}$ for $x\ge1$.
+(iv) The restriction $\rho_A$ of $\rho_\infty$ to $[0,A]$ has mass $m_A\le\exp(-\int\delta_0\,d\rho_A/m_A)<1$.
+\end{lemma}
+\begin{proof}
+(i) $k(p):=p\psi(p+1)-p-\log\Gamma(p+1)$ has $k(0)=0$ and $k'(p)=p\psi'(p+1)-1$. From
+$\psi'(p+1)=\int_0^\infty ue^{-pu}(e^u-1)^{-1}du$, integration by parts gives $p\psi'(p+1)=1+\int e^{-pu}\frac{d}{du}[u/(e^u-1)]\,du$, and
+$\frac{d}{du}[u/(e^u-1)]=-u\pi_Z(u)$. Hence $k(p)=-\int(1-e^{-pu})\pi_Z(u)\,du$; since $\int\min(1,u)\pi_Z<\infty$, this is the Laplace
+exponent of a driftless subordinator. We also have $\pi_Z>0$ because $ue^u-e^u+1>0$ for $u>0$.
+(ii) The density $z^{-1}e^{-x(1-z)/z}$ on $(0,\infty)$ has Poisson output $z^y$, because $\int_0^\infty e^{-x/z}x^y/y!\,dx=z^{y+1}$;
+mix over $z=Z$ (positive terms, Fubini).
+(iii) $\pi_Z(u)\ge e^{-u}/(2u)$: with $v=e^u$ this is $2v^2\log v-3v^2+4v-1\ge0$ for $v\ge1$, which vanishes at $v=1$ with zero
+derivative and has second derivative $4\log v\ge0$. The right side is the L\'evy density of the $\mathrm{Gamma}(1/2,1)$ subordinator,
+so $S=S_1+S'$ with $S_1$ a $\mathrm{Gamma}(1/2,1)$ variable and $S'\ge0$ independent of $S_1$. For $x\ge1$, $s\mapsto e^{s-x(e^s-1)}$ is decreasing, and
+$\hat\rho(x)=E\,e^{S-x(e^S-1)}\le E\,e^{S_1-x(e^{S_1}-1)}\le E\,e^{-(x-1)S_1}=x^{-1/2}$.
+(iv) $\bar\rho=\rho_A/m_A$ is a feasible input with output $R_A/m_A$, where $R_A=\mathsf P\rho_A\le r$. By Proposition~\ref{prop:C-kkt},
+$I(\bar\rho)=C+\int\delta_0\,d\bar\rho+\log m_A-\sum(R_A/m_A)\log(R_A/r)\ge C+\int\delta_0\,d\bar\rho+\log m_A$, and $I(\bar\rho)\le C$.
+\end{proof}
+
+\begin{lemma}[two-sided sizes]\label{lem:C-sizes}
+(i) $\hat\rho(x)\ge c_1/(x\log x)^{1/2}$ for $x\ge x_0$, with absolute constants $c_1,x_0$.
+(ii) Under Proposition~\ref{prop:C-lower}, $c_*\le C_1A^{-1/2}$; with Lemma~\ref{lem:C-edge}(vii), $c_*=\Theta(A^{-1/2})$.
+\end{lemma}
+\begin{proof}
+(i) $e^{s-x(e^s-1)}\ge e^{-2xs}$ for $0\le s\le1$, so $\hat\rho(x)\ge e^{-2}P(S\le1/x)$. Since $Ee^{-pS}\le P(S\le s)+e^{-ps}$ and
+$Ee^{-pS}=r(p)/c_*\ge(e/(2\pi p))^{1/2}e^{-5/(24p)}$ for $p\ge1$ (bounds on $r$ in Section~\ref{sec:C-range}), the choice $s=1/x$,
+$p=2x\log x$ gives $P(S\le1/x)\ge c/(x\log x)^{1/2}-x^{-2}\ge c'/(x\log x)^{1/2}$ for large $x$.
+(ii) $1\ge\sum_{y\le A}m(y)\ge\ell\sum_{y\le A}r(y)\ge\ell c_*\sum_{1\le y\le A}(e/(2\pi y))^{1/2}e^{-5/(24y)}\ge c''\ell c_*A^{1/2}$.
+\end{proof}
+
+The right-edge remainder $T_A=r-R_A=\mathsf P(\rho_\infty\mathbf 1_{(A,\infty)})$ satisfies $T_A(y)\le c_*A^{-1/2}e^{-(A-y)^2/(2A)}$
+for $y\le A$.
+
+\subsection{The range of $m/r$}\label{sec:C-range}
+
+By (F4) $G(y)=\log(y!\,m(y))$ is convex, and $g=G-\varphi+C+1$. For real $y\ge1$,
+\[
+\sqrt{e/(2\pi y)}\,e^{-5/(24y)}\le r(y)/c_*\le\sqrt{e/(2\pi y)}\,e^{1/(2(y+1))},
+\]
+and $r$ is decreasing ($r=c_*EZ^y$ with $Z<1$); this follows from $\log(y+\tfrac12)<\psi(y+1)<\log(y+1)-1/(2(y+1))$ and Stirling's
+bounds.
+
+\begin{lemma}[pointwise upper bound]\label{lem:C-pointwise}
+For $y_0\ge1$ let $m_1=E[X\,|\,Y=y_0-1]$ and $m_2=E[X\,|\,Y=y_0]$. Then
+$g(y_0)\le1+y_0\log m_1-m_1-\varphi(y_0)+m_1\log(m_2/m_1)$.
+\end{lemma}
+\begin{proof}
+The slope $s_0=G(y_0)-G(y_0-1)=\log m_1$ (F3) is a subgradient of the convex sequence $G$ at $y_0$, so
+$g(y)\ge g(y_0)+s_0(y-y_0)-(\varphi(y)-\varphi(y_0))$ for all $y\in\mathbb N_0$. Take $E_{x_j}$ at a mass point $x_j$:
+$E_{x_j}g(Y)=\delta_0(x_j)$ (Proposition~\ref{prop:C-kkt}) and $E_{x_j}\varphi(Y)=x_j\log x_j-x_j+1-\delta_0(x_j)$
+(Lemma~\ref{lem:C-digamma}), so $\delta_0$ cancels and $g(y_0)\le1+[s_0y_0-e^{s_0}-\varphi(y_0)]+B(x_j,e^{s_0})$ with
+$B(x,x')=x\log(x/x')-x+x'\ge0$. Average over the posterior of $X$ given $Y=y_0-1$, a probability on the mass points with mean
+$m_1=e^{s_0}$. The posterior given $Y=y_0$ is that posterior tilted by $x$, so $E[B(X,m_1)\,|\,Y=y_0-1]=m_1E[\log(X/m_1)\,|\,Y=y_0]
+\le m_1\log(m_2/m_1)$ by Jensen's inequality.
+\end{proof}
+
+\begin{proposition}\label{prop:C-upper}
+The function $g$ satisfies $\sup_{y\in\mathbb N_0}g(y)\le\lambda_M=1-\psi(2)+e^{\psi(2)}=2.1034207765\ldots$, that is, $m\le Mr$.
+\end{proposition}
+\begin{proof}
+One has $g\to-\infty$ because $m$ has Poisson tails beyond $A$ while $r(y)$ is of order $y^{-1/2}$, so $g$ attains its maximum at some $y_0$.
+If $y_0=0$, $g(0)=1$ (Proposition~\ref{prop:C-kkt}). If $y_0\ge1$, then $g(y_0-1)\le g(y_0)\ge g(y_0+1)$ and $\varphi(y)-\varphi(y-1)=\psi(y)$ give
+$m_1\ge e^{\psi(y_0)}$ and $m_2\le e^{\psi(y_0+1)}$. In Lemma~\ref{lem:C-pointwise}, $y_0\log m_1-m_1\le y_0\log y_0-y_0$, and
+$m_1\log(m_2/m_1)\le m_1(\psi(y_0+1)-\psi(y_0))=m_1/y_0\le m_2/y_0\le e^{\psi(y_0+1)}/y_0$. With $\varphi(y_0)=y_0\psi(y_0+1)-y_0$,
+\[
+g(y_0)\le f(y_0):=1+y_0(\log y_0-\psi(y_0+1))+e^{\psi(y_0+1)}/y_0 .
+\]
+At $y_0=1$ the bound is $f(1)=\lambda_M$. For $y_0\ge2$ the inequalities $\psi(y_0+1)>\log(y_0+\frac12)$ and $\log(1+u)\ge u-u^2/2$ give
+$y_0(\log y_0-\psi(y_0+1))\le-\frac12+1/(8y_0)$, and $\psi(y_0+1)<\log(y_0+1)$ gives $e^{\psi(y_0+1)}/y_0<1+1/y_0$; so
+$f(y_0)<\frac32+9/(8y_0)\le2.0625<\lambda_M$.
+\end{proof}
+
+\begin{proposition}[lower bound on the input range]\label{prop:C-lower}
+For every integer $y_1\in[0,A]$ one has $g(y_1)\ge-\lambda_\ell$ with $\lambda_\ell=2.777$, that is, $m\ge\ell r$ there.
+\end{proposition}
+\begin{proof}
+Fix $y_1$ and put $\lambda_1=-g(y_1)$; there is nothing to show if $\lambda_1\le0$. For an integer $R\ge1$ and $y=y_1+j$ with $0\le j\le R$, convexity of $G$ and $g(y_1+R)\le\lambda_M$ give $g(y)\le(1-\theta)(-\lambda_1)+\theta\lambda_M+\mathrm{def}_R(j)$ with $\theta=j/R$ and the
+chord defect $\mathrm{def}_R(j)=(1-\theta)\varphi(y_1)+\theta\varphi(y_1+R)-\varphi(y_1+j)\le j(R-j)/(2(y_1+1))$, by the discrete maximum
+principle since $\Delta^2\varphi(y)=1/(y+1)$. Left chords ($R\le y_1$) give the same bound with $y_1+1$ replaced by $y_1-R+1$, and beyond
+the chords $g\le\lambda_M$. Let $U_{\lambda_1}$ be the pointwise minimum of these bounds; it is nonincreasing in $\lambda_1$. The optimality
+inequality at the feasible point $x=y_1$ gives $E_{y_1}U_{\lambda_1}\ge E_{y_1}g\ge\delta_0(y_1)\ge0$.
+
+(a) $y_1\le3000$. For $y_1=0$ the claim holds because $g(0)=1$ (Proposition~\ref{prop:C-kkt}). The bound $U_{1.8}$ is built from chord bounds, with the Poisson mass outside the chords counted at
+$\lambda_M$. For each integer $y_1\in[1,3000]$ it gives $E_{y_1}U_{1.8}-\delta_0(y_1)<0$, with an upper bound of at most $-6.67\times10^{-3}$
+(attained at $y_1=4$); each value is enclosed in ball arithmetic (interval arithmetic with midpoint-radius balls) at 128 bits. Hence $\lambda_1<1.8$ there.
+
+(b) $y_1>3000$. One chord on each side with $R=\lceil c\sqrt{y_1}\,\rceil$, $c=2.6$, and $\theta_Y=|Y-y_1|/R$ give
+$U\le-\lambda_1(1-\theta_Y)_++\lambda_M\min(1,\theta_Y)+R^2/(8(y_1-R+1))$. Since $E|Y-y_1|\le\sqrt{y_1}$, it follows that $E(1-\theta_Y)_+\ge1-1/c$ and
+$E\min(1,\theta_Y)\le1/c$; so $\lambda_1\le(\lambda_M/c+R^2/(8(y_1-R+1)))/(1-1/c)$. With $R\le c\sqrt{y_1}+1$ the last term is at most
+$R_b(y_1)=(c^2y_1+2c\sqrt{y_1}+1)/(8(y_1-c\sqrt{y_1}))$, which decreases on $y_1\ge3001$, and $R_b(3001)$ gives $\lambda_1\le2.77649$.
+\end{proof}
+
+\begin{corollary}\label{cor:C-LM}
+With $z=m/r$: (LM1) $(z-1)\log z\ge\mathcal L(1,\ell)(\log z)^2$ on $[0,A]$, and (LM2) $(z-1)^2\le\mathcal L(1,M)(z-1)\log z$ on
+$\mathbb N_0$. The value of $\varrho$ is $10.128$.
+\end{corollary}
+\begin{proof}
+The ratio satisfies $z\in[\ell,M]$ on $[0,A]$ and $z\le M$ on $\mathbb N_0$ (Propositions~\ref{prop:C-upper} and~\ref{prop:C-lower}), and
+$\mathcal L(1,z)$ is increasing in $z$.
+\end{proof}
+
+\subsection{Exponential decay of $m-r$ in the bulk}
+
+\emph{Weight.} Fix $\xi\in(0,1)$ and an integer $\sigma\ge1$, and put $t=2\sigma/(\xi A)$ and $\chi(x)=(x/A)^{2\sigma}e^{t(A-x)}$. Then
+$\log\chi(x)=\Lambda_0h(x/A)$ with $\Lambda_0=tA\phi_\xi$; $\log\chi$ is concave, maximal at $x_c=\xi A$, zero at $x_L=\kappa_LA$ and at
+$A$, positive on $(x_L,A)$ and negative on $[0,x_L)$ and beyond $A$, with $\chi(0)=0$. Tangent bounds:
+$\log\chi(x)\le\beta_L(x-x_L)$ with $\beta_L=t(\xi/\kappa_L-1)$, and $\log\chi(x)\le\beta_A(A-x)$ with $\beta_A=t(1-\xi)$.
+Let $\mathrm{Win}=\{y\in\mathbb N_0:x_L\le y\le A\}$.
+
+\emph{Objects.} Put $\rho=\rho_A$ (Lemma~\ref{lem:C-ref}), $\mu=\rho-\pi$, $\nu=\chi^{1/2}\mu$ (which has no mass at the origin since $\chi(0)=0$),
+with $N:=\|\nu\|_{\mathrm{TV}}\le2e^{\Lambda_0/2}$. Put $\lambda_\pm=1\pm t/2$ and $H_\lambda(k)=\int p(k\,|\,\lambda x)\,\nu(dx)$;
+$F=\mathsf P\mu=r-T_A-m$, $\mathcal P(y)=\chi(y)^{1/2}F(y)$, $\mathcal Q(y)=\chi(y)^{-1/2}\mathsf P(\chi\mu)(y)$ and
+$C_m=\mathsf P(\chi\mu)-\chi F=\chi^{1/2}(\mathcal Q-\mathcal P)$. The weighted error is
+$E_2=\sum_{y\le A}\chi(y)(m-r)g\ge0$.
+
+\begin{proposition}[decay]\label{thm:C-decay}
+Fix $\xi\in(0,1)$ and $c_0<c_{0}^{\max}(\xi)=\Gamma_\xi^{-2/3}$, where
+\[\Gamma_\xi=(1+\xi\kappa_L^{-1/2})\kappa_L^{-1/4}\varrho^{1/2}/\phi_\xi.\]
+Take $\sigma=\mathrm{round}(c_0A^{1/3}\xi/(2\phi_\xi))$, so that $\Lambda_0=c_0A^{1/3}(1+o(1))$, and $B^2=\lambda_+(\Lambda_0+4\log A)$.
+There are $A_0$ and $C_0$, depending on $\xi$ and $c_0$ only, such that $E_2\le C_0A^{1/2}$ for $A\ge A_0$.
+\end{proposition}
+\begin{proof}
+\emph{Step 1 (identity).} Proposition~\ref{prop:C-weighted} with this $\chi$ and $\rho$, and $\mathsf P(\chi\mu)=\chi F+C_m$ on $y\le A$,
+give $E_2=-\mathcal W-\tilde T+\sum_{\mathrm{Win}}gC_m+e_L+e_{\rm out}-d_0$, with $\tilde T=\sum_{y\le A}\chi gT_A$ and $e_L=\sum_{y<x_L}gC_m$, and with $e_{\rm out}=\sum_{y>A}g\,\mathsf P(\chi\mu)$ and $d_0=\int\chi\delta_0\,d\mu$. Since $\mathcal W\ge0$, the bound $E_2\le|\tilde T|+|\sum_{\mathrm{Win}}gC_m|+|e_L|+|e_{\rm out}|+|d_0|$ holds.
+
+\emph{Step 2 (exact Poisson flows).} From
+$x^se^{-\tau x}p(y\,|\,x)=\frac{\Gamma(y+s+1)}{\Gamma(y+1)(1+\tau)^{y+s}}\,p(y+s\,|\,(1+\tau)x)$ with $s=\pm\sigma$, $\tau=\pm t/2$:
+for $y\ge\sigma$ one has $\mathcal Q(y)=\alpha_+(y)H_{\lambda_+}(y+\sigma)$ and $\mathcal P(y)=\alpha_-(y)H_{\lambda_-}(y-\sigma)$, with
+$\alpha_+(y)=y^{-\sigma}e^{ty/2}\Gamma(y+\sigma+1)/(\Gamma(y+1)\lambda_+^{y+\sigma})$ and
+$\alpha_-(y)=y^{\sigma}e^{-ty/2}\Gamma(y-\sigma+1)/(\Gamma(y+1)\lambda_-^{y-\sigma})$; $\alpha_-\ge e^{-\sigma t/2}$. Put
+$\mathcal A_1=\sup_{\mathrm{Win}}|\alpha_+-\alpha_-|$ and $\mathcal A_2=\sup_{\mathrm{Win}}\alpha_-$; both $\mathcal A_1$ and $\mathcal A_2-1$
+are $O(\Lambda_0^2/A)$.
+
+\emph{Step 3 (Cauchy--Schwarz with (LM1)).} With $r_{\min}=\min_{\mathrm{Win}}r=r(\lfloor A\rfloor)$ one has $|\sum_{\mathrm{Win}}gC_m|\le(E_2/(\mathcal L(1,\ell)r_{\min}))^{1/2}\|\mathcal Q-\mathcal P\|_{\ell^2(\mathrm{Win})}$ and
+$|\tilde T|\le(E_2/\mathcal L(1,\ell))^{1/2}\tau_T$, where $\tau_T^2=\sum_{y\le A}\chi T_A^2/r$.
+
+\emph{Step 4 (three terms).} On $\mathrm{Win}$ the difference is $\mathcal Q-\mathcal P=(\alpha_+-\alpha_-)H_+(y+\sigma)+\alpha_-(H_+-H_-)(y+\sigma)+\alpha_-[H_-(y+\sigma)-H_-(y-\sigma)]$, where
+$H_\pm=H_{\lambda_\pm}$. With $K_1=A+\sigma$ and the Dirichlet form $S_\lambda=\sum_k(k+1)(\Delta H_\lambda(k))^2$,
+\[
+\|\mathcal Q-\mathcal P\|_{\mathrm{Win}}\le\mathcal A_1\|H_{\lambda_+}\|
++\mathcal A_2\,t\sup_{\lambda\in[\lambda_-,\lambda_+]}\lambda^{-1}\bigl[((K_1+1)S_\lambda)^{1/2}+\|H_\lambda\|\bigr]
++\mathcal A_2\,2\sigma\bigl(S_{\lambda_-}/(x_L-\sigma+1)\bigr)^{1/2};
+\]
+the middle term comes from $\frac{d}{d\lambda}H_\lambda(k)=-\lambda^{-1}[(k+1)\Delta H_\lambda(k)+H_\lambda(k)]$ and Minkowski's
+inequality over $\lambda$, the last from writing $H(y+\sigma)-H(y-\sigma)$ as a sum of $2\sigma$ differences, each index
+$j\ge x_L-\sigma$ being used at most $2\sigma$ times.
+
+\emph{Step 5 (one global bandwidth).} Lemma~\ref{lem:C-hankel} gives, with $\Delta_\lambda=1/\lambda_--1/\lambda_+$ and
+$h_0=\|H_{\lambda_-}\|$, for $\lambda\in[\lambda_-,\lambda_+]$:
+$\|H_\lambda\|\le e^{\Delta_\lambda B^2/2}h_0+Ne^{-B^2/(2\lambda_+)}$ and
+$S_\lambda^{1/2}\le(B/\lambda_-^{1/2})\|H_\lambda\|+Ne^{-B^2/(2\lambda_+)}(B^2/\lambda_-+1)^{1/2}$.
+
+\emph{Step 6 (back to $\mathcal P$).} By Step 2, $H_{\lambda_-}(k)=\mathcal P(k+\sigma)/\alpha_-(k+\sigma)$, so $h_0\le e^{\sigma t/2}\|\mathcal P\|_{\ell^2(\mathbb N_0)}$.
+On $\mathrm{Win}$, (LM2) and the decrease of $r$ give $\chi(m-r)^2\le\mathcal L(1,M)\,r(x_L)\,\chi(m-r)g$, so
+$\|\mathcal P\|\le(\mathcal L(1,M)r(x_L)E_2)^{1/2}+P_L+\tau'_T+\|F\|_{\rm out}$ with $P_L^2=\sum_{y<x_L}\chi(m-r)^2$ and $\tau'^2_T=\sum_{y\le A}\chi T_A^2$, and with $\|F\|^2_{\rm out}=\sum_{y>A}\chi F^2$.
+
+\emph{Step 7 (closing).} Steps 4--6 give $\|\mathcal Q-\mathcal P\|_{\mathrm{Win}}\le\delta_1h_0+\rho_N$ with
+\begin{align*}
+\delta_1&=e^{\Delta_\lambda B^2/2}\Bigl[\mathcal A_1+\mathcal A_2\frac{t}{\lambda_-}\Bigl(\frac{(K_1+1)^{1/2}B}{\lambda_-^{1/2}}+1\Bigr)
++\mathcal A_2\frac{2\sigma B}{(\lambda_-(x_L-\sigma+1))^{1/2}}\Bigr],\\
+\rho_N&=Ne^{-B^2/(2\lambda_+)}\Bigl[\mathcal A_1+\mathcal A_2\frac{t}{\lambda_-}\Bigl((K_1+1)^{1/2}\Bigl(\frac{B}{\lambda_-^{1/2}}+\Bigl(\frac{B^2}{\lambda_-}+1\Bigr)^{1/2}\Bigr)+1\Bigr)\\
+&\qquad+\mathcal A_2\frac{2\sigma}{(x_L-\sigma+1)^{1/2}}\Bigl(\frac{B}{\lambda_-^{1/2}}+\Bigl(\frac{B^2}{\lambda_-}+1\Bigr)^{1/2}\Bigr)\Bigr].
+\end{align*}
+With Steps 1, 3 and 6, $E_2\le\delta'E_2+b\,E_2^{1/2}+\epsilon_{\rm out}$, where
+$\delta'=\delta_1e^{\sigma t/2}(\mathcal L(1,M)r(x_L)/(\mathcal L(1,\ell)r_{\min}))^{1/2}$,
+$b=[\delta_1e^{\sigma t/2}(P_L+\tau'_T+\|F\|_{\rm out})+\rho_N]/(\mathcal L(1,\ell)r_{\min})^{1/2}+\tau_T/\mathcal L(1,\ell)^{1/2}$ and
+$\epsilon_{\rm out}=|e_L|+|e_{\rm out}|+|d_0|$. If $\delta'<1$ then
+$E_2\le\bigl[(b+(b^2+4(1-\delta')\epsilon_{\rm out})^{1/2})/(2(1-\delta'))\bigr]^2$.
+
+\emph{Asymptotics.} One has $Ne^{-B^2/(2\lambda_+)}\le2A^{-2}$; $\mathcal A_1$, $\mathcal A_2-1$, $\sigma t$, $t^2A$, $\beta_A^2A$, $\beta_L^2A$ and
+$\Delta_\lambda B^2$ are $O(\Lambda_0^2/A)\to0$; $\delta_1=(1+o(1))\,tA^{1/2}B\,(1+\xi\kappa_L^{-1/2})$ with
+$tA^{1/2}B=c_0^{3/2}/\phi_\xi\,(1+o(1))$; and $r(x_L)/r_{\min}\to\kappa_L^{-1/2}$ by the bounds on $r$ in Section~\ref{sec:C-range}.
+Hence $\delta'\to c_0^{3/2}\Gamma_\xi<1$. With Lemma~\ref{lem:C-edge}, $b=O(A^{1/4})$ and $\epsilon_{\rm out}=O(A^{1/2})$, so
+$E_2=O(A^{1/2})$.
+\end{proof}
+
+\begin{lemma}[Hankel form of the $\ell^2$ norms]\label{lem:C-hankel}
+Let $J_0$ and $I_0$ be the Bessel function and the modified Bessel function of order zero. For a finite signed measure $\nu$ on
+$[0,\infty)$ let $\hat\nu(s)=\int J_0(2sx^{1/2})\,\nu(dx)$. Then
+\[
+\sum_kp(k\,|\,\lambda x)p(k\,|\,\lambda x')=e^{-\lambda(x+x')}I_0\bigl(2\lambda(xx')^{1/2}\bigr)
+=\frac2\lambda\int_0^\infty e^{-s^2/\lambda}J_0(2sx^{1/2})J_0(2sx'^{1/2})\,s\,ds,
+\]
+so that $\|H_\lambda\|^2=\frac2\lambda\int e^{-s^2/\lambda}|\hat\nu(s)|^2s\,ds$ and $S_\lambda=\frac2{\lambda^2}\int e^{-s^2/\lambda}|\hat\nu(s)|^2s^3\,ds$.
+The bounds of Step 5 of Proposition~\ref{thm:C-decay} follow by splitting at $s=B$ and using $|\hat\nu|\le N$ above $B$.
+\end{lemma}
+\begin{proof}
+The first equality is the series of $I_0$. The second is Weber's second exponential integral~\cite[13.31(1)]{Watson1922},
+in its case of order zero, $\int_0^\infty e^{-p^2t^2}J_0(at)J_0(bt)\,t\,dt=(2p^2)^{-1}e^{-(a^2+b^2)/(4p^2)}I_0(ab/(2p^2))$ for
+$|\arg p|<\pi/4$, with $a=2x^{1/2}$, $b=2x'^{1/2}$ and $p^2=1/\lambda$. The norm follows by integrating against
+$\nu\otimes\nu$. For $S_\lambda$, compute $\frac{d}{d\lambda}(\lambda\|H_\lambda\|^2)$ on both sides: on the transform side, and as
+$\sum_k(k+1)(\Delta H_\lambda(k))^2$ on the output side.
+\end{proof}
+
+\begin{lemma}[edge terms]\label{lem:C-edge}
+With $\lambda_*=\max(\lambda_M,\lambda_\ell)$:
+(i) $|d_0|\le(1+e)c_*+2e^{\Lambda_0-x_L}$;
+(ii) $\tau_T^2\le c_*A^{-1/2}(1+(2\pi A)^{1/2})e^{\beta_A^2A/2}$ and $\tau'^2_T\le c_*\tau_T^2$;
+(iii) $|e_{\rm out}|\le2e^{\beta_A^2A/2}(\lambda_*+2\lambda_*(A^{1/2}+1)+3)$;
+(iv) $|e_L|\le\lambda_*\bigl[2+2e^{\beta_L^2A/2}+(1+M)c_*(1+2e^{1/4}(ex_L/(2\pi))^{1/2})\bigr]$;
+(v) $P_L^2\le(1+M)^2c_*^2(1+e^{1/2}(e/(2\pi))(1+\log x_L))$;
+(vi) $\|F\|^2_{\rm out}\le4(2\pi\lfloor A\rfloor)^{-1/2}$;
+(vii) $c_*\ge(1-(e/4)^A)/(M(1+2e^{1/4}(eA/\pi)^{1/2}))$, hence $r_{\min}=\Omega(1/A)$.
+\end{lemma}
+\begin{proof}
+(i) $\chi\le1$ on $[0,x_L)$ and $\delta_0(x)\le e^{-x}$ there; $\int e^{-x}d\rho_\infty=\mathsf P\rho_\infty(0)=r(0)=c_*$ and
+$\sum_jw_je^{-x_j}=m(0)=e\,c_*$ (Proposition~\ref{prop:C-kkt}); on $[x_L,A]$ one has $\chi\delta_0\le e^{\Lambda_0-x_L}$, and the masses of
+$\rho_A$ and $\pi$ are at most $1$.
+(ii) $\chi T_A^2/r\le\chi T_A$ because $T_A\le r$; $T_A(y)\le c_*A^{-1/2}e^{-(A-y)^2/(2A)}$ and $\chi(y)\le e^{\beta_A(A-y)}$; sum over
+$y\le A$ by the maximum plus the integral of the unimodal summand. Finally $\tau'^2_T=\sum\chi(T_A^2/r)r\le(\max r)\tau_T^2=c_*\tau_T^2$,
+since $r$ is decreasing with $r(0)=c_*$.
+(iii) For $y>A$ one has $|g(y)|\le\gamma_g(y):=\lambda_*+(y-y_A)(2\lambda_*+(y-y_A)/y_A)$ with $y_A=\lfloor A\rfloor$: the tangent of the convex
+$G$ at $y_A$ has slope $G(y_A)-G(y_A-1)\ge\psi(y_A)-\lambda_\ell-\lambda_M$, and both $\varphi(y)-\varphi(y_A)\le(y-y_A)\psi(y)$ and $\psi(y)-\psi(y_A)\le(y-y_A)/y_A$ hold. We also have $\mathsf P(\chi|\mu|)(y)\le2e^{\beta_A^2A/2}p(y\,|\,A)$ for $y>A$, from
+$p(y\,|\,x)\le p(y\,|\,A)e^{-(A-x)^2/(2A)}$ for $x\le A<y$ and $\chi(x)\le e^{\beta_A(A-x)}$. Then
+$|e_{\rm out}|\le2e^{\beta_A^2A/2}E\gamma_g(Y')$ with $Y'\sim\mathrm{Poisson}(A)$, which gives (iii).
+(iv) $\sum_{y<x_L}\mathsf P(\chi|\mu|)(y)=\int\chi(x)P_x(Y<x_L)\,d(\rho+\pi)$; for $x\ge x_L$ the Poisson Chernoff bound gives
+$\chi(x)P_x(Y<x_L)\le e^{\beta_L(x-x_L)-(x-x_L)^2/(2x)}\le e^{\beta_L^2A/2}$; on $y\le A$ one has $|F|\le(1+M)r$, and $r$ is summed with the
+bounds of Section~\ref{sec:C-range}.
+(v) $P_L^2=\sum_{y<x_L}\chi(m-r)^2\le(1+M)^2\sum_{y<x_L}r^2$, with the bounds on $r$.
+(vi) For $y>A$ one has $|F|\le R_A+m\le2p(y\,|\,A)$ because $p(y\,|\,\cdot)$ increases on $[0,y]$, and
+$\max_yp(y\,|\,A)\le p(y_A\,|\,y_A)\le(2\pi y_A)^{-1/2}$.
+(vii) $1=\sum m\le M\sum r$, and $\sum_yr(y)\le c_*(1+2e^{1/4}(eA/\pi)^{1/2})+(e/4)^A$ by the bounds on $r$, the last term bounding
+the mass beyond $2A$.
+\end{proof}
+The constants in (i)--(vii) are finite powers and exponentials of $A^{1/3}$; they enter $b$ and $\epsilon_{\rm out}$ as $O(A^{1/4})$
+and $O(A^{1/2})$ because $\beta_A^2A$ and $\beta_L^2A$ are $O(\Lambda_0^2/A)\to0$.
+
+\begin{corollary}[one window]\label{cor:C-window}
+Under Proposition~\ref{thm:C-decay}, for $A\ge A_0$ and every set $Y_W$ of integers inside $\mathrm{Win}$ one has $\sum_{y\in Y_W}(m-r)^2/r\le\mathcal L(1,M)\,C_0A^{1/2}\exp(-\Lambda_0\min_{Y_W}h(y/A))$, uniformly in $Y_W$.
+\end{corollary}
+\begin{proof}
+(LM2) gives $(m-r)^2/r\le\mathcal L(1,M)(m-r)g$ on $\mathbb N_0$; each term of $E_2$ is nonnegative and
+$\chi\ge\exp(\Lambda_0\min_{Y_W}h)$ on $Y_W$.
+\end{proof}
+
+\subsection{Counting mass points in a window}
+
+\emph{Test functions.} For $\vartheta\in(0,1)$ and integers $1\le s_1<s_2$, the window
+$\varpi(x)=P(s_1\le\mathrm{Poisson}(\vartheta x)\le s_2)$ has the exact deconvolution
+$\Psi_\omega(y)=\sum_{s=s_1}^{s_2}\binom ys\vartheta^s(1-\vartheta+i\omega)^{y-s}$: $E_x\Psi_\omega(Y)=e^{i\omega x}\varpi(x)$, by binomial
+thinning ($E_x[\binom Ys\vartheta^s(1-\vartheta+i\omega)^{Y-s}]=e^{i\omega x}e^{-\vartheta x}(\vartheta x)^s/s!$). We also have
+$|\Psi_\omega(y)|\le\Psi_0(y)(1+\omega^2/(1-\vartheta)^2)^{(y-s_1)_+/2}$ with $\Psi_0(y)=P(s_1\le\mathrm{Bin}(y,\vartheta)\le s_2)\le1$.
+
+\begin{lemma}\label{lem:C-count}
+Let $l_1=s_1/\vartheta$, $l_2=s_2/\vartheta$, $\omega_0=2\pi/(l_2-l_1)$ and $W=[a_1,a_2]$ with $a_1\le l_1<l_2\le a_2\le A$. Let $k$ be the number of mass points of $\pi$ in $W$ and let $Y_W=[b_1,b_2]$ be a set of integers. Put $\epsilon_W=\max(\varpi(a_1),\varpi(a_2))$,
+$\gamma=(l_2-l_1)\min_{[l_1,l_2]}(\varpi c_*\hat\rho)$, $\Omega_n=n\omega_0$ and $g_n(y)=(1+\Omega_n^2/(1-\vartheta)^2)^{(y-s_1)_+/2}$; put also $\tau_n=M\sum_{y\notin Y_W}g_n(y)\Psi_0(y)r(y)$, and let $\eta_W^2=\sum_{Y_W}(R_A-m)^2/r$ and $r_W=\sum_{Y_W}r$. Fix $r_b>1$, put
+$n(k)=\lceil r_bk/(r_b-1)\rceil-1$, and let $n_*\ge1$ be an integer with
+\[
+\text{(a)}\ \ r_b\epsilon_W/\gamma\le1/4,\qquad\text{(b)}\ \ (r_b(2n_*+1))^{1/2}\tau_{n_*}/\gamma\le1/4 .
+\]
+If
+$k_C:=\frac{r_b-1}{r_b}\,\frac{(1-\vartheta)(l_2-l_1)}{2\pi}\Bigl(\frac{2\log\bigl(\gamma/(2(r_b(2n_*+1)r_W)^{1/2}\eta_W)\bigr)}{b_2-s_1}\Bigr)^{1/2}>0$
+and $n(\lceil k_C\rceil-1)\le n_*$, then $k\ge k_C$.
+\end{lemma}
+\begin{proof}
+Suppose $k<k_C$ and put $n=n(k)$ ($n=0$ if $k=0$); then $n\le n(\lceil k_C\rceil-1)\le n_*$, so (b) holds at $n$ since $\tau_n$ increases
+with $n$. Let $V$ be the space of trigonometric polynomials $\sum_{l=0}^nc_le^{il\omega_0x}$ vanishing at the $k$ mass points in $W$;
+$\dim V\ge n+1-k$, so $(n+1)/\dim V\le r_b$. Take an orthonormal basis $(P_i)$ of $V$ in $L^2(\mu_\varpi)$, where $\mu_\varpi=\varpi\rho_A\,dx$, and
+$Q_V=\sum|P_i|^2\ge0$; $Q_V$ vanishes at the mass points in $W$ and $\int Q_V\,d\mu_\varpi=\dim V$. The Gram matrix
+$(\int e^{i(l'-l)\omega_0x}d\mu_\varpi)_{ll'}$ is at least $\gamma\,\mathrm{Id}$, with $\mathrm{Id}$ the identity matrix, because $\varpi c_*\hat\rho\ge\gamma/(l_2-l_1)$ on $[l_1,l_2]$, an
+interval of length $2\pi/\omega_0$; so $Q_V\le(n+1)/\gamma$. Writing $Q_V=\sum_{|j|\le n}q_je^{ij\omega_0x}$ with coefficients $q_j$, the coefficient matrix,
+conjugated by the square root of the Gram matrix, is a projector of rank $\dim V$; hence $\sum|q_j|^2\le(n+1)\dim V/\gamma^2$.
+
+With $\Psi=\sum_jq_j\Psi_{j\omega_0}$, every finite measure $\nu'$ on $[0,A]$ satisfies $\int Q_V\varpi\,d\nu'=\sum_y\Psi\,(\mathsf P\nu')$; with
+$\nu'=\rho_A-\pi$, $\dim V=\int Q_V\varpi\,d\pi+\sum_y\Psi(R_A-m)$, with absolute convergence because $|\Psi|$ grows at most geometrically
+while $\mathsf P\nu'$ decays faster than any exponential. Now $\int Q_V\varpi\,d\pi\le(n+1)\epsilon_W/\gamma$, since $Q_V=0$ at the mass points
+in $W$ and $\varpi\le\epsilon_W$ off $W$; $\sum_{Y_W}|\Psi_{j\omega_0}||R_A-m|\le g_n(b_2)r_W^{1/2}\eta_W$; off $Y_W$ the bound $|R_A-m|\le Mr$ holds, so
+that part is at most $\tau_n$; and $\sum_j|q_j|v_j\le(\sum|q_j|^2)^{1/2}(2n+1)^{1/2}\max_jv_j$ for any $v_j\ge 0$. Dividing by $\dim V$ and using
+$(n+1)/\dim V\le r_b$ gives $1\le r_b\epsilon_W/\gamma+(r_b(2n+1))^{1/2}[g_n(b_2)r_W^{1/2}\eta_W+\tau_n]/\gamma$, so by (a) and (b),
+$g_n(b_2)\eta_W\ge\gamma/(2(r_b(2n+1)r_W)^{1/2})\ge\gamma/(2(r_b(2n_*+1)r_W)^{1/2})$. With $\log(1+z)\le z$ this gives $(n\omega_0)^2(b_2-s_1)/(2(1-\vartheta)^2)\ge\log\bigl(\gamma/(2(r_b(2n_*+1)r_W)^{1/2}\eta_W)\bigr)$, that is,
+$n\ge\frac{(1-\vartheta)(l_2-l_1)}{2\pi}\bigl(2\log(\cdots)/(b_2-s_1)\bigr)^{1/2}$. As $n(k)<r_bk/(r_b-1)$, it follows that $k>\frac{r_b-1}{r_b}n\ge k_C$, a contradiction. For $k=0$, $n=0$ and $V=\mathbb C$ give
+$1\le\epsilon_W/\gamma+[r_W^{1/2}\eta_W+\tau_0]/\gamma$, against (a), (b) and $k_C>0$.
+\end{proof}
+
+\subsection{Assembly of the proof}\label{app:C-proof}
+
+Fix $\xi\in(0,1)$ and $c_0<c_{0}^{\max}(\xi)$, take $\delta\in(0,(1-\kappa_L)/2)$ and $r_b>2$, choose $\vartheta\in(0,1/2)$, and let $A\to\infty$. Put
+$L_c=A^{3/4}$, the margin around the mass points $M_a=u(A/\vartheta)^{1/2}$ with $u^2=8\log A$, and the output margin
+$M_o=2(2A\Lambda_0/\vartheta)^{1/2}$; both are $o(L_c)$, since $M_a=O((A\log A)^{1/2})$ and $M_o=O(A^{2/3})$. Place cores $[l_1,l_2]$ of
+length $L_c$ in $[(\kappa_L+\delta)A,(1-\delta)A]$ with consecutive cores $2M_a+1$ apart ($s_1=\lceil\vartheta l_1\rceil$,
+$s_2=\lfloor\vartheta l_2\rfloor$). Each core gets the window $W=[l_1-M_a,l_2+M_a]$; these windows are pairwise disjoint. Its output
+window is $Y_W=[b_1,b_2]=[l_1-M_o,l_2+M_o]$; output windows may overlap, since each lemma is applied to one window. Let $h_W$ be the
+minimum of $h$ over $Y_W/A$ and put
+$\bar\eta_W^2=2\mathcal L(1,M)C_0A^{1/2}e^{-\Lambda_0h_W}+2\sum_{y\in Y_W}T_A^2/r$. By Corollary~\ref{cor:C-window}, $\bar\eta_W\ge\eta_W$, and
+Lemma~\ref{lem:C-count} holds with $\bar\eta_W$ in place of $\eta_W$, because its proof gives
+$g_n(b_2)\eta_W\ge\gamma/(2(r_b(2n_*+1)r_W)^{1/2})$. Uniformly over the windows:
+\begin{enumerate}
+\item The inequalities $T_A\le c_*A^{-1/2}e^{-(A-y)^2/(2A)}$ and $y\le(1-\delta)A+M_o$ bound the second term of $\bar\eta_W^2$ by $e^{-\delta^2A/3}$,
+so $\log(1/\bar\eta_W)=(\Lambda_0/2)h_W-O(\log A)$, with $h_W\ge h_\delta:=\min(h(\kappa_L+\delta/2),h(1-\delta/2))>0$ for large $A$. In
+particular $cA^{1/3}\le\log(1/\bar\eta_W)\le\Lambda_0$.
+\item The estimates $c_*=\Theta(A^{-1/2})$ and $\hat\rho(x)\ge c_1/(x\log x)^{1/2}$ (Lemma~\ref{lem:C-sizes}) and $\varpi\ge1/2-o(1)$ on the core give
+$\gamma\ge c'L_cA^{-1/2}(A\log A)^{-1/2}=c'A^{-1/4}(\log A)^{-1/2}$. The Poisson Chernoff bounds at the two ends of $W$ give
+$\epsilon_W\le\exp(-u^2l/(2(l+M_a))(1-o(1)))\le A^{-3}$ for large $A$. So (a) holds.
+\item The count of Lemma~\ref{lem:C-count} on a window is $f_W=\Theta(L_c(\log(1/\bar\eta_W)/l_2)^{1/2})=\Theta(A^{5/12})$; take
+$n_*=n(\lceil f_W\rceil)=\Theta(A^{5/12})$, so $\Omega:=n_*\omega_0=\Theta(A^{-1/3})$. For $y>b_2$ one has $\Psi_0(y)\le P(\mathrm{Bin}(y,\vartheta)\le s_2)\le\exp(-(\vartheta y-s_2)^2/(2\vartheta y))$ and
+$g_{n_*}(y)\le\exp(\Omega^2(y-s_1)/(2(1-\vartheta)^2))$. At $y=b_2$ the exponent satisfies $(\vartheta y-s_2)^2/(2\vartheta y)\ge\vartheta M_o^2/(2b_2)\ge4\Lambda_0$,
+while $\Omega^2b_2/(2(1-\vartheta)^2)\le(1+o(1))\log(1/\bar\eta_W)/(1-\vartheta)\le2.1\Lambda_0$ (as $\vartheta<1/2$). Beyond $b_2$ the
+derivative of the tail exponent is at most $-(\vartheta/2)(1-(s_2/(\vartheta b_2))^2)=-\Theta(A^{-1/3})$, against the growth rate
+$\Omega^2/(2(1-\vartheta)^2)=\Theta(A^{-2/3})$. For $y<b_1$ one has $P(\mathrm{Bin}(y,\vartheta)\ge s_1)\le\exp(-(s_1-\vartheta y)^2/(2(\vartheta y+(s_1-\vartheta y)/3)))\le e^{-3\Lambda_0}$ at $y=b_1$ and
+smaller below, while $g_{n_*}(y)\le g_{n_*}(b_1)\le e^{2.1\Lambda_0}$. With $r\le c_*$ one gets $\tau_{n_*}\le e^{-\Lambda_0/2}$ for large $A$, so (b)
+holds with $r_b>2$ fixed, and $\log\bigl(\gamma/(2(r_b(2n_*+1)r_W)^{1/2}\bar\eta_W)\bigr)=\log(1/\bar\eta_W)-O(\log A)$.
+\item One has $b_2-s_1=l_2(1-\vartheta)(1+O(A^{-1/4}))$ and $l_2=x(1+O(A^{-1/4}))$ for $x$ in the core.
+\end{enumerate}
+So Lemma~\ref{lem:C-count} gives, on each window,
+$k_W\ge(1-o(1))(1-1/r_b)(1-\vartheta)^{1/2}\frac{l_2-l_1}{2\pi}(\Lambda_0h_W/l_2)^{1/2}$, and $h_W=h(x/A)(1-o(1))$ for $x$ in the
+core, since $h$ is continuous and positive on $[\kappa_L+\delta,1-\delta]$ and the window has relative length $o(1)$. The windows are
+disjoint, so $K(A)\ge\sum_Wk_W$. The cores cover $[(\kappa_L+\delta)A,(1-\delta)A]$ except the spacings, of total length
+$O(A^{1/4}M_a)=O(A^{3/4}(\log A)^{1/2})=o(A)$; dropping them from the integral below loses $O(A^{3/4}(\log A)^{1/2}A^{-1/3})=o(A^{2/3})$.
+Summing as a Riemann sum,
+\begin{align*}
+K(A)&\ge(1-o(1))(1-1/r_b)(1-\vartheta)^{1/2}\frac{\Lambda_0^{1/2}}{2\pi}\int_{(\kappa_L+\delta)A}^{(1-\delta)A}\Bigl(\frac{h(x/A)}{x}\Bigr)^{1/2}dx\\
+&=(1-o(1))(1-1/r_b)(1-\vartheta)^{1/2}\frac{c_0^{1/2}}{2\pi}A^{2/3}\int_{\kappa_L+\delta}^{1-\delta}\Bigl(\frac{h(f)}{f}\Bigr)^{1/2}df .
+\end{align*}
+Divide by $A^{2/3}$, take the $\liminf$, then let $\delta$ tend to $0$, $r_b$ to $\infty$, $\vartheta$ to $0$ and $c_0\to c_{0}^{\max}(\xi)$, and maximize
+over $\xi$. The value of $\lambda_M$, the bounds of Proposition~\ref{prop:C-lower}(a) and the constant are enclosed in ball
+arithmetic. At $\xi=0.2411$ (an exact decimal), $\kappa_L$ is isolated by bisection with signs proved by interval arithmetic, and
+$c_{0}^{\max}\in[0.06490794803,0.06490794804]$. The integral $\mathcal I$ is bounded below by a rigorous quadrature over $[\kappa_L+10^{-8},1-10^{-8}]$, where the integrand is analytic, and above by
+adding the two end pieces with the bound $\kappa_L^{-1/2}$ on the integrand; this gives $\mathcal I\in[1.3824928,1.3824930]$ and
+$c_0^{\max}(\xi)^{1/2}\mathcal I(\xi)/(2\pi)\in[0.0560572,0.0560573]$. Since $c_P$ is a maximum over $\xi$, it follows that $c_P>0.0560$. \qed
+
+\subsection{A spontaneous count}\label{app:C-lam}
+
+Fix $\lambda>0$, let $\pi$ be the capacity-achieving input of $Y\sim\mathrm{Poisson}(X)$ with $\lambda\le X\le U:=\lambda+A$, and let
+$C$ be its capacity. Fact (F1) holds for this channel, with $[\lambda,U]$ in place of $[0,A]$~\cite{Shamai1990}~\cite[Lemma~1]{BDS2024};
+(F3) and (F4) hold for every input law~\cite[Lemma~3]{BDS2024}; (F2) is not used below. Define $r$, $c_*$ and $g$ as before, with this
+$C$. Lemma~\ref{lem:C-digamma} and the identity of Proposition~\ref{prop:C-kkt} do not depend on the input range, so the optimality
+conditions read $E_xg(Y)\ge\delta_0(x)$ on $[\lambda,U]$, with equality at every mass point. The value $g(0)=1$ is not available. It was
+used in Proposition~\ref{prop:C-upper} when $g$ is maximal at $0$, in Proposition~\ref{prop:C-lower} at $y_1=0$, and in
+Lemma~\ref{lem:C-edge}(i) through $m(0)=e\,c_*$. The lemma below replaces the first use.
+
+\begin{lemma}[the value at zero]\label{lem:C-zero}
+For every $\lambda\ge0$, with $m_0=E[X\,|\,Y=0]$ and $m_1=E[X\,|\,Y=1]$, one has $g(0)\le1-m_0+m_0\log(m_1/m_0)$. If $g$ is maximal
+at $0$, then $g(0)\le1+2e^{-1-\gamma_E}<1.42<\lambda_M$.
+\end{lemma}
+\begin{proof}
+By (F3), $G(1)-G(0)=\log m_0$, so convexity of $G$ gives $G(y)\ge G(0)+y\log m_0$ on $\mathbb N_0$; with $g=G-\varphi+C+1$ and
+$\varphi(0)=0$ this gives $g(y)\ge g(0)+y\log m_0-\varphi(y)$. Take $E_{x_j}$ at a mass point $x_j$; as in Lemma~\ref{lem:C-pointwise},
+$\delta_0(x_j)$ cancels and $g(0)\le1-m_0+B(x_j,m_0)$. Average over the posterior of $X$ given $Y=0$, which has mean $m_0$. The posterior
+given $Y=1$ is that posterior tilted by $x$, so $E[B(X,m_0)\,|\,Y=0]=m_0E[\log(X/m_0)\,|\,Y=1]\le m_0\log(m_1/m_0)$ by Jensen's
+inequality. If $g$ is maximal at $0$, then $g(2)\le g(0)$; since $G(2)-G(0)=\log m_0+\log m_1$ and $\varphi(2)=\psi(1)+\psi(2)=1-2\gamma_E$,
+this gives $\log m_1\le1-2\gamma_E-\log m_0$. Hence $g(0)\le1-2\gamma_Em_0-2m_0\log m_0$, and the right side is largest at
+$m_0=e^{-1-\gamma_E}$, where it equals $1+2e^{-1-\gamma_E}=1.4131\ldots$.
+\end{proof}
+
+With this lemma the proof of Proposition~\ref{prop:C-upper} holds for $\lambda>0$, since its case $y_0\ge1$ uses only the mass points,
+the posteriors and the values of $g$ at $y_0\pm1$; so $m\le Mr$ on $\mathbb N_0$. Proposition~\ref{prop:C-lower} holds for every integer
+$y_1\in[\lambda,U]$: its proof uses the optimality inequality at the feasible point $x=y_1$, the case $y_1=0$ does not arise, and the
+bounds of its part (a) do not depend on the channel. Corollary~\ref{cor:C-LM} follows with $[\lambda,U]$ in place of $[0,A]$ in (LM1).
+For the integers $y<\lambda$, put $y_1=\lceil\lambda\rceil$; convexity of $G$ with the slope $\log E[X\,|\,Y=y_1-1]\le\log U$ gives
+$g(y)\ge-\lambda_\ell-y_1(\gamma_E+\log U)$, so $|g(y)|=O(\log A)$ there.
+
+Take $\rho$ to be the restriction of $\rho_\infty$ to $[\lambda,U]$; Lemma~\ref{lem:C-ref}(iv) holds for it, since its proof uses only
+that $\rho/\rho([\lambda,U])$ is a feasible input. Then $\mathsf P\rho=r-T_U-L_\lambda$ on $\mathbb N_0$, where $T_U$ is $T_A$ with $U$ in place
+of $A$ and $L_\lambda=\mathsf P(\rho_\infty\mathbf 1_{[0,\lambda)})$. As $p(y\,|\,x)e^x\le\lambda^y/y!$ for
+$x\le\lambda$ and $\int e^{-x}\rho_\infty(dx)=r(0)=c_*$, one has $L_\lambda(y)\le c_*\lambda^y/y!$. The proof above now runs with $U$ in
+place of $A$ in the weight $\chi$, the window and the cores, with three changes:
+\begin{enumerate}
+\item In Step~1 of Proposition~\ref{thm:C-decay}, $F=r-T_U-L_\lambda-m$, and the identity gains the term $-\tilde L$ with
+$\tilde L=\sum_{y\le U}\chi gL_\lambda$. Below $x_L$ one has $\chi\le1$ and $|g|=O(\log A)$; on and above $x_L$ the weight satisfies $\chi\le e^{\Lambda_0}$, while
+$\lambda^y/y!\le(e\lambda/y)^y$ decays faster than any exponential. So $|\tilde L|=O(c_*\log A)$, which enters $\epsilon_{\rm out}$.
+The part of $\tilde T$ below $\lambda$ is bounded in the same way, since $\chi(y)\le(\lambda/U)^{2\sigma}e^{tU}$ there; the rest of
+$\tilde T$ is bounded as in Step~3.
+\item In Step~6, $\|\mathcal P\|$ gains the term $(\sum_y\chi L_\lambda^2)^{1/2}=O(c_*)$, which enters $b$; in Lemma~\ref{lem:C-count} and
+the assembly, $T_U+L_\lambda$ replaces $T_A$ in $\bar\eta_W$, and $L_\lambda$ is negligible on the output windows.
+\item In Lemma~\ref{lem:C-edge}(i), $m(0)=e^{g(0)}c_*\le Mc_*$, so $|d_0|\le(1+M)c_*+2e^{\Lambda_0-x_L}$. In (iv), $|F|\le Mr$ on
+$y\le U$ because $0\le T_U+L_\lambda\le r$; in (iii), $y_A=\lfloor U\rfloor$ lies in $[\lambda,U]$ for $A\ge1$. Lemma~\ref{lem:C-sizes}(ii)
+sums over the integers of $[\lambda,U]$ and still gives $c_*=\Theta(A^{-1/2})$.
+\end{enumerate}
+None of these changes alters $\delta'$, so its limit and the conditions $b=O(A^{1/4})$ and $\epsilon_{\rm out}=O(A^{1/2})$ stand. The
+assembly gives $K(A,\lambda)\ge(1-o(1))(c_P-\varepsilon)\,U^{2/3}$ for every $\varepsilon>0$, and $U^{2/3}/A^{2/3}\to1$, which proves the
+theorem for $\lambda>0$. \qed
+
+\begin{thebibliography}{99}
+\bibitem{Barlow1961} Barlow HB. Possible principles underlying the transformations of sensory messages. In: Rosenblith WA, editor. Sensory communication. Cambridge (MA): MIT Press; 2012. pp. 216--234. doi: 10.7551/mitpress/9780262518420.003.0013%
+\bibitem{Laughlin1981} Laughlin SB. A simple coding procedure enhances a neuron's information capacity. Z Naturforsch C. 1981;36: 910--912. doi: 10.1515/znc-1981-9-1040
+\bibitem{Shamai1990} Shamai S. Capacity of a pulse amplitude modulated direct detection photon channel. IEE Proc I. 1990;137: 424--430. doi: 10.1049/ip-i-2.1990.0056
+\bibitem{Nikitin2009} Nikitin AP, Stocks NG, Morse RP, McDonnell MD. Neural population coding is optimized by discrete tuning curves. Phys Rev Lett. 2009;103: 138101. doi: 10.1103/physrevlett.103.138101
+\bibitem{McDonnellStocks2008} McDonnell MD, Stocks NG. Maximally informative stimuli and tuning curves for sigmoidal rate-coding neurons and populations. Phys Rev Lett. 2008;101: 058103. doi: 10.1103/physrevlett.101.058103
+\bibitem{Paper1} Firdaus IMTH. How many atoms, where, and when: Predicting the discrete optima of peak-power capacity, minimax estimation and nonparametric maximum likelihood under Gaussian noise. Companion paper; 2026. Available from: \url{https://github.com/Tristan-tech-ai/how-many-atoms}
+\bibitem{Heeringa2024} Heeringa AN. Single-unit data for sensory neuroscience: Responses from the auditory nerve of young-adult and aging gerbils. Sci Data. 2024;11: 411. doi: 10.1038/s41597-024-03259-3
+\bibitem{Wen2009} Wen B, Wang GI, Dean I, Delgutte B. Dynamic range adaptation to sound level statistics in the auditory nerve. J Neurosci. 2009;29: 13797--13808. doi: 10.1523/jneurosci.5610-08.2009
+\bibitem{Escabi2003} Escabí MA, Miller LM, Read HL, Schreiner CE. Naturalistic auditory contrast improves spectrotemporal coding in the cat inferior colliculus. J Neurosci. 2003;23: 11489--11504. doi: 10.1523/jneurosci.23-37-11489.2003
+\bibitem{KostalShinomoto2016} Kostal L, Shinomoto S. Efficient information transfer by Poisson neurons. Math Biosci Eng. 2016;13: 509--520. doi: 10.3934/mbe.2016004
+\bibitem{DBS2021} Dytso A, Barletta L, Shamai S. Properties of the support of the capacity-achieving distribution of the amplitude-constrained Poisson noise channel. IEEE Trans Inf Theory. 2021;67: 7050--7066. doi: 10.1109/tit.2021.3111836
+\bibitem{BDS2024} Barletta L, Dytso A, Shamai S. Improved bounds on the number of support points of the capacity-achieving input for amplitude constrained Poisson channels. In: Proceedings of the IEEE International Symposium on Information Theory (ISIT); 2024. pp. 3630--3635. doi: 10.1109/isit57864.2024.10619622
+\bibitem{Holm1979} Holm S. A simple sequentially rejective multiple test procedure. Scand J Stat. 1979;6: 65--70.
+\bibitem{Favano2026} Favano A, Baniasadi M, Zieder I, Barletta L, Dytso A. The binomial channel: on capacity, optimal inputs, and beta-binomial approximation. arXiv:2607.02683 [Preprint]. 2026.
+\bibitem{Shmueli2005} Shmueli G, Minka TP, Kadane JB, Borle S, Boatwright P. A useful distribution for fitting discrete data: revival of the Conway-Maxwell-Poisson distribution. J R Stat Soc Ser C Appl Stat. 2005;54: 127--142. doi: 10.1111/j.1467-9876.2005.00474.x
+\bibitem{BerryMeister1998} Berry MJ 2nd, Meister M. Refractoriness and neural precision. J Neurosci. 1998;18: 2200--2211. doi: 10.1523/jneurosci.18-06-02200.1998
+\bibitem{Cao2014} Cao J, Hranilovic S, Chen J. Capacity-achieving distributions for the discrete-time Poisson channel---Part I: General properties and numerical techniques. IEEE Trans Commun. 2014;62: 194--202. doi: 10.1109/tcomm.2013.112513.130142
+\bibitem{Watson1922} Watson GN. A treatise on the theory of Bessel functions. Cambridge: Cambridge University Press; 1922.
+\end{thebibliography}
+
+\nolinenumbers
+\end{document}

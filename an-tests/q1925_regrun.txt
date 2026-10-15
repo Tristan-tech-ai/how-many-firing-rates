@@ -1,0 +1,4 @@
+control: data from M_sq (200 synthetic fibres, 27 levels x 10 repeats): PASS, mean d 0.1616, bootstrap 95% lower bound 0.0802 (bar > 0); median sigma 11.80 dB (bar [6, 20])
+control: data from M_log (200 synthetic fibres, 27 levels x 10 repeats): FAIL, mean d -0.1932, bootstrap 95% lower bound -0.2709 (bar > 0); median sigma 10.48 dB (bar [6, 20])
+control decide(): PASS FAIL FAIL VOID VOID (expected PASS FAIL FAIL VOID VOID)
+VERDICT q1925 registration run: CONTROLS PASS

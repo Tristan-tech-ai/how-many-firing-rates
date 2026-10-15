@@ -1,0 +1,5 @@
+control: A 8 lam 0.5, levels from lam + 1, silent count measured, K from the hull: rejected 0.030 of staircase and 0.980 of graded fibres (K full range 3)
+control: A 15 lam 1.0, levels from lam + 1, silent count measured, K from the hull: rejected 0.060 of staircase and 1.000 of graded fibres (K full range 5)
+control hull(): ((2.0, 6.0), (2.0, 6.0), (0.5, 7.5)) (expected (2, 6), (2, 6), (0.5, 7.5))
+control decide(): PASS FAIL VOID (expected PASS FAIL VOID)
+VERDICT q1956 registration run: CONTROLS PASS

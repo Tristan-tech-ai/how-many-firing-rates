@@ -1,0 +1,11 @@
+Reading: control 1 BSC(0.11) n 20 c 2.0: bracket [0.1046806774, 0.1046981431], closed form 0.1046866508, brute force 0.1046866508 -> pass
+Reading: control 1 BSC(0.11) n 20 c 5.0: bracket [0.3621436566, 0.3622201486], closed form 0.3621696252, brute force 0.3621696252 -> pass
+Reading: control 1 BSC(0.11) n 20 c 8.0: bracket [0.7221184382, 0.7221423198], closed form 0.7221264231, brute force 0.7221264231 -> pass
+Reading: control 3 BSC eps 0.1: log M closed 2.652666 nats (3.8270 bits), binned upper-bracket 2.652422 nats -> pass
+Reading: control 2 Poisson A 5 n 10 on-off w 0.4 c 1.0: bracket [0.02060455, 0.02060738], Monte Carlo 0.02047821 +- 0.00010912 -> pass
+Reading: control 2 Poisson A 5 n 10 on-off w 0.4 c 3.0: bracket [0.05593039, 0.05593627], Monte Carlo 0.05587342 +- 0.00015704 -> pass
+READING q1918: controls pass
+control decide(): PASS FAIL INCOMPLETE VOID (expected PASS FAIL INCOMPLETE VOID)
+control score(): ON-OFF GRADED UNRESOLVED (expected ON-OFF GRADED UNRESOLVED)
+control capacity law at A = 5: atoms [0.0, 1.588, 1.6, 1.612, 1.625, 1.638, 5.0], weights [0.4588, 0.0, 0.0142, 0.1246, 0.0108, 0.0, 0.3915]
+VERDICT q1919 registration run: CONTROLS PASS

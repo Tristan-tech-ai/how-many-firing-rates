@@ -1,0 +1,6 @@
+Reading: fibres 271; D - K distribution {-2: 1, -1: 46, 0: 104, 1: 100, 2: 18, 3: 2}
+Reading: A < 5: 68 fibres, fraction D <= K 0.853
+Reading: A >= 5: 203 fibres, fraction D <= K 0.458
+Reading: A quartiles 4.99 8.27 11.46; lam quartiles 2.02 4.70 7.47; K quartiles 2 2 3
+fraction with D <= K 0.557 over 271 fibres (bar >= 0.8)
+VERDICT q1930 (Amendment 2277, H_steps75): FAIL

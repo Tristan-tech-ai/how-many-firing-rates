@@ -1,0 +1,16 @@
+q1912_capacity_loss_a1.py:32: RuntimeWarning: invalid value encountered in multiply
+  L = -x[:, None] + y[None, :] * lx - gammaln(y + 1)[None, :]
+Reading: units 161; loss quartiles 0.3490 0.4150 0.4707; A quartiles 0.101 0.232 0.699; lam quartiles 0.038 0.097 0.243
+Reading: theory, uniform input on [lam, lam + A], A = 0.3, lam/A = 0.0: loss 0.7259
+Reading: theory, uniform input on [lam, lam + A], A = 0.3, lam/A = 0.5: loss 0.6661
+Reading: theory, uniform input on [lam, lam + A], A = 1, lam/A = 0.0: loss 0.6991
+Reading: theory, uniform input on [lam, lam + A], A = 1, lam/A = 0.5: loss 0.6485
+Reading: theory, uniform input on [lam, lam + A], A = 3, lam/A = 0.0: loss 0.5961
+Reading: theory, uniform input on [lam, lam + A], A = 3, lam/A = 0.5: loss 0.6009
+Reading: theory, uniform input on [lam, lam + A], A = 10, lam/A = 0.0: loss 0.3889
+Reading: theory, uniform input on [lam, lam + A], A = 10, lam/A = 0.5: loss 0.4491
+Reading: theory, uniform input on [lam, lam + A], A = 30, lam/A = 0.0: loss 0.2487
+Reading: theory, uniform input on [lam, lam + A], A = 30, lam/A = 0.5: loss 0.2616
+a capacity run did not reach its gap
+VERDICT q1912 (Amendment 2264, H_flat): VOID
+exit 2

@@ -1,0 +1,7 @@
+(U) lamM = 1 - psi(2) + e^{psi(2)} = [2.10342077650 +/- 2.61e-12]
+(U) max over y = 1..1e5 of f(y) - (3/2 + 9/(8y)) = -5.417e-06 (must be <= 0); bound at y = 2: 2.0625 < lamM
+(L) Rb decreasing on [3001, 1e7] (sampled every 997): True; lam bound from Rb(3001): 2.77649; exact ceiling form max 2.775616 at y1 = 3026
+(L) lam_l used: 2.777 (the y1 <= 3000 branch gives at most 1.7897 in POISLB's floating-point scan, pl6)
+c_P with POISLB (2.1034, 2.7553)    rho 10.0635  xi* 0.2411  c0max 0.06505  I 1.38247  c_P 0.05612
+c_P with corrected (lamM, 2.777)    rho 10.1282  xi* 0.2411  c0max 0.06491  I 1.38247  c_P 0.05606
+READING q1906: done

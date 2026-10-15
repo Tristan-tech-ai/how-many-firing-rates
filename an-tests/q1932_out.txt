@@ -1,0 +1,5 @@
+Reading: young fibres 608, mean d 0.2054, lower bound 0.1427
+Reading: middle fibres 69, mean d 0.3245, lower bound 0.0609
+Reading: old fibres 273, mean d 0.1658, lower bound 0.0768
+lower bound young 0.1427 (608 fibres), old 0.0768 (273 fibres) (bar > 0 in both)
+VERDICT q1932 (Amendment 2279, H_L1rep): PASS

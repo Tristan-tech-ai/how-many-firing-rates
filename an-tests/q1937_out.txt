@@ -1,0 +1,6 @@
+Reading: low F third, fibres 88, D <= K in 0.943
+Reading: mid F third, fibres 89, D <= K in 0.865
+Reading: high F third, fibres 88, D <= K in 0.841
+Reading: K - K_Poisson values {0: 60, 1: 177, 2: 28}
+D <= K in 0.883 of 265 fibres (bar 0.80)
+VERDICT q1937 (Amendments 2286 and 2287, H_stepsF repaired): PASS

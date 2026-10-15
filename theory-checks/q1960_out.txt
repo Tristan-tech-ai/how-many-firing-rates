@@ -1,0 +1,4 @@
+M_sq Phi^2                 skewness +0.1369; z(50)-z(10) 1.0232, z(90)-z(50) 1.0873 -> abrupt start, slow end
+Gompertz exp(-exp(-z))     skewness +1.1350; z(50)-z(10) 1.2005, z(90)-z(50) 1.8839 -> abrupt start, slow end
+cll 1-exp(-exp(z))         skewness -1.1350; z(50)-z(10) 1.8839, z(90)-z(50) 1.2005 -> slow start, abrupt end
+logistic                   skewness +0.0000; z(50)-z(10) 2.1972, z(90)-z(50) 2.1972 -> symmetric

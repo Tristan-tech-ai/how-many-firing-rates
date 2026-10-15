@@ -1,0 +1,67 @@
+\section{Finitely many rates for Conway-Maxwell-Poisson counts}\label{sec:cmpfinite-s}
+The matched test of the main text computes the number of steps for a Conway-Maxwell-Poisson count. This section shows that the
+optimal input of that counting channel, like that of the Poisson channel~\cite{Shamai1990}, has finitely many mass points, so that
+Proposition~1 of the main text applies to it.
+
+For $\zeta>0$ and $u\ge0$ let $W_u(y)=u^y(y!)^{-\zeta}/Z(u)$ on $y=0,1,2,\dots$, with $Z(u)=\sum_y u^y(y!)^{-\zeta}$. Since
+$(y!)^{\zeta}$ grows faster than any geometric sequence, $Z$ is an entire function, and $Z(u)\ge1$ for $u\ge0$ because the term
+$y=0$ equals one. The mean $m(u)=uZ'(u)/Z(u)$ satisfies $u\,m'(u)=\mathrm{Var}_u(Y)>0$ for $u>0$, so $m$ increases strictly. Also
+$m(u)=u(1+O(u))$ as $u\to0$, and $m(u)\to\infty$ as $u\to\infty$. Hence each rate $r>0$ is the mean of exactly one $W_u$, and
+$u=0$ gives the count that is always zero, as in the main text. The input interval $[\lambda,\lambda+A]$ becomes an interval
+$U=[u_0,u_1]$, with $u_0=0$ when $\lambda=0$, and mass points in $r$ and in $u$ correspond one to one.
+
+\begin{proposition}\label{prop:cmpfinite}
+For every $\zeta>0$, $\lambda\ge0$ and $A>0$, the capacity of this counting channel is attained, and every capacity-achieving input
+has finitely many mass points.
+\end{proposition}
+
+\begin{proof}
+\emph{Existence.} For $u\in U$, $W_u(y)\le b(y)=u_1^y(y!)^{-\zeta}$, and $\sum_y b(y)\lvert\log b(y)\rvert<\infty$. Every output law
+$q_P=\int W_u\,dP(u)$ therefore obeys $q_P\le b$, so its entropy is a continuous function of $P$ in the weak topology. The entropy of
+$W_u$ is continuous in $u$ on $U$, including $u=0$, where it tends to zero. The mutual information is thus continuous on the compact
+set of input laws on $U$. Its maximum $C$ is attained, and $C>0$ because $A>0$.
+
+\emph{Bounds on the output law.} Let $P^*$ be capacity-achieving with output law $q$. $P^*$ is not the point mass at $u=0$, which
+gives no information, so some $u_a>0$ has $p_a=P^*([u_a,u_1])>0$. For $u\in[u_a,u_1]$, $W_u(y)\ge u_a^y(y!)^{-\zeta}/Z(u_1)$. With
+the upper bound above,
+\begin{equation}\label{eq:cmpB}
+\zeta\log y!-y\log u_1\;\le\;-\log q(y)\;\le\;\zeta\log y!+y\,\lvert\log u_a\rvert+\log\frac{Z(u_1)}{p_a}.
+\end{equation}
+
+\emph{Analyticity.} Let $i(u)=\sum_y W_u(y)\log(W_u(y)/q(y))$, defined for every $u\ge0$. By \eqref{eq:cmpB} each term of
+$\log W_u(y)-\log q(y)=y\log u-\zeta\log y!-\log Z(u)-\log q(y)$ has a finite mean under $W_u$, so for $u>0$
+\[
+i(u)=m(u)\log u-\log Z(u)-\frac{G(u)}{Z(u)},\qquad G(u)=\sum_y u^y(y!)^{-\zeta}g(y),\quad g(y)=\zeta\log y!+\log q(y).
+\]
+By \eqref{eq:cmpB}, $\lvert g(y)\rvert$ grows at most like $y\log y$, so $G$ is entire. As $Z\ge1$ on $[0,\infty)$, the function $i$ is
+real analytic on $(0,\infty)$. At $u=0$, $m(u)\log u\to0$ and $i(u)\to-g(0)=-\log q(0)=i(0)$, so $i$ is continuous on $[0,\infty)$.
+
+\emph{Optimality condition.} For $u\in U$ and $0<\varepsilon<1$ let $P_\varepsilon=(1-\varepsilon)P^*+\varepsilon\delta_u$. By
+\eqref{eq:cmpB}, $\sum_y\lvert W_u(y)-q(y)\rvert\,\lvert\log q(y)\rvert<\infty$, which allows the derivative of the output entropy
+to be taken term by term. The one-sided derivative of the mutual information at $\varepsilon=0$ is $i(u)-C$, and it cannot be
+positive. Hence $i\le C$ on $U$, as in the argument of Smith~\cite{Smith1971}. Since $\int i\,dP^*=C$, equality holds
+$P^*$-almost everywhere, and by continuity on the whole support of $P^*$.
+
+\emph{Growth.} Write $M(s)=m(e^s)$ and $t_1=\log u_1$. For $t>t_1$, the left inequality of \eqref{eq:cmpB} gives
+\[
+i(e^t)\;\ge\;(t-t_1)M(t)-\log Z(e^t)\;=\;\int_{t_1}^{t}\bigl(M(t)-M(s)\bigr)\,ds-\log Z(u_1),
+\]
+because the derivative of $\log Z(e^s)$ in $s$ is $M(s)$. Since $M$ increases, the right side is at least
+$M(t)-M(t_1+1)-\log Z(u_1)$ for $t\ge t_1+1$, so $i(u)\to\infty$ as $u\to\infty$.
+
+\emph{Behaviour at $u=0$.} Write $i(u)=m(u)\log u+\Psi(u)$, with $\Psi=-\log Z-G/Z$ analytic at $0$ and $\Psi(0)=i(0)$. Since
+$m(u)=u(1+O(u))$,
+\[
+i(u)-i(0)=u\log u+\Psi'(0)\,u+O(u^2\log u)\qquad(u\to0^+),
+\]
+so $i(u)<i(0)$ for all small $u>0$.
+
+\emph{Conclusion.} Suppose the support of $P^*$ is infinite. It is a closed subset of the compact interval $U$, so it has an
+accumulation point $u^*$, and $i=C$ on the support. If $u^*>0$, the analytic function $i-C$ has zeros accumulating in $(0,\infty)$,
+so $i=C$ on all of $(0,\infty)$, which contradicts the growth. If $u^*=0$, which can happen only for $\lambda=0$, support points
+$u_k\to0$ give $i(0)=C$ by continuity, which contradicts $i(u_k)=C$ for small $u_k>0$. Hence the support is finite.
+\end{proof}
+
+The value $\zeta=1$ is the Poisson channel. The proof covers the endpoint $\lambda=0$, which six of the 265 fibres of the matched test
+have. The number of steps used in the main text is the number of mass points of a numerical solution on a grid of 801 rates. The
+proposition shows that the exact optimum it approximates also has finitely many mass points.

@@ -1,0 +1,5 @@
+Time-stamp manifest of the registration log
+written 2026-10-15T13:36:04+07:00 (computer clock)
+label: after amend2259.md
+original log PREREG_Q32.md: bytes 5659194, sha256 020b7957b670e50cbc3ad12879f2e7663f8b247d3c71a8d880bb6efa01ef2370, last entry 2259
+public copy registration-log/PREREG_Q32.md: bytes 5546559, sha256 96a67b157ad188ddc3a0dfa526e9c5fb236757d45a2c38e147017e731346211e, last entry 2257

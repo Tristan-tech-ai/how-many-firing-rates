@@ -1,0 +1,9 @@
+Reading: most regular third, fibres 89, D <= K in 0.876
+Reading: middle third, fibres 88, D <= K in 0.773
+Reading: least regular third, fibres 88, D <= K in 0.659
+Reading: A >= 8, fibres 118, D <= K in 0.839
+Reading: A < 8, fibres 147, D <= K in 0.714
+Reading: K - K_matched values {-6: 1, -4: 2, -2: 8, -1: 50, 0: 190, 1: 11, 2: 2, 3: 1}
+Reading: mean capped share of the 41 rates 0.006; flat lines 1; quartiles of a [0.534 0.703 0.874], of b [-0.0573 -0.0355 -0.0182]
+D <= K in 0.770 of 265 fibres (bar 0.80)
+VERDICT q1950 (Amendment 2294, H_stepsR): FAIL

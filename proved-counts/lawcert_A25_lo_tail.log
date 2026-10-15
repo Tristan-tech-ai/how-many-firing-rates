@@ -1,0 +1,12 @@
+tail lemma for p2k25/state_412.427112649163.json: K = 24, A = 412.42711264916346, Ymax = 797, prec 192, sweep box 1e-26
+   point: max |F| = 1.899e-31
+   w_min 0.0316812, x_1 >= 2.44245
+   delta on [x_1, A]  = 2.199e-46      (Poisson tail of A beyond Ymax, all orders, all rows and entries)
+   delta on (h0, x_1) = 2.916e-1632
+(a) Krawczyk with the tail: ||Y F~||_inf 2.026e-28, ||I - Y J~(X)||_inf 6.97535e-10, max_i (|YF|_i + r row_i)/r = 0.0202643 -> CONTAINED
+   logs: 1 file(s), atoms covered 23/23, failures 0, pieces 12426
+   worst free-stretch margin 1.240e-25; largest D'' upper bound over neighbourhoods -2.057e-11; wall D' lower 0.01411
+(b) 2 delta = 4.397e-46 (and 0.000e+00 below x_1) against the worst margin 1.240e-25 -> PASS
+(c) delta against |D''| >= 2.057e-11 and D'(wall) >= 0.01411 -> PASS
+VERDICT: PASS - the untruncated Poisson channel at A = 412.42711264916346 has a unique stationary 24-atom state in the sweep box, a probability distribution satisfying the KKT inequality on [0, A]: |supp P*| = 24.
+[0s]
