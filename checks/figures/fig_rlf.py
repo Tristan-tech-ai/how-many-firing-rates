@@ -37,7 +37,11 @@ stair = r0 + np.array(sup["pts"])[idx]
 import matplotlib  # noqa: E402
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
-fig, (ax, bx) = plt.subplots(1, 2, figsize=(8.6, 3.4), gridspec_kw={"width_ratios": [1.4, 1]})
+# 16 Oct 2026 (P2FIGFILES): PLOS figure rules: Arial, Times or Symbol at 8 to 12 pt, at most 7.5 in wide; TrueType embedded
+plt.rcParams.update({"font.size": 9, "axes.labelsize": 9, "xtick.labelsize": 9, "ytick.labelsize": 9, "font.family": "sans-serif",
+                     "font.sans-serif": ["Arial", "Liberation Sans"], "mathtext.fontset": "custom", "mathtext.rm": "Arial",
+                     "pdf.fonttype": 42})
+fig, (ax, bx) = plt.subplots(1, 2, figsize=(7.5, 3.4), gridspec_kw={"width_ratios": [1.4, 1]})
 rng = np.random.default_rng(0)
 ax.plot(L + rng.uniform(-0.6, 0.6, len(L)), y + rng.uniform(-0.12, 0.12, len(y)), ".", color="0.7", ms=3, label="single-trial counts")
 levs = np.unique(L)

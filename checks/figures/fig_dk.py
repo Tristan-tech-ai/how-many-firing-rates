@@ -51,18 +51,22 @@ group = np.concatenate([[0], np.cumsum(sep)])
 assert group[-1] + 1 == D[pick]
 
 plt.rcParams.update({"font.size": 10, "axes.labelsize": 10, "xtick.labelsize": 9, "ytick.labelsize": 9})
-fig, (a1, a2, a3) = plt.subplots(1, 3, figsize=(8.6, 3.2))
+# 16 Oct 2026 (P2FIGFILES): PLOS figure rules: Arial, Times or Symbol at 8 to 12 pt, at most 7.5 in wide; TrueType embedded
+plt.rcParams.update({"font.family": "sans-serif", "font.sans-serif": ["Arial", "Liberation Sans"], "mathtext.fontset": "custom",
+                     "mathtext.rm": "Arial", "pdf.fonttype": 42})
+fig, (a1, a2, a3) = plt.subplots(1, 3, figsize=(7.5, 3.2))
 rng = np.random.default_rng(0)
 jx, jy = rng.uniform(-0.18, 0.18, len(D)), rng.uniform(-0.18, 0.18, len(D))
 for ax, K, title, frac in ((a1, Kp, "(A) Poisson counts", np.mean(D <= Kp)), (a2, Km, "(B) matched counts", np.mean(D <= Km))):
     ok = D <= K
-    ax.scatter(K[ok] + jx[ok], D[ok] + jy[ok], s=7, color="0.35", alpha=0.6, lw=0, label="D <= K")
+    ax.scatter(K[ok] + jx[ok], D[ok] + jy[ok], s=7, color="0.35", alpha=0.6, lw=0, label="D ≤ K")   # P2REFEREE7: the sign, not "<="
     ax.scatter(K[~ok] + jx[~ok], D[~ok] + jy[~ok], s=7, color="C3", alpha=0.7, lw=0, label="D > K")
     hi = max(D.max(), K.max()) + 0.6
     ax.plot([0.5, hi], [0.5, hi], color="k", lw=0.8)
     ax.set_xlim(0.5, min(hi, 10.5)); ax.set_ylim(0.5, 7.5)
+    ax.xaxis.set_major_locator(matplotlib.ticker.MaxNLocator(integer=True))   # P2REFEREE7: K is an integer (panel B showed 2.5, 7.5)
     ax.set_xlabel("steps K of the optimal staircase"); ax.set_ylabel("distinct mean counts D")
-    ax.set_title("%s: %.0f%% with D <= K" % (title, 100 * frac), fontsize=10, loc="left")
+    ax.set_title("%s:\n%.0f%% with D \u2264 K" % (title, 100 * frac), fontsize=10, loc="left")   # P2REFEREE7: two lines, the titles of A and B touched
 a1.legend(fontsize=8, frameon=False, loc="upper left")
 mu = np.array([c.mean() for c in counts]); se = np.array([c.std(ddof=1) / np.sqrt(len(c)) for c in counts])
 for g in range(group[-1] + 1):

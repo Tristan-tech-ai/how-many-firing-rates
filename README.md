@@ -24,7 +24,8 @@ in gerbil auditory-nerve fibres.
 
 Each test script prints its decision as its last line, starting with `VERDICT`. Its output file (`*_out.txt`, and `*_rows.json` with
 one row per fibre) is the one the paper and the log quote. A script run with `--registration-run` runs only the synthetic controls
-that were run before the recorded fibres were analysed.
+that were run before the recorded fibres were analysed. In `an-tests/`, `proved-counts/` and `theory-checks/` these output files sit
+in a subfolder `paper_neuron/`, the relative path at which the scripts read and write them.
 
 ## Checking the controls
 

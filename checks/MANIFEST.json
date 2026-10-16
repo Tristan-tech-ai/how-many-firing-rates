@@ -37,23 +37,23 @@
  {
   "path": "checks/figures/fig_dk.py",
   "source": "paper_neuron/fig_dk.py",
-  "size": 4779,
-  "sha256": "d32ddefe6f344b8dc727b63932372b9fda30ec7fbc17415b49fbd8ea27673a7e",
-  "source_sha256": "e0dc05fc257e48334df8d13d37e248b9e1e4497f5d9e3b8b31466e3a184e05dc"
+  "size": 5330,
+  "sha256": "0c15f4289ed4146d9a59c08496cb3cebd4aa8ac836dd148958aabbd543808e6f",
+  "source_sha256": "fa634c1e8e6f08a33c643f829a7609bf954bca68dfa10caa69a474888fd95acf"
  },
  {
   "path": "checks/figures/fig_rlf.py",
   "source": "paper_neuron/fig_rlf.py",
-  "size": 4402,
-  "sha256": "56edac78618b65c456b8aeac5c43425161be57adf5e5bf3ea69658c5fb8281dd",
-  "source_sha256": "22b2fc09aaf2fa47a41f1a3e55c5aa79fc9c0eb7e4dff81dae120afafb17112d"
+  "size": 4823,
+  "sha256": "5c3682d91fef621a71cc4cab462652b73a9cebff6f7d250ab2d4d4ffdcc1bdc1",
+  "source_sha256": "811cc0ddb5100caaae9ff42f6dbb4aa701fc3007eb151b3de9b2e0e303bde0ce"
  },
  {
   "path": "checks/figures/fig_schematic.py",
   "source": "paper_neuron/fig_schematic.py",
-  "size": 4383,
-  "sha256": "f5eb04859f2b83a9855a1ded7a5a51ddd82ff5e3e463b76f1685323854945e63",
-  "source_sha256": "a56a1409ea0f340a9f08339461e12b981bcba5e10e7a7653a29b317ba8eb7654"
+  "size": 4960,
+  "sha256": "f855b0fe027ba08427abec9a812d71e27fbfbf6e061a92c0620719ab842835aa",
+  "source_sha256": "006949b6a1a6b240e94bd46b809f7a1fb913be1f1afad604d90bf88f6a09e372"
  },
  {
   "path": "checks/figures/fig_dk.json",
@@ -156,9 +156,9 @@
  {
   "path": "paper/how-many-firing-rates.pdf",
   "source": "paper_neuron/paper2_main.pdf",
-  "size": 514787,
-  "sha256": "667d6a953783df356377e98c052094d274a718670ec88f4b90fadb61abbb93fb",
-  "source_sha256": "667d6a953783df356377e98c052094d274a718670ec88f4b90fadb61abbb93fb"
+  "size": 563198,
+  "sha256": "704f0750427178e5dfd747870cad3cf53362c305e7de2a8a22d4d45da0d9dff9",
+  "source_sha256": "704f0750427178e5dfd747870cad3cf53362c305e7de2a8a22d4d45da0d9dff9"
  },
  {
   "path": "theory-checks/paper_neuron/q1906_out.txt",
@@ -569,9 +569,9 @@
  {
   "path": "paper/S1_Text.pdf",
   "source": "paper_neuron/supplement_p2.pdf",
-  "size": 307228,
-  "sha256": "2572cc813c1882664103ee177d31cc7c412ca5860653d7e1b5efc1ece4893839",
-  "source_sha256": "2572cc813c1882664103ee177d31cc7c412ca5860653d7e1b5efc1ece4893839"
+  "size": 307283,
+  "sha256": "22f93969d7f3cb24a7c696c199f3309a9d7d229058f8f733b1282203f989a8df",
+  "source_sha256": "22f93969d7f3cb24a7c696c199f3309a9d7d229058f8f733b1282203f989a8df"
  },
  {
   "path": "count-law/q1893_a25_walk.py",

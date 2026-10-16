@@ -37,7 +37,10 @@ s = np.linspace(-3, 3, 1201)
 F = norm.cdf(s)
 out = {"stimulus": "standard normal", "staircases": {}, "K_of_A": {}}
 plt.rcParams.update({"font.size": 10, "axes.labelsize": 10, "xtick.labelsize": 9, "ytick.labelsize": 9})   # 15 Oct 21:2x: draft reading 2, finding 17
-fig, (a1, a2, a3) = plt.subplots(1, 3, figsize=(8.6, 3.3))
+# 16 Oct 2026 (P2FIGFILES): PLOS figure rules: Arial, Times or Symbol at 8 to 12 pt, at most 7.5 in wide; TrueType embedded
+plt.rcParams.update({"font.family": "sans-serif", "font.sans-serif": ["Arial", "Liberation Sans"], "mathtext.fontset": "custom",
+                     "mathtext.rm": "Arial", "pdf.fonttype": 42})
+fig, (a1, a2, a3) = plt.subplots(1, 3, figsize=(7.5, 3.3))
 sup10 = support(10.0, 0.0)
 W10 = np.cumsum(sup10["w"]) / np.sum(sup10["w"])
 a1.plot(s, norm.pdf(s), color="k")
@@ -54,8 +57,8 @@ for A, c in ((3.0, "C0"), (10.0, "C2"), (25.0, "C3")):
     out["staircases"]["%g" % A] = {"K": sp["N"], "points": sp["pts"], "weights": sp["w"]}
 a2.plot(s, F ** 2, color="0.4", lw=1.0, ls=":", label="large-A envelope")
 a2.set_xlabel("stimulus s"); a2.set_ylabel("rate / peak count")
-a2.legend(fontsize=7.5, frameon=False, loc="upper left", handlelength=1.2, borderaxespad=0.2)   # 16 Oct: draft reading 4, p5 (legend over the steps)
-a2.set_xlim(-5.2, 3.2)
+a2.legend(fontsize=8, frameon=False, loc="upper left", handlelength=1.0, borderaxespad=0.2, ncol=2, columnspacing=0.8)   # P2FIGFILES: two columns above the curves   # 16 Oct: draft reading 4, p5 (legend over the steps)
+a2.set_xlim(-3.2, 3.2); a2.set_ylim(-0.05, 1.42); a2.set_yticks([0, 0.2, 0.4, 0.6, 0.8, 1.0])
 a2.set_title("(B) infomax tuning curves", fontsize=10, loc="left")
 T = json.load(open(os.path.join(os.path.dirname(HERE), "gate_truth", "table2_primary.json")))
 AK = sorted((int(k), v["A_K"]) for k, v in T.items() if k.isdigit())
@@ -63,10 +66,10 @@ As = np.concatenate([np.arange(1.0, 18.0, 0.25), np.arange(18.0, 61.0, 0.25)])
 Ks = [support(A, 0.0)["N"] if A < 18.0 else 4 + sum(1 for k, a in AK if a <= A) for A in As]
 out["K_of_A"] = {"A": As.tolist(), "K": Ks}
 a3.step(As, Ks, where="post", color="k", lw=1.3, label="optimal K")
-a3.plot(As, 0.056 * As ** (2.0 / 3.0), color="C1", lw=1.0, label="bound 0.056 A^(2/3)")
+a3.plot(As, 0.056 * As ** (2.0 / 3.0), color="C1", lw=1.0, label="bound 0.056 $A^{2/3}$")   # P2REFEREE7: exponent set as math
 a3.set_xlabel("peak count A"); a3.set_ylabel("number of steps K")
-a3.legend(fontsize=9, frameon=False, loc="lower right", bbox_to_anchor=(1.0, 0.12))
-a3.set_title("(C) more spikes allow more steps", fontsize=10, loc="left")
+a3.legend(fontsize=8, frameon=False, loc="lower right", bbox_to_anchor=(1.0, 0.16), handlelength=1.2)   # P2FIGFILES: at 7.5 in, between the steps and the bound
+a3.set_title("(C) more spikes allow\nmore steps", fontsize=10, loc="left")
 fig.tight_layout()
 os.makedirs(os.path.join(HERE, "figs"), exist_ok=True)
 fig.savefig(os.path.join(HERE, "figs", "fig_schematic.pdf"))
