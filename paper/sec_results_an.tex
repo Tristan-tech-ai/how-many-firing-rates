@@ -110,7 +110,7 @@ noise at each rate, so nearby rates are easier to tell apart, the optimal input 
 $K$ above is too small for these fibres. The proof of Proposition~\ref{prop:L1} uses only that the count depends on the stimulus through the rate: for any counting
 channel, the staircase built from a capacity-achieving input with finitely many mass points is an optimal tuning curve. We therefore
 recomputed $K$ for a binomial count with $n$ trials and mean $r$, whose Fano factor is $1-r/n$. The binomial count is the simplest
-count less variable than a Poisson one: a neuron that fires at most once in each of $n$ short bins of the window produces it. For a peak count of 10 in the 50~ms window,
+count less variable than a Poisson one: a neuron that fires at most once in each of $n$ short bins of the window produces it. For a largest expected count $\lambda+A$ of 10 in the 50~ms window,
 $n$ is 10 and each bin is 5~ms long, much longer than the absolute refractory period of about 0.6~ms of these fibres~\cite{Heeringa2024}.
 The bins are a device of the model: the binomial count describes how regular the counts are, not the time course of recovery. Since the count takes only $n+1$
 values, a capacity-achieving input with at most $n+1$ mass points exists~\cite{Favano2026}. For $n$ we took the smallest integer at
@@ -144,7 +144,7 @@ $K+1$ steps. Comparing the two halves of the presentations showed that the varia
 statistic is not inflated. In the last registered test the spontaneous count of each fibre, measured in trials without a stimulus,
 set the lower end of the range on which $K$ is computed; in 149 fibres the lowest tested level lay above it. This raised $K$ in 55
 fibres and the fraction to $49.4\%$, still far below $80\%$, with $86.8\%$ consistent with $K+1$ steps. By this test about half of the
-fibres use one rate more than the optimum.
+fibres use more rates than the optimum, most of them one more.
 
 \begin{table}[tp]
 \caption{Fraction of fibres with $D\le K$ in three groups of equal size formed by the fibres' median Fano factor, for $K$ computed

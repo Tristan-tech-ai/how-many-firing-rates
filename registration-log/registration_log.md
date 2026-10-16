@@ -43834,3 +43834,31 @@ q1964_kkt_witness.py 81ba6c0abd4e9571.
 A PASS of attempt 1 proves that the capacity-achieving input at A = 2001.58782263026 has exactly 66 mass points. A PASS of attempt 2
 proves 46 mass points at A = 1145.6156925304338, both for the untruncated channel. Neither proves where the count changes between
 the lower and the upper state of a bracket.
+## Amendment 2309 (2026-10-16 08:29) - the A_67 lower-end run of amendment 2308 is VOID; its one rerun at 320 bits
+
+allows, written before the rerun is started.
+
+Crash.
+0xfffff806bfc7a350, 0xffffffffc000009a, 0x4), dump C:\WINDOWS\Minidump\101626-11000-01.dmp.
+reboot is at 07:43:41 on 16 Oct 2026. The last sample of the health log is at 07:42:39. In the samples from 07:39:54 to 07:42:39
+the GPU ran at 1 to 2 percent with 40 to 41 C and 6.5 to 7.7 W, and no job used it. The System log of the 3 hours before the crash
+holds no display-driver recovery (event 4101) and no WHEA event.
+crash of 9 Oct 2026 (CRASH_2026-10-09.md).
+restarted, GPU gate open, 0 JSON files quarantined, chains 124 to 130 complete, the GPU walk not restarted (it had ended at its
+instrument limit).
+
+Effect on the A_67 lower-end run (attempt 1 of amendment 2308). The driver lawcert/q1963_lawcert_b.py run had started at 03:04. Its
+log paper_neuron/lawcert_A67_lo_b.log was last written at 07:33 and stops after atom 35 of 66. The printout
+paper_neuron/q1963_A67_out.txt is empty, with no VERDICT line. By the rule of amendment 2308 ("VOID: any other outcome (a crash, a
+missing VERDICT line, ...)") the run is VOID. It says nothing about the channel. Both files are kept unchanged.
+
+Rerun. The same rule says "A VOID allows one rerun at higher precision, recorded." This is that rerun. The precision goes from 256
+to 320 bits. The state, the instruments q470b and q481b, NEWTON_TARGET 1e-50, RBOX 1e-40, MAXPIECES 2000000 and YSIG 24 are
+unchanged, and so are the PASS, FAIL and VOID rules. The driver gained a mode rerun320 that calls the same steps with 320 bits and
+writes new files: paper_neuron/lawcert_A67_lo_b_rerun320.log, lawcert_A67_lo_b_rerun320_witness.log and
+lawcert_A67_lo_b_rerun320_tail.log, with the printout paper_neuron/q1963_A67_rerun320_out.txt. The mode run and the controls are
+unchanged. Backup lawcert/q1963_lawcert_b_before_rerun320.py (sha256 first 16: 9a7f86e1e5f623fc, the hash registered in 2308). The
+Command, from temporal_within:
+py -u lawcert/q1963_lawcert_b.py rerun320 > paper_neuron/q1963_A67_rerun320_out.txt 2>&1.
+A second VOID of this attempt ends it, and the A_67 lower end then stays unproved, as in amendment 2302. A PASS proves that the
+capacity-achieving input at A = 2001.58782263026 has exactly 66 mass points, for the untruncated channel.

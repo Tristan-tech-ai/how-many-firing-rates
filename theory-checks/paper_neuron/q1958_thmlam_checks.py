@@ -15,7 +15,7 @@ The slack 1e-6 on C1-C5 covers the solver tolerance; the margins are printed.
 import sys, math
 import numpy as np
 from scipy.special import gammaln, digamma, exp1
-sys.path.insert(0, r"")
+sys.path.insert(0, __import__('os').path.join(__import__('os').path.dirname(__import__('os').path.abspath(__file__)), '..'))  # support_exact.py sits one folder up
 from support_exact import support
 
 LAM_M = 1 - digamma(2) + math.exp(digamma(2))

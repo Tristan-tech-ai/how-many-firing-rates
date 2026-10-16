@@ -3,7 +3,7 @@ paper 2 direction B (task P2DATA). For every NWB asset it streams only units/tag
 units/spike_times (no raw waveforms) and records: recording type (tag prefix), conditions, repetitions per condition,
 and the spike count per trial. Output data_ext/dandi001262/census.json (one entry per asset); resumable: assets
 already in the file are skipped. Facts only; no test is run here.
-RESUME: py q1895_dandi001262_census.py   (from temporal_within; run with -I is not needed, the data are read as HDF5 only)
+Run: py q1895_dandi001262_census.py   (the data are read as HDF5 only)
 """
 import collections
 import json

@@ -14,7 +14,7 @@ in gerbil auditory-nerve fibres.
 
 | folder | what it holds |
 |---|---|
-| `paper/` | the paper (`paper2_v2_draft.pdf`; the submission layout `paper2_plos.pdf` with its source `paper2_plos.tex`), its sources, figures, figure scripts and the supporting text `supplement_p2.pdf` |
+| `paper/` | the paper (`paper2_main.pdf`; the submission layout `plos/paper2_plos.pdf` with its source `plos/paper2_plos.tex`), its sources, the figures in `figs/` with their scripts, and the supporting text `supplement_p2.pdf` |
 | `theory-checks/` | interval-arithmetic and numerical checks of the constants of Theorem 3 (`q1906`, `q1907`, `q1908`, `q1921`), of the finiteness proof in the supporting text (`q1945`), of the extension to a spontaneous count (`q1958`), and of the direction of asymmetry of the fitted curves (`q1960`) |
 | `count-law/` | the walk that locates count changes (`q1899`) and the states on both sides of them (`q1910`) |
 | `proved-counts/` | the computer-assisted proof of a count (`q470_support_certificate.py`, `q481_tail_lemma.py`), the logs of every run, and the states they read |
@@ -25,10 +25,51 @@ Each test script prints its decision as its last line, starting with `VERDICT`. 
 one row per fibre) is the one the paper and the log quote. A script run with `--registration-run` runs only the synthetic controls
 that were run before the recorded fibres were analysed.
 
+## Checking the controls
+
+Each registered test can be run with its synthetic controls only. The table gives the command and the
+last line it printed on a copy of this repository. The controls need no recordings; a few read the stored outputs of an
+earlier test, which are included.
+
+| script | command (run in its folder) | last line printed |
+|---|---|---|
+| `an-tests/q1912_capacity_loss_a1.py` | `python q1912_capacity_loss_a1.py --registration-run` | VERDICT q1912 registration run: CONTROLS PASS |
+| `an-tests/q1913_capacity_loss_a1_v2.py` | `python q1913_capacity_loss_a1_v2.py --registration-run` | VERDICT q1913 registration run: CONTROLS PASS |
+| `an-tests/q1917_capacity_loss_anf.py` | `python q1917_capacity_loss_anf.py --registration-run` | VERDICT q1917 registration run: CONTROLS PASS |
+| `an-tests/q1919_route_e_dt.py` | `python q1919_route_e_dt.py --registration-run` | VERDICT q1919 registration run: CONTROLS PASS |
+| `an-tests/q1922_map_vs_weights_a1.py` | `python q1922_map_vs_weights_a1.py --registration-run` | VERDICT q1922 registration run: CONTROLS PASS |
+| `an-tests/q1925_rlf_shape.py` | `python q1925_rlf_shape.py --registration-run` | VERDICT q1925 registration run: CONTROLS PASS |
+| `an-tests/q1926_ph_steps.py` | `python q1926_ph_steps.py --registration-run` | VERDICT q1926 registration run: CONTROLS PASS |
+| `an-tests/q1929_ph_drift.py` | `python q1929_ph_drift.py --registration-run` | VERDICT q1929 registration run: CONTROLS PASS |
+| `an-tests/q1930_ph_steps_75ms.py` | `python q1930_ph_steps_75ms.py --registration-run` | VERDICT q1930 registration run: CONTROLS PASS |
+| `an-tests/q1932_hl1_replication.py` | `python q1932_hl1_replication.py --registration-run` | VERDICT q1932 registration run: CONTROLS PASS |
+| `an-tests/q1933_graded_cost.py` | `python q1933_graded_cost.py --registration-run` | VERDICT q1933 registration run: CONTROLS PASS |
+| `an-tests/q1935_rlf_sqrt_shape.py` | `python q1935_rlf_sqrt_shape.py --registration-run` | its controls take longer than 30 minutes; the run of this table was stopped at 30 minutes, after its input files had been found |
+| `an-tests/q1935_rlf_sqrt_shape_v1.py` | `python q1935_rlf_sqrt_shape_v1.py --registration-run` | VERDICT q1935 registration run: CONTROLS FAIL; archived first version, superseded by q1935_rlf_sqrt_shape.py; its controls failed |
+| `an-tests/q1936_ph_fano.py` | `python q1936_ph_fano.py --registration-run` | VERDICT q1936 registration run: CONTROLS PASS |
+| `an-tests/q1937_ph_steps_binomial.py` | `python q1937_ph_steps_binomial.py --registration-run` | VERDICT q1937 registration run: CONTROLS PASS |
+| `an-tests/q1939_ph_steps_compoisson.py` | `python q1939_ph_steps_compoisson.py --registration-run` | VERDICT q1939 registration run: CONTROLS PASS |
+| `an-tests/q1941_graded_ctrl_matched.py` | `python q1941_graded_ctrl_matched.py --registration-run` | VERDICT q1941 registration run: CONTROLS PASS |
+| `an-tests/q1950_ph_steps_ratefano.py` | `python q1950_ph_steps_ratefano.py --registration-run` | needs the DANDI recordings: rebuild data_ext/dandi001262/census.json with q1895 first |
+| `an-tests/q1952_ph_steps_hull.py` | `python q1952_ph_steps_hull.py --registration-run` | VERDICT q1952 registration run: CONTROLS FAIL; its controls failed, so this test was never registered or run on the fibres |
+| `an-tests/q1953_ph_steps_lik.py` | `python q1953_ph_steps_lik.py --registration-run` | VERDICT q1953 registration run: CONTROLS PASS |
+| `an-tests/q1956_ph_steps_lik_hull.py` | `python q1956_ph_steps_lik_hull.py --registration-run` | VERDICT q1956 registration run: CONTROLS PASS |
+| `an-tests/q1957_rlf_shape_asym.py` | `python q1957_rlf_shape_asym.py --registration-run` | VERDICT q1957 registration run: CONTROLS PASS |
+| `theory-checks/paper_neuron/q1958_thmlam_checks.py` | `python q1958_thmlam_checks.py` | VERDICT q1958 checks: FAIL; a numerical check of the proof, not a test; its own verdict is FAIL by its solver-residual check |
+
+## Rebuilding the paper
+
+In `paper/`, `python assemble_v2.py` writes `paper2_main.tex` from the section sources, `python flatten_v2.py` writes the single
+file `paper2_v2_flat.tex`, and `python build_supplement_p2.py` writes `supplement_p2.tex`; each compiles with `pdflatex` (run twice).
+`python assemble_plos.py` writes `plos/paper2_plos.tex` in the layout of PLOS Computational Biology. It needs the PLOS LaTeX template,
+which is not included here: download it from https://journals.plos.org/ploscompbiol/s/latex and set `PLOS_TEMPLATE` to the path of
+`plos_latex_template.tex`, or place that file in `paper/plos_template/`.
+
 ## Data
 
 The recordings are the public dataset 001262 of the DANDI archive (https://dandiarchive.org/dandiset/001262), described by Heeringa
-(Sci. Data 11:411, 2024). They are not copied here. To rebuild the files the tests read, run from `an-tests/`:
+(Sci. Data 11:411, 2024). Its published version 0.241205.0959 (doi:10.48324/dandi.001262/0.241205.0959) carries the license
+CC0-1.0 and open access. The recordings are not copied here. To rebuild the files the tests read, run from `an-tests/`:
 
     python q1895_dandi001262_census.py     # spike counts per trial for every recording, written to data_ext/dandi001262/census.json
     python q1931_subject_ages.py           # ages of the animals, written to data_ext/dandi001262/subject_ages.json
@@ -56,8 +97,9 @@ with OpenSSL and with the OpenTimestamps client.
 
 ## Changes in this copy
 
-`REDACTIONS.md` lists the files from which absolute local folder names were removed, with the hash of each file as written by the
-computation and of the copy here. `MANIFEST.json` gives the source and hash of every file.
+`REDACTIONS.md` lists every file that differs from the file written by the computation: comments removed from TeX and Python
+sources, absolute local folder names removed, and a few notes replaced. Each entry gives both hashes. `MANIFEST.json` gives, for
+every file, its source, the hash of the copy here and the hash of the source file.
 
 ## License
 

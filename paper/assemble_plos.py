@@ -15,7 +15,11 @@ import os
 import re
 
 H = os.path.dirname(os.path.abspath(__file__))
-T = os.path.join(H, "..", "data_ext", "plos_template", "unz", "plos_latex_template.tex")
+# the PLOS template file is not redistributed: set PLOS_TEMPLATE to its path, or place it at plos_template/plos_latex_template.tex
+# next to this script (download: journals.plos.org/ploscompbiol/s/latex)
+T = os.environ.get("PLOS_TEMPLATE") or next((p for p in (os.path.join(H, "plos_template", "plos_latex_template.tex"),
+                                                         os.path.join(H, "..", "data_ext", "plos_template", "unz", "plos_latex_template.tex"))
+                                             if os.path.exists(p)), os.path.join(H, "plos_template", "plos_latex_template.tex"))
 src = io.open(os.path.join(H, "paper2_v2_flat.tex"), encoding="utf-8").read()
 tpl = io.open(T, encoding="utf-8").read()
 
@@ -48,6 +52,20 @@ out = head + front + "\n\\clearpage\n\\newgeometry{top=0.85in,left=1in,right=1in
       "\n\\nolinenumbers\n\\end{document}\n"
 # 16 Oct 2026 (P2REPOLOG step 3): the submission file carries no working comments
 out = "\n".join(l for l in (re.sub(r"(?<!\\)%.*$", "%", x) if re.search(r"(?<!\\)%", x) and x[:re.search(r"(?<!\\)%", x).start()].strip() else (None if re.search(r"(?<!\\)%", x) else x) for x in out.split("\n")) if l is not None)
+# 16 Oct 2026 (P2PLOSIMG): the PLOS template has no keyword section; the index terms stay in the draft and the arXiv version only
+_kw = re.search(r"\\begin\{IEEEkeywords\}.*?\\end\{IEEEkeywords\}\n?", out, re.S)
+assert _kw, "index terms not found"
+out = out.replace(_kw.group(0), "")
+out = re.sub(r"\\newenvironment\{IEEEkeywords\}[^\n]*\n", "", out)
+assert "IEEEkeywords" not in out
+# 16 Oct 2026 (P2SICAPTIONS): PLOS lists the captions of the supporting information files at the end of the manuscript, after the
+# references (writing/PAPER_RULES_PLOSCB.md P3, P11); the template's form is \paragraph*{S1 Text.} with a bold title sentence
+SI = ("\n\\section*{Supporting information}\n\n\\paragraph*{S1 Text.}\n\\label{S1_Text}\n{\\bf Supporting information.} The channel "
+      "model and the count law in the form used there; counts more or less regular than Poisson counts, with the proof that the "
+      "optimal input for the Conway-Maxwell-Poisson count has finitely many rates; a spontaneous rate; codes for windows that hold few "
+      "spikes; a test for discrete levels on six public datasets; and where a new rate appears.\n")
+assert out.count("\\end{thebibliography}\n") == 1
+out = out.replace("\\end{thebibliography}\n", "\\end{thebibliography}\n" + SI, 1)
 os.makedirs(os.path.join(H, "plos"), exist_ok=True)
 io.open(os.path.join(H, "plos", "paper2_plos.tex"), "w", encoding="utf-8", newline="\n").write(
     out)

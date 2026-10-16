@@ -1,0 +1,44 @@
+{
+ "rule": "D == K_matched and D > K_poisson; lower-median A",
+ "candidates": 59,
+ "path": "sub-G151203/sub-G151203_ses-G151203-2P-816nm_icephys.nwb",
+ "A": 7.9750000000000005,
+ "lam": 3.3,
+ "D": 3,
+ "K_poisson": 2,
+ "K_matched": 3,
+ "levels": [
+  10.0,
+  20.0,
+  30.0,
+  40.0,
+  50.0,
+  60.0,
+  70.0,
+  80.0
+ ],
+ "means": [
+  3.3,
+  3.325,
+  3.75,
+  6.725,
+  9.275,
+  10.85,
+  10.7,
+  11.275
+ ],
+ "groups": [
+  0,
+  0,
+  0,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "frac_poisson": 0.5169811320754717,
+ "frac_matched": 0.8226415094339623,
+ "matched_K_above_10_not_shown": 3,
+ "matched_K_above_10_all_meet": true
+}

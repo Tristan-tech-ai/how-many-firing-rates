@@ -3,828 +3,1071 @@
   "path": "proved-counts/q470_support_certificate.py",
   "source": "lawcert/q470_support_certificate.py",
   "size": 21312,
-  "sha256": "8a2826287a19a7047744c373ae74242b02a3aa45c52cb4e3fb87ad601809b705"
+  "sha256": "8a2826287a19a7047744c373ae74242b02a3aa45c52cb4e3fb87ad601809b705",
+  "source_sha256": "8a2826287a19a7047744c373ae74242b02a3aa45c52cb4e3fb87ad601809b705"
  },
  {
   "path": "proved-counts/q481_tail_lemma.py",
   "source": "lawcert/q481_tail_lemma.py",
   "size": 8530,
-  "sha256": "7e9b48b4c3fdfa88c74f484708bf3ce878cce5a16016b42eaa8ef44b83c8222a"
+  "sha256": "7e9b48b4c3fdfa88c74f484708bf3ce878cce5a16016b42eaa8ef44b83c8222a",
+  "source_sha256": "7e9b48b4c3fdfa88c74f484708bf3ce878cce5a16016b42eaa8ef44b83c8222a"
  },
  {
   "path": "proved-counts/state_412.427112649163.json",
   "source": "p2k25/state_412.427112649163.json",
   "size": 2404,
-  "sha256": "8e4ab15c5072fdc7d80627b059b4ffd30559b2e568ffe51947e5c33bc75179e9"
+  "sha256": "8e4ab15c5072fdc7d80627b059b4ffd30559b2e568ffe51947e5c33bc75179e9",
+  "source_sha256": "8e4ab15c5072fdc7d80627b059b4ffd30559b2e568ffe51947e5c33bc75179e9"
  },
  {
   "path": "proved-counts/state_1145.61569253043.json",
   "source": "p2k47/state_1145.61569253043.json",
   "size": 4560,
-  "sha256": "698e5c221692422a817cc83354930ab563b5b38d2dc1d7f2f43667683265d4df"
+  "sha256": "698e5c221692422a817cc83354930ab563b5b38d2dc1d7f2f43667683265d4df",
+  "source_sha256": "698e5c221692422a817cc83354930ab563b5b38d2dc1d7f2f43667683265d4df"
  },
  {
   "path": "proved-counts/state_2001.58782263026.json",
   "source": "p2k67/state_2001.58782263026.json",
   "size": 6520,
-  "sha256": "4ca93f2cb31c920faca69dcd28f6c34a855b5e607aa25d70403b6770939ee11b"
- },
- {
-  "path": "paper/DRAFT_abstract_2026-10-15.md",
-  "source": "paper_neuron/DRAFT_abstract_2026-10-15.md",
-  "size": 1793,
-  "sha256": "74f9ab6e08f1c72c8ef2a3092b34078bda21b29f1d07c8b04c2d5f23917315f2"
- },
- {
-  "path": "paper/DRAFT_author_summary_2026-10-15.md",
-  "source": "paper_neuron/DRAFT_author_summary_2026-10-15.md",
-  "size": 1018,
-  "sha256": "59b3092c733340508178c7c990ab346589479b5c77b20d04890d2817b05a24da"
- },
- {
-  "path": "paper/DRAFT_intro_2026-10-15.tex",
-  "source": "paper_neuron/DRAFT_intro_2026-10-15.tex",
-  "size": 8936,
-  "sha256": "9fce559422a36ff20e91de9ac8f8724ca48ac6cb2b4dc6bab2fd884fa8793127"
- },
- {
-  "path": "paper/DRAFT_results_an_2026-10-15.tex",
-  "source": "paper_neuron/DRAFT_results_an_2026-10-15.tex",
-  "size": 21465,
-  "sha256": "20862798d75824ce94291d0a5a2cf38f3095c83cb4f2167420555fcdc81adbe4"
+  "sha256": "4ca93f2cb31c920faca69dcd28f6c34a855b5e607aa25d70403b6770939ee11b",
+  "source_sha256": "4ca93f2cb31c920faca69dcd28f6c34a855b5e607aa25d70403b6770939ee11b"
  },
  {
   "path": "paper/assemble_plos.py",
   "source": "paper_neuron/assemble_plos.py",
-  "size": 3845,
-  "sha256": "ed48bee0df7f3d7326b84b5eb0690369b3341bedba6670ce3aacd41069099ab9"
+  "size": 5623,
+  "sha256": "2a57eb5362d347c86c5aff47cb897dec561329ccea57811171a526ff02317404",
+  "source_sha256": "2a57eb5362d347c86c5aff47cb897dec561329ccea57811171a526ff02317404"
  },
  {
   "path": "paper/assemble_v2.py",
   "source": "paper_neuron/assemble_v2.py",
-  "size": 8549,
-  "sha256": "c8c0b902ee5655d983f5d0f088a379fd85bb9901578397774112a4c3f083351b"
+  "size": 8400,
+  "sha256": "3a84f3d63feb4f28f2fa5836b8ba17d03d2783f92ccc8f86ea2413d034ebd93d",
+  "source_sha256": "d397d752db76837f86b1db379830ce1369a7c7379aa914b4ab61818aa54a1e2a"
  },
  {
   "path": "paper/bib_p2_vancouver.tex",
   "source": "paper_neuron/bib_p2_vancouver.tex",
   "size": 4396,
-  "sha256": "65c6de22ab9973c03f42b04755db7745cd728bd3ec72a2c492d9e43214425029"
+  "sha256": "4feedfb9b3baa17be3ebbb7a5fa7c10e8456e0b138b037d5cbc1a3c2da2a63d3",
+  "source_sha256": "65c6de22ab9973c03f42b04755db7745cd728bd3ec72a2c492d9e43214425029"
+ },
+ {
+  "path": "paper/bib_supp_vancouver.tex",
+  "source": "paper_neuron/bib_supp_vancouver.tex",
+  "size": 6931,
+  "sha256": "044806d29e3360e34329ac825e6e17cc9bd5d14380c94bd0abd45a72b0dd162e",
+  "source_sha256": "f0e7cb0bdbe1e73dd6fc79975403f532a83f57ab3a0e9b795f3eb7b97ece41c7"
  },
  {
   "path": "paper/build_supplement_p2.py",
   "source": "paper_neuron/build_supplement_p2.py",
-  "size": 8911,
-  "sha256": "5673187c56e0c7087a30f262d0c4177fea41ac9a62eccf096b5ab0194ac584a2"
+  "size": 8909,
+  "sha256": "96baec405f5d2d1ef34380c042666cb1149e0fd45a09bd4961ba9141ab5d67ae",
+  "source_sha256": "96baec405f5d2d1ef34380c042666cb1149e0fd45a09bd4961ba9141ab5d67ae"
  },
  {
   "path": "paper/check_plos_body.py",
   "source": "paper_neuron/check_plos_body.py",
-  "size": 1604,
-  "sha256": "9b0b05d17db016712ef702d4a858040a427c472434354900be068c99127cd3b1"
+  "size": 2234,
+  "sha256": "887f020a21f71057d7db46ca5fd1d0b55caa2a353f797099382920bcb99f4a28",
+  "source_sha256": "887f020a21f71057d7db46ca5fd1d0b55caa2a353f797099382920bcb99f4a28"
  },
  {
   "path": "paper/fig_dk.py",
   "source": "paper_neuron/fig_dk.py",
   "size": 4779,
-  "sha256": "e0dc05fc257e48334df8d13d37e248b9e1e4497f5d9e3b8b31466e3a184e05dc"
+  "sha256": "d32ddefe6f344b8dc727b63932372b9fda30ec7fbc17415b49fbd8ea27673a7e",
+  "source_sha256": "e0dc05fc257e48334df8d13d37e248b9e1e4497f5d9e3b8b31466e3a184e05dc"
  },
  {
   "path": "paper/fig_rlf.py",
   "source": "paper_neuron/fig_rlf.py",
   "size": 4402,
-  "sha256": "22b2fc09aaf2fa47a41f1a3e55c5aa79fc9c0eb7e4dff81dae120afafb17112d"
- },
- {
-  "path": "paper/fig_rlf_before_coldfix4.py",
-  "source": "paper_neuron/fig_rlf_before_coldfix4.py",
-  "size": 3506,
-  "sha256": "46b88e75d2cc2b0937017aba50f8fe4cd4718f1c7370412cf1788de286139184"
- },
- {
-  "path": "paper/fig_rlf_before_median.py",
-  "source": "paper_neuron/fig_rlf_before_median.py",
-  "size": 4213,
-  "sha256": "68ada481c8cc7ac2bf7f8a8537a323d696ce94462828eae90e69bfade2c981e2"
+  "sha256": "56edac78618b65c456b8aeac5c43425161be57adf5e5bf3ea69658c5fb8281dd",
+  "source_sha256": "22b2fc09aaf2fa47a41f1a3e55c5aa79fc9c0eb7e4dff81dae120afafb17112d"
  },
  {
   "path": "paper/fig_schematic.py",
   "source": "paper_neuron/fig_schematic.py",
   "size": 4383,
-  "sha256": "a56a1409ea0f340a9f08339461e12b981bcba5e10e7a7653a29b317ba8eb7654"
+  "sha256": "f5eb04859f2b83a9855a1ded7a5a51ddd82ff5e3e463b76f1685323854945e63",
+  "source_sha256": "a56a1409ea0f340a9f08339461e12b981bcba5e10e7a7653a29b317ba8eb7654"
  },
  {
-  "path": "paper/fig_schematic_before_coldfix2b2.py",
-  "source": "paper_neuron/fig_schematic_before_coldfix2b2.py",
-  "size": 4121,
-  "sha256": "cbe91b8ad838c29db361854a25991b3464508d75efa9f01fb7b0c748432e1b6e"
+  "path": "paper/figs/fig_dk.json",
+  "source": "paper_neuron/figs/fig_dk.json",
+  "size": 644,
+  "sha256": "d2642143760871e60494123cf05073f81bf6134d731e98667d118cc2ec33087a",
+  "source_sha256": "d2642143760871e60494123cf05073f81bf6134d731e98667d118cc2ec33087a"
  },
  {
-  "path": "paper/fig_dk.pdf",
+  "path": "paper/figs/fig_dk.pdf",
   "source": "paper_neuron/figs/fig_dk.pdf",
   "size": 27657,
-  "sha256": "cb093f8af57a9d3eb953286b8e0435339a3d7be37766171bb025c005ecef642a"
+  "sha256": "cb093f8af57a9d3eb953286b8e0435339a3d7be37766171bb025c005ecef642a",
+  "source_sha256": "cb093f8af57a9d3eb953286b8e0435339a3d7be37766171bb025c005ecef642a"
  },
  {
-  "path": "paper/fig_rlf.json",
+  "path": "paper/figs/fig_front.pdf",
+  "source": "paper_neuron/figs/fig_front.pdf",
+  "size": 17599,
+  "sha256": "0809cd65431229bb5e2686cc8d224c420c342253ec3a6ebb8376e6d70e5e1697",
+  "source_sha256": "0809cd65431229bb5e2686cc8d224c420c342253ec3a6ebb8376e6d70e5e1697"
+ },
+ {
+  "path": "paper/figs/fig_graded.pdf",
+  "source": "paper_neuron/figs/fig_graded.pdf",
+  "size": 10711,
+  "sha256": "5201f47cf8ee89d4e4d7447e9a6df7e586935856bf14dda65a75a5c611c429f5",
+  "source_sha256": "5201f47cf8ee89d4e4d7447e9a6df7e586935856bf14dda65a75a5c611c429f5"
+ },
+ {
+  "path": "paper/figs/fig_rlf.json",
   "source": "paper_neuron/figs/fig_rlf.json",
   "size": 802,
-  "sha256": "efb42766997957fb80a26d7fd0714fe333195bfa9288927460af75e58cdff5c6"
+  "sha256": "efb42766997957fb80a26d7fd0714fe333195bfa9288927460af75e58cdff5c6",
+  "source_sha256": "efb42766997957fb80a26d7fd0714fe333195bfa9288927460af75e58cdff5c6"
  },
  {
-  "path": "paper/fig_rlf.pdf",
+  "path": "paper/figs/fig_rlf.pdf",
   "source": "paper_neuron/figs/fig_rlf.pdf",
   "size": 23283,
-  "sha256": "aee0fb50c091e7dc54ba6ff9f3897916be2fbf426320af51d047f846faa05137"
+  "sha256": "aee0fb50c091e7dc54ba6ff9f3897916be2fbf426320af51d047f846faa05137",
+  "source_sha256": "aee0fb50c091e7dc54ba6ff9f3897916be2fbf426320af51d047f846faa05137"
  },
  {
-  "path": "paper/fig_schematic.pdf",
+  "path": "paper/figs/fig_schematic.json",
+  "source": "paper_neuron/figs/fig_schematic.json",
+  "size": 5029,
+  "sha256": "7bda8f004d2d7e2ecb00cb31930e384da7b51129cec65fb218627138cbf0f20f",
+  "source_sha256": "7bda8f004d2d7e2ecb00cb31930e384da7b51129cec65fb218627138cbf0f20f"
+ },
+ {
+  "path": "paper/figs/fig_schematic.pdf",
   "source": "paper_neuron/figs/fig_schematic.pdf",
   "size": 18804,
-  "sha256": "ec66927537a710b1bb6205116bde99a8ab8db1e7ae5578d8a2302f8c4c8564f6"
+  "sha256": "ec66927537a710b1bb6205116bde99a8ab8db1e7ae5578d8a2302f8c4c8564f6",
+  "source_sha256": "ec66927537a710b1bb6205116bde99a8ab8db1e7ae5578d8a2302f8c4c8564f6"
+ },
+ {
+  "path": "paper/figs/fig_wall.pdf",
+  "source": "paper_neuron/figs/fig_wall.pdf",
+  "size": 16619,
+  "sha256": "961122a210f046561e655305bcd794c2c5dd7fbc064f545f7d52ff23107a9259",
+  "source_sha256": "961122a210f046561e655305bcd794c2c5dd7fbc064f545f7d52ff23107a9259"
+ },
+ {
+  "path": "paper/figs/figstyle.py",
+  "source": "paper_neuron/figs/figstyle.py",
+  "size": 1133,
+  "sha256": "88f950bed876c3fedc3a1ba1361400d74ec6964ec1b2446411ec92d27984fdd6",
+  "source_sha256": "88f950bed876c3fedc3a1ba1361400d74ec6964ec1b2446411ec92d27984fdd6"
+ },
+ {
+  "path": "paper/figs/make_figs2.py",
+  "source": "paper_neuron/figs/make_figs2.py",
+  "size": 5124,
+  "sha256": "1ebab348c2f8afda36480fddcc4e53a4a5fe8aba6cb2ad45b8c2001cdfbe2813",
+  "source_sha256": "1ebab348c2f8afda36480fddcc4e53a4a5fe8aba6cb2ad45b8c2001cdfbe2813"
  },
  {
   "path": "paper/flatten_v2.py",
   "source": "paper_neuron/flatten_v2.py",
-  "size": 527,
-  "sha256": "9ac94a4e147571d2e56defb172b26f961bbe36810dc9515f9385b6db4dac3e6f"
+  "size": 519,
+  "sha256": "77632b8bbaefc7f6ecffd7803e54b394972604145108ffd055acb60f79176d81",
+  "source_sha256": "77632b8bbaefc7f6ecffd7803e54b394972604145108ffd055acb60f79176d81"
  },
  {
-  "path": "proved-counts/lawcert_A25_lo.log",
+  "path": "proved-counts/paper_neuron/lawcert_A25_lo.log",
   "source": "paper_neuron/lawcert_A25_lo.log",
   "size": 6666,
-  "sha256": "5395895cdcfd5ee313d13f185f89e8b762c71c64dd6db62d882e9c1f94215c6e"
+  "sha256": "81f29b5d03eec3f65089c31b5daab13be1245ca7a0785d8fd1753ee6110a07fb",
+  "source_sha256": "5395895cdcfd5ee313d13f185f89e8b762c71c64dd6db62d882e9c1f94215c6e"
  },
  {
-  "path": "proved-counts/lawcert_A25_lo_tail.log",
+  "path": "proved-counts/paper_neuron/lawcert_A25_lo_tail.log",
   "source": "paper_neuron/lawcert_A25_lo_tail.log",
   "size": 1100,
-  "sha256": "1912315341f4a2973ad7599296b0523ef40995bf6f9ef00985242e7537e03a75"
+  "sha256": "fd5353a6849b0b75cfade2b5f19816a0a6a0b6cb77870960b381af9e01e6f20f",
+  "source_sha256": "1912315341f4a2973ad7599296b0523ef40995bf6f9ef00985242e7537e03a75"
  },
  {
-  "path": "proved-counts/lawcert_A47_lo.log",
+  "path": "proved-counts/paper_neuron/lawcert_A47_lo.log",
   "source": "paper_neuron/lawcert_A47_lo.log",
   "size": 11453,
-  "sha256": "0f4a8e70a39edcc6d37eb17b91a99a27b1eb36b5bb12278b327caff5fe2f78b4"
+  "sha256": "ee3c6038871eb1c39680aaa856a04d31105951911892e2e9ae8ab6d52da1a18c",
+  "source_sha256": "0f4a8e70a39edcc6d37eb17b91a99a27b1eb36b5bb12278b327caff5fe2f78b4"
  },
  {
-  "path": "proved-counts/lawcert_A47_lo_192bit_void.log",
+  "path": "proved-counts/paper_neuron/lawcert_A47_lo_192bit_void.log",
   "source": "paper_neuron/lawcert_A47_lo_192bit_void.log",
   "size": 6136,
-  "sha256": "5fd470ff7a601a68b593938070cae3ce3f8f82ec3f8bda61aefe3c9e0ad4dec4"
+  "sha256": "05f695cfcce1f3a0f39d1251894195854f1bd36581b9224893777645368f94d4",
+  "source_sha256": "5fd470ff7a601a68b593938070cae3ce3f8f82ec3f8bda61aefe3c9e0ad4dec4"
  },
  {
-  "path": "proved-counts/lawcert_A47_lo_256bit_pieces_void.log",
+  "path": "proved-counts/paper_neuron/lawcert_A47_lo_256bit_pieces_void.log",
   "source": "paper_neuron/lawcert_A47_lo_256bit_pieces_void.log",
   "size": 11803,
-  "sha256": "04c7f1df998f4a73df3378cd434608289cccff54932d0b3841669f8c58bf1709"
+  "sha256": "c46a647e6df1cd78b3b44807e57f78b6e5a0d83b18d10ff9095bd0fa2b6a975c",
+  "source_sha256": "04c7f1df998f4a73df3378cd434608289cccff54932d0b3841669f8c58bf1709"
  },
  {
-  "path": "proved-counts/lawcert_A47_lo_256bit_rbox30_void.log",
+  "path": "proved-counts/paper_neuron/lawcert_A47_lo_256bit_rbox30_void.log",
   "source": "paper_neuron/lawcert_A47_lo_256bit_rbox30_void.log",
   "size": 535,
-  "sha256": "16c144e5aa031fe91ad697680e160fa82623c38182b53e5c46bc6e15ff651121"
+  "sha256": "3b6e9f8b80963564b0dc348409fc1bb8d69985dcfea49586615e46fa118c0374",
+  "source_sha256": "16c144e5aa031fe91ad697680e160fa82623c38182b53e5c46bc6e15ff651121"
  },
  {
-  "path": "proved-counts/lawcert_A47_lo_tail.log",
+  "path": "proved-counts/paper_neuron/lawcert_A47_lo_tail.log",
   "source": "paper_neuron/lawcert_A47_lo_tail.log",
   "size": 909,
-  "sha256": "101758558d4f9191341860e3fc6c51da28d6c9ddd9acb03eab0461a14920e9b7"
+  "sha256": "c42883e689dbb04c6058591017f0f6c4a4976bed469cbee237c610eaba5f099c",
+  "source_sha256": "101758558d4f9191341860e3fc6c51da28d6c9ddd9acb03eab0461a14920e9b7"
  },
  {
-  "path": "proved-counts/lawcert_A67_box.txt",
+  "path": "proved-counts/paper_neuron/lawcert_A67_box.txt",
   "source": "paper_neuron/lawcert_A67_box.txt",
   "size": 1241,
-  "sha256": "b70a96030c3c96dd33cf35c2914a2b5382be4819c359518075870001df8d258f"
+  "sha256": "0ecd74f3a1f63c6e8b0736ead5ac8672bf019eab05f18b657e6ae72801d987bd",
+  "source_sha256": "b70a96030c3c96dd33cf35c2914a2b5382be4819c359518075870001df8d258f"
  },
  {
-  "path": "proved-counts/lawcert_A67_box_ysig16.txt",
+  "path": "proved-counts/paper_neuron/lawcert_A67_box_ysig16.txt",
   "source": "paper_neuron/lawcert_A67_box_ysig16.txt",
   "size": 1244,
-  "sha256": "075ce8c36adc6d3489f4f3729102846eea51c6fe7800ae47fe9573bc22033aa6"
+  "sha256": "6ea2481938a2d7b19c68d670033751cfed9cf8d033ec861b5dee1a39bd96c94e",
+  "source_sha256": "075ce8c36adc6d3489f4f3729102846eea51c6fe7800ae47fe9573bc22033aa6"
  },
  {
-  "path": "paper/paper2_v2_draft.pdf",
-  "source": "paper_neuron/paper2_v2_draft.pdf",
-  "size": 515337,
-  "sha256": "30c3f426bb3db3939bd75f68e51f7df09a13f33f8d6c36a31530ea2f7be2963f"
+  "path": "paper/paper2.tex",
+  "source": "paper_neuron/paper2.tex",
+  "size": 75856,
+  "sha256": "024e0356481341184559c7fdcd7c66d417fdf12fc39d334f9df45aef17b7bc6a",
+  "source_sha256": "1d500efb87aa19d7d8f30828987a80ea0fa2e666f2539acc3d2cc951874b39a2"
  },
  {
-  "path": "paper/paper2_plos.pdf",
+  "path": "paper/paper2_main.pdf",
+  "source": "paper_neuron/paper2_main.pdf",
+  "size": 514787,
+  "sha256": "667d6a953783df356377e98c052094d274a718670ec88f4b90fadb61abbb93fb",
+  "source_sha256": "667d6a953783df356377e98c052094d274a718670ec88f4b90fadb61abbb93fb"
+ },
+ {
+  "path": "paper/plos/paper2_plos.pdf",
   "source": "paper_neuron/plos/paper2_plos.pdf",
-  "size": 563690,
-  "sha256": "1b201245a0f34260eaab2dace35bac14d5bdfb0e24bdaf6004d0348e4697c584"
+  "size": 562593,
+  "sha256": "1254e94a389a9a6542ea56c04d1668fbdf15fe4cee0fa0e59c9a22f810a9ed3e",
+  "source_sha256": "1254e94a389a9a6542ea56c04d1668fbdf15fe4cee0fa0e59c9a22f810a9ed3e"
  },
  {
-  "path": "paper/paper2_plos.tex",
+  "path": "paper/plos/paper2_plos.tex",
   "source": "paper_neuron/plos/paper2_plos.tex",
-  "size": 121907,
-  "sha256": "8aaae89f6dac8d6ec9523eeb0039cc5e19b631f5875634da007967834e5031f0"
+  "size": 122169,
+  "sha256": "8daecb7f2d7e3496af0d146bf43da204268821dafda4f2e35b3acecf8f824d31",
+  "source_sha256": "b2cf13b3a823db53c36fa70ceed6d5b7a8ba95215ee7ed3ba59612e361c163e7"
  },
  {
-  "path": "theory-checks/q1906_out.txt",
+  "path": "theory-checks/paper_neuron/q1906_out.txt",
   "source": "paper_neuron/q1906_out.txt",
   "size": 642,
-  "sha256": "9c17b144b8f4238a0eab389e58e00bbd9eab32942e962327cc91af1fae197f67"
+  "sha256": "9c17b144b8f4238a0eab389e58e00bbd9eab32942e962327cc91af1fae197f67",
+  "source_sha256": "9c17b144b8f4238a0eab389e58e00bbd9eab32942e962327cc91af1fae197f67"
  },
  {
-  "path": "an-tests/q1912_out.txt",
+  "path": "an-tests/paper_neuron/q1912_out.txt",
   "source": "paper_neuron/q1912_out.txt",
   "size": 1258,
-  "sha256": "e7ab6663bba355af54197d2f0764e7822c60a596eea9cc81f336be260bbcea9d"
+  "sha256": "fa3c330ca287bb82880525023e473917286dd84d42fb0da704f11aa1ac87a0d9",
+  "source_sha256": "e7ab6663bba355af54197d2f0764e7822c60a596eea9cc81f336be260bbcea9d"
  },
  {
-  "path": "an-tests/q1913_out.txt",
+  "path": "an-tests/paper_neuron/q1913_out.txt",
   "source": "paper_neuron/q1913_out.txt",
   "size": 1060,
-  "sha256": "fac4c07117bcaa8dfcc52eb323257eedc0cd7c39e1ef2b3986419b4006fa6ce6"
+  "sha256": "fac4c07117bcaa8dfcc52eb323257eedc0cd7c39e1ef2b3986419b4006fa6ce6",
+  "source_sha256": "fac4c07117bcaa8dfcc52eb323257eedc0cd7c39e1ef2b3986419b4006fa6ce6"
  },
  {
-  "path": "an-tests/q1919_out.txt",
+  "path": "an-tests/paper_neuron/q1919_cells.json",
+  "source": "paper_neuron/q1919_cells.json",
+  "size": 5540,
+  "sha256": "2da237c09fc0ed031f445388c0cdc115e5e2103643c5cf8b14cb7976e4d73404",
+  "source_sha256": "2da237c09fc0ed031f445388c0cdc115e5e2103643c5cf8b14cb7976e4d73404"
+ },
+ {
+  "path": "an-tests/paper_neuron/q1919_out.txt",
   "source": "paper_neuron/q1919_out.txt",
   "size": 2938,
-  "sha256": "5ab88f9b197e805aa7fe8fe48982c16cf468f3b325cd0e68fc6a7ce61f6ba480"
+  "sha256": "5ab88f9b197e805aa7fe8fe48982c16cf468f3b325cd0e68fc6a7ce61f6ba480",
+  "source_sha256": "5ab88f9b197e805aa7fe8fe48982c16cf468f3b325cd0e68fc6a7ce61f6ba480"
  },
  {
-  "path": "an-tests/q1919_regrun.txt",
+  "path": "an-tests/paper_neuron/q1919_regrun.txt",
   "source": "paper_neuron/q1919_regrun.txt",
   "size": 1187,
-  "sha256": "f81f590c2d8f028f312a4c13ac1f91ead1da57a5f82ba94934ad5165d0b750ba"
+  "sha256": "f81f590c2d8f028f312a4c13ac1f91ead1da57a5f82ba94934ad5165d0b750ba",
+  "source_sha256": "f81f590c2d8f028f312a4c13ac1f91ead1da57a5f82ba94934ad5165d0b750ba"
  },
  {
-  "path": "theory-checks/q1921_out.txt",
+  "path": "theory-checks/paper_neuron/q1921_out.txt",
   "source": "paper_neuron/q1921_out.txt",
   "size": 562,
-  "sha256": "6dd0dc41f6ec1cb00f7c25963bf7d79f0f3ebf962e54eba75f554bafb8aabdda"
+  "sha256": "6dd0dc41f6ec1cb00f7c25963bf7d79f0f3ebf962e54eba75f554bafb8aabdda",
+  "source_sha256": "6dd0dc41f6ec1cb00f7c25963bf7d79f0f3ebf962e54eba75f554bafb8aabdda"
  },
  {
-  "path": "an-tests/q1922_out.txt",
+  "path": "an-tests/paper_neuron/q1922_out.txt",
   "source": "paper_neuron/q1922_out.txt",
   "size": 234,
-  "sha256": "2652ee05c7a2621c2ce94c26ac963b53d210c7bda1ef0c10134c53b7588bc4a3"
+  "sha256": "2652ee05c7a2621c2ce94c26ac963b53d210c7bda1ef0c10134c53b7588bc4a3",
+  "source_sha256": "2652ee05c7a2621c2ce94c26ac963b53d210c7bda1ef0c10134c53b7588bc4a3"
  },
  {
-  "path": "an-tests/q1925_out.txt",
+  "path": "an-tests/paper_neuron/q1925_out.txt",
   "source": "paper_neuron/q1925_out.txt",
   "size": 512,
-  "sha256": "223cd3b89eda48429232558519abbd724286dac8fafed52d4b52e37bf0111a3b"
+  "sha256": "223cd3b89eda48429232558519abbd724286dac8fafed52d4b52e37bf0111a3b",
+  "source_sha256": "223cd3b89eda48429232558519abbd724286dac8fafed52d4b52e37bf0111a3b"
  },
  {
-  "path": "an-tests/q1925_regrun.txt",
+  "path": "an-tests/paper_neuron/q1925_regrun.txt",
   "source": "paper_neuron/q1925_regrun.txt",
   "size": 478,
-  "sha256": "5c6b201c19bb997be3d3956d7f600b6a0e0ded471dfdaedeafc3acd4af0aa01b"
+  "sha256": "5c6b201c19bb997be3d3956d7f600b6a0e0ded471dfdaedeafc3acd4af0aa01b",
+  "source_sha256": "5c6b201c19bb997be3d3956d7f600b6a0e0ded471dfdaedeafc3acd4af0aa01b"
  },
  {
-  "path": "an-tests/q1925_rows.json",
+  "path": "an-tests/paper_neuron/q1925_rows.json",
   "source": "paper_neuron/q1925_rows.json",
   "size": 177976,
-  "sha256": "92492047921c50804693e96f641204ed124148b757e98d82da90c350c48a8e85"
+  "sha256": "92492047921c50804693e96f641204ed124148b757e98d82da90c350c48a8e85",
+  "source_sha256": "92492047921c50804693e96f641204ed124148b757e98d82da90c350c48a8e85"
  },
  {
-  "path": "an-tests/q1926_out.txt",
+  "path": "an-tests/paper_neuron/q1926_out.txt",
   "source": "paper_neuron/q1926_out.txt",
   "size": 372,
-  "sha256": "772ba3bcb4e87df4fd97b476b49f020a3ce7a7075470cfeb3df62d186edcabcb"
+  "sha256": "772ba3bcb4e87df4fd97b476b49f020a3ce7a7075470cfeb3df62d186edcabcb",
+  "source_sha256": "772ba3bcb4e87df4fd97b476b49f020a3ce7a7075470cfeb3df62d186edcabcb"
  },
  {
-  "path": "an-tests/q1926_rows.json",
+  "path": "an-tests/paper_neuron/q1926_rows.json",
   "source": "paper_neuron/q1926_rows.json",
   "size": 34070,
-  "sha256": "e0f0f8aa843637cf2b1818d28ca5b0d83c543202f270361d968a70fc67ab81d0"
+  "sha256": "e0f0f8aa843637cf2b1818d28ca5b0d83c543202f270361d968a70fc67ab81d0",
+  "source_sha256": "e0f0f8aa843637cf2b1818d28ca5b0d83c543202f270361d968a70fc67ab81d0"
  },
  {
-  "path": "an-tests/q1929_out.txt",
+  "path": "an-tests/paper_neuron/q1929_out.txt",
   "source": "paper_neuron/q1929_out.txt",
   "size": 239,
-  "sha256": "afb97eb3a398531c4a5c6f811103ffb5f1a2722ff9ef4e5b4c0eec9003a5b271"
+  "sha256": "afb97eb3a398531c4a5c6f811103ffb5f1a2722ff9ef4e5b4c0eec9003a5b271",
+  "source_sha256": "afb97eb3a398531c4a5c6f811103ffb5f1a2722ff9ef4e5b4c0eec9003a5b271"
  },
  {
-  "path": "an-tests/q1930_out.txt",
+  "path": "an-tests/paper_neuron/q1930_out.txt",
   "source": "paper_neuron/q1930_out.txt",
   "size": 381,
-  "sha256": "66e1e421a68da7104afbed12149d97f8d14f6f244e587a4126636e6b2e5e40aa"
+  "sha256": "66e1e421a68da7104afbed12149d97f8d14f6f244e587a4126636e6b2e5e40aa",
+  "source_sha256": "66e1e421a68da7104afbed12149d97f8d14f6f244e587a4126636e6b2e5e40aa"
  },
  {
-  "path": "an-tests/q1932_out.txt",
+  "path": "an-tests/paper_neuron/q1930_rows.json",
+  "source": "paper_neuron/q1930_rows.json",
+  "size": 34797,
+  "sha256": "07b6e0e55f8c8d1900debeb1567b6308c43ae06f786951388c44d3e426f3d21a",
+  "source_sha256": "07b6e0e55f8c8d1900debeb1567b6308c43ae06f786951388c44d3e426f3d21a"
+ },
+ {
+  "path": "an-tests/paper_neuron/q1932_out.txt",
   "source": "paper_neuron/q1932_out.txt",
   "size": 313,
-  "sha256": "156e19ab3c7fe316095ddcf1eb1c06748e326336f1eb2a3a102be2bb47ef3120"
+  "sha256": "156e19ab3c7fe316095ddcf1eb1c06748e326336f1eb2a3a102be2bb47ef3120",
+  "source_sha256": "156e19ab3c7fe316095ddcf1eb1c06748e326336f1eb2a3a102be2bb47ef3120"
  },
  {
-  "path": "an-tests/q1935_out.txt",
+  "path": "an-tests/paper_neuron/q1933_rows.json",
+  "source": "paper_neuron/q1933_rows.json",
+  "size": 54108,
+  "sha256": "ad761ea1a16e3b945d22dc91edfe16d83a9239f573edf8a34ad5b4bf23933b6d",
+  "source_sha256": "ad761ea1a16e3b945d22dc91edfe16d83a9239f573edf8a34ad5b4bf23933b6d"
+ },
+ {
+  "path": "an-tests/paper_neuron/q1935_out.txt",
   "source": "paper_neuron/q1935_out.txt",
   "size": 496,
-  "sha256": "c445421dec0141db705bd6ae8289a8b416f009bedccbfbe350d535e949b189ef"
+  "sha256": "c445421dec0141db705bd6ae8289a8b416f009bedccbfbe350d535e949b189ef",
+  "source_sha256": "c445421dec0141db705bd6ae8289a8b416f009bedccbfbe350d535e949b189ef"
  },
  {
-  "path": "an-tests/q1935_regrun.txt",
+  "path": "an-tests/paper_neuron/q1935_regrun.txt",
   "source": "paper_neuron/q1935_regrun.txt",
   "size": 1002,
-  "sha256": "b8494793238320f4eaa4d90617ec938a4296f068c25378be599ce2da9cad77d5"
+  "sha256": "b8494793238320f4eaa4d90617ec938a4296f068c25378be599ce2da9cad77d5",
+  "source_sha256": "b8494793238320f4eaa4d90617ec938a4296f068c25378be599ce2da9cad77d5"
  },
  {
-  "path": "an-tests/q1935_regrun_v1.txt",
+  "path": "an-tests/paper_neuron/q1935_regrun_v1.txt",
   "source": "paper_neuron/q1935_regrun_v1.txt",
   "size": 968,
-  "sha256": "953f4aec6b86f80910d49f079f2526cf84ac3b50331075c30be5670e20f7adad"
+  "sha256": "953f4aec6b86f80910d49f079f2526cf84ac3b50331075c30be5670e20f7adad",
+  "source_sha256": "953f4aec6b86f80910d49f079f2526cf84ac3b50331075c30be5670e20f7adad"
  },
  {
-  "path": "an-tests/q1935_rows.json",
+  "path": "an-tests/paper_neuron/q1935_rows.json",
   "source": "paper_neuron/q1935_rows.json",
   "size": 214839,
-  "sha256": "a7ee8b0bbd2d218b5d027e2f843cdd85ea7c72a51189179bded6a5fea583d5ab"
+  "sha256": "a7ee8b0bbd2d218b5d027e2f843cdd85ea7c72a51189179bded6a5fea583d5ab",
+  "source_sha256": "a7ee8b0bbd2d218b5d027e2f843cdd85ea7c72a51189179bded6a5fea583d5ab"
  },
  {
-  "path": "an-tests/q1935_v2_patch.py",
+  "path": "an-tests/paper_neuron/q1935_v2_patch.py",
   "source": "paper_neuron/q1935_v2_patch.py",
   "size": 7751,
-  "sha256": "3c958bbb6f5e90154ec60fc581874c68ae0bc6da0da53837f5ce4921a3338ac1"
+  "sha256": "3c958bbb6f5e90154ec60fc581874c68ae0bc6da0da53837f5ce4921a3338ac1",
+  "source_sha256": "3c958bbb6f5e90154ec60fc581874c68ae0bc6da0da53837f5ce4921a3338ac1"
  },
  {
-  "path": "an-tests/q1936_out.txt",
+  "path": "an-tests/paper_neuron/q1936_out.txt",
   "source": "paper_neuron/q1936_out.txt",
   "size": 312,
-  "sha256": "37b5aecc94f6bf91132c103c5c4671bde2ae55737a3bb328479514446916f095"
+  "sha256": "37b5aecc94f6bf91132c103c5c4671bde2ae55737a3bb328479514446916f095",
+  "source_sha256": "37b5aecc94f6bf91132c103c5c4671bde2ae55737a3bb328479514446916f095"
  },
  {
-  "path": "an-tests/q1937_out.txt",
+  "path": "an-tests/paper_neuron/q1936_rows.json",
+  "source": "paper_neuron/q1936_rows.json",
+  "size": 59221,
+  "sha256": "def7fc7cc300673244c02bc77d4603aaa9bbd9f9c1d18a21242fe4b65bd633fb",
+  "source_sha256": "def7fc7cc300673244c02bc77d4603aaa9bbd9f9c1d18a21242fe4b65bd633fb"
+ },
+ {
+  "path": "an-tests/paper_neuron/q1937_out.txt",
   "source": "paper_neuron/q1937_out.txt",
   "size": 314,
-  "sha256": "093ab5487726429e6e7a207a2e29f4a8417a80282b5a772527013921b52faabd"
+  "sha256": "093ab5487726429e6e7a207a2e29f4a8417a80282b5a772527013921b52faabd",
+  "source_sha256": "093ab5487726429e6e7a207a2e29f4a8417a80282b5a772527013921b52faabd"
  },
  {
-  "path": "an-tests/q1937_regrun.txt",
+  "path": "an-tests/paper_neuron/q1937_regrun.txt",
   "source": "paper_neuron/q1937_regrun.txt",
   "size": 562,
-  "sha256": "ee4d157ab799bfa6849bbeb6795148b32c2bdad0884c4f0f92aa268cb173dc40"
+  "sha256": "ee4d157ab799bfa6849bbeb6795148b32c2bdad0884c4f0f92aa268cb173dc40",
+  "source_sha256": "ee4d157ab799bfa6849bbeb6795148b32c2bdad0884c4f0f92aa268cb173dc40"
  },
  {
-  "path": "an-tests/q1937_regrun_v2.txt",
+  "path": "an-tests/paper_neuron/q1937_regrun_v2.txt",
   "source": "paper_neuron/q1937_regrun_v2.txt",
   "size": 562,
-  "sha256": "ee4d157ab799bfa6849bbeb6795148b32c2bdad0884c4f0f92aa268cb173dc40"
+  "sha256": "ee4d157ab799bfa6849bbeb6795148b32c2bdad0884c4f0f92aa268cb173dc40",
+  "source_sha256": "ee4d157ab799bfa6849bbeb6795148b32c2bdad0884c4f0f92aa268cb173dc40"
  },
  {
-  "path": "an-tests/q1937_rows.json",
+  "path": "an-tests/paper_neuron/q1937_rows.json",
   "source": "paper_neuron/q1937_rows.json",
   "size": 35447,
-  "sha256": "d8350a5836e2b44c0552ce44e4c93eb277433dc85c5e88e956135b94ef5e0277"
+  "sha256": "d8350a5836e2b44c0552ce44e4c93eb277433dc85c5e88e956135b94ef5e0277",
+  "source_sha256": "d8350a5836e2b44c0552ce44e4c93eb277433dc85c5e88e956135b94ef5e0277"
  },
  {
-  "path": "an-tests/q1937_rows_v1_void.json",
+  "path": "an-tests/paper_neuron/q1937_rows_v1_void.json",
   "source": "paper_neuron/q1937_rows_v1_void.json",
   "size": 35670,
-  "sha256": "4e8df08f8dd22ccfbd57790d9470061d684e4f4f491c0f3797b5ba97bc0f1974"
+  "sha256": "4e8df08f8dd22ccfbd57790d9470061d684e4f4f491c0f3797b5ba97bc0f1974",
+  "source_sha256": "4e8df08f8dd22ccfbd57790d9470061d684e4f4f491c0f3797b5ba97bc0f1974"
  },
  {
-  "path": "an-tests/q1938_out.txt",
+  "path": "an-tests/paper_neuron/q1938_out.txt",
   "source": "paper_neuron/q1938_out.txt",
   "size": 372,
-  "sha256": "c5ce1004050b59145c6f1a40bc1200ee4be0e827e1730b5c9a61482ed14de4f8"
+  "sha256": "c5ce1004050b59145c6f1a40bc1200ee4be0e827e1730b5c9a61482ed14de4f8",
+  "source_sha256": "c5ce1004050b59145c6f1a40bc1200ee4be0e827e1730b5c9a61482ed14de4f8"
  },
  {
-  "path": "an-tests/q1939_out.txt",
+  "path": "an-tests/paper_neuron/q1939_out.txt",
   "source": "paper_neuron/q1939_out.txt",
   "size": 401,
-  "sha256": "2e1fe0f27b9b1307e1e7c2236896f98fbbde31bef0cae201e5cc27f445e3bedc"
+  "sha256": "2e1fe0f27b9b1307e1e7c2236896f98fbbde31bef0cae201e5cc27f445e3bedc",
+  "source_sha256": "2e1fe0f27b9b1307e1e7c2236896f98fbbde31bef0cae201e5cc27f445e3bedc"
  },
  {
-  "path": "an-tests/q1939_regrun.txt",
+  "path": "an-tests/paper_neuron/q1939_regrun.txt",
   "source": "paper_neuron/q1939_regrun.txt",
   "size": 805,
-  "sha256": "e72772863f9217e67cd6186ab26425d45a3ea7f2c24402b6a5e8056c89596c58"
+  "sha256": "e72772863f9217e67cd6186ab26425d45a3ea7f2c24402b6a5e8056c89596c58",
+  "source_sha256": "e72772863f9217e67cd6186ab26425d45a3ea7f2c24402b6a5e8056c89596c58"
  },
  {
-  "path": "an-tests/q1939_rows.json",
+  "path": "an-tests/paper_neuron/q1939_rows.json",
   "source": "paper_neuron/q1939_rows.json",
   "size": 44266,
-  "sha256": "cc7f2637c5d4bfbfa057799022b005d13b2b724b69a2cf5d975c2b58a63e222f"
+  "sha256": "cc7f2637c5d4bfbfa057799022b005d13b2b724b69a2cf5d975c2b58a63e222f",
+  "source_sha256": "cc7f2637c5d4bfbfa057799022b005d13b2b724b69a2cf5d975c2b58a63e222f"
  },
  {
-  "path": "an-tests/q1941_out.txt",
+  "path": "an-tests/paper_neuron/q1941_out.txt",
   "source": "paper_neuron/q1941_out.txt",
   "size": 566,
-  "sha256": "9147755011c4474346df3ddd8bd8d640e91e8014d8f31270e581951166242d50"
+  "sha256": "9147755011c4474346df3ddd8bd8d640e91e8014d8f31270e581951166242d50",
+  "source_sha256": "9147755011c4474346df3ddd8bd8d640e91e8014d8f31270e581951166242d50"
  },
  {
-  "path": "an-tests/q1941_regrun.txt",
+  "path": "an-tests/paper_neuron/q1941_regrun.txt",
   "source": "paper_neuron/q1941_regrun.txt",
   "size": 356,
-  "sha256": "0435ec32c44c70c28af76a014daa6f0dd880360918b6e36a2d61c71bc431682a"
+  "sha256": "0435ec32c44c70c28af76a014daa6f0dd880360918b6e36a2d61c71bc431682a",
+  "source_sha256": "0435ec32c44c70c28af76a014daa6f0dd880360918b6e36a2d61c71bc431682a"
  },
  {
-  "path": "an-tests/q1942_out.txt",
+  "path": "an-tests/paper_neuron/q1942_out.txt",
   "source": "paper_neuron/q1942_out.txt",
   "size": 759,
-  "sha256": "6619a3c46baca3c6515eb565b2bee3ff4485a55a210d604333cc656aed83e006"
+  "sha256": "6619a3c46baca3c6515eb565b2bee3ff4485a55a210d604333cc656aed83e006",
+  "source_sha256": "6619a3c46baca3c6515eb565b2bee3ff4485a55a210d604333cc656aed83e006"
  },
  {
-  "path": "theory-checks/q1945_out.txt",
+  "path": "theory-checks/paper_neuron/q1945_out.txt",
   "source": "paper_neuron/q1945_out.txt",
   "size": 2045,
-  "sha256": "900896c60ef9b5a666bc989f186a683ec68e7f40cd5d80310e93217616c01091"
+  "sha256": "900896c60ef9b5a666bc989f186a683ec68e7f40cd5d80310e93217616c01091",
+  "source_sha256": "900896c60ef9b5a666bc989f186a683ec68e7f40cd5d80310e93217616c01091"
  },
  {
-  "path": "an-tests/q1949_out.txt",
+  "path": "an-tests/paper_neuron/q1948_rows.json",
+  "source": "paper_neuron/q1948_rows.json",
+  "size": 54189,
+  "sha256": "88ffee3b00bd2e6d58e6343b5190a4dc2854619a8dc31836eaef41ff96ba3bef",
+  "source_sha256": "88ffee3b00bd2e6d58e6343b5190a4dc2854619a8dc31836eaef41ff96ba3bef"
+ },
+ {
+  "path": "an-tests/paper_neuron/q1949_out.txt",
   "source": "paper_neuron/q1949_out.txt",
   "size": 901,
-  "sha256": "4c1ba82879e30fd137fae9ca3a0e6e2c4948a64e93c439d19e77cd59f2a8a0c5"
+  "sha256": "4c1ba82879e30fd137fae9ca3a0e6e2c4948a64e93c439d19e77cd59f2a8a0c5",
+  "source_sha256": "4c1ba82879e30fd137fae9ca3a0e6e2c4948a64e93c439d19e77cd59f2a8a0c5"
  },
  {
-  "path": "an-tests/q1950_out.txt",
+  "path": "an-tests/paper_neuron/q1950_out.txt",
   "source": "paper_neuron/q1950_out.txt",
   "size": 567,
-  "sha256": "c496be8aaa6a75010ae3cf2e1d6ece9784955cf42be9a8804b9f1a4de445b939"
+  "sha256": "c496be8aaa6a75010ae3cf2e1d6ece9784955cf42be9a8804b9f1a4de445b939",
+  "source_sha256": "c496be8aaa6a75010ae3cf2e1d6ece9784955cf42be9a8804b9f1a4de445b939"
  },
  {
-  "path": "an-tests/q1950_regrun.txt",
+  "path": "an-tests/paper_neuron/q1950_regrun.txt",
   "source": "paper_neuron/q1950_regrun.txt",
   "size": 774,
-  "sha256": "312d01c9e12317096b69d718da0cd16b8ae0596661b59c0d6f83927b561642e3"
+  "sha256": "312d01c9e12317096b69d718da0cd16b8ae0596661b59c0d6f83927b561642e3",
+  "source_sha256": "312d01c9e12317096b69d718da0cd16b8ae0596661b59c0d6f83927b561642e3"
  },
  {
-  "path": "an-tests/q1950_rows.json",
+  "path": "an-tests/paper_neuron/q1950_rows.json",
   "source": "paper_neuron/q1950_rows.json",
   "size": 68017,
-  "sha256": "a41f37e24839b88bba4c6f7484f88b0e4b3d7b87bde5559675b684048e35096e"
+  "sha256": "a41f37e24839b88bba4c6f7484f88b0e4b3d7b87bde5559675b684048e35096e",
+  "source_sha256": "a41f37e24839b88bba4c6f7484f88b0e4b3d7b87bde5559675b684048e35096e"
  },
  {
-  "path": "an-tests/q1953_out.txt",
+  "path": "an-tests/paper_neuron/q1953_out.txt",
   "source": "paper_neuron/q1953_out.txt",
   "size": 445,
-  "sha256": "587c992623d8c752eca71898e0d8a592301cb4bfaf0eb1e625a16057d43b03c7"
+  "sha256": "587c992623d8c752eca71898e0d8a592301cb4bfaf0eb1e625a16057d43b03c7",
+  "source_sha256": "587c992623d8c752eca71898e0d8a592301cb4bfaf0eb1e625a16057d43b03c7"
  },
  {
-  "path": "an-tests/q1953_regrun.txt",
+  "path": "an-tests/paper_neuron/q1953_regrun.txt",
   "source": "paper_neuron/q1953_regrun.txt",
   "size": 539,
-  "sha256": "f226cb6089fbca6a17898e78f189e6c4d184567445c12647e8547150a73d3dd9"
+  "sha256": "f226cb6089fbca6a17898e78f189e6c4d184567445c12647e8547150a73d3dd9",
+  "source_sha256": "f226cb6089fbca6a17898e78f189e6c4d184567445c12647e8547150a73d3dd9"
  },
  {
-  "path": "an-tests/q1953_rows.json",
+  "path": "an-tests/paper_neuron/q1953_rows.json",
   "source": "paper_neuron/q1953_rows.json",
   "size": 60322,
-  "sha256": "7fcba5cae70e876697dc84b3f0eef0c69c433fe319d80f8d8f894739ccabf646"
+  "sha256": "7fcba5cae70e876697dc84b3f0eef0c69c433fe319d80f8d8f894739ccabf646",
+  "source_sha256": "7fcba5cae70e876697dc84b3f0eef0c69c433fe319d80f8d8f894739ccabf646"
  },
  {
-  "path": "an-tests/q1956_out.txt",
+  "path": "an-tests/paper_neuron/q1956_out.txt",
   "source": "paper_neuron/q1956_out.txt",
   "size": 541,
-  "sha256": "5fbbac2d4c70e0c4409522591fe292a24c61de4a2fd3fd09478293ac0a45aa71"
+  "sha256": "5fbbac2d4c70e0c4409522591fe292a24c61de4a2fd3fd09478293ac0a45aa71",
+  "source_sha256": "5fbbac2d4c70e0c4409522591fe292a24c61de4a2fd3fd09478293ac0a45aa71"
  },
  {
-  "path": "an-tests/q1956_regrun.txt",
+  "path": "an-tests/paper_neuron/q1956_regrun.txt",
   "source": "paper_neuron/q1956_regrun.txt",
   "size": 512,
-  "sha256": "19b76d22ea7d1caf6f4c962ae80e2c2788717be0794c1455f04c0671bca43f59"
+  "sha256": "19b76d22ea7d1caf6f4c962ae80e2c2788717be0794c1455f04c0671bca43f59",
+  "source_sha256": "19b76d22ea7d1caf6f4c962ae80e2c2788717be0794c1455f04c0671bca43f59"
  },
  {
-  "path": "an-tests/q1956_rows.json",
+  "path": "an-tests/paper_neuron/q1956_rows.json",
   "source": "paper_neuron/q1956_rows.json",
   "size": 67724,
-  "sha256": "4f80f815fcca72e75766c998f44e33a7ba6ad094bbef3c9d5759c7754a440228"
+  "sha256": "4f80f815fcca72e75766c998f44e33a7ba6ad094bbef3c9d5759c7754a440228",
+  "source_sha256": "4f80f815fcca72e75766c998f44e33a7ba6ad094bbef3c9d5759c7754a440228"
  },
  {
-  "path": "an-tests/q1957_out.txt",
+  "path": "an-tests/paper_neuron/q1957_out.txt",
   "source": "paper_neuron/q1957_out.txt",
   "size": 447,
-  "sha256": "950189f365e9c7679061d05a9741f80281d7b356563acf6359ba14e45c5a08d1"
+  "sha256": "950189f365e9c7679061d05a9741f80281d7b356563acf6359ba14e45c5a08d1",
+  "source_sha256": "950189f365e9c7679061d05a9741f80281d7b356563acf6359ba14e45c5a08d1"
  },
  {
-  "path": "an-tests/q1957_recompute.py",
+  "path": "an-tests/paper_neuron/q1957_recompute.py",
   "source": "paper_neuron/q1957_recompute.py",
   "size": 1153,
-  "sha256": "4763d92efe4e8db28a5e6eb13ce9192f0552b03d42662916f6653ec77165c019"
+  "sha256": "4763d92efe4e8db28a5e6eb13ce9192f0552b03d42662916f6653ec77165c019",
+  "source_sha256": "4763d92efe4e8db28a5e6eb13ce9192f0552b03d42662916f6653ec77165c019"
  },
  {
-  "path": "an-tests/q1957_recompute_out.txt",
+  "path": "an-tests/paper_neuron/q1957_recompute_out.txt",
   "source": "paper_neuron/q1957_recompute_out.txt",
   "size": 287,
-  "sha256": "52a7e08b02ab052b94addde7fbb55b8ca714910bb3eaa2d5ff037128507b15c1"
+  "sha256": "52a7e08b02ab052b94addde7fbb55b8ca714910bb3eaa2d5ff037128507b15c1",
+  "source_sha256": "52a7e08b02ab052b94addde7fbb55b8ca714910bb3eaa2d5ff037128507b15c1"
  },
  {
-  "path": "an-tests/q1957_regrun.txt",
+  "path": "an-tests/paper_neuron/q1957_regrun.txt",
   "source": "paper_neuron/q1957_regrun.txt",
   "size": 394,
-  "sha256": "a8178bd7917ae5419241259350ee2e9c3e66a2f0886dee9556760b0f809571e5"
+  "sha256": "a8178bd7917ae5419241259350ee2e9c3e66a2f0886dee9556760b0f809571e5",
+  "source_sha256": "a8178bd7917ae5419241259350ee2e9c3e66a2f0886dee9556760b0f809571e5"
  },
  {
-  "path": "an-tests/q1957_rows.json",
+  "path": "an-tests/paper_neuron/q1957_rows.json",
   "source": "paper_neuron/q1957_rows.json",
   "size": 129991,
-  "sha256": "39e5aab905fff057cb1cc5cd3d0902310c3dfa7bce60ddb204311ac35ad0919f"
+  "sha256": "39e5aab905fff057cb1cc5cd3d0902310c3dfa7bce60ddb204311ac35ad0919f",
+  "source_sha256": "39e5aab905fff057cb1cc5cd3d0902310c3dfa7bce60ddb204311ac35ad0919f"
  },
  {
-  "path": "theory-checks/q1958_out.txt",
+  "path": "theory-checks/paper_neuron/q1958_out.txt",
   "source": "paper_neuron/q1958_out.txt",
   "size": 4431,
-  "sha256": "10eb0b62c24ced478dc1e0950bd40f6f6213bcfbe0d3c470f8c0e21841827739"
+  "sha256": "10eb0b62c24ced478dc1e0950bd40f6f6213bcfbe0d3c470f8c0e21841827739",
+  "source_sha256": "10eb0b62c24ced478dc1e0950bd40f6f6213bcfbe0d3c470f8c0e21841827739"
  },
  {
-  "path": "theory-checks/q1958_thmlam_checks.py",
+  "path": "theory-checks/paper_neuron/q1958_thmlam_checks.py",
   "source": "paper_neuron/q1958_thmlam_checks.py",
   "size": 3768,
-  "sha256": "db060792ceaaeec1d85d05e539842399577a40c174eefe3880728d1089a68e5f"
+  "sha256": "f2668406080c74a19d58dd1401e72436f8596028e945867fcc1f95dd26c9e290",
+  "source_sha256": "db060792ceaaeec1d85d05e539842399577a40c174eefe3880728d1089a68e5f"
  },
  {
-  "path": "theory-checks/q1960_out.txt",
+  "path": "theory-checks/paper_neuron/q1960_out.txt",
   "source": "paper_neuron/q1960_out.txt",
   "size": 431,
-  "sha256": "3cc8ece1296a6dea90c9b0eb8d4770d0c40ed0b5aeb42e01181754866da5aa8e"
+  "sha256": "3cc8ece1296a6dea90c9b0eb8d4770d0c40ed0b5aeb42e01181754866da5aa8e",
+  "source_sha256": "3cc8ece1296a6dea90c9b0eb8d4770d0c40ed0b5aeb42e01181754866da5aa8e"
  },
  {
-  "path": "theory-checks/q1960_skew_direction.py",
+  "path": "theory-checks/paper_neuron/q1960_skew_direction.py",
   "source": "paper_neuron/q1960_skew_direction.py",
   "size": 1476,
-  "sha256": "24c1ca44b58ab177a2def00333899f31b67e66d8f8a9dead791860b2aa5be63d"
+  "sha256": "24c1ca44b58ab177a2def00333899f31b67e66d8f8a9dead791860b2aa5be63d",
+  "source_sha256": "24c1ca44b58ab177a2def00333899f31b67e66d8f8a9dead791860b2aa5be63d"
+ },
+ {
+  "path": "paper/sec_abstract.md",
+  "source": "paper_neuron/sec_abstract.md",
+  "size": 1793,
+  "sha256": "74f9ab6e08f1c72c8ef2a3092b34078bda21b29f1d07c8b04c2d5f23917315f2",
+  "source_sha256": "74f9ab6e08f1c72c8ef2a3092b34078bda21b29f1d07c8b04c2d5f23917315f2"
+ },
+ {
+  "path": "paper/sec_author_summary.md",
+  "source": "paper_neuron/sec_author_summary.md",
+  "size": 1018,
+  "sha256": "59b3092c733340508178c7c990ab346589479b5c77b20d04890d2817b05a24da",
+  "source_sha256": "59b3092c733340508178c7c990ab346589479b5c77b20d04890d2817b05a24da"
  },
  {
   "path": "paper/sec_backmatter.tex",
   "source": "paper_neuron/sec_backmatter.tex",
   "size": 2263,
-  "sha256": "2de5aacb267c52841e0510fa7fb3fc95b1fc1b9c1f794aad3f56419a0e15dc61"
+  "sha256": "44692727cb33811aeb2a2d15e103e100e8f52c0b8c429343c3c9f5117ba1f077",
+  "source_sha256": "2de5aacb267c52841e0510fa7fb3fc95b1fc1b9c1f794aad3f56419a0e15dc61"
  },
  {
   "path": "paper/sec_countlaw.tex",
   "source": "paper_neuron/sec_countlaw.tex",
   "size": 6265,
-  "sha256": "eb57d92a55d56cd64b5b6e17d059f54fa96d0ed475b223dba14bc7db9503ebf0"
+  "sha256": "ab76a09906c00066762a256fc33142102fd844314b0627d8dd3dd9cd1e3ec423",
+  "source_sha256": "eb57d92a55d56cd64b5b6e17d059f54fa96d0ed475b223dba14bc7db9503ebf0"
  },
  {
   "path": "paper/sec_discussion.tex",
   "source": "paper_neuron/sec_discussion.tex",
   "size": 6755,
-  "sha256": "f9289aa054975bfbfa9af0d24974a2eeb60e0ef9a5bb74652f5ed06feecb34c6"
+  "sha256": "7d4b7e1e515d6c0bc5c95e64b4c10a1fe47a13b1b6dee17c240b2e862d73ded0",
+  "source_sha256": "f9289aa054975bfbfa9af0d24974a2eeb60e0ef9a5bb74652f5ed06feecb34c6"
+ },
+ {
+  "path": "paper/sec_intro.tex",
+  "source": "paper_neuron/sec_intro.tex",
+  "size": 8911,
+  "sha256": "1268633cfdf787d9322787ee593f932319eea3e620855e845ef82bfe4461585c",
+  "source_sha256": "b792539b121548e144154695f820c220b8bbdd0672f074e02b9d0cf136eafacc"
  },
  {
   "path": "paper/sec_laughlin.tex",
   "source": "paper_neuron/sec_laughlin.tex",
   "size": 8628,
-  "sha256": "ac5d420b3b89ff4891c4b6546a059f23b2fbaa5b4daffa32dc8c3d30e5b68eca"
+  "sha256": "0074eae78c932be4ced5f22a0eda6874fee1d500d8bd1586a2c9f85ede4a8923",
+  "source_sha256": "ac5d420b3b89ff4891c4b6546a059f23b2fbaa5b4daffa32dc8c3d30e5b68eca"
  },
  {
   "path": "paper/sec_methods.tex",
   "source": "paper_neuron/sec_methods.tex",
   "size": 22635,
-  "sha256": "41545ee47fd5c0724686fb32e5f2d24761990c32df2ff3567edcd0cb4a7e6ea0"
+  "sha256": "43ec4aae84a768a0778696a3fbeef9cf81d191b20e4d63b6efde8e4338d5ec6d",
+  "source_sha256": "41545ee47fd5c0724686fb32e5f2d24761990c32df2ff3567edcd0cb4a7e6ea0"
+ },
+ {
+  "path": "paper/sec_results_an.tex",
+  "source": "paper_neuron/sec_results_an.tex",
+  "size": 21509,
+  "sha256": "8cc061b6125337e98e5d885fc24fd5ad5a010159cca65e687dc0eb87ca5951d2",
+  "source_sha256": "bd68588fdb87152628112660a8876ab3d02b57d67a44015b3193157159c10762"
  },
  {
   "path": "paper/sec_thmC.tex",
   "source": "paper_neuron/sec_thmC.tex",
   "size": 41661,
-  "sha256": "a456d354792211eb48e1bc947723a0ef5a3b0edea12a672c59481a11b52ab481"
+  "sha256": "7d95160e17b1fe9e1436fa13ea3a9751d5292eb9ef51d18fa6551a68a8bee2eb",
+  "source_sha256": "a456d354792211eb48e1bc947723a0ef5a3b0edea12a672c59481a11b52ab481"
  },
  {
   "path": "paper/supp_cmp_finite.tex",
   "source": "paper_neuron/supp_cmp_finite.tex",
-  "size": 5371,
-  "sha256": "9e7b4b17c9f6ce7ddde08cc704f34efcd891f3ccb7014e2e6a13938f98105234"
+  "size": 5547,
+  "sha256": "a360e4c424d5553ab9d62e10b3e06254ac5020e113f84e2eaf621d4a47a5bdc6",
+  "source_sha256": "53e8f6c2779997c987f0c019b2eb6ac67884d8c31ce975fd6ce6db8c6f05e000"
  },
  {
   "path": "paper/supplement_p2.pdf",
   "source": "paper_neuron/supplement_p2.pdf",
-  "size": 307464,
-  "sha256": "8cf5755ecd048150a3e99e9b80988f1479902bf2e7af5f31233213464fdfa443"
+  "size": 307228,
+  "sha256": "2572cc813c1882664103ee177d31cc7c412ca5860653d7e1b5efc1ece4893839",
+  "source_sha256": "2572cc813c1882664103ee177d31cc7c412ca5860653d7e1b5efc1ece4893839"
+ },
+ {
+  "path": "count-law/q1893_a25_walk.py",
+  "source": "q1893_a25_walk.py",
+  "size": 13513,
+  "sha256": "c9dd5a4875973f5f665037e2e6bf1f61226f4e630a81e06832f1c8f10ec409f7",
+  "source_sha256": "251893170f37993f673461c557c8339fb4d986cd684b5182a45cc78dcfcf5573"
  },
  {
   "path": "an-tests/q1895_dandi001262_census.py",
   "source": "q1895_dandi001262_census.py",
   "size": 3150,
-  "sha256": "6594569a1d7bc454041f44d483950a39be73d36da36b2904295bf9db2e2c4f37"
+  "sha256": "229b5c344bcbc87be3c8cdb69990462d4564992f995f97f7d04b12b4cb156e4c",
+  "source_sha256": "6594569a1d7bc454041f44d483950a39be73d36da36b2904295bf9db2e2c4f37"
  },
  {
   "path": "count-law/q1899_count_change_walk.py",
   "source": "q1899_count_change_walk.py",
   "size": 13890,
-  "sha256": "58ff38a24bbaa470149cf228a79a82e6a26f9627b20f537bf609105e5e1896af"
+  "sha256": "0013dc9eccd0bbfb31d2f7e0239fc18f07438be52bbdd0325119395d702a1465",
+  "source_sha256": "58ff38a24bbaa470149cf228a79a82e6a26f9627b20f537bf609105e5e1896af"
+ },
+ {
+  "path": "theory-checks/q1903_poislb_constants.py",
+  "source": "q1903_poislb_constants.py",
+  "size": 4519,
+  "sha256": "a377e64778e0d412851886c42d80582def3b6ca1d756b2ffcfd52528b4aa2c20",
+  "source_sha256": "a377e64778e0d412851886c42d80582def3b6ca1d756b2ffcfd52528b4aa2c20"
  },
  {
   "path": "theory-checks/q1906_range_constants.py",
   "source": "q1906_range_constants.py",
   "size": 3208,
-  "sha256": "6f56c8a00f6885b53bc0d16f2e9c83044297c40d1a1e33f03098a05f9cc63b9c"
+  "sha256": "6f56c8a00f6885b53bc0d16f2e9c83044297c40d1a1e33f03098a05f9cc63b9c",
+  "source_sha256": "6f56c8a00f6885b53bc0d16f2e9c83044297c40d1a1e33f03098a05f9cc63b9c"
  },
  {
   "path": "theory-checks/q1907_decay_delta_check.py",
   "source": "q1907_decay_delta_check.py",
   "size": 2830,
-  "sha256": "9c13e32d947038c7344264e169bd6bbe06271e4e30f5854f2f4c0c1db76f1d75"
+  "sha256": "9c13e32d947038c7344264e169bd6bbe06271e4e30f5854f2f4c0c1db76f1d75",
+  "source_sha256": "9c13e32d947038c7344264e169bd6bbe06271e4e30f5854f2f4c0c1db76f1d75"
  },
  {
   "path": "theory-checks/q1908_lowerbound_ball.py",
   "source": "q1908_lowerbound_ball.py",
   "size": 4279,
-  "sha256": "cb944320461808ae562650898cc052013c991a3188dfd2659ad90a9cb4956a08"
+  "sha256": "cb944320461808ae562650898cc052013c991a3188dfd2659ad90a9cb4956a08",
+  "source_sha256": "cb944320461808ae562650898cc052013c991a3188dfd2659ad90a9cb4956a08"
  },
  {
   "path": "count-law/q1910_count_change_sides.py",
   "source": "q1910_count_change_sides.py",
   "size": 3435,
-  "sha256": "44819cc94a9daa85cdb408a83b2418b90604c3c571006142d6eea00de615b2d1"
+  "sha256": "44819cc94a9daa85cdb408a83b2418b90604c3c571006142d6eea00de615b2d1",
+  "source_sha256": "44819cc94a9daa85cdb408a83b2418b90604c3c571006142d6eea00de615b2d1"
  },
  {
   "path": "an-tests/q1912_capacity_loss_a1.py",
   "source": "q1912_capacity_loss_a1.py",
   "size": 6666,
-  "sha256": "32243485a128de28be8c7be0d15683e58e2d8eef4546678aaf46a82ccad55573"
+  "sha256": "32243485a128de28be8c7be0d15683e58e2d8eef4546678aaf46a82ccad55573",
+  "source_sha256": "32243485a128de28be8c7be0d15683e58e2d8eef4546678aaf46a82ccad55573"
  },
  {
   "path": "an-tests/q1913_capacity_loss_a1_v2.py",
   "source": "q1913_capacity_loss_a1_v2.py",
   "size": 8119,
-  "sha256": "349e8ab787d6f82f61ae2234e61817ecceb0a9d5c5760a947922c30e5ca38a7a"
+  "sha256": "349e8ab787d6f82f61ae2234e61817ecceb0a9d5c5760a947922c30e5ca38a7a",
+  "source_sha256": "349e8ab787d6f82f61ae2234e61817ecceb0a9d5c5760a947922c30e5ca38a7a"
  },
  {
   "path": "an-tests/q1917_capacity_loss_anf.py",
   "source": "q1917_capacity_loss_anf.py",
   "size": 7523,
-  "sha256": "ab134d7feb12bcdefc06d8f89e5b94a8cc0eaaed07e97bf3e5c209db6c7d1409"
+  "sha256": "ab134d7feb12bcdefc06d8f89e5b94a8cc0eaaed07e97bf3e5c209db6c7d1409",
+  "source_sha256": "ab134d7feb12bcdefc06d8f89e5b94a8cc0eaaed07e97bf3e5c209db6c7d1409"
  },
  {
   "path": "an-tests/q1918_route_e_controls.py",
   "source": "q1918_route_e_controls.py",
   "size": 6858,
-  "sha256": "60760d3a4be33526f815f6c6ec41d676713ad527d43c518259442eb22d55f66e"
+  "sha256": "60760d3a4be33526f815f6c6ec41d676713ad527d43c518259442eb22d55f66e",
+  "source_sha256": "60760d3a4be33526f815f6c6ec41d676713ad527d43c518259442eb22d55f66e"
  },
  {
   "path": "an-tests/q1918_route_e_controls_run1.py",
   "source": "q1918_route_e_controls_run1.py",
   "size": 6819,
-  "sha256": "6533a4124edfd42308b64ecf38559097a8a2851ff416a7d3a993dbf2fb2b8ca9"
+  "sha256": "6533a4124edfd42308b64ecf38559097a8a2851ff416a7d3a993dbf2fb2b8ca9",
+  "source_sha256": "6533a4124edfd42308b64ecf38559097a8a2851ff416a7d3a993dbf2fb2b8ca9"
  },
  {
   "path": "an-tests/q1919_route_e_dt.py",
   "source": "q1919_route_e_dt.py",
   "size": 7478,
-  "sha256": "09dc8b72df847d3d290e680bd4c910281753f648f90781a618ea2411132e0c2a"
+  "sha256": "09dc8b72df847d3d290e680bd4c910281753f648f90781a618ea2411132e0c2a",
+  "source_sha256": "09dc8b72df847d3d290e680bd4c910281753f648f90781a618ea2411132e0c2a"
  },
  {
   "path": "theory-checks/q1921_cP_ball.py",
   "source": "q1921_cP_ball.py",
   "size": 3130,
-  "sha256": "646f3c33880de7165f8d930614775ab5a04ed1aa5a908dfd19e2aaec72a47d2f"
+  "sha256": "646f3c33880de7165f8d930614775ab5a04ed1aa5a908dfd19e2aaec72a47d2f",
+  "source_sha256": "646f3c33880de7165f8d930614775ab5a04ed1aa5a908dfd19e2aaec72a47d2f"
  },
  {
   "path": "an-tests/q1922_map_vs_weights_a1.py",
   "source": "q1922_map_vs_weights_a1.py",
   "size": 5774,
-  "sha256": "d23e0dddac3fa2720351565f176cb9579f87cf6215d0428baddf5f0627562c2f"
+  "sha256": "8362c6f441efc6dccf06ce107db03c865f7c2183ec151491bd757c9f2fd0a540",
+  "source_sha256": "d23e0dddac3fa2720351565f176cb9579f87cf6215d0428baddf5f0627562c2f"
  },
  {
   "path": "an-tests/q1925_rlf_shape.py",
   "source": "q1925_rlf_shape.py",
   "size": 8077,
-  "sha256": "dfce763b745f7b089626675637e04b65dfffcfaf4a806582f1fdad5ba80932da"
+  "sha256": "dfce763b745f7b089626675637e04b65dfffcfaf4a806582f1fdad5ba80932da",
+  "source_sha256": "dfce763b745f7b089626675637e04b65dfffcfaf4a806582f1fdad5ba80932da"
  },
  {
   "path": "an-tests/q1926_ph_steps.py",
   "source": "q1926_ph_steps.py",
   "size": 6569,
-  "sha256": "ec20075d9f66345ba66e4058fab3b5cac3735179fe7557944c729d9b8db16f95"
+  "sha256": "ec20075d9f66345ba66e4058fab3b5cac3735179fe7557944c729d9b8db16f95",
+  "source_sha256": "ec20075d9f66345ba66e4058fab3b5cac3735179fe7557944c729d9b8db16f95"
  },
  {
   "path": "an-tests/q1928_kmerge_recheck.py",
   "source": "q1928_kmerge_recheck.py",
   "size": 1442,
-  "sha256": "b19063fab3a5631abda5359f81001999de76bb55f98683e55e6422ee88a45750"
+  "sha256": "b19063fab3a5631abda5359f81001999de76bb55f98683e55e6422ee88a45750",
+  "source_sha256": "b19063fab3a5631abda5359f81001999de76bb55f98683e55e6422ee88a45750"
  },
  {
   "path": "an-tests/q1929_ph_drift.py",
   "source": "q1929_ph_drift.py",
   "size": 4563,
-  "sha256": "657a465053cf5a438ade91c9c5e408d8713341f2d26788e597e8cd9af944b4ff"
+  "sha256": "657a465053cf5a438ade91c9c5e408d8713341f2d26788e597e8cd9af944b4ff",
+  "source_sha256": "657a465053cf5a438ade91c9c5e408d8713341f2d26788e597e8cd9af944b4ff"
  },
  {
   "path": "an-tests/q1930_ph_steps_75ms.py",
   "source": "q1930_ph_steps_75ms.py",
   "size": 1764,
-  "sha256": "92fbeddf15a6f5d8c769e6fb95ddd8b85532bf5197ca5f150ab05c1ec2d4e3d3"
+  "sha256": "92fbeddf15a6f5d8c769e6fb95ddd8b85532bf5197ca5f150ab05c1ec2d4e3d3",
+  "source_sha256": "92fbeddf15a6f5d8c769e6fb95ddd8b85532bf5197ca5f150ab05c1ec2d4e3d3"
  },
  {
   "path": "an-tests/q1931_subject_ages.py",
   "source": "q1931_subject_ages.py",
   "size": 1135,
-  "sha256": "2305629edc8ace9da68890260957c2ae097e3b3310591da8fc6cbe76b658fd7f"
+  "sha256": "2305629edc8ace9da68890260957c2ae097e3b3310591da8fc6cbe76b658fd7f",
+  "source_sha256": "2305629edc8ace9da68890260957c2ae097e3b3310591da8fc6cbe76b658fd7f"
  },
  {
   "path": "an-tests/q1932_hl1_replication.py",
   "source": "q1932_hl1_replication.py",
   "size": 3382,
-  "sha256": "cf8c9eabae04be07378f5825620a3f797cb850b6033bf492abc8d22a055ed0a1"
+  "sha256": "cf8c9eabae04be07378f5825620a3f797cb850b6033bf492abc8d22a055ed0a1",
+  "source_sha256": "cf8c9eabae04be07378f5825620a3f797cb850b6033bf492abc8d22a055ed0a1"
  },
  {
   "path": "an-tests/q1933_graded_cost.py",
   "source": "q1933_graded_cost.py",
   "size": 5500,
-  "sha256": "c728901c90b6af7b53950ef2c4900feea02f7d932a08a29f7006514e52842a16"
+  "sha256": "c728901c90b6af7b53950ef2c4900feea02f7d932a08a29f7006514e52842a16",
+  "source_sha256": "c728901c90b6af7b53950ef2c4900feea02f7d932a08a29f7006514e52842a16"
  },
  {
   "path": "an-tests/q1935_rlf_sqrt_shape.py",
   "source": "q1935_rlf_sqrt_shape.py",
   "size": 9750,
-  "sha256": "af7971c80d171701ed340785ac34e799865e320949746b7191010941fa3f9f31"
+  "sha256": "bc54ba311d1d48e4f33969c4149811a3ac6ca8b29e0be61543675dc9ea703049",
+  "source_sha256": "af7971c80d171701ed340785ac34e799865e320949746b7191010941fa3f9f31"
  },
  {
   "path": "an-tests/q1935_rlf_sqrt_shape_v1.py",
   "source": "q1935_rlf_sqrt_shape_v1.py",
   "size": 9515,
-  "sha256": "7bbb2134491105633adfe3497571d1a289e9b63cd2cf35dee99939f1415c432e"
+  "sha256": "8456351e219b4d19fff69a1fa0831f6f9caf81209b48300fd80bb5e7ef230a7a",
+  "source_sha256": "7bbb2134491105633adfe3497571d1a289e9b63cd2cf35dee99939f1415c432e"
  },
  {
   "path": "an-tests/q1936_ph_fano.py",
   "source": "q1936_ph_fano.py",
   "size": 5569,
-  "sha256": "811ff3c83c8ec8c95ae96531303998df72b6a891c46af12bf38bc237178cf256"
+  "sha256": "87aa759085d1d613fcb5cd15907f9648ac6567f8767148ff8e720cf4ad33d709",
+  "source_sha256": "811ff3c83c8ec8c95ae96531303998df72b6a891c46af12bf38bc237178cf256"
  },
  {
   "path": "an-tests/q1937_ph_steps_binomial.py",
   "source": "q1937_ph_steps_binomial.py",
   "size": 7121,
-  "sha256": "8ffdda6bff64e5b58a113898d6092dfaa2bbb159ad768b7abebc5b174af463d8"
+  "sha256": "8ffdda6bff64e5b58a113898d6092dfaa2bbb159ad768b7abebc5b174af463d8",
+  "source_sha256": "8ffdda6bff64e5b58a113898d6092dfaa2bbb159ad768b7abebc5b174af463d8"
  },
  {
   "path": "an-tests/q1938_channel_fano_vs_fibre.py",
   "source": "q1938_channel_fano_vs_fibre.py",
   "size": 2069,
-  "sha256": "d62345674af16cfb40cae7107607850749e5e74af6fd61389b1042e67c79f543"
+  "sha256": "d62345674af16cfb40cae7107607850749e5e74af6fd61389b1042e67c79f543",
+  "source_sha256": "d62345674af16cfb40cae7107607850749e5e74af6fd61389b1042e67c79f543"
  },
  {
   "path": "an-tests/q1939_ph_steps_compoisson.py",
   "source": "q1939_ph_steps_compoisson.py",
   "size": 8734,
-  "sha256": "a91836dd9e321d854bc02ed3d0a1257788051dd847c88639422aac8922df23dc"
+  "sha256": "a91836dd9e321d854bc02ed3d0a1257788051dd847c88639422aac8922df23dc",
+  "source_sha256": "a91836dd9e321d854bc02ed3d0a1257788051dd847c88639422aac8922df23dc"
  },
  {
   "path": "an-tests/q1941_graded_ctrl_matched.py",
   "source": "q1941_graded_ctrl_matched.py",
   "size": 4266,
-  "sha256": "65e694cadfda2fe1be69d1e35d23502d89666283712cb7865ce7d619e0eaba69"
+  "sha256": "65e694cadfda2fe1be69d1e35d23502d89666283712cb7865ce7d619e0eaba69",
+  "source_sha256": "65e694cadfda2fe1be69d1e35d23502d89666283712cb7865ce7d619e0eaba69"
  },
  {
   "path": "an-tests/q1942_thirds_table.py",
   "source": "q1942_thirds_table.py",
   "size": 2658,
-  "sha256": "4f90941b2463298bcc8c74983d83444913ce8038186c12f1eb7c42831c8fbfc8"
+  "sha256": "4f90941b2463298bcc8c74983d83444913ce8038186c12f1eb7c42831c8fbfc8",
+  "source_sha256": "4f90941b2463298bcc8c74983d83444913ce8038186c12f1eb7c42831c8fbfc8"
  },
  {
   "path": "theory-checks/q1945_cmp_finite_checks.py",
   "source": "q1945_cmp_finite_checks.py",
   "size": 5648,
-  "sha256": "e2df37b64c6880ce2a1019bd36dfba98368ed1a2e892f1cf236d778e7aea281a"
+  "sha256": "e2df37b64c6880ce2a1019bd36dfba98368ed1a2e892f1cf236d778e7aea281a",
+  "source_sha256": "e2df37b64c6880ce2a1019bd36dfba98368ed1a2e892f1cf236d778e7aea281a"
  },
  {
   "path": "an-tests/q1949_fano_vs_rate.py",
   "source": "q1949_fano_vs_rate.py",
   "size": 2529,
-  "sha256": "df5617c2e739f929a36d6b0caed3fab9c28e20e74a6704f950790c509ea93851"
+  "sha256": "df5617c2e739f929a36d6b0caed3fab9c28e20e74a6704f950790c509ea93851",
+  "source_sha256": "df5617c2e739f929a36d6b0caed3fab9c28e20e74a6704f950790c509ea93851"
  },
  {
   "path": "an-tests/q1950_ph_steps_ratefano.py",
   "source": "q1950_ph_steps_ratefano.py",
   "size": 11310,
-  "sha256": "399c94890db94c8500e3862e3f52da8bdada8f8a1604b4baa62d25282f275670"
+  "sha256": "399c94890db94c8500e3862e3f52da8bdada8f8a1604b4baa62d25282f275670",
+  "source_sha256": "399c94890db94c8500e3862e3f52da8bdada8f8a1604b4baa62d25282f275670"
  },
  {
   "path": "an-tests/q1951_range_readings.py",
   "source": "q1951_range_readings.py",
   "size": 2633,
-  "sha256": "a47c990ec7244b0651afcaea9f5794f8bcd33772f36ed52779b7c4658703d090"
+  "sha256": "a47c990ec7244b0651afcaea9f5794f8bcd33772f36ed52779b7c4658703d090",
+  "source_sha256": "a47c990ec7244b0651afcaea9f5794f8bcd33772f36ed52779b7c4658703d090"
  },
  {
   "path": "an-tests/q1952_ph_steps_hull.py",
   "source": "q1952_ph_steps_hull.py",
   "size": 7054,
-  "sha256": "6899bb8c626a513e867980b53c02ec3ae3b98b910ee564247c534a1bb1f2bf09"
+  "sha256": "6899bb8c626a513e867980b53c02ec3ae3b98b910ee564247c534a1bb1f2bf09",
+  "source_sha256": "6899bb8c626a513e867980b53c02ec3ae3b98b910ee564247c534a1bb1f2bf09"
  },
  {
   "path": "an-tests/q1953_ph_steps_lik.py",
   "source": "q1953_ph_steps_lik.py",
   "size": 6868,
-  "sha256": "d1de93df8ebf89a8d60f844f1ce793f032ae1a0091c3d2f460b16a8aceb55922"
+  "sha256": "d1de93df8ebf89a8d60f844f1ce793f032ae1a0091c3d2f460b16a8aceb55922",
+  "source_sha256": "d1de93df8ebf89a8d60f844f1ce793f032ae1a0091c3d2f460b16a8aceb55922"
  },
  {
   "path": "an-tests/q1956_ph_steps_lik_hull.py",
   "source": "q1956_ph_steps_lik_hull.py",
   "size": 6398,
-  "sha256": "79ce40eee6c221b76fa73405411067b767ec6d0ae297bb193209af17a6ecc255"
+  "sha256": "79ce40eee6c221b76fa73405411067b767ec6d0ae297bb193209af17a6ecc255",
+  "source_sha256": "79ce40eee6c221b76fa73405411067b767ec6d0ae297bb193209af17a6ecc255"
  },
  {
   "path": "an-tests/q1957_rlf_shape_asym.py",
   "source": "q1957_rlf_shape_asym.py",
   "size": 5453,
-  "sha256": "5392f79acc894e612a6e44849a3d2f0814ac7162f6045dd9a4a41709f85d2073"
+  "sha256": "d1ef692a169f382655ab771a78351bc34e294e888a796562e1c19534af6d2eab",
+  "source_sha256": "5392f79acc894e612a6e44849a3d2f0814ac7162f6045dd9a4a41709f85d2073"
  },
  {
   "path": "an-tests/q8_levels_a1.py",
   "source": "q8_levels_a1.py",
   "size": 5386,
-  "sha256": "9b87d2fd015a96b397279f2a7df6fd7b05c7eae52b61fc0b0a0186d3f7786513"
+  "sha256": "9b87d2fd015a96b397279f2a7df6fd7b05c7eae52b61fc0b0a0186d3f7786513",
+  "source_sha256": "9b87d2fd015a96b397279f2a7df6fd7b05c7eae52b61fc0b0a0186d3f7786513"
+ },
+ {
+  "path": "theory-checks/support_exact.py",
+  "source": "support_exact.py",
+  "size": 3029,
+  "sha256": "857a41ee4f360c0e4bd93ccedac09bff95381c0338f3b4048da294587c9cd70a",
+  "source_sha256": "857a41ee4f360c0e4bd93ccedac09bff95381c0338f3b4048da294587c9cd70a"
  },
  {
   "path": "an-tests/support_exact.py",
   "source": "support_exact.py",
   "size": 3029,
-  "sha256": "857a41ee4f360c0e4bd93ccedac09bff95381c0338f3b4048da294587c9cd70a"
+  "sha256": "857a41ee4f360c0e4bd93ccedac09bff95381c0338f3b4048da294587c9cd70a",
+  "source_sha256": "857a41ee4f360c0e4bd93ccedac09bff95381c0338f3b4048da294587c9cd70a"
+ },
+ {
+  "path": "paper/support_exact.py",
+  "source": "support_exact.py",
+  "size": 3029,
+  "sha256": "857a41ee4f360c0e4bd93ccedac09bff95381c0338f3b4048da294587c9cd70a",
+  "source_sha256": "857a41ee4f360c0e4bd93ccedac09bff95381c0338f3b4048da294587c9cd70a"
  }
 ]

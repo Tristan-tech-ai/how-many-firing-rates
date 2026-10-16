@@ -27,7 +27,7 @@ METHOD.
     A = 430 ends the walk if V never changes sign.
 CHECKPOINT AND RESUME. Directory p2k25/: every accepted state p2k25/state_A<A>.json, the list p2k25/walk.json,
 and at the end p2k25/A25_result.json. A restart reads walk.json and continues from the last accepted states.
-RESUME: cd temporal_within && py q1893_a25_walk.py   (idempotent). Stop by the PID in p2k25/walker.pid only.
+
 BLIND READOUT. The walker prints counts and phases only (no A, no V); the verdict is the last line of
 q1894_a25_verdict.py, run on p2k25/A25_result.json.
 """
