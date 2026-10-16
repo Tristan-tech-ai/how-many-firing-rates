@@ -35,151 +35,60 @@
   "source_sha256": "4ca93f2cb31c920faca69dcd28f6c34a855b5e607aa25d70403b6770939ee11b"
  },
  {
-  "path": "paper/assemble_plos.py",
-  "source": "paper_neuron/assemble_plos.py",
-  "size": 5623,
-  "sha256": "2a57eb5362d347c86c5aff47cb897dec561329ccea57811171a526ff02317404",
-  "source_sha256": "2a57eb5362d347c86c5aff47cb897dec561329ccea57811171a526ff02317404"
- },
- {
-  "path": "paper/assemble_v2.py",
-  "source": "paper_neuron/assemble_v2.py",
-  "size": 8400,
-  "sha256": "3a84f3d63feb4f28f2fa5836b8ba17d03d2783f92ccc8f86ea2413d034ebd93d",
-  "source_sha256": "d397d752db76837f86b1db379830ce1369a7c7379aa914b4ab61818aa54a1e2a"
- },
- {
-  "path": "paper/bib_p2_vancouver.tex",
-  "source": "paper_neuron/bib_p2_vancouver.tex",
-  "size": 4396,
-  "sha256": "4feedfb9b3baa17be3ebbb7a5fa7c10e8456e0b138b037d5cbc1a3c2da2a63d3",
-  "source_sha256": "65c6de22ab9973c03f42b04755db7745cd728bd3ec72a2c492d9e43214425029"
- },
- {
-  "path": "paper/bib_supp_vancouver.tex",
-  "source": "paper_neuron/bib_supp_vancouver.tex",
-  "size": 6931,
-  "sha256": "044806d29e3360e34329ac825e6e17cc9bd5d14380c94bd0abd45a72b0dd162e",
-  "source_sha256": "f0e7cb0bdbe1e73dd6fc79975403f532a83f57ab3a0e9b795f3eb7b97ece41c7"
- },
- {
-  "path": "paper/build_supplement_p2.py",
-  "source": "paper_neuron/build_supplement_p2.py",
-  "size": 8909,
-  "sha256": "96baec405f5d2d1ef34380c042666cb1149e0fd45a09bd4961ba9141ab5d67ae",
-  "source_sha256": "96baec405f5d2d1ef34380c042666cb1149e0fd45a09bd4961ba9141ab5d67ae"
- },
- {
-  "path": "paper/check_plos_body.py",
-  "source": "paper_neuron/check_plos_body.py",
-  "size": 2234,
-  "sha256": "887f020a21f71057d7db46ca5fd1d0b55caa2a353f797099382920bcb99f4a28",
-  "source_sha256": "887f020a21f71057d7db46ca5fd1d0b55caa2a353f797099382920bcb99f4a28"
- },
- {
-  "path": "paper/fig_dk.py",
+  "path": "checks/figures/fig_dk.py",
   "source": "paper_neuron/fig_dk.py",
   "size": 4779,
   "sha256": "d32ddefe6f344b8dc727b63932372b9fda30ec7fbc17415b49fbd8ea27673a7e",
   "source_sha256": "e0dc05fc257e48334df8d13d37e248b9e1e4497f5d9e3b8b31466e3a184e05dc"
  },
  {
-  "path": "paper/fig_rlf.py",
+  "path": "checks/figures/fig_rlf.py",
   "source": "paper_neuron/fig_rlf.py",
   "size": 4402,
   "sha256": "56edac78618b65c456b8aeac5c43425161be57adf5e5bf3ea69658c5fb8281dd",
   "source_sha256": "22b2fc09aaf2fa47a41f1a3e55c5aa79fc9c0eb7e4dff81dae120afafb17112d"
  },
  {
-  "path": "paper/fig_schematic.py",
+  "path": "checks/figures/fig_schematic.py",
   "source": "paper_neuron/fig_schematic.py",
   "size": 4383,
   "sha256": "f5eb04859f2b83a9855a1ded7a5a51ddd82ff5e3e463b76f1685323854945e63",
   "source_sha256": "a56a1409ea0f340a9f08339461e12b981bcba5e10e7a7653a29b317ba8eb7654"
  },
  {
-  "path": "paper/figs/fig_dk.json",
+  "path": "checks/figures/fig_dk.json",
   "source": "paper_neuron/figs/fig_dk.json",
   "size": 644,
   "sha256": "d2642143760871e60494123cf05073f81bf6134d731e98667d118cc2ec33087a",
   "source_sha256": "d2642143760871e60494123cf05073f81bf6134d731e98667d118cc2ec33087a"
  },
  {
-  "path": "paper/figs/fig_dk.pdf",
-  "source": "paper_neuron/figs/fig_dk.pdf",
-  "size": 27657,
-  "sha256": "cb093f8af57a9d3eb953286b8e0435339a3d7be37766171bb025c005ecef642a",
-  "source_sha256": "cb093f8af57a9d3eb953286b8e0435339a3d7be37766171bb025c005ecef642a"
- },
- {
-  "path": "paper/figs/fig_front.pdf",
-  "source": "paper_neuron/figs/fig_front.pdf",
-  "size": 17599,
-  "sha256": "0809cd65431229bb5e2686cc8d224c420c342253ec3a6ebb8376e6d70e5e1697",
-  "source_sha256": "0809cd65431229bb5e2686cc8d224c420c342253ec3a6ebb8376e6d70e5e1697"
- },
- {
-  "path": "paper/figs/fig_graded.pdf",
-  "source": "paper_neuron/figs/fig_graded.pdf",
-  "size": 10711,
-  "sha256": "5201f47cf8ee89d4e4d7447e9a6df7e586935856bf14dda65a75a5c611c429f5",
-  "source_sha256": "5201f47cf8ee89d4e4d7447e9a6df7e586935856bf14dda65a75a5c611c429f5"
- },
- {
-  "path": "paper/figs/fig_rlf.json",
+  "path": "checks/figures/fig_rlf.json",
   "source": "paper_neuron/figs/fig_rlf.json",
   "size": 802,
   "sha256": "efb42766997957fb80a26d7fd0714fe333195bfa9288927460af75e58cdff5c6",
   "source_sha256": "efb42766997957fb80a26d7fd0714fe333195bfa9288927460af75e58cdff5c6"
  },
  {
-  "path": "paper/figs/fig_rlf.pdf",
-  "source": "paper_neuron/figs/fig_rlf.pdf",
-  "size": 23283,
-  "sha256": "aee0fb50c091e7dc54ba6ff9f3897916be2fbf426320af51d047f846faa05137",
-  "source_sha256": "aee0fb50c091e7dc54ba6ff9f3897916be2fbf426320af51d047f846faa05137"
- },
- {
-  "path": "paper/figs/fig_schematic.json",
+  "path": "checks/figures/fig_schematic.json",
   "source": "paper_neuron/figs/fig_schematic.json",
   "size": 5029,
   "sha256": "7bda8f004d2d7e2ecb00cb31930e384da7b51129cec65fb218627138cbf0f20f",
   "source_sha256": "7bda8f004d2d7e2ecb00cb31930e384da7b51129cec65fb218627138cbf0f20f"
  },
  {
-  "path": "paper/figs/fig_schematic.pdf",
-  "source": "paper_neuron/figs/fig_schematic.pdf",
-  "size": 18804,
-  "sha256": "ec66927537a710b1bb6205116bde99a8ab8db1e7ae5578d8a2302f8c4c8564f6",
-  "source_sha256": "ec66927537a710b1bb6205116bde99a8ab8db1e7ae5578d8a2302f8c4c8564f6"
- },
- {
-  "path": "paper/figs/fig_wall.pdf",
-  "source": "paper_neuron/figs/fig_wall.pdf",
-  "size": 16619,
-  "sha256": "961122a210f046561e655305bcd794c2c5dd7fbc064f545f7d52ff23107a9259",
-  "source_sha256": "961122a210f046561e655305bcd794c2c5dd7fbc064f545f7d52ff23107a9259"
- },
- {
-  "path": "paper/figs/figstyle.py",
+  "path": "checks/figures/figstyle.py",
   "source": "paper_neuron/figs/figstyle.py",
   "size": 1133,
   "sha256": "88f950bed876c3fedc3a1ba1361400d74ec6964ec1b2446411ec92d27984fdd6",
   "source_sha256": "88f950bed876c3fedc3a1ba1361400d74ec6964ec1b2446411ec92d27984fdd6"
  },
  {
-  "path": "paper/figs/make_figs2.py",
+  "path": "checks/figures/make_figs2.py",
   "source": "paper_neuron/figs/make_figs2.py",
   "size": 5124,
   "sha256": "1ebab348c2f8afda36480fddcc4e53a4a5fe8aba6cb2ad45b8c2001cdfbe2813",
   "source_sha256": "1ebab348c2f8afda36480fddcc4e53a4a5fe8aba6cb2ad45b8c2001cdfbe2813"
- },
- {
-  "path": "paper/flatten_v2.py",
-  "source": "paper_neuron/flatten_v2.py",
-  "size": 519,
-  "sha256": "77632b8bbaefc7f6ecffd7803e54b394972604145108ffd055acb60f79176d81",
-  "source_sha256": "77632b8bbaefc7f6ecffd7803e54b394972604145108ffd055acb60f79176d81"
  },
  {
   "path": "proved-counts/paper_neuron/lawcert_A25_lo.log",
@@ -245,32 +154,11 @@
   "source_sha256": "075ce8c36adc6d3489f4f3729102846eea51c6fe7800ae47fe9573bc22033aa6"
  },
  {
-  "path": "paper/paper2.tex",
-  "source": "paper_neuron/paper2.tex",
-  "size": 75856,
-  "sha256": "024e0356481341184559c7fdcd7c66d417fdf12fc39d334f9df45aef17b7bc6a",
-  "source_sha256": "1d500efb87aa19d7d8f30828987a80ea0fa2e666f2539acc3d2cc951874b39a2"
- },
- {
-  "path": "paper/paper2_main.pdf",
+  "path": "paper/how-many-firing-rates.pdf",
   "source": "paper_neuron/paper2_main.pdf",
   "size": 514787,
   "sha256": "667d6a953783df356377e98c052094d274a718670ec88f4b90fadb61abbb93fb",
   "source_sha256": "667d6a953783df356377e98c052094d274a718670ec88f4b90fadb61abbb93fb"
- },
- {
-  "path": "paper/plos/paper2_plos.pdf",
-  "source": "paper_neuron/plos/paper2_plos.pdf",
-  "size": 562593,
-  "sha256": "1254e94a389a9a6542ea56c04d1668fbdf15fe4cee0fa0e59c9a22f810a9ed3e",
-  "source_sha256": "1254e94a389a9a6542ea56c04d1668fbdf15fe4cee0fa0e59c9a22f810a9ed3e"
- },
- {
-  "path": "paper/plos/paper2_plos.tex",
-  "source": "paper_neuron/plos/paper2_plos.tex",
-  "size": 122169,
-  "sha256": "8daecb7f2d7e3496af0d146bf43da204268821dafda4f2e35b3acecf8f824d31",
-  "source_sha256": "b2cf13b3a823db53c36fa70ceed6d5b7a8ba95215ee7ed3ba59612e361c163e7"
  },
  {
   "path": "theory-checks/paper_neuron/q1906_out.txt",
@@ -679,84 +567,7 @@
   "source_sha256": "24c1ca44b58ab177a2def00333899f31b67e66d8f8a9dead791860b2aa5be63d"
  },
  {
-  "path": "paper/sec_abstract.md",
-  "source": "paper_neuron/sec_abstract.md",
-  "size": 1793,
-  "sha256": "74f9ab6e08f1c72c8ef2a3092b34078bda21b29f1d07c8b04c2d5f23917315f2",
-  "source_sha256": "74f9ab6e08f1c72c8ef2a3092b34078bda21b29f1d07c8b04c2d5f23917315f2"
- },
- {
-  "path": "paper/sec_author_summary.md",
-  "source": "paper_neuron/sec_author_summary.md",
-  "size": 1018,
-  "sha256": "59b3092c733340508178c7c990ab346589479b5c77b20d04890d2817b05a24da",
-  "source_sha256": "59b3092c733340508178c7c990ab346589479b5c77b20d04890d2817b05a24da"
- },
- {
-  "path": "paper/sec_backmatter.tex",
-  "source": "paper_neuron/sec_backmatter.tex",
-  "size": 2263,
-  "sha256": "44692727cb33811aeb2a2d15e103e100e8f52c0b8c429343c3c9f5117ba1f077",
-  "source_sha256": "2de5aacb267c52841e0510fa7fb3fc95b1fc1b9c1f794aad3f56419a0e15dc61"
- },
- {
-  "path": "paper/sec_countlaw.tex",
-  "source": "paper_neuron/sec_countlaw.tex",
-  "size": 6265,
-  "sha256": "ab76a09906c00066762a256fc33142102fd844314b0627d8dd3dd9cd1e3ec423",
-  "source_sha256": "eb57d92a55d56cd64b5b6e17d059f54fa96d0ed475b223dba14bc7db9503ebf0"
- },
- {
-  "path": "paper/sec_discussion.tex",
-  "source": "paper_neuron/sec_discussion.tex",
-  "size": 6755,
-  "sha256": "7d4b7e1e515d6c0bc5c95e64b4c10a1fe47a13b1b6dee17c240b2e862d73ded0",
-  "source_sha256": "f9289aa054975bfbfa9af0d24974a2eeb60e0ef9a5bb74652f5ed06feecb34c6"
- },
- {
-  "path": "paper/sec_intro.tex",
-  "source": "paper_neuron/sec_intro.tex",
-  "size": 8911,
-  "sha256": "1268633cfdf787d9322787ee593f932319eea3e620855e845ef82bfe4461585c",
-  "source_sha256": "b792539b121548e144154695f820c220b8bbdd0672f074e02b9d0cf136eafacc"
- },
- {
-  "path": "paper/sec_laughlin.tex",
-  "source": "paper_neuron/sec_laughlin.tex",
-  "size": 8628,
-  "sha256": "0074eae78c932be4ced5f22a0eda6874fee1d500d8bd1586a2c9f85ede4a8923",
-  "source_sha256": "ac5d420b3b89ff4891c4b6546a059f23b2fbaa5b4daffa32dc8c3d30e5b68eca"
- },
- {
-  "path": "paper/sec_methods.tex",
-  "source": "paper_neuron/sec_methods.tex",
-  "size": 22635,
-  "sha256": "43ec4aae84a768a0778696a3fbeef9cf81d191b20e4d63b6efde8e4338d5ec6d",
-  "source_sha256": "41545ee47fd5c0724686fb32e5f2d24761990c32df2ff3567edcd0cb4a7e6ea0"
- },
- {
-  "path": "paper/sec_results_an.tex",
-  "source": "paper_neuron/sec_results_an.tex",
-  "size": 21509,
-  "sha256": "8cc061b6125337e98e5d885fc24fd5ad5a010159cca65e687dc0eb87ca5951d2",
-  "source_sha256": "bd68588fdb87152628112660a8876ab3d02b57d67a44015b3193157159c10762"
- },
- {
-  "path": "paper/sec_thmC.tex",
-  "source": "paper_neuron/sec_thmC.tex",
-  "size": 41661,
-  "sha256": "7d95160e17b1fe9e1436fa13ea3a9751d5292eb9ef51d18fa6551a68a8bee2eb",
-  "source_sha256": "a456d354792211eb48e1bc947723a0ef5a3b0edea12a672c59481a11b52ab481"
- },
- {
-  "path": "paper/supp_cmp_finite.tex",
-  "source": "paper_neuron/supp_cmp_finite.tex",
-  "size": 5547,
-  "sha256": "a360e4c424d5553ab9d62e10b3e06254ac5020e113f84e2eaf621d4a47a5bdc6",
-  "source_sha256": "53e8f6c2779997c987f0c019b2eb6ac67884d8c31ce975fd6ce6db8c6f05e000"
- },
- {
-  "path": "paper/supplement_p2.pdf",
+  "path": "paper/S1_Text.pdf",
   "source": "paper_neuron/supplement_p2.pdf",
   "size": 307228,
   "sha256": "2572cc813c1882664103ee177d31cc7c412ca5860653d7e1b5efc1ece4893839",
@@ -1058,13 +869,6 @@
  },
  {
   "path": "an-tests/support_exact.py",
-  "source": "support_exact.py",
-  "size": 3029,
-  "sha256": "857a41ee4f360c0e4bd93ccedac09bff95381c0338f3b4048da294587c9cd70a",
-  "source_sha256": "857a41ee4f360c0e4bd93ccedac09bff95381c0338f3b4048da294587c9cd70a"
- },
- {
-  "path": "paper/support_exact.py",
   "source": "support_exact.py",
   "size": 3029,
   "sha256": "857a41ee4f360c0e4bd93ccedac09bff95381c0338f3b4048da294587c9cd70a",

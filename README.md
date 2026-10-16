@@ -14,12 +14,13 @@ in gerbil auditory-nerve fibres.
 
 | folder | what it holds |
 |---|---|
-| `paper/` | the paper (`paper2_main.pdf`; the submission layout `plos/paper2_plos.pdf` with its source `plos/paper2_plos.tex`), its sources, the figures in `figs/` with their scripts, and the supporting text `supplement_p2.pdf` |
+| `paper/` | the paper (`how-many-firing-rates.pdf`) and its supporting text (`S1_Text.pdf`) |
 | `theory-checks/` | interval-arithmetic and numerical checks of the constants of Theorem 3 (`q1906`, `q1907`, `q1908`, `q1921`), of the finiteness proof in the supporting text (`q1945`), of the extension to a spontaneous count (`q1958`), and of the direction of asymmetry of the fitted curves (`q1960`) |
 | `count-law/` | the walk that locates count changes (`q1899`) and the states on both sides of them (`q1910`) |
 | `proved-counts/` | the computer-assisted proof of a count (`q470_support_certificate.py`, `q481_tail_lemma.py`), the logs of every run, and the states they read |
 | `an-tests/` | the registered tests on auditory-nerve fibres and their outputs: shape (`q1925`, `q1932`, `q1935`, `q1957`), distinct rates (`q1926`, `q1930`, `q1937`, `q1939`, `q1950`, `q1953`, `q1956`), drift (`q1929`), variability of counts (`q1936`, `q1949`), synthetic controls (`q1941`), tables (`q1942`), and the earlier analyses the paper cites |
 | `registration-log/` | the public copy of the registration log, and `timestamps/` with the files that date it |
+| `checks/` | the figure scripts with the data each figure plots (`figures/`), and the list of files with their hashes (`MANIFEST.json`, `FILES.md`) |
 
 Each test script prints its decision as its last line, starting with `VERDICT`. Its output file (`*_out.txt`, and `*_rows.json` with
 one row per fibre) is the one the paper and the log quote. A script run with `--registration-run` runs only the synthetic controls
@@ -57,13 +58,12 @@ earlier test, which are included.
 | `an-tests/q1957_rlf_shape_asym.py` | `python q1957_rlf_shape_asym.py --registration-run` | VERDICT q1957 registration run: CONTROLS PASS |
 | `theory-checks/paper_neuron/q1958_thmlam_checks.py` | `python q1958_thmlam_checks.py` | VERDICT q1958 checks: FAIL; a numerical check of the proof, not a test; its own verdict is FAIL by its solver-residual check |
 
-## Rebuilding the paper
+## Figures
 
-In `paper/`, `python assemble_v2.py` writes `paper2_main.tex` from the section sources, `python flatten_v2.py` writes the single
-file `paper2_v2_flat.tex`, and `python build_supplement_p2.py` writes `supplement_p2.tex`; each compiles with `pdflatex` (run twice).
-`python assemble_plos.py` writes `plos/paper2_plos.tex` in the layout of PLOS Computational Biology. It needs the PLOS LaTeX template,
-which is not included here: download it from https://journals.plos.org/ploscompbiol/s/latex and set `PLOS_TEMPLATE` to the path of
-`plos_latex_template.tex`, or place that file in `paper/plos_template/`.
+`checks/figures/` holds the script of each figure of the paper (`fig_schematic.py` for Fig 1, `fig_rlf.py` for Fig 2, `fig_dk.py`
+for Fig 3, and `make_figs2.py` for the figures of the supporting text) and, as JSON, every value each figure plots. The scripts expect
+the folder layout of the original project: the stored outputs they read are those of `an-tests/` and `count-law/`, and their paths
+in the original project are listed in `checks/MANIFEST.json`.
 
 ## Data
 
@@ -97,8 +97,8 @@ with OpenSSL and with the OpenTimestamps client.
 
 ## Changes in this copy
 
-`REDACTIONS.md` lists every file that differs from the file written by the computation: comments removed from TeX and Python
-sources, absolute local folder names removed, and a few notes replaced. Each entry gives both hashes. `MANIFEST.json` gives, for
+`checks/FILES.md` lists every file that differs from the file written by the computation: comments removed from Python sources,
+absolute local folder names removed, and a few notes replaced. Each entry gives both hashes. `checks/MANIFEST.json` gives, for
 every file, its source, the hash of the copy here and the hash of the source file.
 
 ## License
